@@ -4,7 +4,7 @@ import nodemailer from "nodemailer";
 import { IMailData } from "./typings/List";
 import { server } from "./config/GlobalSettings";
 import "./config/settings";
-import "./api/routes";
+import routes from "./api/routes";
 
 const port: number = parseInt(<string>process.env.PORT) || 5000;
 
@@ -17,6 +17,8 @@ const transporter = nodemailer.createTransport({
     pass: "XX",
   },
 });
+
+server.use(routes);
 
 server.listen(port, () => console.log(`Server listening on port ${port}...`));
 
