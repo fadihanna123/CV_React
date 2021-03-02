@@ -1,10 +1,10 @@
 import { Request, Response } from "express";
 
-import { server } from "../config/GlobalSettings";
+import { router } from "../config/GlobalSettings";
 import { IMailData } from "../typings/List";
 import { transporter } from "../server";
 
-server.post("/mailit", (req: Request, res: Response) => {
+router.post("/mailit", (req: Request, res: Response) => {
   const { mail, fullname, phone, msg } = req.body;
   const mailData: IMailData = {
     from: `${fullname} XX@gmail.com`,
@@ -24,3 +24,5 @@ server.post("/mailit", (req: Request, res: Response) => {
     res.status(200).send({ message: "Mail send", message_id: info.messageId });
   });
 });
+
+export default router;

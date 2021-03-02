@@ -1,14 +1,12 @@
-import { Request, Response } from "express";
 import nodemailer from "nodemailer";
 
-import { IMailData } from "./typings/List";
 import { server } from "./config/GlobalSettings";
 import "./config/settings";
 import routes from "./api/routes";
 
 const port: number = parseInt(<string>process.env.PORT) || 5000;
 
-const transporter = nodemailer.createTransport({
+export const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 465,
   secure: true,
@@ -21,5 +19,3 @@ const transporter = nodemailer.createTransport({
 server.use(routes);
 
 server.listen(port, () => console.log(`Server listening on port ${port}...`));
-
-export { transporter };
