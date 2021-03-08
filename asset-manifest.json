@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.js": "/static/js/main.54df95dd.chunk.js",
+    "main.js.map": "/static/js/main.54df95dd.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9da65a6b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9da65a6b.js.map",
+    "static/js/2.492e09ee.chunk.js": "/static/js/2.492e09ee.chunk.js",
+    "static/js/2.492e09ee.chunk.js.map": "/static/js/2.492e09ee.chunk.js.map",
+    "index.html": "/index.html",
+    "static/js/2.492e09ee.chunk.js.LICENSE.txt": "/static/js/2.492e09ee.chunk.js.LICENSE.txt",
+    "static/media/1.d0feb36d.PNG": "/static/media/1.d0feb36d.PNG",
+    "static/media/2.cc31e087.PNG": "/static/media/2.cc31e087.PNG",
+    "static/media/3.bc0cafb8.PNG": "/static/media/3.bc0cafb8.PNG",
+    "static/media/4.0693f6e5.PNG": "/static/media/4.0693f6e5.PNG",
+    "static/media/5.81b08992.png": "/static/media/5.81b08992.png",
+    "static/media/6.686e978d.PNG": "/static/media/6.686e978d.PNG",
+    "static/media/7.d951e3a7.png": "/static/media/7.d951e3a7.png",
+    "static/media/Github.5994b25b.png": "/static/media/Github.5994b25b.png",
+    "static/media/Profilbild.4c3b9a53.jpg": "/static/media/Profilbild.4c3b9a53.jpg",
+    "static/media/coding.9c56759b.jpg": "/static/media/coding.9c56759b.jpg",
+    "static/media/logo.6bbceddf.jpg": "/static/media/logo.6bbceddf.jpg",
+    "static/media/star.90b77c31.png": "/static/media/star.90b77c31.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9da65a6b.js",
+    "static/js/2.492e09ee.chunk.js",
+    "static/js/main.54df95dd.chunk.js"
+  ]
+}
