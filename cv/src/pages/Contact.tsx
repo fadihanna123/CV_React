@@ -1,9 +1,9 @@
+import axios from "axios";
 import React, { useState } from "react";
 import styled from "styled-components";
-import axios from "axios";
-import { ContactForm, MailData } from "../typings/List";
 
 import Coding from "../Images/coding.jpg";
+import { ContactForm, MailData } from "../typings/List";
 
 const Contact = () => {
   const [contactform, setContactform] = useState<ContactForm>({

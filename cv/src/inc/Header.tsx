@@ -1,10 +1,10 @@
-import { Switch, Route, Link } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
 import styled from "styled-components";
 
-import Start from "../pages/Start";
-import Projects from "../pages/Projects";
-import Contact from "../pages/Contact";
 import Logo from "../Images/logo.jpg";
+import Contact from "../pages/Contact";
+import Projects from "../pages/Projects";
+import Start from "../pages/Start";
 
 const Header = () => {
   return (

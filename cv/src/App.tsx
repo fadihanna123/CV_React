@@ -1,8 +1,8 @@
-import styled from "styled-components";
 import axios from "axios";
+import styled from "styled-components";
 
-import Header from "./inc/Header";
 import Footer from "./inc/Footer";
+import Header from "./inc/Header";
 
 axios.defaults.baseURL = "http://localhost:5000/";
 axios.defaults.headers["Content-Type"] = "application/json";

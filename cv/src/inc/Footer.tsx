@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-import Linkedin from "../Images/Linkedin.png";
 import Github from "../Images/Github.png";
+import Linkedin from "../Images/Linkedin.png";
 
 const Footer = () => {
   return (

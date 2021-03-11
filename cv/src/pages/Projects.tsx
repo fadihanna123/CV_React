@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-import Coding from "../Images/coding.jpg";
 import Project1 from "../Images/1.PNG";
 import Project2 from "../Images/2.PNG";
 import Project3 from "../Images/3.PNG";
@@ -8,6 +7,7 @@ import Project4 from "../Images/4.PNG";
 import Project5 from "../Images/5.png";
 import Project6 from "../Images/6.PNG";
 import Project7 from "../Images/7.png";
+import Coding from "../Images/coding.jpg";
 
 const Projects = () => {
   return (

@@ -1,8 +1,9 @@
+import "./config/settings";
+
 import nodemailer from "nodemailer";
 
-import { server } from "./config/GlobalSettings";
-import "./config/settings";
 import routes from "./api/routes";
+import { server } from "./config/GlobalSettings";
 
 const port: number = parseInt(<string>process.env.PORT) || 5000;
 
