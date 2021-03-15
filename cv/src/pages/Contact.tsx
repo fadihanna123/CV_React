@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 import Coding from "../Images/coding.jpg";
-import { ContactForm, MailData } from "../typings/List";
+import { ContactForm, MailData } from "../typings";
 
 const Contact = () => {
   const [contactform, setContactform] = useState<ContactForm>({

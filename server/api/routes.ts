@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 
-import { router } from "../config/GlobalSettings";
-import { IMailData } from "../typings/List";
+import { router } from "../config";
+import { IMailData } from "../typings";
 import { transporter } from "../server";
 
 router.post("/mailit", (req: Request, res: Response) => {
