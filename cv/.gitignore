@@ -8,10 +8,7 @@
 logs
 **/*.backup.*
 **/*.back.*
-<<<<<<< HEAD
-=======
 build
->>>>>>> d2308a9a4a392857116d4c2698d4148f29145d39
 
 node_modules
 bower_components
