@@ -19,4 +19,6 @@ export const transporter = nodemailer.createTransport({
 
 server.use(routes);
 
-server.listen(port, () => console.log(`Server listening on port ${port}...`));
+server.listen(port, () =>
+  console.log(` \n Server listening on port ${port}... \n `)
+);
