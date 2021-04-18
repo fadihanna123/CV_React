@@ -1,10 +1,8 @@
-import React from "react";
+import Coding from "Images/coding.jpg";
+import ProfileBild from "Images/Profilbild.jpg";
+import Star from "Images/star.png";
 import CountUp from "react-countup";
 import styled from "styled-components";
-
-import Coding from "../Images/coding.jpg";
-import ProfileBild from "../Images/Profilbild.jpg";
-import Star from "../Images/star.png";
 
 const Start = () => {
   return (
