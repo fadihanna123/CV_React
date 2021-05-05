@@ -17,27 +17,27 @@ const Start = () => {
       <TxtRow>
         <Col50>
           <AboutTxt>
-            Jag heter Fadi Hanna och är 28 år gammal. Jag föddes i Syrien där
-            jag
-            <br /> studerade i 8 år. Jag är en social person med hjärtat på rätt
-            ställe.
-            <br /> Jag började lära mig webbutveckling år 2010 och sedan dess
-            gillade jag
-            <br /> den. Jag är utbildad webbutvecklare med särskilt intresse för
-            PHP, React,
-            <br /> Wordpress, Mysql och många andra. Jag brinner för IT och
-            teknik.
-            <br /> Självklart har jag klarat grundläggande och gymnasial svenska
-            samt andra
-            <br /> kurser bland annat kurser inom data/IT. Just nu är jag
-            färdigutbildad
-            <br /> datatekniker med inriktning mot webbutveckling. Jag är också
+            Jag är en glad, social person som trivs med livet och har hjärtat på
+            rätt
             <br />
-            tillgänglig för eventuella praktikplatser. Jag är så bra i<br />
-            webbutveckling och önskar att vara mellan er. Det är mycket
-            intressant
-            <br /> som är kvar att berätta för er om mig och ser emot att träffa
-            er i<br /> intervjun.
+            plats! Föddes i Syrien där jag studerade i åtta år. Kom till Sverige
+            för
+            <br />
+            över 10 år sedan. När jag kom hit 2007 började intressera mig för
+            <br />
+            Webbutveckling, och sedan dess är jag fast. Har utbildat mig till
+            <br />
+            utvecklare, med fokus på webbutveckling. Just nu arbetar jag med
+            <br />
+            JavaScript (React), TypeScript, HTML, CSS, Strapi m.m. Men jag själv
+            <br />
+            skulle kalla mig för en Fullstack utvecklare, då jag arbetat både
+            med
+            <br /> Backend (PHP) samt Frontend utveckling (JavaScript, React,
+            TypeScript,
+            <br />
+            HTML, CSS etc.). Har ni några funderingar är ni välkomna att höra av
+            er.
           </AboutTxt>
         </Col50>
         <Col25>
@@ -48,6 +48,16 @@ const Start = () => {
         <WorkCol>
           <WorkHeading>Arbetsliverfarenhet</WorkHeading>
           <WorkList>
+            <li>
+              <b>Javascript utvecklare</b>
+              <br />
+              Soltia AB, Tumba
+              <br />
+              April
+              <CountUp duration={1} start={0} end={2021} className="count" />-
+              Nu
+            </li>
+
             <li>
               <b>PHP utvecklare</b>
               <br />
@@ -315,6 +325,7 @@ const WhoContent = styled.div`
   font-size: 32px;
   font-style: italic;
   background-size: cover;
+
   @media (max-width: 1800px) {
     background-size: cover;
     height: 300px;
@@ -328,6 +339,7 @@ const WhoHeading = styled.h1`
   padding-top: 130px;
   height: 0;
   padding-right: 280px;
+
   @media (max-width: 1800px) {
     margin: 0;
     padding: 0;
@@ -341,6 +353,7 @@ const Who = styled.p`
   color: white;
   padding-top: 60px;
   padding-right: 300px;
+
   @media (max-width: 1800px) {
     margin: 0;
     padding: 1px;
@@ -352,6 +365,7 @@ const SkillsHeading = styled.h1`
   height: 50px;
   font-size: 32px;
   margin-left: 750px;
+
   @media (max-width: 1800px) {
     margin: 0;
     text-align: center;
@@ -360,6 +374,7 @@ const SkillsHeading = styled.h1`
 
 const WorkList = styled.ul`
   list-style: square;
+
   @media (max-width: 1800px) {
     list-style: none;
     margin: 0;
@@ -369,6 +384,7 @@ const WorkList = styled.ul`
 
 const StudieList = styled.ul`
   list-style: square;
+
   @media (max-width: 1800px) {
     list-style: none;
     margin: 0;
@@ -379,14 +395,17 @@ const StudieList = styled.ul`
 const WorkHeading = styled.h1`
   margin: 10px;
 `;
+
 const StudieHeading = styled.h1`
   margin: 10px;
   white-space: nowrap;
 `;
 
 const Icon = styled.img`
-  width: 15px;
-  height: 15px;
+  max-width: 15px;
+  max-height: 15px;
+  width: auto;
+  height: auto;
 `;
 
 const Row = styled.div`
@@ -397,6 +416,7 @@ const Row = styled.div`
 const ThirdRow = styled.div`
   display: flex;
   justify-content: center;
+
   @media (max-width: 1800px) {
     flex-direction: column;
   }
@@ -405,6 +425,7 @@ const ThirdRow = styled.div`
 const TxtRow = styled.div`
   display: flex;
   justify-content: center;
+
   @media (max-width: 1800px) {
     flex-direction: column;
     width: 100%;
@@ -415,6 +436,7 @@ const Col = styled.div`
   width: 15%;
   font-weight: bold;
   line-height: 2em;
+
   @media (max-width: 1800px) {
     width: 100%;
     text-align: center;
@@ -424,6 +446,7 @@ const Col = styled.div`
 const StudieCol = styled.div`
   width: 15%;
   line-height: 2em;
+
   @media (max-width: 1800px) {
     width: 100%;
     text-align: center;
@@ -433,6 +456,7 @@ const StudieCol = styled.div`
 const WorkCol = styled.div`
   width: 50%;
   line-height: 2em;
+
   @media (max-width: 1800px) {
     width: 100%;
     text-align: center;
@@ -443,6 +467,7 @@ const Col25 = styled.div`
   width: 25%;
   margin-top: 100px;
   margin-left: 50px;
+
   @media (max-width: 1800px) {
     width: 100%;
     margin: 0;
@@ -451,6 +476,7 @@ const Col25 = styled.div`
 
 const Col50 = styled.div`
   width: 50%;
+
   @media (max-width: 1800px) {
     width: 100%;
     margin: 0;
@@ -464,6 +490,8 @@ const AboutTxt = styled.p`
 `;
 
 const ProfilePhoto = styled.img`
-  width: 100%;
-  height: 90%;
+  display: block;
+  max-width: 100%;
+  max-height: 90%;
+  height: auto;
 `;

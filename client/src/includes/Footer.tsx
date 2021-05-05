@@ -36,15 +36,19 @@ const Footer = () => {
 export default Footer;
 
 const Icon = styled.img`
-  width: 40px;
-  height: 40px;
+  max-width: 40px;
+  max-height: 40px;
   margin-top: 20px;
+  width: auto;
+  height: auto;
 `;
+
 const FooterBlock = styled.footer`
   background: #f5f5f5;
   text-align: center;
   font-style: italic;
 `;
+
 const Row = styled.div`
   display: flex;
   justify-content: center;
@@ -52,14 +56,17 @@ const Row = styled.div`
     flex-direction: column;
   }
 `;
+
 const Col13 = styled.div`
   width: 13%;
+
   @media (max-width: 1800px) {
     width: 100%;
   }
 `;
 const Col = styled.div`
   width: 20%;
+
   @media (max-width: 1800px) {
     width: 100%;
   }

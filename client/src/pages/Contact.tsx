@@ -118,6 +118,7 @@ export default Contact;
 const Row = styled.div`
   display: flex;
   justify-content: center;
+
   @media (max-width: 1800px) {
     flex-direction: column;
   }
@@ -140,6 +141,7 @@ const SendBtn = styled.button`
   margin: 0 auto;
   border-radius: 15px;
   font-size: 17px;
+
   &:hover {
     background: black;
     color: white;
@@ -190,6 +192,7 @@ const MyTxtarea = styled.textarea`
   border-radius: 0.25rem;
   margin-bottom: 10px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
   &:focus {
     border-color: #0275d8;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px lightblue;
@@ -203,6 +206,7 @@ const ContactText = styled.p`
   color: white;
   padding-top: 60px;
   padding-right: 300px;
+
   @media (max-width: 1800px) {
     margin: 0;
     padding: 1px;
@@ -214,6 +218,7 @@ const FormLabel = styled.label`
   margin: 10px;
   font-weight: bold;
   font-size: 19px;
+
   @media (max-width: 1800px) {
     text-align: center;
   }
@@ -221,6 +226,7 @@ const FormLabel = styled.label`
 
 const Col10 = styled.div`
   width: 10%;
+
   @media (max-width: 1800px) {
     width: 100%;
   }
@@ -228,6 +234,7 @@ const Col10 = styled.div`
 
 const Col25 = styled.div`
   width: 25%;
+
   @media (max-width: 1800px) {
     width: 90%;
   }
@@ -242,6 +249,7 @@ const ContactContent = styled.div`
   font-style: italic;
   background-size: cover;
   margin-bottom: 100px;
+
   @media (max-width: 1800px) {
     background-size: cover;
     height: 220px;
@@ -255,6 +263,7 @@ const ContactHeading = styled.h1`
   padding-top: 130px;
   height: 0;
   padding-right: 280px;
+
   @media (max-width: 1800px) {
     margin: 0;
     padding: 0;

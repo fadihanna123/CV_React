@@ -141,6 +141,7 @@ const ProjectsText = styled.p`
   color: white;
   padding-top: 60px;
   padding-right: 300px;
+
   @media (max-width: 1800px) {
     margin: 0;
     padding: 1px;
@@ -155,6 +156,7 @@ const ProjectsContent = styled.div`
   font-size: 32px;
   font-style: italic;
   background-size: cover;
+
   @media (max-width: 1800px) {
     background-size: cover;
     height: 220px;
@@ -168,6 +170,7 @@ const ProjectsHeading = styled.h1`
   padding-top: 130px;
   height: 0;
   padding-right: 280px;
+
   @media (max-width: 1800px) {
     margin: 0;
     padding: 0;
@@ -180,6 +183,7 @@ const Row = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 50px;
+
   @media (max-width: 1800px) {
     flex-direction: column;
   }
@@ -187,6 +191,7 @@ const Row = styled.div`
 
 const Col = styled.div`
   width: 25%;
+
   @media (max-width: 1800px) {
     width: 100%;
   }
@@ -201,18 +206,23 @@ const Card = styled.div`
   border: 1px solid black;
   border-radius: 10px;
   background: #efeae4;
+
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
 `;
 
 const ProjectImage = styled.img`
-  width: 100%;
-  height: 100%;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
 `;
 
 const ProjectTitle = styled.h1`
   text-align: center;
+
   @media (max-width: 1800px) {
     font-size: 25px;
   }
@@ -223,9 +233,11 @@ const ProjectLink = styled.a`
   font-size: 30px;
   margin: 5px;
   color: blue;
+
   &:hover {
     color: red;
   }
+
   @media (max-width: 1800px) {
     display: flex;
     flex-direction: column;
