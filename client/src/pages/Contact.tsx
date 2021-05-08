@@ -1,32 +1,35 @@
+import { useState } from "@hookstate/core";
 import axios from "axios";
+import { settingState } from "HookState";
 import Coding from "Images/coding.jpg";
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import { ContactForm, MailData } from "typings";
+import { MailData } from "typings";
 
 const Contact = () => {
-  const [contactform, setContactform] = useState<ContactForm>({
-    fullname: "",
-    mail: "",
-    phone: "",
-    msg: "",
-  });
+  const state = useState(settingState);
+  const contactForm = state.contactForm;
+  const setContactForm = state.setContactForm;
+  const loading = state.loading;
+  const setLoading = state.setLoading;
 
   const typer = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => setContactform({ ...contactform, [e.target.name]: e.target.value });
-
-  const [loading, setLoading] = useState<boolean>(false);
+  ) =>
+    setContactForm.set({
+      ...contactForm.get(),
+      [e.target.name]: e.target.value,
+    });
 
   const SendMail = async (): Promise<void> => {
     try {
-      setLoading(true);
+      setLoading.set(true);
 
-      await axios.post<MailData>("mailit", contactform);
+      await axios.post<MailData>("mailit", contactForm.get());
     } catch (err) {
-      console.log(err.response);
+      console.log(err.message);
     } finally {
-      setLoading(false);
+      setLoading.set(false);
     }
   };
 
@@ -56,7 +59,7 @@ const Contact = () => {
             <Input
               id="fullname"
               name="fullname"
-              value={contactform.fullname}
+              value={contactForm.get().fullname}
               onChange={typer}
             />
           </Col25>
@@ -70,7 +73,7 @@ const Contact = () => {
             <Input
               id="mail"
               name="mail"
-              value={contactform.mail}
+              value={contactForm.get().mail}
               onChange={typer}
             />
           </Col25>
@@ -84,7 +87,7 @@ const Contact = () => {
             <Input
               id="phone"
               name="phone"
-              value={contactform.phone}
+              value={contactForm.get().phone}
               onChange={typer}
             />
           </Col25>
@@ -100,7 +103,7 @@ const Contact = () => {
               name="msg"
               cols={50}
               rows={10}
-              value={contactform.msg}
+              value={contactForm.get().msg}
               onChange={typer}
             ></MyTxtarea>
           </Col25>

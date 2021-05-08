@@ -9,12 +9,14 @@ export default createGlobalStyle`
     outline: 0;
     border: 0;
     list-style: none;
+    font-size: 100%;
   }
 
   img
   {
-    width: 100%;
+    display: block;
     max-width: 100%;
+    width: auto;
     height: auto;
   }
 
