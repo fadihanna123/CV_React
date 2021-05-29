@@ -1,37 +1,11 @@
-import { useState } from "@hookstate/core";
-import axios from "axios";
-import { settingState } from "HookState";
+import ContactForm from "components/ContactForm";
 import Coding from "Images/coding.jpg";
-import React from "react";
+import { useRecoilState } from "recoil";
+import { loadingState } from "States";
 import styled from "styled-components";
-import { MailData } from "typings";
 
 const Contact = () => {
-  const state = useState(settingState);
-  const contactForm = state.contactForm;
-  const setContactForm = state.setContactForm;
-  const loading = state.loading;
-  const setLoading = state.setLoading;
-
-  const typer = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) =>
-    setContactForm.set({
-      ...contactForm.get(),
-      [e.target.name]: e.target.value,
-    });
-
-  const SendMail = async (): Promise<void> => {
-    try {
-      setLoading.set(true);
-
-      await axios.post<MailData>("mailit", contactForm.get());
-    } catch (err) {
-      console.log(err.message);
-    } finally {
-      setLoading.set(false);
-    }
-  };
+  const [loading] = useRecoilState(loadingState);
 
   return (
     <>
@@ -39,6 +13,7 @@ const Contact = () => {
         <ContactHeading>Kontakt</ContactHeading>
         <ContactText>Jag är glad att du vill kontakta mig</ContactText>
       </ContactContent>
+      <ContactForm />
       {loading ? (
         <Alert>
           Tack för att du kontaktar mig.
@@ -50,82 +25,11 @@ const Contact = () => {
       ) : (
         ""
       )}
-      <ContactBlock>
-        <Row>
-          <Col10>
-            <FormLabel htmlFor="fullname">Fullständigt namn:</FormLabel>
-          </Col10>
-          <Col25>
-            <Input
-              id="fullname"
-              name="fullname"
-              value={contactForm.get().fullname}
-              onChange={typer}
-            />
-          </Col25>
-        </Row>
-
-        <Row>
-          <Col10>
-            <FormLabel htmlFor="mail">E-postadress:</FormLabel>
-          </Col10>
-          <Col25>
-            <Input
-              id="mail"
-              name="mail"
-              value={contactForm.get().mail}
-              onChange={typer}
-            />
-          </Col25>
-        </Row>
-
-        <Row>
-          <Col10>
-            <FormLabel htmlFor="phone">Mobilnummer:</FormLabel>
-          </Col10>
-          <Col25>
-            <Input
-              id="phone"
-              name="phone"
-              value={contactForm.get().phone}
-              onChange={typer}
-            />
-          </Col25>
-        </Row>
-
-        <Row>
-          <Col10>
-            <FormLabel htmlFor="msg">Meddelande:</FormLabel>
-          </Col10>
-          <Col25>
-            <MyTxtarea
-              id="msg"
-              name="msg"
-              cols={50}
-              rows={10}
-              value={contactForm.get().msg}
-              onChange={typer}
-            ></MyTxtarea>
-          </Col25>
-        </Row>
-        <SendBtn type="submit" onClick={SendMail}>
-          Skicka
-        </SendBtn>
-      </ContactBlock>
     </>
   );
 };
 
 export default Contact;
-
-const Row = styled.div`
-  display: flex;
-  justify-content: center;
-
-  @media (max-width: 1800px) {
-    flex-direction: column;
-  }
-`;
 
 const Alert = styled.div`
   text-align: center;
@@ -133,74 +37,6 @@ const Alert = styled.div`
   background: #292b2c;
   margin: 10px;
   padding: 10px;
-`;
-
-const SendBtn = styled.button`
-  margin: 10px;
-  padding: 15px;
-  background: black;
-  color: white;
-  display: flex;
-  margin: 0 auto;
-  border-radius: 15px;
-  font-size: 17px;
-
-  &:hover {
-    background: black;
-    color: white;
-  }
-`;
-
-const ContactBlock = styled.div`
-  text-align: center;
-  font-style: italic;
-`;
-
-const Input = styled.input`
-  display: block;
-  width: 100%;
-  min-height: calc(1.5em + 0.75rem + 2px);
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid gray;
-  appearance: none;
-  border-radius: 0.25rem;
-  margin-bottom: 10px;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  &:focus {
-    border-color: #0275d8;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px lightblue;
-    outline: 0 none;
-  }
-`;
-
-const MyTxtarea = styled.textarea`
-  display: block;
-  width: 100%;
-  min-height: calc(1.5em + 0.75rem + 2px);
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid gray;
-  appearance: none;
-  border-radius: 0.25rem;
-  margin-bottom: 10px;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-
-  &:focus {
-    border-color: #0275d8;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px lightblue;
-    outline: 0 none;
-  }
 `;
 
 const ContactText = styled.p`
@@ -213,33 +49,6 @@ const ContactText = styled.p`
   @media (max-width: 1800px) {
     margin: 0;
     padding: 1px;
-  }
-`;
-
-const FormLabel = styled.label`
-  display: block;
-  margin: 10px;
-  font-weight: bold;
-  font-size: 19px;
-
-  @media (max-width: 1800px) {
-    text-align: center;
-  }
-`;
-
-const Col10 = styled.div`
-  width: 10%;
-
-  @media (max-width: 1800px) {
-    width: 100%;
-  }
-`;
-
-const Col25 = styled.div`
-  width: 25%;
-
-  @media (max-width: 1800px) {
-    width: 90%;
   }
 `;
 
