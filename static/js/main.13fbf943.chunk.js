@@ -1,2 +1,1217 @@
-(this.webpackJsonpcv=this.webpackJsonpcv||[]).push([[0],{75:function(t,e,n){"use strict";n.r(e);var c,a,r,s,j,i,b,x,l,d,o,O,h,g,A,p,m,u,f,w,k,v,Q,C,S,E,B,N,P,G,y,H,I,T,z,D,R,J,M,F,U,W,L,Y,K,X,V,q=n(2),Z=n(21),_=n.n(Z),$=n.p+"static/media/Github.5994b25b.png",tt=n(3),et=n(0),nt=function(){return Object(et.jsx)(et.Fragment,{children:Object(et.jsx)(at,{children:Object(et.jsxs)(rt,{children:[Object(et.jsx)(st,{children:Object(et.jsx)("h1",{children:"MittCV"})}),Object(et.jsxs)(jt,{children:[Object(et.jsx)("a",{href:"https://www.linkedin.com/in/fadi-hanna-5506401b0/",target:"_blank",rel:"noopener noreferrer",children:Object(et.jsx)(ct,{src:"data:image/png;base64,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",alt:"Linkedin Ikon"})}),Object(et.jsx)("a",{href:"https://github.com/fadihanna123",target:"_blank",rel:"noopener noreferrer",children:Object(et.jsx)(ct,{src:$,alt:"Github Ikon"})})]})]})})})},ct=tt.b.img(c||(c=Object(q.a)(["\n  max-width: 40px;\n  max-height: 40px;\n  margin-top: 20px;\n  width: auto;\n  height: auto;\n"]))),at=tt.b.footer(a||(a=Object(q.a)(["\n  background: #f5f5f5;\n  text-align: center;\n  font-style: italic;\n"]))),rt=tt.b.div(r||(r=Object(q.a)(["\n  display: flex;\n  justify-content: center;\n  @media (max-width: 1800px) {\n    flex-direction: column;\n  }\n"]))),st=tt.b.div(s||(s=Object(q.a)(["\n  width: 13%;\n\n  @media (max-width: 1800px) {\n    width: 100%;\n  }\n"]))),jt=tt.b.div(j||(j=Object(q.a)(["\n  width: 20%;\n\n  @media (max-width: 1800px) {\n    width: 100%;\n  }\n"]))),it=n.p+"static/media/logo.6bbceddf.jpg",bt=n(4),xt=n(11),lt=n.n(xt),dt=n(26),ot=n(19),Ot=n(5),ht=n(14),gt=Object(ht.b)({key:"contactFormState",default:{fullname:"",mail:"",phone:"",msg:""}}),At=Object(ht.b)({key:"loadingState",default:!1}),pt=function(){var t=Object(ht.c)(gt),e=Object(bt.a)(t,2),n=e[0],c=e[1],a=Object(ht.c)(At),r=Object(bt.a)(a,2)[1],s=function(t){return c(Object(Ot.a)(Object(Ot.a)({},n),{},Object(ot.a)({},t.target.name,t.target.value)))},j=function(){var t=Object(dt.a)(lt.a.mark((function t(){return lt.a.wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return t.prev=0,r(!0),t.next=4,_.a.post("mailit",n);case 4:t.next=9;break;case 6:t.prev=6,t.t0=t.catch(0),console.log(t.t0.message);case 9:return t.prev=9,r(!1),t.finish(9);case 12:case"end":return t.stop()}}),t,null,[[0,6,9,12]])})));return function(){return t.apply(this,arguments)}}();return Object(et.jsx)(et.Fragment,{children:Object(et.jsxs)(ft,{children:[Object(et.jsxs)(mt,{children:[Object(et.jsx)(Qt,{children:Object(et.jsx)(vt,{htmlFor:"fullname",children:"Fullst\xe4ndigt namn:"})}),Object(et.jsx)(Ct,{children:Object(et.jsx)(wt,{id:"fullname",name:"fullname",value:n.fullname,onChange:s})})]}),Object(et.jsxs)(mt,{children:[Object(et.jsx)(Qt,{children:Object(et.jsx)(vt,{htmlFor:"mail",children:"E-postadress:"})}),Object(et.jsx)(Ct,{children:Object(et.jsx)(wt,{id:"mail",name:"mail",value:n.mail,onChange:s})})]}),Object(et.jsxs)(mt,{children:[Object(et.jsx)(Qt,{children:Object(et.jsx)(vt,{htmlFor:"phone",children:"Mobilnummer:"})}),Object(et.jsx)(Ct,{children:Object(et.jsx)(wt,{id:"phone",name:"phone",value:n.phone,onChange:s})})]}),Object(et.jsxs)(mt,{children:[Object(et.jsx)(Qt,{children:Object(et.jsx)(vt,{htmlFor:"msg",children:"Meddelande:"})}),Object(et.jsx)(Ct,{children:Object(et.jsx)(kt,{id:"msg",name:"msg",cols:50,rows:10,value:n.msg,onChange:s})})]}),Object(et.jsx)(ut,{type:"submit",onClick:j,children:"Skicka"})]})})},mt=tt.b.div(i||(i=Object(q.a)(["\n  display: flex;\n  justify-content: center;\n\n  @media (max-width: 1800px) {\n    flex-direction: column;\n  }\n"]))),ut=tt.b.button(b||(b=Object(q.a)(["\n  margin: 10px;\n  padding: 15px;\n  background: black;\n  color: white;\n  display: flex;\n  margin: 0 auto;\n  border-radius: 15px;\n  font-size: 17px;\n\n  &:hover {\n    background: black;\n    color: white;\n  }\n"]))),ft=tt.b.div(x||(x=Object(q.a)(["\n  text-align: center;\n  font-style: italic;\n"]))),wt=tt.b.input(l||(l=Object(q.a)(["\n  display: block;\n  width: 100%;\n  min-height: calc(1.5em + 0.75rem + 2px);\n  padding: 0.375rem 0.75rem;\n  font-size: 1rem;\n  font-weight: 400;\n  line-height: 1.5;\n  color: #495057;\n  background-color: #fff;\n  background-clip: padding-box;\n  border: 1px solid gray;\n  appearance: none;\n  border-radius: 0.25rem;\n  margin-bottom: 10px;\n  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n  &:focus {\n    border-color: #0275d8;\n    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px lightblue;\n    outline: 0 none;\n  }\n"]))),kt=tt.b.textarea(d||(d=Object(q.a)(["\n  display: block;\n  width: 100%;\n  min-height: calc(1.5em + 0.75rem + 2px);\n  padding: 0.375rem 0.75rem;\n  font-size: 1rem;\n  font-weight: 400;\n  line-height: 1.5;\n  color: #495057;\n  background-color: #fff;\n  background-clip: padding-box;\n  border: 1px solid gray;\n  appearance: none;\n  border-radius: 0.25rem;\n  margin-bottom: 10px;\n  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n\n  &:focus {\n    border-color: #0275d8;\n    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px lightblue;\n    outline: 0 none;\n  }\n"]))),vt=tt.b.label(o||(o=Object(q.a)(["\n  display: block;\n  margin: 10px;\n  font-weight: bold;\n  font-size: 19px;\n\n  @media (max-width: 1800px) {\n    text-align: center;\n  }\n"]))),Qt=tt.b.div(O||(O=Object(q.a)(["\n  width: 10%;\n\n  @media (max-width: 1800px) {\n    width: 100%;\n  }\n"]))),Ct=tt.b.div(h||(h=Object(q.a)(["\n  width: 25%;\n\n  @media (max-width: 1800px) {\n    width: 90%;\n  }\n"]))),St=n.p+"static/media/coding.9c56759b.jpg",Et=function(){var t=Object(ht.c)(At),e=Object(bt.a)(t,1)[0];return Object(et.jsxs)(et.Fragment,{children:[Object(et.jsxs)(Pt,{children:[Object(et.jsx)(Gt,{children:"Kontakt"}),Object(et.jsx)(Nt,{children:"Jag \xe4r glad att du vill kontakta mig"})]}),Object(et.jsx)(pt,{}),e?Object(et.jsxs)(Bt,{children:["Tack f\xf6r att du kontaktar mig.",Object(et.jsx)("br",{}),"Jag har tagit emot ditt meddelande.",Object(et.jsx)("br",{}),"Jag kommer att kontakta dig s\xe5 fort jag kan."]}):""]})},Bt=tt.b.div(g||(g=Object(q.a)(["\n  text-align: center;\n  color: #5cb85c;\n  background: #292b2c;\n  margin: 10px;\n  padding: 10px;\n"]))),Nt=tt.b.p(A||(A=Object(q.a)(["\n  text-align: center;\n  font-style: italic;\n  color: white;\n  padding-top: 60px;\n  padding-right: 300px;\n\n  @media (max-width: 1800px) {\n    margin: 0;\n    padding: 1px;\n  }\n"]))),Pt=tt.b.div(p||(p=Object(q.a)(["\n  background: url(",");\n  height: 400px;\n  color: white;\n  text-align: center;\n  font-size: 32px;\n  font-style: italic;\n  background-size: cover;\n  margin-bottom: 100px;\n\n  @media (max-width: 1800px) {\n    background-size: cover;\n    height: 220px;\n  }\n"])),St),Gt=tt.b.h1(m||(m=Object(q.a)(["\n  font-style: italic;\n  color: white;\n  font-size: 52px;\n  padding-top: 130px;\n  height: 0;\n  padding-right: 280px;\n\n  @media (max-width: 1800px) {\n    margin: 0;\n    padding: 0;\n    height: 100px;\n    padding: 20px;\n  }\n"]))),yt=n.p+"static/media/1.d0feb36d.PNG",Ht=n.p+"static/media/2.cc31e087.PNG",It=n.p+"static/media/3.bc0cafb8.PNG",Tt=n.p+"static/media/4.0693f6e5.PNG",zt=n.p+"static/media/5.81b08992.png",Dt=n.p+"static/media/6.686e978d.PNG",Rt=n.p+"static/media/7.d951e3a7.png",Jt=function(){return Object(et.jsxs)(et.Fragment,{children:[Object(et.jsxs)(Ft,{children:[Object(et.jsx)(Ut,{children:"Projekt"}),Object(et.jsx)(Mt,{children:"H\xe4r kan du se mina tidigare projekt."})]}),Object(et.jsxs)(Wt,{children:[Object(et.jsx)(Lt,{children:Object(et.jsxs)(Yt,{children:[Object(et.jsx)(Xt,{children:"Mitt-CV Wordpress"}),Object(et.jsx)(Kt,{src:Rt,alt:"Mitt-CV Wordpress"}),Object(et.jsx)(Vt,{target:"_blank",href:"https://github.com/fadihanna123/CV",children:"Github"}),Object(et.jsx)(Vt,{target:"_blank",href:"https://mitt-cv.com/cvwordpress/",children:"Webbplats"})]})}),Object(et.jsx)(Lt,{children:Object(et.jsxs)(Yt,{children:[Object(et.jsx)(Xt,{children:"Intran\xe4tet(Dashboard) PHP"}),Object(et.jsx)(Kt,{src:Ht,alt:"Intran\xe4tsprojekt"}),Object(et.jsx)(Vt,{target:"_blank",href:"https://github.com/fadihanna123/Intranat",children:"Github"}),Object(et.jsx)(Vt,{target:"_blank",href:"https://intranet.gssonsel.se.185-133-206-116.bb.kringelstan.se/index.php",children:"Webbplats"})]})}),Object(et.jsx)(Lt,{children:Object(et.jsxs)(Yt,{children:[Object(et.jsx)(Xt,{children:"PixabayFinder React"}),Object(et.jsx)(Kt,{src:Dt,alt:"PixabayFinder"}),Object(et.jsx)(Vt,{target:"_blank",href:"https://github.com/fadihanna123/PixaBayFinder",children:"Github"}),Object(et.jsx)(Vt,{target:"_blank",href:"https://fadihanna123.github.io/PixabayFinder/",children:"Webbplats"})]})})]}),Object(et.jsxs)(Wt,{children:[Object(et.jsx)(Lt,{children:Object(et.jsxs)(Yt,{children:[Object(et.jsx)(Xt,{children:"Min Fris\xf6r ASP.NET"}),Object(et.jsx)(Kt,{src:yt,alt:"MinFris\xf6rsprojekt"}),Object(et.jsx)(Vt,{href:"https://github.com/fadihanna123/ASPNET_Projekt",children:"Github"})]})}),Object(et.jsx)(Lt,{children:Object(et.jsxs)(Yt,{children:[Object(et.jsx)(Xt,{children:"Blogging PHP"}),Object(et.jsx)(Kt,{src:It,alt:"Bloggingsprojekt"}),Object(et.jsx)(Vt,{target:"_blank",href:"https://github.com/fadihanna123/BloggProjekt",children:"Github"})]})}),Object(et.jsx)(Lt,{children:Object(et.jsxs)(Yt,{children:[Object(et.jsx)(Xt,{children:"Datahj\xe4lp"}),Object(et.jsx)(Kt,{src:zt,alt:"Datahj\xe4lpsprojekt"}),Object(et.jsx)(Vt,{target:"_blank",href:"https://github.com/fadihanna123/DatahjalpProjekt",children:"Github"}),Object(et.jsx)(Vt,{target:"_blank",href:"https://fadihanna123.github.io/DatahjalpProjekt/index.html",children:"Webbplats"})]})})]}),Object(et.jsx)(Wt,{children:Object(et.jsx)(Lt,{children:Object(et.jsxs)(Yt,{children:[Object(et.jsx)(Xt,{children:"Billigast & Begagnat"}),Object(et.jsx)(Kt,{src:Tt,alt:"Billigast&Begagnatsprojekt"}),Object(et.jsx)(Vt,{href:"https://github.com/fadihanna123/E-handelprojekt",children:"Github"})]})})})]})},Mt=tt.b.p(u||(u=Object(q.a)(["\n  text-align: center;\n  font-style: italic;\n  color: white;\n  padding-top: 60px;\n  padding-right: 300px;\n\n  @media (max-width: 1800px) {\n    margin: 0;\n    padding: 1px;\n  }\n"]))),Ft=tt.b.div(f||(f=Object(q.a)(["\n  background: url(",");\n  height: 400px;\n  color: white;\n  text-align: center;\n  font-size: 32px;\n  font-style: italic;\n  background-size: cover;\n\n  @media (max-width: 1800px) {\n    background-size: cover;\n    height: 220px;\n  }\n"])),St),Ut=tt.b.h1(w||(w=Object(q.a)(["\n  font-style: italic;\n  color: white;\n  font-size: 52px;\n  padding-top: 130px;\n  height: 0;\n  padding-right: 280px;\n\n  @media (max-width: 1800px) {\n    margin: 0;\n    padding: 0;\n    height: 100px;\n    padding: 20px;\n  }\n"]))),Wt=tt.b.div(k||(k=Object(q.a)(["\n  display: flex;\n  justify-content: center;\n  margin-top: 50px;\n\n  @media (max-width: 1800px) {\n    flex-direction: column;\n  }\n"]))),Lt=tt.b.div(v||(v=Object(q.a)(["\n  width: 25%;\n\n  @media (max-width: 1800px) {\n    width: 100%;\n  }\n"]))),Yt=tt.b.div(Q||(Q=Object(q.a)(["\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  transition: 0.3s;\n  padding: 2px 16px;\n  margin: 10px;\n  text-align: center;\n  border: 1px solid black;\n  border-radius: 10px;\n  background: #efeae4;\n\n  &:hover {\n    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);\n  }\n"]))),Kt=tt.b.img(C||(C=Object(q.a)(["\n  display: block;\n  max-width: 100%;\n  max-height: 100%;\n  height: auto;\n  width: auto;\n"]))),Xt=tt.b.h1(S||(S=Object(q.a)(["\n  text-align: center;\n\n  @media (max-width: 1800px) {\n    font-size: 25px;\n  }\n"]))),Vt=tt.b.a(E||(E=Object(q.a)(["\n  text-decoration: none;\n  font-size: 30px;\n  margin: 5px;\n  color: blue;\n\n  &:hover {\n    color: red;\n  }\n\n  @media (max-width: 1800px) {\n    display: flex;\n    flex-direction: column;\n  }\n"]))),qt=n.p+"static/media/Profilbild.2ec727e7.jpg",Zt=function(){return Object(et.jsxs)(_t,{children:[Object(et.jsx)(te,{children:Object(et.jsxs)(ee,{children:["Jag \xe4r en glad, social person som trivs med livet och har hj\xe4rtat p\xe5 r\xe4tt",Object(et.jsx)("br",{}),"plats! F\xf6ddes i Syrien d\xe4r jag studerade i \xe5tta \xe5r. Kom till Sverige f\xf6r",Object(et.jsx)("br",{}),"\xf6ver 10 \xe5r sedan. N\xe4r jag kom hit 2007 b\xf6rjade intressera mig f\xf6r",Object(et.jsx)("br",{}),"Webbutveckling, och sedan dess \xe4r jag fast. Har utbildat mig till",Object(et.jsx)("br",{}),"utvecklare, med fokus p\xe5 webbutveckling. Just nu arbetar jag med",Object(et.jsx)("br",{}),"JavaScript (React), TypeScript, HTML, CSS, Strapi m.m. Men jag sj\xe4lv",Object(et.jsx)("br",{}),"skulle kalla mig f\xf6r en Fullstack utvecklare, d\xe5 jag arbetat b\xe5de med",Object(et.jsx)("br",{})," Backend (PHP) samt Frontend utveckling (JavaScript, React, TypeScript,",Object(et.jsx)("br",{}),"HTML, CSS etc.). Har ni n\xe5gra funderingar \xe4r ni v\xe4lkomna att h\xf6ra av er."]})}),Object(et.jsx)($t,{children:Object(et.jsx)(ne,{src:qt,alt:"Profilbild"})})]})},_t=tt.b.div(B||(B=Object(q.a)(["\n  display: flex;\n  justify-content: center;\n\n  @media (max-width: 1800px) {\n    flex-direction: column;\n    width: 100%;\n  }\n"]))),$t=tt.b.div(N||(N=Object(q.a)(["\n  width: 25%;\n  margin-top: 100px;\n  margin-left: 50px;\n\n  @media (max-width: 1800px) {\n    width: 100%;\n    margin: 0;\n  }\n"]))),te=tt.b.div(P||(P=Object(q.a)(["\n  width: 50%;\n\n  @media (max-width: 1800px) {\n    width: 100%;\n    margin: 0;\n  }\n"]))),ee=tt.b.p(G||(G=Object(q.a)(["\n  text-align: center;\n  font-size: 32px;\n  margin-top: 100px;\n"]))),ne=tt.b.img(y||(y=Object(q.a)(["\n  display: block;\n  max-width: 100%;\n  max-height: 90%;\n  height: auto;\n"]))),ce=n.p+"static/media/star.90b77c31.png",ae=function(){return Object(et.jsxs)(et.Fragment,{children:[Object(et.jsxs)(se,{children:["React",Object(et.jsx)("br",{}),"Javascript",Object(et.jsx)("br",{})," PHP",Object(et.jsx)("br",{})," React Native",Object(et.jsx)("br",{})," Wordpress",Object(et.jsx)("br",{}),"ASP.NET",Object(et.jsx)("br",{})," Typescript",Object(et.jsx)("br",{})," Node JS",Object(et.jsx)("br",{})," MySQL",Object(et.jsx)("br",{})," Mongodb",Object(et.jsx)("br",{})," HTML",Object(et.jsx)("br",{})," CSS",Object(et.jsx)("br",{})," SASS",Object(et.jsx)("br",{})," Bootstrap",Object(et.jsx)("br",{})," PugJS",Object(et.jsx)("br",{})," Git",Object(et.jsx)("br",{})," jQuery",Object(et.jsx)("br",{})," JSON",Object(et.jsx)("br",{})," Restful och API",Object(et.jsx)("br",{})," CMS",Object(et.jsx)("br",{})," Adobe Photoshop",Object(et.jsx)("br",{})," Adobe XD",Object(et.jsx)("br",{})," Heroku",Object(et.jsx)("br",{})," C#",Object(et.jsx)("br",{})," Gulp",Object(et.jsx)("br",{})," Agil"]}),Object(et.jsxs)(se,{children:[Object(et.jsx)(re,{src:ce,alt:"react"}),Object(et.jsx)(re,{src:ce,alt:"react"}),Object(et.jsx)(re,{src:ce,alt:"react"}),Object(et.jsx)(re,{src:ce,alt:"react"}),Object(et.jsx)("br",{}),Object(et.jsx)(re,{src:ce,alt:"Javascript"}),Object(et.jsx)(re,{src:ce,alt:"Javascript"}),Object(et.jsx)(re,{src:ce,alt:"Javascript"}),Object(et.jsx)(re,{src:ce,alt:"Javascript"}),Object(et.jsx)("br",{}),Object(et.jsx)(re,{src:ce,alt:"PHP"}),Object(et.jsx)(re,{src:ce,alt:"PHP"}),Object(et.jsx)(re,{src:ce,alt:"PHP"}),Object(et.jsx)(re,{src:ce,alt:"PHP"}),Object(et.jsx)(re,{src:ce,alt:"PHP"}),Object(et.jsx)("br",{}),Object(et.jsx)(re,{src:ce,alt:"ReactNative"}),Object(et.jsx)(re,{src:ce,alt:"ReactNative"}),Object(et.jsx)(re,{src:ce,alt:"ReactNative"}),Object(et.jsx)("br",{}),Object(et.jsx)(re,{src:ce,alt:"wp"}),Object(et.jsx)(re,{src:ce,alt:"wp"}),Object(et.jsx)(re,{src:ce,alt:"wp"}),Object(et.jsx)("br",{}),Object(et.jsx)(re,{src:ce,alt:"ASPNET"}),Object(et.jsx)(re,{src:ce,alt:"ASPNET"}),Object(et.jsx)(re,{src:ce,alt:"ASPNET"}),Object(et.jsx)(re,{src:ce,alt:"ASPNET"}),Object(et.jsx)("br",{}),Object(et.jsx)(re,{src:ce,alt:"Typescript"}),Object(et.jsx)(re,{src:ce,alt:"Typescript"}),Object(et.jsx)(re,{src:ce,alt:"Typescript"}),Object(et.jsx)("br",{}),Object(et.jsx)(re,{src:ce,alt:"NodeJS"}),Object(et.jsx)(re,{src:ce,alt:"NodeJS"}),Object(et.jsx)(re,{src:ce,alt:"NodeJS"}),Object(et.jsx)(re,{src:ce,alt:"NodeJS"}),Object(et.jsx)(re,{src:ce,alt:"NodeJS"}),Object(et.jsx)("br",{}),Object(et.jsx)(re,{src:ce,alt:"SQL"}),Object(et.jsx)(re,{src:ce,alt:"SQL"}),Object(et.jsx)(re,{src:ce,alt:"SQL"}),Object(et.jsx)(re,{src:ce,alt:"SQL"}),Object(et.jsx)(re,{src:ce,alt:"SQL"}),Object(et.jsx)("br",{}),Object(et.jsx)(re,{src:ce,alt:"Mongodb"}),Object(et.jsx)(re,{src:ce,alt:"Mongodb"}),Object(et.jsx)(re,{src:ce,alt:"Mongodb"}),Object(et.jsx)(re,{src:ce,alt:"Mongodb"}),Object(et.jsx)(re,{src:ce,alt:"Mongodb"}),Object(et.jsx)("br",{}),Object(et.jsx)(re,{src:ce,alt:"HTML"}),Object(et.jsx)(re,{src:ce,alt:"HTML"}),Object(et.jsx)(re,{src:ce,alt:"HTML"}),Object(et.jsx)(re,{src:ce,alt:"HTML"}),Object(et.jsx)(re,{src:ce,alt:"HTML"}),Object(et.jsx)("br",{}),Object(et.jsx)(re,{src:ce,alt:"CSS"}),Object(et.jsx)(re,{src:ce,alt:"CSS"}),Object(et.jsx)(re,{src:ce,alt:"CSS"}),Object(et.jsx)(re,{src:ce,alt:"CSS"}),Object(et.jsx)(re,{src:ce,alt:"CSS"}),Object(et.jsx)("br",{}),Object(et.jsx)(re,{src:ce,alt:"Sass"}),Object(et.jsx)(re,{src:ce,alt:"Sass"}),Object(et.jsx)(re,{src:ce,alt:"Sass"}),Object(et.jsx)("br",{}),Object(et.jsx)(re,{src:ce,alt:"Bootstrap"}),Object(et.jsx)(re,{src:ce,alt:"Bootstrap"}),Object(et.jsx)(re,{src:ce,alt:"Bootstrap"}),Object(et.jsx)(re,{src:ce,alt:"Bootstrap"}),Object(et.jsx)("br",{}),Object(et.jsx)(re,{src:ce,alt:"PugJS"}),Object(et.jsx)(re,{src:ce,alt:"PugJS"}),Object(et.jsx)(re,{src:ce,alt:"PugJS"}),Object(et.jsx)("br",{}),Object(et.jsx)(re,{src:ce,alt:"Git"}),Object(et.jsx)(re,{src:ce,alt:"Git"}),Object(et.jsx)(re,{src:ce,alt:"Git"}),Object(et.jsx)(re,{src:ce,alt:"Git"}),Object(et.jsx)("br",{}),Object(et.jsx)(re,{src:ce,alt:"jQuery"}),Object(et.jsx)(re,{src:ce,alt:"jQuery"}),Object(et.jsx)(re,{src:ce,alt:"jQuery"}),Object(et.jsx)(re,{src:ce,alt:"jQuery"}),Object(et.jsx)(re,{src:ce,alt:"jQuery"}),Object(et.jsx)("br",{}),Object(et.jsx)(re,{src:ce,alt:"Json"}),Object(et.jsx)(re,{src:ce,alt:"Json"}),Object(et.jsx)(re,{src:ce,alt:"Json"}),Object(et.jsx)("br",{}),Object(et.jsx)(re,{src:ce,alt:"Rest"}),Object(et.jsx)(re,{src:ce,alt:"Rest"}),Object(et.jsx)(re,{src:ce,alt:"Rest"}),Object(et.jsx)(re,{src:ce,alt:"Rest"}),Object(et.jsx)("br",{}),Object(et.jsx)(re,{src:ce,alt:"CMS"}),Object(et.jsx)(re,{src:ce,alt:"CMS"}),Object(et.jsx)(re,{src:ce,alt:"CMS"}),Object(et.jsx)(re,{src:ce,alt:"CMS"}),Object(et.jsx)("br",{}),Object(et.jsx)(re,{src:ce,alt:"Adobe Ph"}),Object(et.jsx)(re,{src:ce,alt:"Adobe Ph"}),Object(et.jsx)(re,{src:ce,alt:"Adobe Ph"}),Object(et.jsx)(re,{src:ce,alt:"Adobe Ph"}),Object(et.jsx)("br",{}),Object(et.jsx)(re,{src:ce,alt:"Adobe XD"}),Object(et.jsx)(re,{src:ce,alt:"Adobe XD"}),Object(et.jsx)(re,{src:ce,alt:"Adobe XD"}),Object(et.jsx)(re,{src:ce,alt:"Adobe XD"}),Object(et.jsx)("br",{}),Object(et.jsx)(re,{src:ce,alt:"Heroku"}),Object(et.jsx)(re,{src:ce,alt:"Heroku"}),Object(et.jsx)(re,{src:ce,alt:"Heroku"}),Object(et.jsx)(re,{src:ce,alt:"Heroku"}),Object(et.jsx)("br",{}),Object(et.jsx)(re,{src:ce,alt:"C#"}),Object(et.jsx)(re,{src:ce,alt:"C#"}),Object(et.jsx)(re,{src:ce,alt:"C#"}),Object(et.jsx)(re,{src:ce,alt:"C#"}),Object(et.jsx)("br",{}),Object(et.jsx)(re,{src:ce,alt:"Gulp"}),Object(et.jsx)(re,{src:ce,alt:"Gulp"}),Object(et.jsx)(re,{src:ce,alt:"Gulp"}),Object(et.jsx)(re,{src:ce,alt:"Gulp"}),Object(et.jsx)("br",{}),Object(et.jsx)(re,{src:ce,alt:"Agil"}),Object(et.jsx)(re,{src:ce,alt:"Agil"}),Object(et.jsx)(re,{src:ce,alt:"Agil"}),Object(et.jsx)(re,{src:ce,alt:"Agil"}),Object(et.jsx)("br",{})]})]})},re=tt.b.img(H||(H=Object(q.a)(["\n  max-width: 15px;\n  max-height: 15px;\n  width: auto;\n  height: auto;\n"]))),se=tt.b.div(I||(I=Object(q.a)(["\n  width: 15%;\n  font-weight: bold;\n  line-height: 2em;\n\n  @media (max-width: 1800px) {\n    width: 100%;\n    text-align: center;\n  }\n"]))),je=n(13),ie=n.n(je),be=function(){return Object(et.jsx)(et.Fragment,{children:Object(et.jsxs)(xe,{children:[Object(et.jsxs)(ge,{children:[Object(et.jsx)(oe,{children:"Arbetsliverfarenhet"}),Object(et.jsxs)(le,{children:[Object(et.jsxs)("li",{children:[Object(et.jsx)("b",{children:"Javascript utvecklare"}),Object(et.jsx)("br",{}),"Soltia AB, Tumba",Object(et.jsx)("br",{}),"April",Object(et.jsx)(ie.a,{duration:1,start:0,end:2021,className:"count"}),"- Nu"]}),Object(et.jsxs)("li",{children:[Object(et.jsx)("b",{children:"PHP utvecklare"}),Object(et.jsx)("br",{}),"Kringelstan Webbyr\xe5, S\xf6dert\xe4lje",Object(et.jsx)("br",{}),"November",Object(et.jsx)(ie.a,{duration:1,start:0,end:2020,className:"count"}),"- December",Object(et.jsx)(ie.a,{start:0,end:2020,className:"count",duration:1})]}),Object(et.jsxs)("li",{children:[Object(et.jsx)("b",{children:"Webbutvecklare - Praktik"}),Object(et.jsx)("br",{}),"Kringelstan Webbyr\xe5, S\xf6dert\xe4lje",Object(et.jsx)("br",{}),"Oktober",Object(et.jsx)(ie.a,{duration:1,start:0,end:2020,className:"count"}),"- November",Object(et.jsx)(ie.a,{start:0,end:2020,className:"count",duration:1})]}),Object(et.jsxs)("li",{children:[Object(et.jsx)("b",{children:"L\xe4rare inom media- och informationsteknik."}),Object(et.jsx)("br",{}),"Wendela Hebbegymnasiet, S\xf6dert\xe4lje",Object(et.jsx)("br",{}),"Augusti",Object(et.jsx)(ie.a,{duration:1,start:0,end:2020,className:"count"}),"- September",Object(et.jsx)(ie.a,{start:0,end:2020,className:"count",duration:1})]})]})]}),Object(et.jsxs)(he,{children:[Object(et.jsx)(Oe,{children:"Tidigare utbildningar"}),Object(et.jsxs)(de,{children:[Object(et.jsxs)("li",{children:[Object(et.jsx)("b",{children:"Webbutvecklingsprogrammet"}),Object(et.jsx)("br",{}),"Mittuniversitetet, Sundsvall",Object(et.jsx)("br",{}),"Augusti",Object(et.jsx)(ie.a,{duration:1,start:0,end:2018,className:"count"}),"- Juni",Object(et.jsx)(ie.a,{duration:1,start:0,end:2020,className:"count"})]}),Object(et.jsxs)("li",{children:[Object(et.jsx)("b",{children:"Teknikprogrammet"}),Object(et.jsx)("br",{}),"Komvux, S\xf6dert\xe4lje",Object(et.jsx)("br",{}),"Augusti",Object(et.jsx)(ie.a,{duration:1,start:0,end:2013,className:"count"}),"- Mars",Object(et.jsx)(ie.a,{duration:1,start:0,end:2018,className:"count"})]})]})]})]})})},xe=tt.b.div(T||(T=Object(q.a)(["\n  display: flex;\n  justify-content: center;\n\n  @media (max-width: 1800px) {\n    flex-direction: column;\n  }\n"]))),le=tt.b.ul(z||(z=Object(q.a)(["\n  list-style: square;\n\n  @media (max-width: 1800px) {\n    list-style: none;\n    margin: 0;\n    padding: 0;\n  }\n"]))),de=tt.b.ul(D||(D=Object(q.a)(["\n  list-style: square;\n\n  @media (max-width: 1800px) {\n    list-style: none;\n    margin: 0;\n    padding: 0;\n  }\n"]))),oe=tt.b.h1(R||(R=Object(q.a)(["\n  margin: 10px;\n"]))),Oe=tt.b.h1(J||(J=Object(q.a)(["\n  margin: 10px;\n  white-space: nowrap;\n"]))),he=tt.b.div(M||(M=Object(q.a)(["\n  width: 15%;\n  line-height: 2em;\n\n  @media (max-width: 1800px) {\n    width: 100%;\n    text-align: center;\n  }\n"]))),ge=tt.b.div(F||(F=Object(q.a)(["\n  width: 50%;\n  line-height: 2em;\n\n  @media (max-width: 1800px) {\n    width: 100%;\n    text-align: center;\n  }\n"]))),Ae=function(){return Object(et.jsxs)(et.Fragment,{children:[Object(et.jsxs)(pe,{children:[Object(et.jsx)(me,{children:"Vem \xe4r jag"}),Object(et.jsxs)(ue,{children:["Jag heter Fadi Hanna och \xe4r utbildad som datatekniker",Object(et.jsx)("br",{})," med inriktning mot webbutvecklare."]})]}),Object(et.jsx)(Zt,{}),Object(et.jsx)(be,{}),Object(et.jsx)(fe,{children:"Kompetenser"}),Object(et.jsx)("br",{}),Object(et.jsx)(we,{children:Object(et.jsx)(ae,{})})]})},pe=tt.b.div(U||(U=Object(q.a)(["\n  background: url(",");\n  height: 400px;\n  color: white;\n  text-align: center;\n  font-size: 32px;\n  font-style: italic;\n  background-size: cover;\n\n  @media (max-width: 1800px) {\n    background-size: cover;\n    height: 300px;\n  }\n"])),St),me=tt.b.h1(W||(W=Object(q.a)(["\n  font-style: italic;\n  color: white;\n  font-size: 52px;\n  padding-top: 130px;\n  height: 0;\n  padding-right: 280px;\n\n  @media (max-width: 1800px) {\n    margin: 0;\n    padding: 0;\n    height: 100px;\n  }\n"]))),ue=tt.b.p(L||(L=Object(q.a)(["\n  text-align: center;\n  font-style: italic;\n  color: white;\n  padding-top: 60px;\n  padding-right: 300px;\n\n  @media (max-width: 1800px) {\n    margin: 0;\n    padding: 1px;\n  }\n"]))),fe=tt.b.h1(Y||(Y=Object(q.a)(["\n  font-style: italic;\n  height: 50px;\n  font-size: 32px;\n  margin-left: 750px;\n\n  @media (max-width: 1800px) {\n    margin: 0;\n    text-align: center;\n  }\n"]))),we=tt.b.div(K||(K=Object(q.a)(["\n  display: flex;\n  justify-content: center;\n"]))),ke=n(16),ve=n(6),Qe=function(){return Object(et.jsxs)(et.Fragment,{children:[Object(et.jsxs)(Ce,{children:[Object(et.jsx)(ke.b,{to:"/",children:Object(et.jsx)("img",{src:it,alt:"Logotypen"})}),Object(et.jsx)(ke.b,{className:"links",to:"/",children:"Startsida"}),Object(et.jsx)(ke.b,{className:"links",to:"/Projects",children:"Projekt"}),Object(et.jsx)(ke.b,{className:"links",to:"/Contact",children:"Kontakt"})]}),Object(et.jsxs)(ve.c,{children:[Object(et.jsx)(ve.a,{exact:!0,path:"/",component:Ae}),Object(et.jsx)(ve.a,{exact:!0,path:"/Projects",component:Jt}),Object(et.jsx)(ve.a,{exact:!0,path:"/Contact",component:Et})]})]})},Ce=tt.b.div(X||(X=Object(q.a)(["\n  margin: 10px;\n  background: white;\n  padding: 10px;\n  display: flex;\n  align-items: center;\n  font-size: 25px;\n\n  a {\n    text-decoration: none;\n    padding: 10px;\n    margin-right: auto;\n    font-weight: bold;\n    color: black;\n  }\n\n  a:hover {\n    color: red;\n  }\n\n  .links {\n    margin-top: 100px;\n  }\n\n  @media (max-width: 1800px) {\n    flex-direction: column;\n    a {\n      margin: 0 auto;\n    }\n\n    .links {\n      margin: 0;\n    }\n  }\n"])));_.a.defaults.baseURL="http://localhost:5000/",_.a.defaults.headers["Content-Type"]="application/json";var Se,Ee=function(){return Object(et.jsx)(et.Fragment,{children:Object(et.jsxs)(Be,{children:[Object(et.jsx)(Qe,{}),Object(et.jsx)(nt,{})]})})},Be=tt.b.div(V||(V=Object(q.a)(["\n  margin: 10px;\n"]))),Ne=n(1),Pe=n.n(Ne),Ge=n(27),ye=n.n(Ge),He=Object(tt.a)(Se||(Se=Object(q.a)(["\n  body \n  {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    outline: 0;\n    border: 0;\n    list-style: none;\n    font-size: 100%;\n  }\n\n  img\n  {\n    display: block;\n    max-width: 100%;\n    width: auto;\n    height: auto;\n  }\n\n  .count\n  {\n    margin: 5px;\n  }\n\n  @media (max-width: 1500px)\n  {\n    body\n    {\n      margin: 0;\n      padding: 0;\n      font-size: 100%;\n      width: 100%;\n    }\n\n  }\n\n"])));ye.a.render(Object(et.jsx)(Pe.a.StrictMode,{children:Object(et.jsxs)(ke.a,{children:[Object(et.jsx)(He,{}),Object(et.jsx)(ht.a,{children:Object(et.jsx)(Ee,{})})]})}),document.getElementById("root"))}},[[75,1,2]]]);
+(this.webpackJsonpcv = this.webpackJsonpcv || []).push([
+  [0],
+  {
+    75: function (t, e, n) {
+      "use strict";
+      n.r(e);
+      var c,
+        a,
+        r,
+        s,
+        j,
+        i,
+        b,
+        x,
+        l,
+        d,
+        o,
+        O,
+        h,
+        g,
+        A,
+        p,
+        m,
+        u,
+        f,
+        w,
+        k,
+        v,
+        Q,
+        C,
+        S,
+        E,
+        B,
+        N,
+        P,
+        G,
+        y,
+        H,
+        I,
+        T,
+        z,
+        D,
+        R,
+        J,
+        M,
+        F,
+        U,
+        W,
+        L,
+        Y,
+        K,
+        X,
+        V,
+        q = n(2),
+        Z = n(21),
+        _ = n.n(Z),
+        $ = n.p + "static/media/Github.5994b25b.png",
+        tt = n(3),
+        et = n(0),
+        nt = function () {
+          return Object(et.jsx)(et.Fragment, {
+            children: Object(et.jsx)(at, {
+              children: Object(et.jsxs)(rt, {
+                children: [
+                  Object(et.jsx)(st, {
+                    children: Object(et.jsx)("h1", { children: "MittCV" }),
+                  }),
+                  Object(et.jsxs)(jt, {
+                    children: [
+                      Object(et.jsx)("a", {
+                        href: "https://www.linkedin.com/in/fadi-hanna-5506401b0/",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        children: Object(et.jsx)(ct, {
+                          src: "data:image/png;base64,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",
+                          alt: "Linkedin Ikon",
+                        }),
+                      }),
+                      Object(et.jsx)("a", {
+                        href: "https://github.com/fadihanna123",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        children: Object(et.jsx)(ct, {
+                          src: $,
+                          alt: "Github Ikon",
+                        }),
+                      }),
+                    ],
+                  }),
+                ],
+              }),
+            }),
+          });
+        },
+        ct = tt.b.img(
+          c ||
+            (c = Object(q.a)([
+              "\n  max-width: 40px;\n  max-height: 40px;\n  margin-top: 20px;\n  width: auto;\n  height: auto;\n",
+            ]))
+        ),
+        at = tt.b.footer(
+          a ||
+            (a = Object(q.a)([
+              "\n  background: #f5f5f5;\n  text-align: center;\n  font-style: italic;\n",
+            ]))
+        ),
+        rt = tt.b.div(
+          r ||
+            (r = Object(q.a)([
+              "\n  display: flex;\n  justify-content: center;\n  @media (max-width: 1800px) {\n    flex-direction: column;\n  }\n",
+            ]))
+        ),
+        st = tt.b.div(
+          s ||
+            (s = Object(q.a)([
+              "\n  width: 13%;\n\n  @media (max-width: 1800px) {\n    width: 100%;\n  }\n",
+            ]))
+        ),
+        jt = tt.b.div(
+          j ||
+            (j = Object(q.a)([
+              "\n  width: 20%;\n\n  @media (max-width: 1800px) {\n    width: 100%;\n  }\n",
+            ]))
+        ),
+        it = n.p + "static/media/logo.6bbceddf.jpg",
+        bt = n(4),
+        xt = n(11),
+        lt = n.n(xt),
+        dt = n(26),
+        ot = n(19),
+        Ot = n(5),
+        ht = n(14),
+        gt = Object(ht.b)({
+          key: "contactFormState",
+          default: { fullname: "", mail: "", phone: "", msg: "" },
+        }),
+        At = Object(ht.b)({ key: "loadingState", default: !1 }),
+        pt = function () {
+          var t = Object(ht.c)(gt),
+            e = Object(bt.a)(t, 2),
+            n = e[0],
+            c = e[1],
+            a = Object(ht.c)(At),
+            r = Object(bt.a)(a, 2)[1],
+            s = function (t) {
+              return c(
+                Object(Ot.a)(
+                  Object(Ot.a)({}, n),
+                  {},
+                  Object(ot.a)({}, t.target.name, t.target.value)
+                )
+              );
+            },
+            j = (function () {
+              var t = Object(dt.a)(
+                lt.a.mark(function t() {
+                  return lt.a.wrap(
+                    function (t) {
+                      for (;;)
+                        switch ((t.prev = t.next)) {
+                          case 0:
+                            return (
+                              (t.prev = 0),
+                              r(!0),
+                              (t.next = 4),
+                              _.a.post("mailit", n)
+                            );
+                          case 4:
+                            t.next = 9;
+                            break;
+                          case 6:
+                            (t.prev = 6),
+                              (t.t0 = t.catch(0)),
+                              console.log(t.t0.message);
+                          case 9:
+                            return (t.prev = 9), r(!1), t.finish(9);
+                          case 12:
+                          case "end":
+                            return t.stop();
+                        }
+                    },
+                    t,
+                    null,
+                    [[0, 6, 9, 12]]
+                  );
+                })
+              );
+              return function () {
+                return t.apply(this, arguments);
+              };
+            })();
+          return Object(et.jsx)(et.Fragment, {
+            children: Object(et.jsxs)(ft, {
+              children: [
+                Object(et.jsxs)(mt, {
+                  children: [
+                    Object(et.jsx)(Qt, {
+                      children: Object(et.jsx)(vt, {
+                        htmlFor: "fullname",
+                        children: "Fullst\xe4ndigt namn:",
+                      }),
+                    }),
+                    Object(et.jsx)(Ct, {
+                      children: Object(et.jsx)(wt, {
+                        id: "fullname",
+                        name: "fullname",
+                        value: n.fullname,
+                        onChange: s,
+                      }),
+                    }),
+                  ],
+                }),
+                Object(et.jsxs)(mt, {
+                  children: [
+                    Object(et.jsx)(Qt, {
+                      children: Object(et.jsx)(vt, {
+                        htmlFor: "mail",
+                        children: "E-postadress:",
+                      }),
+                    }),
+                    Object(et.jsx)(Ct, {
+                      children: Object(et.jsx)(wt, {
+                        id: "mail",
+                        name: "mail",
+                        value: n.mail,
+                        onChange: s,
+                      }),
+                    }),
+                  ],
+                }),
+                Object(et.jsxs)(mt, {
+                  children: [
+                    Object(et.jsx)(Qt, {
+                      children: Object(et.jsx)(vt, {
+                        htmlFor: "phone",
+                        children: "Mobilnummer:",
+                      }),
+                    }),
+                    Object(et.jsx)(Ct, {
+                      children: Object(et.jsx)(wt, {
+                        id: "phone",
+                        name: "phone",
+                        value: n.phone,
+                        onChange: s,
+                      }),
+                    }),
+                  ],
+                }),
+                Object(et.jsxs)(mt, {
+                  children: [
+                    Object(et.jsx)(Qt, {
+                      children: Object(et.jsx)(vt, {
+                        htmlFor: "msg",
+                        children: "Meddelande:",
+                      }),
+                    }),
+                    Object(et.jsx)(Ct, {
+                      children: Object(et.jsx)(kt, {
+                        id: "msg",
+                        name: "msg",
+                        cols: 50,
+                        rows: 10,
+                        value: n.msg,
+                        onChange: s,
+                      }),
+                    }),
+                  ],
+                }),
+                Object(et.jsx)(ut, {
+                  type: "submit",
+                  onClick: j,
+                  children: "Skicka",
+                }),
+              ],
+            }),
+          });
+        },
+        mt = tt.b.div(
+          i ||
+            (i = Object(q.a)([
+              "\n  display: flex;\n  justify-content: center;\n\n  @media (max-width: 1800px) {\n    flex-direction: column;\n  }\n",
+            ]))
+        ),
+        ut = tt.b.button(
+          b ||
+            (b = Object(q.a)([
+              "\n  margin: 10px;\n  padding: 15px;\n  background: black;\n  color: white;\n  display: flex;\n  margin: 0 auto;\n  border-radius: 15px;\n  font-size: 17px;\n\n  &:hover {\n    background: black;\n    color: white;\n  }\n",
+            ]))
+        ),
+        ft = tt.b.div(
+          x ||
+            (x = Object(q.a)([
+              "\n  text-align: center;\n  font-style: italic;\n",
+            ]))
+        ),
+        wt = tt.b.input(
+          l ||
+            (l = Object(q.a)([
+              "\n  display: block;\n  width: 100%;\n  min-height: calc(1.5em + 0.75rem + 2px);\n  padding: 0.375rem 0.75rem;\n  font-size: 1rem;\n  font-weight: 400;\n  line-height: 1.5;\n  color: #495057;\n  background-color: #fff;\n  background-clip: padding-box;\n  border: 1px solid gray;\n  appearance: none;\n  border-radius: 0.25rem;\n  margin-bottom: 10px;\n  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n  &:focus {\n    border-color: #0275d8;\n    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px lightblue;\n    outline: 0 none;\n  }\n",
+            ]))
+        ),
+        kt = tt.b.textarea(
+          d ||
+            (d = Object(q.a)([
+              "\n  display: block;\n  width: 100%;\n  min-height: calc(1.5em + 0.75rem + 2px);\n  padding: 0.375rem 0.75rem;\n  font-size: 1rem;\n  font-weight: 400;\n  line-height: 1.5;\n  color: #495057;\n  background-color: #fff;\n  background-clip: padding-box;\n  border: 1px solid gray;\n  appearance: none;\n  border-radius: 0.25rem;\n  margin-bottom: 10px;\n  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n\n  &:focus {\n    border-color: #0275d8;\n    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px lightblue;\n    outline: 0 none;\n  }\n",
+            ]))
+        ),
+        vt = tt.b.label(
+          o ||
+            (o = Object(q.a)([
+              "\n  display: block;\n  margin: 10px;\n  font-weight: bold;\n  font-size: 19px;\n\n  @media (max-width: 1800px) {\n    text-align: center;\n  }\n",
+            ]))
+        ),
+        Qt = tt.b.div(
+          O ||
+            (O = Object(q.a)([
+              "\n  width: 10%;\n\n  @media (max-width: 1800px) {\n    width: 100%;\n  }\n",
+            ]))
+        ),
+        Ct = tt.b.div(
+          h ||
+            (h = Object(q.a)([
+              "\n  width: 25%;\n\n  @media (max-width: 1800px) {\n    width: 90%;\n  }\n",
+            ]))
+        ),
+        St = n.p + "static/media/coding.9c56759b.jpg",
+        Et = function () {
+          var t = Object(ht.c)(At),
+            e = Object(bt.a)(t, 1)[0];
+          return Object(et.jsxs)(et.Fragment, {
+            children: [
+              Object(et.jsxs)(Pt, {
+                children: [
+                  Object(et.jsx)(Gt, { children: "Kontakt" }),
+                  Object(et.jsx)(Nt, {
+                    children: "Jag \xe4r glad att du vill kontakta mig",
+                  }),
+                ],
+              }),
+              Object(et.jsx)(pt, {}),
+              e
+                ? Object(et.jsxs)(Bt, {
+                    children: [
+                      "Tack f\xf6r att du kontaktar mig.",
+                      Object(et.jsx)("br", {}),
+                      "Jag har tagit emot ditt meddelande.",
+                      Object(et.jsx)("br", {}),
+                      "Jag kommer att kontakta dig s\xe5 fort jag kan.",
+                    ],
+                  })
+                : "",
+            ],
+          });
+        },
+        Bt = tt.b.div(
+          g ||
+            (g = Object(q.a)([
+              "\n  text-align: center;\n  color: #5cb85c;\n  background: #292b2c;\n  margin: 10px;\n  padding: 10px;\n",
+            ]))
+        ),
+        Nt = tt.b.p(
+          A ||
+            (A = Object(q.a)([
+              "\n  text-align: center;\n  font-style: italic;\n  color: white;\n  padding-top: 60px;\n  padding-right: 300px;\n\n  @media (max-width: 1800px) {\n    margin: 0;\n    padding: 1px;\n  }\n",
+            ]))
+        ),
+        Pt = tt.b.div(
+          p ||
+            (p = Object(q.a)([
+              "\n  background: url(",
+              ");\n  height: 400px;\n  color: white;\n  text-align: center;\n  font-size: 32px;\n  font-style: italic;\n  background-size: cover;\n  margin-bottom: 100px;\n\n  @media (max-width: 1800px) {\n    background-size: cover;\n    height: 220px;\n  }\n",
+            ])),
+          St
+        ),
+        Gt = tt.b.h1(
+          m ||
+            (m = Object(q.a)([
+              "\n  font-style: italic;\n  color: white;\n  font-size: 52px;\n  padding-top: 130px;\n  height: 0;\n  padding-right: 280px;\n\n  @media (max-width: 1800px) {\n    margin: 0;\n    padding: 0;\n    height: 100px;\n    padding: 20px;\n  }\n",
+            ]))
+        ),
+        yt = n.p + "static/media/1.d0feb36d.PNG",
+        Ht = n.p + "static/media/2.cc31e087.PNG",
+        It = n.p + "static/media/3.bc0cafb8.PNG",
+        Tt = n.p + "static/media/4.0693f6e5.PNG",
+        zt = n.p + "static/media/5.81b08992.png",
+        Dt = n.p + "static/media/6.686e978d.PNG",
+        Rt = n.p + "static/media/7.d951e3a7.png",
+        Jt = function () {
+          return Object(et.jsxs)(et.Fragment, {
+            children: [
+              Object(et.jsxs)(Ft, {
+                children: [
+                  Object(et.jsx)(Ut, { children: "Projekt" }),
+                  Object(et.jsx)(Mt, {
+                    children: "H\xe4r kan du se mina tidigare projekt.",
+                  }),
+                ],
+              }),
+              Object(et.jsxs)(Wt, {
+                children: [
+                  Object(et.jsx)(Lt, {
+                    children: Object(et.jsxs)(Yt, {
+                      children: [
+                        Object(et.jsx)(Xt, { children: "Mitt-CV Wordpress" }),
+                        Object(et.jsx)(Kt, {
+                          src: Rt,
+                          alt: "Mitt-CV Wordpress",
+                        }),
+                        Object(et.jsx)(Vt, {
+                          target: "_blank",
+                          href: "https://github.com/fadihanna123/CV",
+                          children: "Github",
+                        }),
+                        Object(et.jsx)(Vt, {
+                          target: "_blank",
+                          href: "https://mitt-cv.com/cvwordpress/",
+                          children: "Webbplats",
+                        }),
+                      ],
+                    }),
+                  }),
+                  Object(et.jsx)(Lt, {
+                    children: Object(et.jsxs)(Yt, {
+                      children: [
+                        Object(et.jsx)(Xt, {
+                          children: "Intran\xe4tet(Dashboard) PHP",
+                        }),
+                        Object(et.jsx)(Kt, {
+                          src: Ht,
+                          alt: "Intran\xe4tsprojekt",
+                        }),
+                        Object(et.jsx)(Vt, {
+                          target: "_blank",
+                          href: "https://github.com/fadihanna123/Intranat",
+                          children: "Github",
+                        }),
+                        Object(et.jsx)(Vt, {
+                          target: "_blank",
+                          href: "https://intranet.gssonsel.se.185-133-206-116.bb.kringelstan.se/index.php",
+                          children: "Webbplats",
+                        }),
+                      ],
+                    }),
+                  }),
+                  Object(et.jsx)(Lt, {
+                    children: Object(et.jsxs)(Yt, {
+                      children: [
+                        Object(et.jsx)(Xt, { children: "PixabayFinder React" }),
+                        Object(et.jsx)(Kt, { src: Dt, alt: "PixabayFinder" }),
+                        Object(et.jsx)(Vt, {
+                          target: "_blank",
+                          href: "https://github.com/fadihanna123/PixaBayFinder",
+                          children: "Github",
+                        }),
+                        Object(et.jsx)(Vt, {
+                          target: "_blank",
+                          href: "https://fadihanna123.github.io/PixabayFinder/",
+                          children: "Webbplats",
+                        }),
+                      ],
+                    }),
+                  }),
+                ],
+              }),
+              Object(et.jsxs)(Wt, {
+                children: [
+                  Object(et.jsx)(Lt, {
+                    children: Object(et.jsxs)(Yt, {
+                      children: [
+                        Object(et.jsx)(Xt, {
+                          children: "Min Fris\xf6r ASP.NET",
+                        }),
+                        Object(et.jsx)(Kt, {
+                          src: yt,
+                          alt: "MinFris\xf6rsprojekt",
+                        }),
+                        Object(et.jsx)(Vt, {
+                          href: "https://github.com/fadihanna123/ASPNET_Projekt",
+                          children: "Github",
+                        }),
+                      ],
+                    }),
+                  }),
+                  Object(et.jsx)(Lt, {
+                    children: Object(et.jsxs)(Yt, {
+                      children: [
+                        Object(et.jsx)(Xt, { children: "Blogging PHP" }),
+                        Object(et.jsx)(Kt, {
+                          src: It,
+                          alt: "Bloggingsprojekt",
+                        }),
+                        Object(et.jsx)(Vt, {
+                          target: "_blank",
+                          href: "https://github.com/fadihanna123/BloggProjekt",
+                          children: "Github",
+                        }),
+                      ],
+                    }),
+                  }),
+                  Object(et.jsx)(Lt, {
+                    children: Object(et.jsxs)(Yt, {
+                      children: [
+                        Object(et.jsx)(Xt, { children: "Datahj\xe4lp" }),
+                        Object(et.jsx)(Kt, {
+                          src: zt,
+                          alt: "Datahj\xe4lpsprojekt",
+                        }),
+                        Object(et.jsx)(Vt, {
+                          target: "_blank",
+                          href: "https://github.com/fadihanna123/DatahjalpProjekt",
+                          children: "Github",
+                        }),
+                        Object(et.jsx)(Vt, {
+                          target: "_blank",
+                          href: "https://fadihanna123.github.io/DatahjalpProjekt/index.html",
+                          children: "Webbplats",
+                        }),
+                      ],
+                    }),
+                  }),
+                ],
+              }),
+              Object(et.jsx)(Wt, {
+                children: Object(et.jsx)(Lt, {
+                  children: Object(et.jsxs)(Yt, {
+                    children: [
+                      Object(et.jsx)(Xt, { children: "Billigast & Begagnat" }),
+                      Object(et.jsx)(Kt, {
+                        src: Tt,
+                        alt: "Billigast&Begagnatsprojekt",
+                      }),
+                      Object(et.jsx)(Vt, {
+                        href: "https://github.com/fadihanna123/E-handelprojekt",
+                        children: "Github",
+                      }),
+                    ],
+                  }),
+                }),
+              }),
+            ],
+          });
+        },
+        Mt = tt.b.p(
+          u ||
+            (u = Object(q.a)([
+              "\n  text-align: center;\n  font-style: italic;\n  color: white;\n  padding-top: 60px;\n  padding-right: 300px;\n\n  @media (max-width: 1800px) {\n    margin: 0;\n    padding: 1px;\n  }\n",
+            ]))
+        ),
+        Ft = tt.b.div(
+          f ||
+            (f = Object(q.a)([
+              "\n  background: url(",
+              ");\n  height: 400px;\n  color: white;\n  text-align: center;\n  font-size: 32px;\n  font-style: italic;\n  background-size: cover;\n\n  @media (max-width: 1800px) {\n    background-size: cover;\n    height: 220px;\n  }\n",
+            ])),
+          St
+        ),
+        Ut = tt.b.h1(
+          w ||
+            (w = Object(q.a)([
+              "\n  font-style: italic;\n  color: white;\n  font-size: 52px;\n  padding-top: 130px;\n  height: 0;\n  padding-right: 280px;\n\n  @media (max-width: 1800px) {\n    margin: 0;\n    padding: 0;\n    height: 100px;\n    padding: 20px;\n  }\n",
+            ]))
+        ),
+        Wt = tt.b.div(
+          k ||
+            (k = Object(q.a)([
+              "\n  display: flex;\n  justify-content: center;\n  margin-top: 50px;\n\n  @media (max-width: 1800px) {\n    flex-direction: column;\n  }\n",
+            ]))
+        ),
+        Lt = tt.b.div(
+          v ||
+            (v = Object(q.a)([
+              "\n  width: 25%;\n\n  @media (max-width: 1800px) {\n    width: 100%;\n  }\n",
+            ]))
+        ),
+        Yt = tt.b.div(
+          Q ||
+            (Q = Object(q.a)([
+              "\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  transition: 0.3s;\n  padding: 2px 16px;\n  margin: 10px;\n  text-align: center;\n  border: 1px solid black;\n  border-radius: 10px;\n  background: #efeae4;\n\n  &:hover {\n    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);\n  }\n",
+            ]))
+        ),
+        Kt = tt.b.img(
+          C ||
+            (C = Object(q.a)([
+              "\n  display: block;\n  max-width: 100%;\n  max-height: 100%;\n  height: auto;\n  width: auto;\n",
+            ]))
+        ),
+        Xt = tt.b.h1(
+          S ||
+            (S = Object(q.a)([
+              "\n  text-align: center;\n\n  @media (max-width: 1800px) {\n    font-size: 25px;\n  }\n",
+            ]))
+        ),
+        Vt = tt.b.a(
+          E ||
+            (E = Object(q.a)([
+              "\n  text-decoration: none;\n  font-size: 30px;\n  margin: 5px;\n  color: blue;\n\n  &:hover {\n    color: red;\n  }\n\n  @media (max-width: 1800px) {\n    display: flex;\n    flex-direction: column;\n  }\n",
+            ]))
+        ),
+        qt = n.p + "static/media/Profilbild.2ec727e7.jpg",
+        Zt = function () {
+          return Object(et.jsxs)(_t, {
+            children: [
+              Object(et.jsx)(te, {
+                children: Object(et.jsxs)(ee, {
+                  children: [
+                    "Jag \xe4r en glad, social person som trivs med livet och har hj\xe4rtat p\xe5 r\xe4tt",
+                    Object(et.jsx)("br", {}),
+                    "plats! F\xf6ddes i Syrien d\xe4r jag studerade i \xe5tta \xe5r. Kom till Sverige f\xf6r",
+                    Object(et.jsx)("br", {}),
+                    "\xf6ver 10 \xe5r sedan. N\xe4r jag kom hit 2007 b\xf6rjade intressera mig f\xf6r",
+                    Object(et.jsx)("br", {}),
+                    "Webbutveckling, och sedan dess \xe4r jag fast. Har utbildat mig till",
+                    Object(et.jsx)("br", {}),
+                    "utvecklare, med fokus p\xe5 webbutveckling. Just nu arbetar jag med",
+                    Object(et.jsx)("br", {}),
+                    "JavaScript (React), TypeScript, HTML, CSS, Strapi m.m. Men jag sj\xe4lv",
+                    Object(et.jsx)("br", {}),
+                    "skulle kalla mig f\xf6r en Fullstack utvecklare, d\xe5 jag arbetat b\xe5de med",
+                    Object(et.jsx)("br", {}),
+                    " Backend (PHP) samt Frontend utveckling (JavaScript, React, TypeScript,",
+                    Object(et.jsx)("br", {}),
+                    "HTML, CSS etc.). Har ni n\xe5gra funderingar \xe4r ni v\xe4lkomna att h\xf6ra av er.",
+                  ],
+                }),
+              }),
+              Object(et.jsx)($t, {
+                children: Object(et.jsx)(ne, { src: qt, alt: "Profilbild" }),
+              }),
+            ],
+          });
+        },
+        _t = tt.b.div(
+          B ||
+            (B = Object(q.a)([
+              "\n  display: flex;\n  justify-content: center;\n\n  @media (max-width: 1800px) {\n    flex-direction: column;\n    width: 100%;\n  }\n",
+            ]))
+        ),
+        $t = tt.b.div(
+          N ||
+            (N = Object(q.a)([
+              "\n  width: 25%;\n  margin-top: 100px;\n  margin-left: 50px;\n\n  @media (max-width: 1800px) {\n    width: 100%;\n    margin: 0;\n  }\n",
+            ]))
+        ),
+        te = tt.b.div(
+          P ||
+            (P = Object(q.a)([
+              "\n  width: 50%;\n\n  @media (max-width: 1800px) {\n    width: 100%;\n    margin: 0;\n  }\n",
+            ]))
+        ),
+        ee = tt.b.p(
+          G ||
+            (G = Object(q.a)([
+              "\n  text-align: center;\n  font-size: 32px;\n  margin-top: 100px;\n",
+            ]))
+        ),
+        ne = tt.b.img(
+          y ||
+            (y = Object(q.a)([
+              "\n  display: block;\n  max-width: 100%;\n  max-height: 90%;\n  height: auto;\n",
+            ]))
+        ),
+        ce = n.p + "static/media/star.90b77c31.png",
+        ae = function () {
+          return Object(et.jsxs)(et.Fragment, {
+            children: [
+              Object(et.jsxs)(se, {
+                children: [
+                  "React",
+                  Object(et.jsx)("br", {}),
+                  "Javascript",
+                  Object(et.jsx)("br", {}),
+                  " PHP",
+                  Object(et.jsx)("br", {}),
+                  " React Native",
+                  Object(et.jsx)("br", {}),
+                  " Wordpress",
+                  Object(et.jsx)("br", {}),
+                  "ASP.NET",
+                  Object(et.jsx)("br", {}),
+                  " Typescript",
+                  Object(et.jsx)("br", {}),
+                  " Node JS",
+                  Object(et.jsx)("br", {}),
+                  " MySQL",
+                  Object(et.jsx)("br", {}),
+                  " Mongodb",
+                  Object(et.jsx)("br", {}),
+                  " HTML",
+                  Object(et.jsx)("br", {}),
+                  " CSS",
+                  Object(et.jsx)("br", {}),
+                  " SASS",
+                  Object(et.jsx)("br", {}),
+                  " Bootstrap",
+                  Object(et.jsx)("br", {}),
+                  " PugJS",
+                  Object(et.jsx)("br", {}),
+                  " Git",
+                  Object(et.jsx)("br", {}),
+                  " jQuery",
+                  Object(et.jsx)("br", {}),
+                  " JSON",
+                  Object(et.jsx)("br", {}),
+                  " Restful och API",
+                  Object(et.jsx)("br", {}),
+                  " CMS",
+                  Object(et.jsx)("br", {}),
+                  " Adobe Photoshop",
+                  Object(et.jsx)("br", {}),
+                  " Adobe XD",
+                  Object(et.jsx)("br", {}),
+                  " Heroku",
+                  Object(et.jsx)("br", {}),
+                  " C#",
+                  Object(et.jsx)("br", {}),
+                  " Gulp",
+                  Object(et.jsx)("br", {}),
+                  " Agil",
+                ],
+              }),
+              Object(et.jsxs)(se, {
+                children: [
+                  Object(et.jsx)(re, { src: ce, alt: "react" }),
+                  Object(et.jsx)(re, { src: ce, alt: "react" }),
+                  Object(et.jsx)(re, { src: ce, alt: "react" }),
+                  Object(et.jsx)(re, { src: ce, alt: "react" }),
+                  Object(et.jsx)("br", {}),
+                  Object(et.jsx)(re, { src: ce, alt: "Javascript" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Javascript" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Javascript" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Javascript" }),
+                  Object(et.jsx)("br", {}),
+                  Object(et.jsx)(re, { src: ce, alt: "PHP" }),
+                  Object(et.jsx)(re, { src: ce, alt: "PHP" }),
+                  Object(et.jsx)(re, { src: ce, alt: "PHP" }),
+                  Object(et.jsx)(re, { src: ce, alt: "PHP" }),
+                  Object(et.jsx)(re, { src: ce, alt: "PHP" }),
+                  Object(et.jsx)("br", {}),
+                  Object(et.jsx)(re, { src: ce, alt: "ReactNative" }),
+                  Object(et.jsx)(re, { src: ce, alt: "ReactNative" }),
+                  Object(et.jsx)(re, { src: ce, alt: "ReactNative" }),
+                  Object(et.jsx)("br", {}),
+                  Object(et.jsx)(re, { src: ce, alt: "wp" }),
+                  Object(et.jsx)(re, { src: ce, alt: "wp" }),
+                  Object(et.jsx)(re, { src: ce, alt: "wp" }),
+                  Object(et.jsx)("br", {}),
+                  Object(et.jsx)(re, { src: ce, alt: "ASPNET" }),
+                  Object(et.jsx)(re, { src: ce, alt: "ASPNET" }),
+                  Object(et.jsx)(re, { src: ce, alt: "ASPNET" }),
+                  Object(et.jsx)(re, { src: ce, alt: "ASPNET" }),
+                  Object(et.jsx)("br", {}),
+                  Object(et.jsx)(re, { src: ce, alt: "Typescript" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Typescript" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Typescript" }),
+                  Object(et.jsx)("br", {}),
+                  Object(et.jsx)(re, { src: ce, alt: "NodeJS" }),
+                  Object(et.jsx)(re, { src: ce, alt: "NodeJS" }),
+                  Object(et.jsx)(re, { src: ce, alt: "NodeJS" }),
+                  Object(et.jsx)(re, { src: ce, alt: "NodeJS" }),
+                  Object(et.jsx)(re, { src: ce, alt: "NodeJS" }),
+                  Object(et.jsx)("br", {}),
+                  Object(et.jsx)(re, { src: ce, alt: "SQL" }),
+                  Object(et.jsx)(re, { src: ce, alt: "SQL" }),
+                  Object(et.jsx)(re, { src: ce, alt: "SQL" }),
+                  Object(et.jsx)(re, { src: ce, alt: "SQL" }),
+                  Object(et.jsx)(re, { src: ce, alt: "SQL" }),
+                  Object(et.jsx)("br", {}),
+                  Object(et.jsx)(re, { src: ce, alt: "Mongodb" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Mongodb" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Mongodb" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Mongodb" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Mongodb" }),
+                  Object(et.jsx)("br", {}),
+                  Object(et.jsx)(re, { src: ce, alt: "HTML" }),
+                  Object(et.jsx)(re, { src: ce, alt: "HTML" }),
+                  Object(et.jsx)(re, { src: ce, alt: "HTML" }),
+                  Object(et.jsx)(re, { src: ce, alt: "HTML" }),
+                  Object(et.jsx)(re, { src: ce, alt: "HTML" }),
+                  Object(et.jsx)("br", {}),
+                  Object(et.jsx)(re, { src: ce, alt: "CSS" }),
+                  Object(et.jsx)(re, { src: ce, alt: "CSS" }),
+                  Object(et.jsx)(re, { src: ce, alt: "CSS" }),
+                  Object(et.jsx)(re, { src: ce, alt: "CSS" }),
+                  Object(et.jsx)(re, { src: ce, alt: "CSS" }),
+                  Object(et.jsx)("br", {}),
+                  Object(et.jsx)(re, { src: ce, alt: "Sass" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Sass" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Sass" }),
+                  Object(et.jsx)("br", {}),
+                  Object(et.jsx)(re, { src: ce, alt: "Bootstrap" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Bootstrap" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Bootstrap" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Bootstrap" }),
+                  Object(et.jsx)("br", {}),
+                  Object(et.jsx)(re, { src: ce, alt: "PugJS" }),
+                  Object(et.jsx)(re, { src: ce, alt: "PugJS" }),
+                  Object(et.jsx)(re, { src: ce, alt: "PugJS" }),
+                  Object(et.jsx)("br", {}),
+                  Object(et.jsx)(re, { src: ce, alt: "Git" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Git" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Git" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Git" }),
+                  Object(et.jsx)("br", {}),
+                  Object(et.jsx)(re, { src: ce, alt: "jQuery" }),
+                  Object(et.jsx)(re, { src: ce, alt: "jQuery" }),
+                  Object(et.jsx)(re, { src: ce, alt: "jQuery" }),
+                  Object(et.jsx)(re, { src: ce, alt: "jQuery" }),
+                  Object(et.jsx)(re, { src: ce, alt: "jQuery" }),
+                  Object(et.jsx)("br", {}),
+                  Object(et.jsx)(re, { src: ce, alt: "Json" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Json" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Json" }),
+                  Object(et.jsx)("br", {}),
+                  Object(et.jsx)(re, { src: ce, alt: "Rest" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Rest" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Rest" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Rest" }),
+                  Object(et.jsx)("br", {}),
+                  Object(et.jsx)(re, { src: ce, alt: "CMS" }),
+                  Object(et.jsx)(re, { src: ce, alt: "CMS" }),
+                  Object(et.jsx)(re, { src: ce, alt: "CMS" }),
+                  Object(et.jsx)(re, { src: ce, alt: "CMS" }),
+                  Object(et.jsx)("br", {}),
+                  Object(et.jsx)(re, { src: ce, alt: "Adobe Ph" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Adobe Ph" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Adobe Ph" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Adobe Ph" }),
+                  Object(et.jsx)("br", {}),
+                  Object(et.jsx)(re, { src: ce, alt: "Adobe XD" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Adobe XD" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Adobe XD" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Adobe XD" }),
+                  Object(et.jsx)("br", {}),
+                  Object(et.jsx)(re, { src: ce, alt: "Heroku" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Heroku" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Heroku" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Heroku" }),
+                  Object(et.jsx)("br", {}),
+                  Object(et.jsx)(re, { src: ce, alt: "C#" }),
+                  Object(et.jsx)(re, { src: ce, alt: "C#" }),
+                  Object(et.jsx)(re, { src: ce, alt: "C#" }),
+                  Object(et.jsx)(re, { src: ce, alt: "C#" }),
+                  Object(et.jsx)("br", {}),
+                  Object(et.jsx)(re, { src: ce, alt: "Gulp" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Gulp" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Gulp" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Gulp" }),
+                  Object(et.jsx)("br", {}),
+                  Object(et.jsx)(re, { src: ce, alt: "Agil" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Agil" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Agil" }),
+                  Object(et.jsx)(re, { src: ce, alt: "Agil" }),
+                  Object(et.jsx)("br", {}),
+                ],
+              }),
+            ],
+          });
+        },
+        re = tt.b.img(
+          H ||
+            (H = Object(q.a)([
+              "\n  max-width: 15px;\n  max-height: 15px;\n  width: auto;\n  height: auto;\n",
+            ]))
+        ),
+        se = tt.b.div(
+          I ||
+            (I = Object(q.a)([
+              "\n  width: 15%;\n  font-weight: bold;\n  line-height: 2em;\n\n  @media (max-width: 1800px) {\n    width: 100%;\n    text-align: center;\n  }\n",
+            ]))
+        ),
+        je = n(13),
+        ie = n.n(je),
+        be = function () {
+          return Object(et.jsx)(et.Fragment, {
+            children: Object(et.jsxs)(xe, {
+              children: [
+                Object(et.jsxs)(ge, {
+                  children: [
+                    Object(et.jsx)(oe, { children: "Arbetsliverfarenhet" }),
+                    Object(et.jsxs)(le, {
+                      children: [
+                        Object(et.jsxs)("li", {
+                          children: [
+                            Object(et.jsx)("b", {
+                              children: "Javascript utvecklare",
+                            }),
+                            Object(et.jsx)("br", {}),
+                            "Soltia AB, Tumba",
+                            Object(et.jsx)("br", {}),
+                            "April",
+                            Object(et.jsx)(ie.a, {
+                              duration: 1,
+                              start: 0,
+                              end: 2021,
+                              className: "count",
+                            }),
+                            "- Nu",
+                          ],
+                        }),
+                        Object(et.jsxs)("li", {
+                          children: [
+                            Object(et.jsx)("b", { children: "PHP utvecklare" }),
+                            Object(et.jsx)("br", {}),
+                            "Kringelstan Webbyr\xe5, S\xf6dert\xe4lje",
+                            Object(et.jsx)("br", {}),
+                            "November",
+                            Object(et.jsx)(ie.a, {
+                              duration: 1,
+                              start: 0,
+                              end: 2020,
+                              className: "count",
+                            }),
+                            "- December",
+                            Object(et.jsx)(ie.a, {
+                              start: 0,
+                              end: 2020,
+                              className: "count",
+                              duration: 1,
+                            }),
+                          ],
+                        }),
+                        Object(et.jsxs)("li", {
+                          children: [
+                            Object(et.jsx)("b", {
+                              children: "Webbutvecklare - Praktik",
+                            }),
+                            Object(et.jsx)("br", {}),
+                            "Kringelstan Webbyr\xe5, S\xf6dert\xe4lje",
+                            Object(et.jsx)("br", {}),
+                            "Oktober",
+                            Object(et.jsx)(ie.a, {
+                              duration: 1,
+                              start: 0,
+                              end: 2020,
+                              className: "count",
+                            }),
+                            "- November",
+                            Object(et.jsx)(ie.a, {
+                              start: 0,
+                              end: 2020,
+                              className: "count",
+                              duration: 1,
+                            }),
+                          ],
+                        }),
+                        Object(et.jsxs)("li", {
+                          children: [
+                            Object(et.jsx)("b", {
+                              children:
+                                "L\xe4rare inom media- och informationsteknik.",
+                            }),
+                            Object(et.jsx)("br", {}),
+                            "Wendela Hebbegymnasiet, S\xf6dert\xe4lje",
+                            Object(et.jsx)("br", {}),
+                            "Augusti",
+                            Object(et.jsx)(ie.a, {
+                              duration: 1,
+                              start: 0,
+                              end: 2020,
+                              className: "count",
+                            }),
+                            "- September",
+                            Object(et.jsx)(ie.a, {
+                              start: 0,
+                              end: 2020,
+                              className: "count",
+                              duration: 1,
+                            }),
+                          ],
+                        }),
+                      ],
+                    }),
+                  ],
+                }),
+                Object(et.jsxs)(he, {
+                  children: [
+                    Object(et.jsx)(Oe, { children: "Tidigare utbildningar" }),
+                    Object(et.jsxs)(de, {
+                      children: [
+                        Object(et.jsxs)("li", {
+                          children: [
+                            Object(et.jsx)("b", {
+                              children: "Webbutvecklingsprogrammet",
+                            }),
+                            Object(et.jsx)("br", {}),
+                            "Mittuniversitetet, Sundsvall",
+                            Object(et.jsx)("br", {}),
+                            "Augusti",
+                            Object(et.jsx)(ie.a, {
+                              duration: 1,
+                              start: 0,
+                              end: 2018,
+                              className: "count",
+                            }),
+                            "- Juni",
+                            Object(et.jsx)(ie.a, {
+                              duration: 1,
+                              start: 0,
+                              end: 2020,
+                              className: "count",
+                            }),
+                          ],
+                        }),
+                        Object(et.jsxs)("li", {
+                          children: [
+                            Object(et.jsx)("b", {
+                              children: "Teknikprogrammet",
+                            }),
+                            Object(et.jsx)("br", {}),
+                            "Komvux, S\xf6dert\xe4lje",
+                            Object(et.jsx)("br", {}),
+                            "Augusti",
+                            Object(et.jsx)(ie.a, {
+                              duration: 1,
+                              start: 0,
+                              end: 2013,
+                              className: "count",
+                            }),
+                            "- Mars",
+                            Object(et.jsx)(ie.a, {
+                              duration: 1,
+                              start: 0,
+                              end: 2018,
+                              className: "count",
+                            }),
+                          ],
+                        }),
+                      ],
+                    }),
+                  ],
+                }),
+              ],
+            }),
+          });
+        },
+        xe = tt.b.div(
+          T ||
+            (T = Object(q.a)([
+              "\n  display: flex;\n  justify-content: center;\n\n  @media (max-width: 1800px) {\n    flex-direction: column;\n  }\n",
+            ]))
+        ),
+        le = tt.b.ul(
+          z ||
+            (z = Object(q.a)([
+              "\n  list-style: square;\n\n  @media (max-width: 1800px) {\n    list-style: none;\n    margin: 0;\n    padding: 0;\n  }\n",
+            ]))
+        ),
+        de = tt.b.ul(
+          D ||
+            (D = Object(q.a)([
+              "\n  list-style: square;\n\n  @media (max-width: 1800px) {\n    list-style: none;\n    margin: 0;\n    padding: 0;\n  }\n",
+            ]))
+        ),
+        oe = tt.b.h1(R || (R = Object(q.a)(["\n  margin: 10px;\n"]))),
+        Oe = tt.b.h1(
+          J ||
+            (J = Object(q.a)(["\n  margin: 10px;\n  white-space: nowrap;\n"]))
+        ),
+        he = tt.b.div(
+          M ||
+            (M = Object(q.a)([
+              "\n  width: 15%;\n  line-height: 2em;\n\n  @media (max-width: 1800px) {\n    width: 100%;\n    text-align: center;\n  }\n",
+            ]))
+        ),
+        ge = tt.b.div(
+          F ||
+            (F = Object(q.a)([
+              "\n  width: 50%;\n  line-height: 2em;\n\n  @media (max-width: 1800px) {\n    width: 100%;\n    text-align: center;\n  }\n",
+            ]))
+        ),
+        Ae = function () {
+          return Object(et.jsxs)(et.Fragment, {
+            children: [
+              Object(et.jsxs)(pe, {
+                children: [
+                  Object(et.jsx)(me, { children: "Vem \xe4r jag" }),
+                  Object(et.jsxs)(ue, {
+                    children: [
+                      "Jag heter Fadi Hanna och \xe4r utbildad som datatekniker",
+                      Object(et.jsx)("br", {}),
+                      " med inriktning mot webbutvecklare.",
+                    ],
+                  }),
+                ],
+              }),
+              Object(et.jsx)(Zt, {}),
+              Object(et.jsx)(be, {}),
+              Object(et.jsx)(fe, { children: "Kompetenser" }),
+              Object(et.jsx)("br", {}),
+              Object(et.jsx)(we, { children: Object(et.jsx)(ae, {}) }),
+            ],
+          });
+        },
+        pe = tt.b.div(
+          U ||
+            (U = Object(q.a)([
+              "\n  background: url(",
+              ");\n  height: 400px;\n  color: white;\n  text-align: center;\n  font-size: 32px;\n  font-style: italic;\n  background-size: cover;\n\n  @media (max-width: 1800px) {\n    background-size: cover;\n    height: 300px;\n  }\n",
+            ])),
+          St
+        ),
+        me = tt.b.h1(
+          W ||
+            (W = Object(q.a)([
+              "\n  font-style: italic;\n  color: white;\n  font-size: 52px;\n  padding-top: 130px;\n  height: 0;\n  padding-right: 280px;\n\n  @media (max-width: 1800px) {\n    margin: 0;\n    padding: 0;\n    height: 100px;\n  }\n",
+            ]))
+        ),
+        ue = tt.b.p(
+          L ||
+            (L = Object(q.a)([
+              "\n  text-align: center;\n  font-style: italic;\n  color: white;\n  padding-top: 60px;\n  padding-right: 300px;\n\n  @media (max-width: 1800px) {\n    margin: 0;\n    padding: 1px;\n  }\n",
+            ]))
+        ),
+        fe = tt.b.h1(
+          Y ||
+            (Y = Object(q.a)([
+              "\n  font-style: italic;\n  height: 50px;\n  font-size: 32px;\n  margin-left: 750px;\n\n  @media (max-width: 1800px) {\n    margin: 0;\n    text-align: center;\n  }\n",
+            ]))
+        ),
+        we = tt.b.div(
+          K ||
+            (K = Object(q.a)([
+              "\n  display: flex;\n  justify-content: center;\n",
+            ]))
+        ),
+        ke = n(16),
+        ve = n(6),
+        Qe = function () {
+          return Object(et.jsxs)(et.Fragment, {
+            children: [
+              Object(et.jsxs)(Ce, {
+                children: [
+                  Object(et.jsx)(ke.b, {
+                    to: "",
+                    children: Object(et.jsx)("img", {
+                      src: it,
+                      alt: "Logotypen",
+                    }),
+                  }),
+                  Object(et.jsx)(ke.b, {
+                    className: "links",
+                    to: "/",
+                    children: "Startsida",
+                  }),
+                  Object(et.jsx)(ke.b, {
+                    className: "links",
+                    to: "/Projects",
+                    children: "Projekt",
+                  }),
+                  Object(et.jsx)(ke.b, {
+                    className: "links",
+                    to: "/Contact",
+                    children: "Kontakt",
+                  }),
+                ],
+              }),
+              Object(et.jsxs)(ve.c, {
+                children: [
+                  Object(et.jsx)(ve.a, { exact: !0, path: "/", component: Ae }),
+                  Object(et.jsx)(ve.a, {
+                    exact: !0,
+                    path: "/Projects",
+                    component: Jt,
+                  }),
+                  Object(et.jsx)(ve.a, {
+                    exact: !0,
+                    path: "/Contact",
+                    component: Et,
+                  }),
+                ],
+              }),
+            ],
+          });
+        },
+        Ce = tt.b.div(
+          X ||
+            (X = Object(q.a)([
+              "\n  margin: 10px;\n  background: white;\n  padding: 10px;\n  display: flex;\n  align-items: center;\n  font-size: 25px;\n\n  a {\n    text-decoration: none;\n    padding: 10px;\n    margin-right: auto;\n    font-weight: bold;\n    color: black;\n  }\n\n  a:hover {\n    color: red;\n  }\n\n  .links {\n    margin-top: 100px;\n  }\n\n  @media (max-width: 1800px) {\n    flex-direction: column;\n    a {\n      margin: 0 auto;\n    }\n\n    .links {\n      margin: 0;\n    }\n  }\n",
+            ]))
+        );
+      (_.a.defaults.baseURL = "http://localhost:5000/"),
+        (_.a.defaults.headers["Content-Type"] = "application/json");
+      var Se,
+        Ee = function () {
+          return Object(et.jsx)(et.Fragment, {
+            children: Object(et.jsxs)(Be, {
+              children: [Object(et.jsx)(Qe, {}), Object(et.jsx)(nt, {})],
+            }),
+          });
+        },
+        Be = tt.b.div(V || (V = Object(q.a)(["\n  margin: 10px;\n"]))),
+        Ne = n(1),
+        Pe = n.n(Ne),
+        Ge = n(27),
+        ye = n.n(Ge),
+        He = Object(tt.a)(
+          Se ||
+            (Se = Object(q.a)([
+              "\n  body \n  {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    outline: 0;\n    border: 0;\n    list-style: none;\n    font-size: 100%;\n  }\n\n  img\n  {\n    display: block;\n    max-width: 100%;\n    width: auto;\n    height: auto;\n  }\n\n  .count\n  {\n    margin: 5px;\n  }\n\n  @media (max-width: 1500px)\n  {\n    body\n    {\n      margin: 0;\n      padding: 0;\n      font-size: 100%;\n      width: 100%;\n    }\n\n  }\n\n",
+            ]))
+        );
+      ye.a.render(
+        Object(et.jsx)(Pe.a.StrictMode, {
+          children: Object(et.jsxs)(ke.a, {
+            children: [
+              Object(et.jsx)(He, {}),
+              Object(et.jsx)(ht.a, { children: Object(et.jsx)(Ee, {}) }),
+            ],
+          }),
+        }),
+        document.getElementById("root")
+      );
+    },
+  },
+  [[75, 1, 2]],
+]);
 //# sourceMappingURL=main.13fbf943.chunk.js.map
