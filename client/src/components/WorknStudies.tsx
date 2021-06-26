@@ -1,5 +1,13 @@
-import styled from "styled-components";
 import CountUp from "react-countup";
+import {
+  ThirdRow,
+  WorkCol,
+  WorkHeading,
+  WorkList,
+  StudieCol,
+  StudieHeading,
+  StudieList,
+} from "styles";
 
 const WorknStudies = () => {
   return (
@@ -84,61 +92,3 @@ const WorknStudies = () => {
 };
 
 export default WorknStudies;
-
-const ThirdRow = styled.div`
-  display: flex;
-  justify-content: center;
-
-  @media (max-width: 1800px) {
-    flex-direction: column;
-  }
-`;
-
-const WorkList = styled.ul`
-  list-style: square;
-
-  @media (max-width: 1800px) {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-`;
-
-const StudieList = styled.ul`
-  list-style: square;
-
-  @media (max-width: 1800px) {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-`;
-
-const WorkHeading = styled.h1`
-  margin: 10px;
-`;
-
-const StudieHeading = styled.h1`
-  margin: 10px;
-  white-space: nowrap;
-`;
-
-const StudieCol = styled.div`
-  width: 15%;
-  line-height: 2em;
-
-  @media (max-width: 1800px) {
-    width: 100%;
-    text-align: center;
-  }
-`;
-
-const WorkCol = styled.div`
-  width: 50%;
-  line-height: 2em;
-
-  @media (max-width: 1800px) {
-    width: 100%;
-    text-align: center;
-  }
-`;

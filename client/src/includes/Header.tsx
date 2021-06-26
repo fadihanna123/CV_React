@@ -8,32 +8,36 @@ import styled from "styled-components";
 const Header = () => {
   return (
     <>
-      <Navbar>
-        <Link to="/">
-          <img src={Logo} alt="Logotypen" />
-        </Link>
-        <Link className="links" to="/">
-          Startsida
-        </Link>
-        <Link className="links" to="/Projects">
-          Projekt
-        </Link>
-        <Link className="links" to="/Contact">
-          Kontakt
-        </Link>
-      </Navbar>
-      <Switch>
-        <Route exact path="/" component={Start} />
-        <Route exact path="/Projects" component={Projects} />
-        <Route exact path="/Contact" component={Contact} />
-      </Switch>
+      <header>
+        <Navbar>
+          <Link to="/">
+            <img src={Logo} alt="Logotypen" />
+          </Link>
+          <Link className="links" to="/">
+            Startsida
+          </Link>
+          <Link className="links" to="/Projects">
+            Projekt
+          </Link>
+          <Link className="links" to="/Contact">
+            Kontakt
+          </Link>
+        </Navbar>
+      </header>
+      <main>
+        <Switch>
+          <Route exact path="/" component={Start} />
+          <Route exact path="/Projects" component={Projects} />
+          <Route exact path="/Contact" component={Contact} />
+        </Switch>
+      </main>
     </>
   );
 };
 
 export default Header;
 
-const Navbar = styled.div`
+const Navbar = styled.nav`
   margin: 10px;
   background: white;
   padding: 10px;

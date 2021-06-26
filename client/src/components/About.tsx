@@ -78,4 +78,9 @@ const ProfilePhoto = styled.img`
   max-width: 100%;
   max-height: 90%;
   height: auto;
+
+  @media (max-width: 1800px) {
+    width: 100%;
+    margin: 0;
+  }
 `;
