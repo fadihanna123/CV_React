@@ -5,35 +5,33 @@ import Start from "pages/Start";
 import { Link, Route, Switch } from "react-router-dom";
 import styled from "styled-components";
 
-const Header = () => {
-  return (
-    <>
-      <header>
-        <Navbar>
-          <Link to="/">
-            <img src={Logo} alt="Logotypen" />
-          </Link>
-          <Link className="links" to="/">
-            Startsida
-          </Link>
-          <Link className="links" to="/Projects">
-            Projekt
-          </Link>
-          <Link className="links" to="/Contact">
-            Kontakt
-          </Link>
-        </Navbar>
-      </header>
-      <main>
-        <Switch>
-          <Route exact path="/" component={Start} />
-          <Route exact path="/Projects" component={Projects} />
-          <Route exact path="/Contact" component={Contact} />
-        </Switch>
-      </main>
-    </>
-  );
-};
+const Header = () => (
+  <>
+    <header>
+      <Navbar>
+        <Link to="/">
+          <img src={Logo} alt="Logotypen" />
+        </Link>
+        <Link className="links" to="/">
+          Startsida
+        </Link>
+        <Link className="links" to="/Projects">
+          Projekt
+        </Link>
+        <Link className="links" to="/Contact">
+          Kontakt
+        </Link>
+      </Navbar>
+    </header>
+    <main>
+      <Switch>
+        <Route exact path="/" component={Start} />
+        <Route exact path="/Projects" component={Projects} />
+        <Route exact path="/Contact" component={Contact} />
+      </Switch>
+    </main>
+  </>
+);
 
 export default Header;
 

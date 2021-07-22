@@ -2,34 +2,32 @@ import Github from "Images/Github.png";
 import Linkedin from "Images/Linkedin.png";
 import styled from "styled-components";
 
-const Footer = () => {
-  return (
-    <FooterBlock>
-      <Row>
-        <Col13>
-          <h1>MittCV</h1>
-        </Col13>
-        <Col>
-          <a
-            href="https://www.linkedin.com/in/fadi-hanna-5506401b0/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Icon src={Linkedin} alt="Linkedin Ikon" />
-          </a>
+const Footer = () => (
+  <FooterBlock>
+    <Row>
+      <Col13>
+        <h1>MittCV</h1>
+      </Col13>
+      <Col>
+        <a
+          href="https://www.linkedin.com/in/fadi-hanna-5506401b0/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon src={Linkedin} alt="Linkedin Ikon" />
+        </a>
 
-          <a
-            href="https://github.com/fadihanna123"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Icon src={Github} alt="Github Ikon" />
-          </a>
-        </Col>
-      </Row>
-    </FooterBlock>
-  );
-};
+        <a
+          href="https://github.com/fadihanna123"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon src={Github} alt="Github Ikon" />
+        </a>
+      </Col>
+    </Row>
+  </FooterBlock>
+);
 
 export default Footer;
 
