@@ -1,7 +1,7 @@
 import ContactForm from "components/ContactForm";
 import Coding from "Images/coding.jpg";
 import { useRecoilState } from "recoil";
-import { loadingState } from "States";
+import { loadingState } from "states";
 import styled from "styled-components";
 
 const Contact = () => {

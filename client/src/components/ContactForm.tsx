@@ -1,9 +1,7 @@
 import axios from "axios";
 import { Flip, toast, ToastContainer } from "react-toastify";
 import { useRecoilState } from "recoil";
-import { contactFormState, loadingState } from "States";
-import { MailData } from "typings";
-
+import { contactFormState, loadingState } from "states";
 import {
   Col10,
   Col25,
@@ -13,11 +11,13 @@ import {
   MyTxtarea,
   Row,
   SendBtn,
-} from "../styles/ContactStyles";
+} from "styles";
+import { MailData } from "typings";
 
 const ContactForm = () => {
   const [contactForm, setContactForm] = useRecoilState(contactFormState);
   const [, setLoading] = useRecoilState(loadingState);
+  const endPoint: string = "mailit";
 
   const typer = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -31,7 +31,7 @@ const ContactForm = () => {
     try {
       setLoading(true);
 
-      await axios.post<MailData>("mailit", contactForm);
+      await axios.post<MailData>(endPoint, contactForm);
     } catch (err) {
       toast((err as Error).message, { transition: Flip, type: "error" });
     } finally {
