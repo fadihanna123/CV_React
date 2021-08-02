@@ -48,6 +48,7 @@ const FooterBlock = styled.footer`
 const Row = styled.div`
   display: flex;
   justify-content: center;
+  
   @media (max-width: 1800px) {
     flex-direction: column;
   }
