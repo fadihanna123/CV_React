@@ -1,5 +1,5 @@
-import Github from "Images/Github.png";
-import Linkedin from "Images/Linkedin.png";
+import Github from "images/Github.png";
+import Linkedin from "images/Linkedin.png";
 import styled from "styled-components";
 
 const Footer = () => (

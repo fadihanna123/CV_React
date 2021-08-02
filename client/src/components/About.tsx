@@ -1,4 +1,4 @@
-import ProfileBild from "Images/Profilbild.jpg";
+import ProfileBild from "images/Profilbild.jpg";
 import styled from "styled-components";
 
 const About = () => (

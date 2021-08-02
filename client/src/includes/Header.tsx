@@ -1,4 +1,4 @@
-import Logo from "Images/logo.jpg";
+import Logo from "images/logo.jpg";
 import Contact from "pages/Contact";
 import Projects from "pages/Projects";
 import Start from "pages/Start";

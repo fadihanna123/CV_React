@@ -1,10 +1,10 @@
-import Project1 from "Images/1.PNG";
-import Project2 from "Images/2.PNG";
-import Project3 from "Images/3.PNG";
-import Project4 from "Images/4.PNG";
-import Project5 from "Images/5.png";
-import Project6 from "Images/6.PNG";
-import Project7 from "Images/7.png";
+import Project1 from "images/1.PNG";
+import Project2 from "images/2.PNG";
+import Project3 from "images/3.PNG";
+import Project4 from "images/4.PNG";
+import Project5 from "images/5.png";
+import Project6 from "images/6.PNG";
+import Project7 from "images/7.png";
 import {
   Card,
   ProjectImage,

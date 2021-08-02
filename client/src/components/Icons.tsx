@@ -1,4 +1,4 @@
-import Star from "Images/star.png";
+import Star from "images/star.png";
 import { Col, Icon } from "styles";
 
 const Icons = () => (

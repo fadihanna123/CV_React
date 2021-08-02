@@ -1,36 +1,34 @@
 import About from "components/About";
 import Icons from "components/Icons";
 import WorknStudies from "components/WorknStudies";
-import Coding from "Images/coding.jpg";
+import Coding from "images/coding.jpg";
 import styled from "styled-components";
 
-const Start = () => {
-  return (
-    <>
-      <WhoContent>
-        <WhoHeading>Vem är jag</WhoHeading>
-        <Who>
-          Jag heter Fadi Hanna och är utbildad som datatekniker
-          <br /> med inriktning mot webbutvecklare.
-        </Who>
-      </WhoContent>
-      <About />
-      <WorknStudies />
-      <SkillsHeading>Kompetenser</SkillsHeading>
-      <br />
-      <Row>
-        <Icons />
-      </Row>
-    </>
-  );
-};
+const Start = () => (
+  <>
+    <WhoContent>
+      <WhoHeading>Vem är jag</WhoHeading>
+      <Who>
+        Jag heter Fadi Hanna och är utbildad som datatekniker
+        <br /> med inriktning mot webbutvecklare.
+      </Who>
+    </WhoContent>
+    <About />
+    <WorknStudies />
+    <SkillsHeading>Kompetenser</SkillsHeading>
+    <br />
+    <Row>
+      <Icons />
+    </Row>
+  </>
+);
 
 export default Start;
 
 const WhoContent = styled.div`
   background: url(${Coding});
   height: 400px;
-  color: white;
+  color: #fff;
   text-align: center;
   font-size: 32px;
   font-style: italic;
@@ -44,7 +42,7 @@ const WhoContent = styled.div`
 
 const WhoHeading = styled.h1`
   font-style: italic;
-  color: white;
+  color: #fff;
   font-size: 52px;
   padding-top: 130px;
   height: 0;
@@ -60,7 +58,7 @@ const WhoHeading = styled.h1`
 const Who = styled.p`
   text-align: center;
   font-style: italic;
-  color: white;
+  color: #fff;
   padding-top: 60px;
   padding-right: 300px;
 

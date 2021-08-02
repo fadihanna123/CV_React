@@ -1,5 +1,5 @@
 import ContactForm from "components/ContactForm";
-import Coding from "Images/coding.jpg";
+import Coding from "images/coding.jpg";
 import { useRecoilState } from "recoil";
 import { loadingState } from "states";
 import styled from "styled-components";
