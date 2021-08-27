@@ -5,7 +5,7 @@ import Start from "pages/Start";
 import { Link, Route, Switch } from "react-router-dom";
 import styled from "styled-components";
 
-const Header = () => (
+const Header: React.FC = () => (
   <>
     <header>
       <Navbar>

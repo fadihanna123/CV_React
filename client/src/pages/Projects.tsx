@@ -17,7 +17,7 @@ import {
   ProjectTitle,
 } from "styles";
 
-const Projects = () => (
+const Projects: React.FC = () => (
   <>
     <ProjectsContent>
       <ProjectsHeading>Projekt</ProjectsHeading>
@@ -39,7 +39,6 @@ const Projects = () => (
           </ProjectLink>
         </Card>
       </ProjectsCol>
-
       <ProjectsCol>
         <Card>
           <ProjectTitle>Intranätet(Dashboard) PHP</ProjectTitle>
@@ -58,7 +57,6 @@ const Projects = () => (
           </ProjectLink>
         </Card>
       </ProjectsCol>
-
       <ProjectsCol>
         <Card>
           <ProjectTitle>PixabayFinder React</ProjectTitle>
@@ -78,7 +76,6 @@ const Projects = () => (
         </Card>
       </ProjectsCol>
     </ProjectsRow>
-
     <ProjectsRow>
       <ProjectsCol>
         <Card>
@@ -89,7 +86,6 @@ const Projects = () => (
           </ProjectLink>
         </Card>
       </ProjectsCol>
-
       <ProjectsCol>
         <Card>
           <ProjectTitle>Blogging PHP</ProjectTitle>
@@ -102,7 +98,6 @@ const Projects = () => (
           </ProjectLink>
         </Card>
       </ProjectsCol>
-
       <ProjectsCol>
         <Card>
           <ProjectTitle>Datahjälp</ProjectTitle>
@@ -122,7 +117,6 @@ const Projects = () => (
         </Card>
       </ProjectsCol>
     </ProjectsRow>
-
     <ProjectsRow>
       <ProjectsCol>
         <Card>

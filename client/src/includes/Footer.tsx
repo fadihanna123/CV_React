@@ -2,7 +2,7 @@ import Github from "images/Github.png";
 import Linkedin from "images/Linkedin.png";
 import styled from "styled-components";
 
-const Footer = () => (
+const Footer: React.FC = () => (
   <FooterBlock>
     <Row>
       <Col13>
@@ -48,7 +48,7 @@ const FooterBlock = styled.footer`
 const Row = styled.div`
   display: flex;
   justify-content: center;
-  
+
   @media (max-width: 1800px) {
     flex-direction: column;
   }

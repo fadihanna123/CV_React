@@ -4,7 +4,7 @@ import { useRecoilState } from "recoil";
 import { loadingState } from "states";
 import styled from "styled-components";
 
-const Contact = () => {
+const Contact: React.FC = () => {
   const [loading] = useRecoilState(loadingState);
 
   return (

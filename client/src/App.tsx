@@ -6,7 +6,7 @@ import styled from "styled-components";
 axios.defaults.baseURL = "http://localhost:5000/";
 axios.defaults.headers["Content-Type"] = "application/json";
 
-const App = () => (
+const App: React.FC = () => (
   <Container>
     <Header />
     <Footer />

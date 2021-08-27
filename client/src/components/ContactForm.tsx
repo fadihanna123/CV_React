@@ -1,5 +1,5 @@
-import axios from "axios";
-import { Flip, toast, ToastContainer } from "react-toastify";
+import { sendMail } from "functions";
+import { Flip, ToastContainer } from "react-toastify";
 import { useRecoilState } from "recoil";
 import { contactFormState, loadingState } from "states";
 import {
@@ -12,12 +12,10 @@ import {
   Row,
   SendBtn,
 } from "styles";
-import { MailData } from "typings";
 
-const ContactForm = () => {
+const ContactForm: React.FC = () => {
   const [contactForm, setContactForm] = useRecoilState(contactFormState);
   const [, setLoading] = useRecoilState(loadingState);
-  const endPoint: string = "mailit";
 
   const typer = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -26,18 +24,6 @@ const ContactForm = () => {
       ...contactForm,
       [e.target.name]: e.target.value,
     });
-
-  const SendMail = async (): Promise<void> => {
-    try {
-      setLoading(true);
-
-      await axios.post<MailData>(endPoint, contactForm);
-    } catch (err) {
-      toast((err as Error).message, { transition: Flip, type: "error" });
-    } finally {
-      setLoading(false);
-    }
-  };
 
   return (
     <ContactBlock>
@@ -54,7 +40,6 @@ const ContactForm = () => {
           />
         </Col25>
       </Row>
-
       <Row>
         <Col10>
           <FormLabel htmlFor="mail">E-postadress:</FormLabel>
@@ -68,7 +53,6 @@ const ContactForm = () => {
           />
         </Col25>
       </Row>
-
       <Row>
         <Col10>
           <FormLabel htmlFor="phone">Mobilnummer:</FormLabel>
@@ -82,7 +66,6 @@ const ContactForm = () => {
           />
         </Col25>
       </Row>
-
       <Row>
         <Col10>
           <FormLabel htmlFor="msg">Meddelande:</FormLabel>
@@ -98,7 +81,7 @@ const ContactForm = () => {
           ></MyTxtarea>
         </Col25>
       </Row>
-      <SendBtn type="submit" onClick={SendMail}>
+      <SendBtn type="submit" onClick={() => sendMail(setLoading, contactForm)}>
         Skicka
       </SendBtn>
       <ToastContainer transition={Flip} />

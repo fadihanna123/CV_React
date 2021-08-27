@@ -9,7 +9,7 @@ import {
   StudieList,
 } from "styles";
 
-const WorknStudies = () => (
+const WorknStudies: React.FC = () => (
   <ThirdRow>
     <WorkCol>
       <WorkHeading>Arbetsliverfarenhet</WorkHeading>

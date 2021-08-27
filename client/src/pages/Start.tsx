@@ -4,7 +4,7 @@ import WorknStudies from "components/WorknStudies";
 import Coding from "images/coding.jpg";
 import styled from "styled-components";
 
-const Start = () => (
+const Start: React.FC = () => (
   <>
     <WhoContent>
       <WhoHeading>Vem är jag</WhoHeading>
