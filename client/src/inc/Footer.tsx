@@ -2,32 +2,36 @@ import Github from "images/Github.png";
 import Linkedin from "images/Linkedin.png";
 import styled from "styled-components";
 
-const Footer: React.FC = () => (
-  <FooterBlock>
-    <Row>
-      <Col13>
-        <h1>MittCV</h1>
-      </Col13>
-      <Col>
-        <a
-          href="https://www.linkedin.com/in/fadi-hanna-5506401b0/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Icon src={Linkedin} alt="Linkedin Ikon" />
-        </a>
+const Footer: React.FC = () => {
+  const { REACT_APP_LINKEDIN_URL, REACT_APP_GITHUB_URL } = process.env;
 
-        <a
-          href="https://github.com/fadihanna123"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Icon src={Github} alt="Github Ikon" />
-        </a>
-      </Col>
-    </Row>
-  </FooterBlock>
-);
+  return (
+    <FooterBlock>
+      <Row>
+        <Col13>
+          <h1>MittCV</h1>
+        </Col13>
+        <Col>
+          <a
+            href={REACT_APP_LINKEDIN_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon src={Linkedin} alt="Linkedin Ikon" />
+          </a>
+
+          <a
+            href={REACT_APP_GITHUB_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon src={Github} alt="Github Ikon" />
+          </a>
+        </Col>
+      </Row>
+    </FooterBlock>
+  );
+};
 
 export default Footer;
 

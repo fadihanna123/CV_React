@@ -1,6 +1,6 @@
 import axios from "axios";
-import Footer from "includes/Footer";
-import Header from "includes/Header";
+import Footer from "inc/Footer";
+import Header from "inc/Header";
 import styled from "styled-components";
 
 axios.defaults.baseURL = "http://localhost:5000/";

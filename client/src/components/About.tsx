@@ -1,7 +1,7 @@
 import ProfileBild from "images/Profilbild.jpg";
 import styled from "styled-components";
 
-const About: FC = () => (
+const About: React.FC = () => (
   <TxtRow>
     <Col50>
       <AboutTxt>

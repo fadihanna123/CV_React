@@ -34,7 +34,7 @@ const Projects: React.FC = () => (
           >
             Github
           </ProjectLink>
-          <ProjectLink target="_blank" href="https://mitt-cv.com/cvwordpress/">
+          <ProjectLink target="_blank" href="https://mitt-cv.com/">
             Webbplats
           </ProjectLink>
         </Card>
