@@ -1,3 +1,4 @@
+import cors from "cors";
 import { Request, Response, Router } from "express";
 
 import { transporter } from "../server";

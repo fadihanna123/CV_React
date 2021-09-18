@@ -1,7 +1,8 @@
 import Layout from "app/Layout";
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:5000/";
+const { REACT_APP_BACKEND_URL } = process.env;
+axios.defaults.baseURL = REACT_APP_BACKEND_URL;
 axios.defaults.headers["Content-Type"] = "application/json";
 
 const App: React.FC = () => <Layout />;
