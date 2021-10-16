@@ -1,10 +1,10 @@
-import axios from "axios";
+import { request } from "api";
 import { Flip, toast } from "react-toastify";
-import { ContactForm, MailData } from "typings";
+import { ContactFormTypes } from "typings";
 
 const sendMail = async (
   setLoading: (loading: boolean) => void,
-  contactForm: ContactForm
+  contactForm: ContactFormTypes
 ): Promise<void> => {
   try {
     const { REACT_APP_SEND_MAIL } = process.env;
@@ -12,7 +12,7 @@ const sendMail = async (
 
     setLoading(true);
 
-    await axios.post<MailData>(endPoint as string, contactForm);
+    await request(endPoint as string, "post", contactForm);
   } catch (err) {
     toast((err as Error).message, { transition: Flip, type: "error" });
   } finally {

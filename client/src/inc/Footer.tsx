@@ -1,6 +1,6 @@
-import Github from "images/Github.png";
-import Linkedin from "images/Linkedin.png";
-import styled from "styled-components";
+import Github from "assets/Github.png";
+import Linkedin from "assets/Linkedin.png";
+import { Col, Col13, FooterBlock, Icon, Row } from "styles/footerStyles";
 
 const Footer: React.FC = () => {
   const { REACT_APP_LINKEDIN_URL, REACT_APP_GITHUB_URL } = process.env;
@@ -34,41 +34,3 @@ const Footer: React.FC = () => {
 };
 
 export default Footer;
-
-const Icon = styled.img`
-  max-width: 40px;
-  max-height: 40px;
-  margin-top: 20px;
-  width: auto;
-  height: auto;
-`;
-
-const FooterBlock = styled.footer`
-  background: #f5f5f5;
-  text-align: center;
-  font-style: italic;
-`;
-
-const Row = styled.div`
-  display: flex;
-  justify-content: center;
-
-  @media (max-width: 1800px) {
-    flex-direction: column;
-  }
-`;
-
-const Col13 = styled.div`
-  width: 13%;
-
-  @media (max-width: 1800px) {
-    width: 100%;
-  }
-`;
-const Col = styled.div`
-  width: 20%;
-
-  @media (max-width: 1800px) {
-    width: 100%;
-  }
-`;

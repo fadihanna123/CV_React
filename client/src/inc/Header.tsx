@@ -1,9 +1,9 @@
-import Logo from "images/logo.jpg";
+import Logo from "assets/logo.jpg";
 import Contact from "pages/Contact";
 import Projects from "pages/Projects";
 import Start from "pages/Start";
 import { Link, Route, Switch } from "react-router-dom";
-import styled from "styled-components";
+import { Navbar } from "styles";
 
 const Header: React.FC = () => (
   <>
@@ -34,39 +34,3 @@ const Header: React.FC = () => (
 );
 
 export default Header;
-
-const Navbar = styled.nav`
-  margin: 10px;
-  background: white;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  font-size: 25px;
-
-  a {
-    text-decoration: none;
-    padding: 10px;
-    margin-right: auto;
-    font-weight: bold;
-    color: black;
-  }
-
-  a:hover {
-    color: red;
-  }
-
-  .links {
-    margin-top: 100px;
-  }
-
-  @media (max-width: 1800px) {
-    flex-direction: column;
-    a {
-      margin: 0 auto;
-    }
-
-    .links {
-      margin: 0;
-    }
-  }
-`;

@@ -1,6 +1,6 @@
 import Footer from "inc/Footer";
 import Header from "inc/Header";
-import styled from "styled-components";
+import { Container } from "styles";
 
 const Layout: React.FC = () => (
   <Container>
@@ -10,7 +10,3 @@ const Layout: React.FC = () => (
 );
 
 export default Layout;
-
-const Container = styled.div`
-  margin: 10px;
-`;

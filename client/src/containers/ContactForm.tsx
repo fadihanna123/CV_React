@@ -1,4 +1,4 @@
-import { sendMail } from "functions";
+import { sendMail, typer } from "functions";
 import { Flip, ToastContainer } from "react-toastify";
 import { useRecoilState } from "recoil";
 import { contactFormState, loadingState } from "states";
@@ -12,18 +12,12 @@ import {
   Row,
   SendBtn,
 } from "styles";
+import { ContactFormTypes } from "typings";
 
 const ContactForm: React.FC = () => {
-  const [contactForm, setContactForm] = useRecoilState(contactFormState);
+  const [contactForm, setContactForm] =
+    useRecoilState<ContactFormTypes>(contactFormState);
   const [, setLoading] = useRecoilState(loadingState);
-
-  const typer = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) =>
-    setContactForm({
-      ...contactForm,
-      [e.target.name]: e.target.value,
-    });
 
   return (
     <ContactBlock>
@@ -36,7 +30,9 @@ const ContactForm: React.FC = () => {
             id="fullname"
             name="fullname"
             value={contactForm.fullname}
-            onChange={typer}
+            onChange={(
+              e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+            ) => typer(e, contactForm, setContactForm)}
           />
         </Col25>
       </Row>
@@ -49,7 +45,9 @@ const ContactForm: React.FC = () => {
             id="mail"
             name="mail"
             value={contactForm.mail}
-            onChange={typer}
+            onChange={(
+              e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+            ) => typer(e, contactForm, setContactForm)}
           />
         </Col25>
       </Row>
@@ -62,7 +60,9 @@ const ContactForm: React.FC = () => {
             id="phone"
             name="phone"
             value={contactForm.phone}
-            onChange={typer}
+            onChange={(
+              e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+            ) => typer(e, contactForm, setContactForm)}
           />
         </Col25>
       </Row>
@@ -77,7 +77,9 @@ const ContactForm: React.FC = () => {
             cols={50}
             rows={10}
             value={contactForm.msg}
-            onChange={typer}
+            onChange={(
+              e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+            ) => typer(e, contactForm, setContactForm)}
           ></MyTxtarea>
         </Col25>
       </Row>

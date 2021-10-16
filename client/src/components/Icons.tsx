@@ -1,4 +1,4 @@
-import Star from "images/star.png";
+import Star from "assets/star.png";
 import { Col, Icon } from "styles";
 
 const Icons: React.FC = () => (

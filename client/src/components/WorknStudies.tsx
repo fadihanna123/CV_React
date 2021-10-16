@@ -1,12 +1,12 @@
 import CountUp from "react-countup";
 import {
+  StudieCol,
+  StudieHeading,
+  StudieList,
   ThirdRow,
   WorkCol,
   WorkHeading,
   WorkList,
-  StudieCol,
-  StudieHeading,
-  StudieList,
 } from "styles";
 
 const WorknStudies: React.FC = () => (

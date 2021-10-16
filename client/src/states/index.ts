@@ -1,7 +1,7 @@
 import { atom } from "recoil";
-import { ContactForm } from "typings";
+import { ContactFormTypes } from "typings";
 
-export const contactFormState = atom<ContactForm>({
+export const contactFormState = atom<ContactFormTypes>({
   key: "contactFormState",
   default: {
     fullname: "",
