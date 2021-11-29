@@ -2,7 +2,7 @@ import Logo from "assets/logo.jpg";
 import Contact from "pages/Contact";
 import Projects from "pages/Projects";
 import Start from "pages/Start";
-import { Link, Route, Switch } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 import { Navbar } from "styles";
 
 const Header: React.FC = () => (
@@ -24,11 +24,11 @@ const Header: React.FC = () => (
       </Navbar>
     </header>
     <main>
-      <Switch>
-        <Route exact path="/" component={Start} />
-        <Route exact path="/Projects" component={Projects} />
-        <Route exact path="/Contact" component={Contact} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Start />} />
+        <Route path="/Projects" element={<Projects />} />
+        <Route path="/Contact" element={<Contact />} />
+      </Routes>
     </main>
   </>
 );
