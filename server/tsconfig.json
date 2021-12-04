@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "esNext",
+    "lib": ["DOM", "DOM.Iterable", "esnext"],
     "module": "commonjs",
     "strict": true,
     "esModuleInterop": true,
