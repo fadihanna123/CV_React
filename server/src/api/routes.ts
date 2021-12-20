@@ -1,6 +1,6 @@
 import { Router } from "express";
 
-import { sendMail } from "../controllers";
+import { sendMail } from "controllers";
 
 const router: Router = Router();
 

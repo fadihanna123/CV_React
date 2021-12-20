@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 
-import { transporter } from "../server";
-import { IMailData } from "../typings";
+import { transporter } from "server";
+import { IMailData } from "typings";
 
 export const sendMail = (req: Request, res: Response): void => {
   const { mail, fullname, phone, msg } = req.body;
