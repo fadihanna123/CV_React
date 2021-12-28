@@ -1,32 +1,34 @@
-import nodemailer from "nodemailer";
-import express, { Request, Response, Router } from "express";
+import "dotenv/config";
 
+import routes from "api/routes";
 import cors from "cors";
-import { IMailData } from "./typings";
-import routes from "./api/routes";
+import express, { json, urlencoded } from "express";
+import rateLimit from "express-rate-limit";
+import helmet from "helmet";
+import morgan from "morgan";
+import nodemailer from "nodemailer";
+import { logger } from "tools";
+import { allowedDomains, errorHandler, psw, serverPort, uname } from "utils";
 
 const server = express();
 
 // Settings
-
-const port: number = parseInt(<string>process.env.PORT) || 5000;
-
-const { USERNAME, PASSWORD } = process.env;
+const port: number = parseInt(<string>serverPort) || 5000;
 
 export const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 465,
   secure: false,
   auth: {
-    user: USERNAME,
-    pass: PASSWORD,
+    user: uname,
+    pass: psw,
   },
   tls: { rejectUnauthorized: false },
 });
-server.use(express.json());
-server.use(express.urlencoded({ extended: true }));
 
-const whiteList: string[] = ["https://localhost:3000"];
+const whiteList = [allowedDomains?.split(" , ")];
+
+const limiter = rateLimit({ windowMs: 3600000, max: 45 });
 
 const corsOptions = {
   origin: (origin: any, callback: any) => {
@@ -38,9 +40,13 @@ const corsOptions = {
   },
 };
 
+server.use(morgan("dev"));
+server.use(limiter);
+server.use(helmet());
 server.use(cors(corsOptions));
+server.use(json({ type: "application/json", limit: "1kb" }));
+server.use(urlencoded({ extended: true }));
 server.use(routes);
+server.use(errorHandler);
 
-server.listen(port, () =>
-  console.log(` \n Server listening on port ${port}... \n `)
-);
+server.listen(port, () => logger.debug(`Server listening on port ${port}...`));
