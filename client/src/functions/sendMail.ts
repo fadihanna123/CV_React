@@ -1,23 +1,23 @@
-import { request } from "api";
-import { Flip, toast } from "react-toastify";
-import { ContactFormTypes } from "typings";
+import { request } from 'api';
+import { Flip, toast } from 'react-toastify';
+import { Dispatch } from 'redux';
+import { setLoading } from 'redux/actions';
+import { ContactFormTypes } from 'typings';
+import { sendMail_api } from 'utils/envs';
 
-const sendMail = async (
-  setLoading: (loading: boolean) => void,
-  contactForm: ContactFormTypes
+export const sendMail = async (
+  contactForm: ContactFormTypes,
+  dispatch: Dispatch<any>
 ): Promise<void> => {
   try {
-    const { REACT_APP_SEND_MAIL } = process.env;
-    const endPoint: string | undefined = REACT_APP_SEND_MAIL;
+    const endPoint = sendMail_api;
 
-    setLoading(true);
+    dispatch(setLoading(true));
 
-    await request(endPoint as string, "post", contactForm);
+    await request.post(endPoint as string, contactForm);
   } catch (err) {
-    toast((err as Error).message, { transition: Flip, type: "error" });
+    toast.error((err as Error).message, { transition: Flip });
   } finally {
-    setLoading(false);
+    dispatch(setLoading(false));
   }
 };
-
-export { sendMail };

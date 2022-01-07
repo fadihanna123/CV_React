@@ -1,9 +1,11 @@
-import Layout from "app/Layout";
-import axios from "axios";
+import Layout from 'app/Layout';
+import axios from 'axios';
+import { backendURL } from 'utils/envs';
 
-const { REACT_APP_BACKEND_URL } = process.env;
-axios.defaults.baseURL = REACT_APP_BACKEND_URL;
-axios.defaults.headers.common["Content-Type"] = "application/json";
+const globalHeader: string = "application/json";
+
+axios.defaults.baseURL = backendURL;
+axios.defaults.headers.common["Content-Type"] = globalHeader;
 
 const App: React.FC = () => <Layout />;
 

@@ -17,19 +17,13 @@ export const FooterBlock = styled.footer`
 export const Row = styled.div`
   display: flex;
   justify-content: center;
+  flex-direction: row;
 
   @media (max-width: 1800px) {
     flex-direction: column;
   }
 `;
 
-export const Col13 = styled.div`
-  width: 13%;
-
-  @media (max-width: 1800px) {
-    width: 100%;
-  }
-`;
 export const Col = styled.div`
   width: 20%;
 

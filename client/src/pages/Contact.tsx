@@ -1,10 +1,12 @@
-import ContactForm from "containers/ContactForm";
-import { useRecoilState } from "recoil";
-import { loadingState } from "states";
-import { Alert, ContactContent, ContactHeading, ContactText } from "styles";
+import ContactForm from 'containers/ContactForm';
+import { useSelector } from 'react-redux';
+import { Alert, ContactContent, ContactHeading, ContactText } from 'styles';
+import { LoadingReducerTypes } from 'typings';
 
 const Contact: React.FC = () => {
-  const [loading] = useRecoilState(loadingState);
+  const loading = useSelector(
+    (state: LoadingReducerTypes) => state.loadingReducer
+  );
 
   return (
     <>
@@ -13,7 +15,7 @@ const Contact: React.FC = () => {
         <ContactText>Jag är glad att du vill kontakta mig</ContactText>
       </ContactContent>
       <ContactForm />
-      {loading ? (
+      {loading && (
         <Alert>
           Tack för att du kontaktar mig.
           <br />
@@ -21,8 +23,6 @@ const Contact: React.FC = () => {
           <br />
           Jag kommer att kontakta dig så fort jag kan.
         </Alert>
-      ) : (
-        ""
       )}
     </>
   );

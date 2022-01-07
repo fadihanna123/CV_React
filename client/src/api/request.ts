@@ -1,29 +1,23 @@
-import axios, { AxiosResponse } from "axios";
-import { Flip, toast } from "react-toastify";
+import axios, { AxiosResponse } from 'axios';
 
-const request = async (
-  url: string,
-  method?: any,
-  redata?: any,
-  headers?: {}
-): Promise<any> => {
-  let data: AxiosResponse<any> | undefined;
-  try {
-    if (method === "get") {
-      data = await axios.get(url, headers);
-    } else if (method === "post") {
-      data = await axios.post(url, redata, headers);
-    } else if (method === "put") {
-      data = await axios.put(url, redata, headers);
-    } else if (method === "delete") {
-      data = await axios.delete(url, headers);
-    } else {
-      data = await axios.get(url);
-    }
-    return data!.data;
-  } catch (error) {
-    toast.error((error as Error).message, { transition: Flip });
-  }
+export const request = {
+  get: async <T>(url: string): Promise<AxiosResponse<T, any>> =>
+    await axios.get<T>(url),
+
+  post: async <T>(
+    url: string,
+    data: any,
+    headers?: { headers: {} }
+  ): Promise<AxiosResponse<T, any>> => await axios.post<T>(url, data, headers),
+
+  put: async <T>(
+    url: string,
+    data: any,
+    headers?: { headers: {} }
+  ): Promise<AxiosResponse<T, any>> => await axios.put<T>(url, data, headers),
+
+  delete: async <T>(
+    url: string,
+    headers?: { headers: {} }
+  ): Promise<AxiosResponse<T, any>> => await axios.delete<T>(url, headers),
 };
-
-export { request };

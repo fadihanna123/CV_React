@@ -41,6 +41,7 @@ export const ProfilePhoto = styled.img`
   max-width: 100%;
   max-height: 90%;
   height: auto;
+  margin: 10px;
 
   @media (max-width: 1800px) {
     width: 100%;

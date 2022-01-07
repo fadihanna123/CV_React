@@ -1,19 +1,19 @@
-import "dotenv/config";
+import 'dotenv/config';
 
-import routes from "api/routes";
-import cors from "cors";
-import express, { json, urlencoded } from "express";
-import rateLimit from "express-rate-limit";
-import helmet from "helmet";
-import morgan from "morgan";
-import nodemailer from "nodemailer";
-import { logger } from "tools";
-import { allowedDomains, errorHandler, psw, serverPort, uname } from "utils";
+import routes from 'api/routes';
+import cors from 'cors';
+import express, { json, urlencoded } from 'express';
+import rateLimit from 'express-rate-limit';
+import helmet from 'helmet';
+import morgan from 'morgan';
+import nodemailer from 'nodemailer';
+import { logger } from 'tools';
+import { allowedDomains, errorHandler, psw, serverPort, uname } from 'utils';
 
 const server = express();
 
 // Settings
-const port: number = parseInt(<string>serverPort) || 5000;
+const port = parseInt(<string>serverPort) || 5000;
 
 export const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
@@ -26,13 +26,13 @@ export const transporter = nodemailer.createTransport({
   tls: { rejectUnauthorized: false },
 });
 
-const whiteList = [allowedDomains?.split(" , ")];
+const whiteList = allowedDomains?.split(", ");
 
 const limiter = rateLimit({ windowMs: 3600000, max: 45 });
 
 const corsOptions = {
   origin: (origin: any, callback: any) => {
-    if (whiteList.indexOf(origin) !== -1) {
+    if (whiteList!.indexOf(origin) !== -1) {
       callback(null, true);
     } else {
       callback(new Error("Not allowed by CORS"));

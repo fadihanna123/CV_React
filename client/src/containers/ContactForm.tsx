@@ -1,23 +1,15 @@
-import { sendMail, typer } from "functions";
-import { Flip, ToastContainer } from "react-toastify";
-import { useRecoilState } from "recoil";
-import { contactFormState, loadingState } from "states";
-import {
-  Col10,
-  Col25,
-  ContactBlock,
-  FormLabel,
-  Input,
-  MyTxtarea,
-  Row,
-  SendBtn,
-} from "styles";
-import { ContactFormTypes } from "typings";
+import { sendMail, typer } from 'functions';
+import { useDispatch, useSelector } from 'react-redux';
+import { Flip, ToastContainer } from 'react-toastify';
+import { Col10, Col25, ContactBlock, FormLabel, Input, MyTxtarea, Row, SendBtn } from 'styles';
+import { ContactFormReducerTypes } from 'typings';
 
 const ContactForm: React.FC = () => {
-  const [contactForm, setContactForm] =
-    useRecoilState<ContactFormTypes>(contactFormState);
-  const [, setLoading] = useRecoilState(loadingState);
+  const contactForm = useSelector(
+    (state: ContactFormReducerTypes) => state.contactFormReducer
+  );
+
+  const dispatch = useDispatch();
 
   return (
     <ContactBlock>
@@ -32,7 +24,7 @@ const ContactForm: React.FC = () => {
             value={contactForm.fullname}
             onChange={(
               e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-            ) => typer(e, contactForm, setContactForm)}
+            ) => typer(e, contactForm, dispatch)}
           />
         </Col25>
       </Row>
@@ -47,7 +39,7 @@ const ContactForm: React.FC = () => {
             value={contactForm.mail}
             onChange={(
               e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-            ) => typer(e, contactForm, setContactForm)}
+            ) => typer(e, contactForm, dispatch)}
           />
         </Col25>
       </Row>
@@ -62,7 +54,7 @@ const ContactForm: React.FC = () => {
             value={contactForm.phone}
             onChange={(
               e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-            ) => typer(e, contactForm, setContactForm)}
+            ) => typer(e, contactForm, dispatch)}
           />
         </Col25>
       </Row>
@@ -79,11 +71,11 @@ const ContactForm: React.FC = () => {
             value={contactForm.msg}
             onChange={(
               e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-            ) => typer(e, contactForm, setContactForm)}
+            ) => typer(e, contactForm, dispatch)}
           ></MyTxtarea>
         </Col25>
       </Row>
-      <SendBtn type="submit" onClick={() => sendMail(setLoading, contactForm)}>
+      <SendBtn type="submit" onClick={() => sendMail(contactForm, dispatch)}>
         Skicka
       </SendBtn>
       <ToastContainer transition={Flip} />

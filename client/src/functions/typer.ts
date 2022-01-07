@@ -1,13 +1,15 @@
-import { ContactFormTypes } from "typings";
+import { Dispatch } from 'redux';
+import { setContactForm } from 'redux/actions';
+import { ContactFormTypes } from 'typings';
 
-const typer = (
+export const typer = (
   e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   contactForm: ContactFormTypes,
-  setContactForm: (contactForm: ContactFormTypes) => void
+  dispatch: Dispatch<any>
 ) =>
-  setContactForm({
-    ...contactForm,
-    [e.target.name]: e.target.value,
-  });
-
-export { typer };
+  dispatch(
+    setContactForm({
+      ...contactForm,
+      [e.target.name]: e.target.value,
+    })
+  );

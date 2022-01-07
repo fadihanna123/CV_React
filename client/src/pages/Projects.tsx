@@ -1,10 +1,12 @@
-import Project1 from "assets/1.PNG";
-import Project2 from "assets/2.PNG";
-import Project3 from "assets/3.PNG";
-import Project4 from "assets/4.PNG";
-import Project5 from "assets/5.png";
-import Project6 from "assets/6.PNG";
+import Project3 from "assets/2.PNG";
+import Project4 from "assets/3.PNG";
+import Project5 from "assets/4.PNG";
+import Project8 from "assets/6.PNG";
 import Project7 from "assets/7.png";
+import Project1 from "assets/Soltia-2048x952.png";
+import Project9 from "assets/1.PNG";
+import Project10 from "assets/5.png";
+
 import {
   Card,
   ProjectImage,
@@ -26,6 +28,15 @@ const Projects: React.FC = () => (
     <ProjectsRow>
       <ProjectsCol>
         <Card>
+          <ProjectTitle>Soltia</ProjectTitle>
+          <ProjectImage src={Project1} alt="Soltia" />
+          <ProjectLink target="_blank" href="https://soltia.com/">
+            Webbplats
+          </ProjectLink>
+        </Card>
+      </ProjectsCol>
+      <ProjectsCol>
+        <Card>
           <ProjectTitle>Mitt-CV Wordpress</ProjectTitle>
           <ProjectImage src={Project7} alt="Mitt-CV Wordpress" />
           <ProjectLink
@@ -41,8 +52,8 @@ const Projects: React.FC = () => (
       </ProjectsCol>
       <ProjectsCol>
         <Card>
-          <ProjectTitle>Intranätet(Dashboard) PHP</ProjectTitle>
-          <ProjectImage src={Project2} alt="Intranätsprojekt" />
+          <ProjectTitle>Intranätet(Dashboard)</ProjectTitle>
+          <ProjectImage src={Project3} alt="Intranätsprojekt" />
           <ProjectLink
             target="_blank"
             href="https://github.com/fadihanna123/Intranat"
@@ -57,10 +68,12 @@ const Projects: React.FC = () => (
           </ProjectLink>
         </Card>
       </ProjectsCol>
+    </ProjectsRow>
+    <ProjectsRow>
       <ProjectsCol>
         <Card>
-          <ProjectTitle>PixabayFinder React</ProjectTitle>
-          <ProjectImage src={Project6} alt="PixabayFinder" />
+          <ProjectTitle>PixabayFinder</ProjectTitle>
+          <ProjectImage src={Project8} alt="PixabayFinder" />
           <ProjectLink
             target="_blank"
             href="https://github.com/fadihanna123/PixaBayFinder"
@@ -75,12 +88,10 @@ const Projects: React.FC = () => (
           </ProjectLink>
         </Card>
       </ProjectsCol>
-    </ProjectsRow>
-    <ProjectsRow>
       <ProjectsCol>
         <Card>
-          <ProjectTitle>Min Frisör ASP.NET</ProjectTitle>
-          <ProjectImage src={Project1} alt="MinFrisörsprojekt" />
+          <ProjectTitle>Min Frisör</ProjectTitle>
+          <ProjectImage src={Project9} alt="MinFrisörsprojekt" />
           <ProjectLink href="https://github.com/fadihanna123/ASPNET_Projekt">
             Github
           </ProjectLink>
@@ -88,8 +99,8 @@ const Projects: React.FC = () => (
       </ProjectsCol>
       <ProjectsCol>
         <Card>
-          <ProjectTitle>Blogging PHP</ProjectTitle>
-          <ProjectImage src={Project3} alt="Bloggingsprojekt" />
+          <ProjectTitle>Blogging</ProjectTitle>
+          <ProjectImage src={Project4} alt="Bloggingsprojekt" />
           <ProjectLink
             target="_blank"
             href="https://github.com/fadihanna123/BloggProjekt"
@@ -98,10 +109,12 @@ const Projects: React.FC = () => (
           </ProjectLink>
         </Card>
       </ProjectsCol>
+    </ProjectsRow>
+    <ProjectsRow>
       <ProjectsCol>
         <Card>
           <ProjectTitle>Datahjälp</ProjectTitle>
-          <ProjectImage src={Project5} alt="Datahjälpsprojekt" />
+          <ProjectImage src={Project10} alt="Datahjälpsprojekt" />
           <ProjectLink
             target="_blank"
             href="https://github.com/fadihanna123/DatahjalpProjekt"
@@ -116,12 +129,10 @@ const Projects: React.FC = () => (
           </ProjectLink>
         </Card>
       </ProjectsCol>
-    </ProjectsRow>
-    <ProjectsRow>
       <ProjectsCol>
         <Card>
           <ProjectTitle>Billigast & Begagnat</ProjectTitle>
-          <ProjectImage src={Project4} alt="Billigast&Begagnatsprojekt" />
+          <ProjectImage src={Project5} alt="Billigast&Begagnatsprojekt" />
           <ProjectLink href="https://github.com/fadihanna123/E-handelprojekt">
             Github
           </ProjectLink>

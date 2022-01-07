@@ -1,13 +1,3 @@
-export interface ContactFormTypes {
-  fullname: string;
-  mail: string;
-  phone: string;
-  msg: string;
-}
-
-export interface MailData {
-  fullname: string;
-  mail: string;
-  phone: string;
-  msg: string;
-}
+export * from "./forms";
+export * from "./mail";
+export * from "./redux";
