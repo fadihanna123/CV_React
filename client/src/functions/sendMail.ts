@@ -1,8 +1,8 @@
 import { request } from 'api';
+import { ContactFormTypes } from 'models';
 import { Flip, toast } from 'react-toastify';
 import { Dispatch } from 'redux';
 import { setLoading } from 'redux/actions';
-import { ContactFormTypes } from 'typings';
 import { sendMail_api } from 'utils/envs';
 
 export const sendMail = async (
