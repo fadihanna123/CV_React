@@ -1,8 +1,8 @@
 import { sendMail, typer } from 'functions';
+import { ContactFormReducerTypes } from 'models';
 import { useDispatch, useSelector } from 'react-redux';
 import { Flip, ToastContainer } from 'react-toastify';
 import { Col10, Col25, ContactBlock, FormLabel, Input, MyTxtarea, Row, SendBtn } from 'styles';
-import { ContactFormReducerTypes } from 'typings';
 
 const ContactForm: React.FC = () => {
   const contactForm = useSelector(

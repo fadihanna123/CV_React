@@ -1,6 +1,6 @@
+import { ContactFormTypes } from 'models';
 import { Dispatch } from 'redux';
 import { setContactForm } from 'redux/actions';
-import { ContactFormTypes } from 'typings';
 
 export const typer = (
   e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,

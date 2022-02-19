@@ -1,9 +1,8 @@
-import { Request, Response } from "express";
-
-import { transporter } from "server";
-import { logger } from "tools";
-import { IMailData } from "typings";
-import { apiKey, authorizationKey } from "utils";
+import { Request, Response } from 'express';
+import { IMailData } from 'models';
+import { transporter } from 'server';
+import { logger } from 'tools';
+import { apiKey, authorizationKey } from 'utils';
 
 export const sendMail = (req: Request, res: Response): void => {
   if (
@@ -17,9 +16,9 @@ export const sendMail = (req: Request, res: Response): void => {
       to: "XX@",
       subject: `${fullname} vill komma i kontakt med dig`,
       html: `Fullständigt namn: ${fullname}<br />
-    E-postadress: ${mail}<br />
-    Mobilnummer: ${phone}<br />
-    Meddelande: ${msg}<br />`,
+      E-postadress: ${mail}<br />
+      Mobilnummer: ${phone}<br />
+      Meddelande: ${msg}<br />`,
     };
 
     transporter.sendMail(mailData, (error, info) => {

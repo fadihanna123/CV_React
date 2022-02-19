@@ -1,7 +1,7 @@
 import ContactForm from 'containers/ContactForm';
+import { LoadingReducerTypes } from 'models';
 import { useSelector } from 'react-redux';
 import { Alert, ContactContent, ContactHeading, ContactText } from 'styles';
-import { LoadingReducerTypes } from 'typings';
 
 const Contact: React.FC = () => {
   const loading = useSelector(
