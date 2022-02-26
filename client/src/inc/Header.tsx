@@ -1,14 +1,14 @@
-import Logo from "assets/logo.jpg";
-import Contact from "pages/Contact";
-import Projects from "pages/Projects";
-import Start from "pages/Start";
-import { Link, Route, Routes } from "react-router-dom";
-import { Navbar } from "styles";
+import Logo from 'assets/logo.jpg';
+import Contact from 'pages/Contact';
+import Projects from 'pages/Projects';
+import Start from 'pages/Start';
+import { Link, Route, Routes } from 'react-router-dom';
+import { MainHeader, Menu } from 'ui';
 
 const Header: React.FC = () => (
   <>
-    <header>
-      <Navbar>
+    <MainHeader>
+      <Menu>
         <Link to="/">
           <img src={Logo} alt="Logotypen" />
         </Link>
@@ -21,8 +21,8 @@ const Header: React.FC = () => (
         <Link className="links" to="/Contact">
           Kontakt
         </Link>
-      </Navbar>
-    </header>
+      </Menu>
+    </MainHeader>
     <main>
       <Routes>
         <Route path="/" element={<Start />} />

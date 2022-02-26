@@ -1,10 +1,11 @@
-import Github from "assets/Github.png";
-import Linkedin from "assets/Linkedin.png";
-import { Col, FooterBlock, Icon, Row } from "styles/footerStyles";
-import { githubURL, linkedinurl } from "utils/envs";
+import Github from 'assets/Github.png';
+import Linkedin from 'assets/Linkedin.png';
+import { Col, Icon, Row } from 'styles/footerStyles';
+import { MainFooter } from 'ui';
+import { githubURL, linkedinurl } from 'utils/envs';
 
 const Footer: React.FC = () => (
-  <FooterBlock>
+  <MainFooter>
     <Row>
       <Col>
         <h1>MittCV</h1>
@@ -19,7 +20,7 @@ const Footer: React.FC = () => (
         </a>
       </Col>
     </Row>
-  </FooterBlock>
+  </MainFooter>
 );
 
 export default Footer;
