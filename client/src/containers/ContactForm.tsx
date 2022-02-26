@@ -1,4 +1,4 @@
-import { sendMail, typer } from 'functions';
+import { contactMe, typer } from 'functions';
 import { ContactFormReducerTypes } from 'models';
 import { useDispatch, useSelector } from 'react-redux';
 import { Flip, ToastContainer } from 'react-toastify';
@@ -75,7 +75,7 @@ const ContactForm: React.FC = () => {
           ></MyTxtarea>
         </Col25>
       </Row>
-      <SendBtn type="submit" onClick={() => sendMail(contactForm, dispatch)}>
+      <SendBtn type="submit" onClick={() => contactMe(contactForm, dispatch)}>
         Skicka
       </SendBtn>
       <ToastContainer transition={Flip} />
