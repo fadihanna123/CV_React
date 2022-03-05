@@ -41,7 +41,7 @@ const Projects: React.FC = () => (
           <ProjectImage src={Project7} alt="Mitt-CV Wordpress" />
           <ProjectLink
             target="_blank"
-            href="https://github.com/fadihanna123/CV"
+            href="https://github.com/fadihanna123/MittCV_WP"
           >
             Github
           </ProjectLink>
@@ -88,29 +88,6 @@ const Projects: React.FC = () => (
           </ProjectLink>
         </Card>
       </ProjectsCol>
-      <ProjectsCol>
-        <Card>
-          <ProjectTitle>Min Frisör</ProjectTitle>
-          <ProjectImage src={Project9} alt="MinFrisörsprojekt" />
-          <ProjectLink href="https://github.com/fadihanna123/ASPNET_Projekt">
-            Github
-          </ProjectLink>
-        </Card>
-      </ProjectsCol>
-      <ProjectsCol>
-        <Card>
-          <ProjectTitle>Blogging</ProjectTitle>
-          <ProjectImage src={Project4} alt="Bloggingsprojekt" />
-          <ProjectLink
-            target="_blank"
-            href="https://github.com/fadihanna123/BloggProjekt"
-          >
-            Github
-          </ProjectLink>
-        </Card>
-      </ProjectsCol>
-    </ProjectsRow>
-    <ProjectsRow>
       <ProjectsCol>
         <Card>
           <ProjectTitle>Datahjälp</ProjectTitle>
