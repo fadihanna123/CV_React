@@ -1,11 +1,20 @@
 export class MainFooterProps {
-  constructor(public children: JSX.Element) {}
+  constructor(other?: any) {
+    this.children = other.children;
+  }
+  public children: JSX.Element;
 }
 
 export class MainHeaderProps {
-  constructor(public children: JSX.Element) {}
+  constructor(other?: any) {
+    this.children = other.children;
+  }
+  public children: JSX.Element;
 }
 
 export class MenuProps {
-  constructor(public children: JSX.Element | JSX.Element[]) {}
+  constructor(other?: any) {
+    this.children = other.children;
+  }
+  public children: JSX.Element | JSX.Element[];
 }
