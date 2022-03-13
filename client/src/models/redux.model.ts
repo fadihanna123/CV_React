@@ -5,9 +5,15 @@ export class ActionTypes {
 }
 
 export class ContactFormReducerTypes {
-  constructor(public contactFormReducer: ContactFormTypes) {}
+  constructor(other?: any) {
+    this.contactFormReducer = other.contactFormReducer;
+  }
+  public contactFormReducer: ContactFormTypes;
 }
 
 export class LoadingReducerTypes {
-  constructor(public loadingReducer: boolean) {}
+  constructor(other?: any) {
+    this.loadingReducer = other.loadingReducer;
+  }
+  public loadingReducer: boolean;
 }

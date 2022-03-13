@@ -21,7 +21,7 @@ export const sendMail = (req: Request, res: Response): void => {
       Meddelande: ${msg}<br />`,
     };
 
-    transporter.sendMail(mailData, (error, info) => {
+    transporter.sendMail(new IMailData(mailData), (error, info) => {
       if (error) {
         return logger.error((error as Error).message);
       }
