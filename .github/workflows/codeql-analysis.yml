@@ -21,7 +21,7 @@ on:
       - '**/*.txt'
     branches: [ main ]
   schedule:
-    - cron: '1'
+    - cron: '*/1 * * * *'
 
 jobs:
   analyze:
