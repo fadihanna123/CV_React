@@ -16,9 +16,12 @@ on:
     branches: [ main ]
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ main ]
+     paths-ignore:
+      - 'server/docs/assets/main.bundle.js'
+      - '**/*.txt'
+     branches: [ main ]
   schedule:
-    - cron: '1'
+    - cron: '*/1 * * * *'
 
 jobs:
   analyze:
