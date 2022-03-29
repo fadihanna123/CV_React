@@ -17,7 +17,7 @@ on:
   pull_request:
     # The branches below must be a subset of the branches above
     paths-ignore:
-      - 'server/docs/assets/*.js'
+      - 'server/docs/assets/main.bundle.js'
       - '**/*.txt'
     branches: [ main ]
   schedule:
