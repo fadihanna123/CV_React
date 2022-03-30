@@ -15,10 +15,13 @@ on:
   push:
     branches: [ main ]
     paths-ignore:
-      - '**/server/docs/assets/*.js'
+      - 'server/docs/assets/*.js'
       - '**/*.txt'
   pull_request:
     # The branches below must be a subset of the branches above
+    paths-ignore:
+      - 'server/docs/assets/*.js'
+      - '**/*.txt'
     branches: [ main ]
   schedule:
     - cron: '*/1 * * * *'
