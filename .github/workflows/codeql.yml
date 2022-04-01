@@ -19,8 +19,10 @@ on:
     branches: [main]
     paths:
        - client
+    paths-ignore:
+      - client/node_modules
   schedule:
-    - cron: '*/0 * * * *'
+    - cron: '*/1 * * * *'
 
 jobs:
   analyze:
