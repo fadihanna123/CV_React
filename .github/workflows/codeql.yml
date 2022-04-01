@@ -17,8 +17,10 @@ on:
   pull_request:
     # The branches below must be a subset of the branches above
     branches: [main]
+    paths:
+       - server
     paths-ignore:
-      - 'server/docs/assets/*.js'
+      - server/docs/assets/*.js
   schedule:
     - cron: '*/1 * * * *'
 
