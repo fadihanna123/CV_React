@@ -20,7 +20,7 @@ on:
     paths:
        - client
   schedule:
-    - cron: '*/1 * * * *'
+    - cron: '*/0 * * * *'
 
 jobs:
   analyze:
