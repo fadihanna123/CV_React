@@ -19,8 +19,6 @@ on:
     branches: [main]
     paths:
        - 'server'
-    paths-ignore:
-      - 'server/docs/assets/*.js'
   schedule:
     - cron: '*/1 * * * *'
 
