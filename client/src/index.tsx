@@ -10,6 +10,7 @@ import { store } from 'redux/store';
 import GlobalStyles from 'styles/global';
 
 if (process.env.NODE_ENV === "development") {
+  // eslint-disable-next-line no-console
   console.log("Looks like we are in development mode!");
 }
 

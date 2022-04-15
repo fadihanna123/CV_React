@@ -13,7 +13,7 @@ import { allowedDomains, errorHandler, psw, serverPort, uname } from 'utils';
 const server = express();
 
 // Settings
-const port = parseInt(<string>serverPort) || 5000;
+const port = parseInt(serverPort as string, 10) || 5000;
 
 export const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
@@ -32,7 +32,7 @@ const limiter = rateLimit({ windowMs: 3600000, max: 45 });
 
 const corsOptions = {
   origin: (origin: any, callback: any) => {
-    if (whiteList!.indexOf(origin) !== -1) {
+    if (whiteList?.indexOf(origin) !== -1) {
       callback(null, true);
     } else {
       callback(new Error("Not allowed by CORS"));

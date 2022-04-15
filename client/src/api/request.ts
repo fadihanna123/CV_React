@@ -1,5 +1,5 @@
-import axios, { AxiosResponse } from "axios";
-import { toast } from "react-toastify";
+import axios from 'axios';
+import { toast } from 'react-toastify';
 
 export const request = {
   get: async <T>(url: string) => {
@@ -17,7 +17,11 @@ export const request = {
     });
   },
 
-  post: async <T>(url: string, data: any, headers?: { headers: {} }) => {
+  post: async <T>(
+    url: string,
+    data: any,
+    headers?: { headers: Record<string, never> }
+  ) => {
     await axios.post<T>(url, data, headers).catch((error) => {
       if (error.response) {
         toast.error(error.response.data);
@@ -32,7 +36,11 @@ export const request = {
     });
   },
 
-  put: async <T>(url: string, data: any, headers?: { headers: {} }) => {
+  put: async <T>(
+    url: string,
+    data: any,
+    headers?: { headers: Record<string, never> }
+  ) => {
     await axios.put<T>(url, data, headers).catch((error) => {
       if (error.response) {
         toast.error(error.response.data);
@@ -47,7 +55,10 @@ export const request = {
     });
   },
 
-  delete: async <T>(url: string, headers?: { headers: {} }) => {
+  delete: async <T>(
+    url: string,
+    headers?: { headers: Record<string, never> }
+  ) => {
     await axios.delete<T>(url, headers).catch((error) => {
       if (error.response) {
         toast.error(error.response.data);

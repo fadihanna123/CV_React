@@ -1,12 +1,9 @@
-import Project3 from "assets/2.PNG";
-import Project4 from "assets/3.PNG";
-import Project5 from "assets/4.PNG";
-import Project8 from "assets/6.PNG";
-import Project7 from "assets/7.png";
-import Project1 from "assets/Soltia-2048x952.png";
-import Project9 from "assets/1.PNG";
-import Project10 from "assets/5.png";
-
+import Project3 from 'assets/2.PNG';
+import Project5 from 'assets/4.PNG';
+import Project10 from 'assets/5.png';
+import Project8 from 'assets/6.PNG';
+import Project7 from 'assets/7.png';
+import Project1 from 'assets/Soltia-2048x952.png';
 import {
   Card,
   ProjectImage,
@@ -17,7 +14,7 @@ import {
   ProjectsRow,
   ProjectsText,
   ProjectTitle,
-} from "styles";
+} from 'styles';
 
 const Projects: React.FC = () => (
   <>
