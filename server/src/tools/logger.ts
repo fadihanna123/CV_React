@@ -1,9 +1,9 @@
-import { DateTime } from "luxon";
-import winston, { format } from "winston";
+import { DateTime } from 'luxon';
+import winston, { format } from 'winston';
 
 const { combine, prettyPrint, printf, timestamp } = format;
 
-const myFormat = printf(({ level, message, label, timestamp }) => {
+const myFormat = printf(({ level, message, timestamp }) => {
   timestamp = DateTime.fromJSDate(new Date(timestamp)).toFormat(
     "yyyy-MM-dd HH:mm"
   );
