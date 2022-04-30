@@ -37,7 +37,7 @@ const About: React.FC = () => (
                 src={ProfileBild}
                 aria-label="Profilbild"
                 loading="lazy"
-                alt="TEST"
+                alt="Profilbild"
             />
         </Col25>
     </TxtRow>
