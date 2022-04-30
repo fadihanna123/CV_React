@@ -33,7 +33,12 @@ const About: React.FC = () => (
             </AboutTxt>
         </Col50>
         <Col25>
-            <ProfilePhoto src={ProfileBild} aria-label="Profilbild" />
+            <ProfilePhoto
+                src={ProfileBild}
+                aria-label="Profilbild"
+                loading="lazy"
+                alt="Profilbild"
+            />
         </Col25>
     </TxtRow>
 );
