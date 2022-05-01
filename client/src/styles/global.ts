@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
   body 
@@ -10,6 +10,7 @@ export default createGlobalStyle`
     border: 0;
     list-style: none;
     font-size: 100%;
+    transition: 0.3s;
   }
 
   img
@@ -17,11 +18,13 @@ export default createGlobalStyle`
     max-width: 100%;
     width: auto;
     height: auto;
+    transition: 0.3s;
   }
 
   .count
   {
     margin: 5px;
+    transition: 0.3s;
   }
 
   @media (max-width: 1500px)
