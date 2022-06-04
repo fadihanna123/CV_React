@@ -1,5 +1,5 @@
-import Coding from 'assets/coding.jpg';
-import styled from 'styled-components';
+import Coding from "assets/coding.jpg";
+import styled from "styled-components";
 
 export const ProjectsText = styled.p`
     text-align: center;
