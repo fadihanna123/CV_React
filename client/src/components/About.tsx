@@ -1,6 +1,6 @@
-import ProfileBild from 'assets/Profilbild.jpg';
-import { Col25 } from 'styles';
-import { AboutTxt, Col50, ProfilePhoto, TxtRow } from 'styles/aboutStyles';
+import ProfileBild from "assets/Profilbild.jpg";
+import { Col25 } from "styles";
+import { AboutTxt, Col50, ProfilePhoto, TxtRow } from "styles/aboutStyles";
 
 const About: React.FC = () => (
     <TxtRow>
