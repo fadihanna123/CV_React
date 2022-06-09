@@ -1,19 +1,18 @@
 import Project3 from "assets/2.PNG";
-import Project5 from "assets/4.PNG";
 import Project10 from "assets/5.png";
 import Project8 from "assets/6.PNG";
 import Project7 from "assets/7.png";
 import Project1 from "assets/Soltia-2048x952.png";
 import {
-  Card,
-  ProjectImage,
-  ProjectLink,
-  ProjectsCol,
-  ProjectsContent,
-  ProjectsHeading,
-  ProjectsRow,
-  ProjectsText,
-  ProjectTitle,
+    Card,
+    ProjectImage,
+    ProjectLink,
+    ProjectsCol,
+    ProjectsContent,
+    ProjectsHeading,
+    ProjectsRow,
+    ProjectsText,
+    ProjectTitle,
 } from "styles";
 
 const Projects: React.FC = () => (
@@ -100,18 +99,6 @@ const Projects: React.FC = () => (
                         href="https://fadihanna123.github.io/DatahjalpProjekt/index.html"
                     >
                         Webbplats
-                    </ProjectLink>
-                </Card>
-            </ProjectsCol>
-            <ProjectsCol>
-                <Card>
-                    <ProjectTitle>Billigast & Begagnat</ProjectTitle>
-                    <ProjectImage
-                        src={Project5}
-                        alt="Billigast&Begagnatsprojekt"
-                    />
-                    <ProjectLink href="https://github.com/fadihanna123/E-handelprojekt">
-                        Github
                     </ProjectLink>
                 </Card>
             </ProjectsCol>
