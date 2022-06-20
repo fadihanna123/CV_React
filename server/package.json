@@ -2,6 +2,7 @@
   "name": "cv-backend",
   "version": "1.0.9",
   "license": "MIT",
+  "private": "true",
   "author": {
     "name": "Fadi Hanna",
     "email": "fhanna181@gmail.com"

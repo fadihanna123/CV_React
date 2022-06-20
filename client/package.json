@@ -1,6 +1,7 @@
 {
     "name": "cv_react",
     "version": "0.1.10",
+    "private": "true",
     "author": {
         "name": "Fadi Hanna",
         "email": "fhanna181@gmail.com"
