@@ -1,6 +1,7 @@
 server/node_modules
 server/docs/
 client/node_modules
+client/public/*.html
 server/.eslintrc.js
 client/.eslintrc.js
 server/src/tools/docs.ts
