@@ -1,9 +1,9 @@
 export class ContactFormTypes {
-  constructor(other?: any) {
-    this.fullname = other.fullname;
-    this.mail = other.mail;
-    this.msg = other.msg;
-    this.phone = other.phone;
+  constructor(payload?: any) {
+    this.fullname = payload.fullname;
+    this.mail = payload.mail;
+    this.msg = payload.msg;
+    this.phone = payload.phone;
   }
   public fullname: string;
   public mail: string;

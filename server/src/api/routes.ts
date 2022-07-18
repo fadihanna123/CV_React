@@ -1,9 +1,10 @@
-import { Router } from "express";
-
-import { sendMail } from "controllers";
+import { getMenu, sendMail } from 'controllers';
+import { Router } from 'express';
 
 const router: Router = Router();
 
-router.post("/mailit", sendMail);
+router.get('/menu', getMenu);
+
+router.post('/mailit', sendMail);
 
 export default router;
