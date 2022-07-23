@@ -15,7 +15,7 @@ Happy linting! 💖
 module.exports = {
   env: {
     browser: true,
-    es6: true,
+    es2022: true,
     node: true,
   },
   root: true,
@@ -29,7 +29,12 @@ module.exports = {
     sourceType: 'module',
     tsconfigRootDir: __dirname,
   },
-  plugins: ['eslint-plugin-import', 'eslint-plugin-jsdoc', 'eslint-plugin-prefer-arrow', '@typescript-eslint'],
+  plugins: [
+    'eslint-plugin-import',
+    'eslint-plugin-jsdoc',
+    'eslint-plugin-prefer-arrow',
+    '@typescript-eslint',
+  ],
   rules: {
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/array-type': [
@@ -43,22 +48,28 @@ module.exports = {
       {
         types: {
           Object: {
-            message: 'Avoid using the `Object` type. Did you mean `object`?',
+            message:
+              'Avoid using the `Object` type. Did you mean `object`?',
           },
           Function: {
-            message: 'Avoid using the `Function` type. Prefer a specific function type, like `() => void`.',
+            message:
+              'Avoid using the `Function` type. Prefer a specific function type, like `() => void`.',
           },
           Boolean: {
-            message: 'Avoid using the `Boolean` type. Did you mean `boolean`?',
+            message:
+              'Avoid using the `Boolean` type. Did you mean `boolean`?',
           },
           Number: {
-            message: 'Avoid using the `Number` type. Did you mean `number`?',
+            message:
+              'Avoid using the `Number` type. Did you mean `number`?',
           },
           String: {
-            message: 'Avoid using the `String` type. Did you mean `string`?',
+            message:
+              'Avoid using the `String` type. Did you mean `string`?',
           },
           Symbol: {
-            message: 'Avoid using the `Symbol` type. Did you mean `symbol`?',
+            message:
+              'Avoid using the `Symbol` type. Did you mean `symbol`?',
           },
         },
       },

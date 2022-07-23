@@ -1,3 +1,3 @@
-export * from "./Contact";
-export * from "./Projects";
-export * from "./Start";
+export * from './Contact';
+export * from './Projects';
+export * from './Start';
