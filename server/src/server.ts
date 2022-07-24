@@ -5,10 +5,12 @@ import { listenFn } from 'controllers';
 import cors from 'cors';
 import express, { json, urlencoded } from 'express';
 import rateLimit from 'express-rate-limit';
+import fs from 'fs';
 import helmet from 'helmet';
+import https from 'https';
 import morgan from 'morgan';
 import nodemailer from 'nodemailer';
-import { allowedDomains, errorHandler, psw, serverPort, uname } from 'utils';
+import { allowedDomains, crtFile, errorHandler, keyFile, psw, serverPort, uname } from 'utils';
 
 const server = express();
 
@@ -32,12 +34,17 @@ const limiter = rateLimit({ windowMs: 3600000, max: 50 });
 
 const corsOptions = {
   origin: (origin: any, callback: any) => {
-    if (whiteList?.indexOf(origin) !== -1) {
+    if (whiteList?.indexOf(origin) !== -1 || !origin) {
       callback(null, true);
     } else {
       callback(new Error('Not allowed by CORS'));
     }
   },
+};
+
+const httpsOptions = {
+  key: fs.readFileSync(keyFile as string),
+  cert: fs.readFileSync(crtFile as string),
 };
 
 server.use(morgan('dev'));
@@ -49,4 +56,4 @@ server.use(urlencoded({ extended: true }));
 server.use(routes);
 server.use(errorHandler);
 
-server.listen(port, listenFn);
+https.createServer(httpsOptions, server).listen(port, listenFn);
