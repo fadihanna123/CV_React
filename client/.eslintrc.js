@@ -75,6 +75,7 @@ module.exports = {
       },
     ],
     '@typescript-eslint/consistent-type-assertions': 'error',
+    'no-console': 'error',
     '@typescript-eslint/dot-notation': 'error',
     '@typescript-eslint/member-ordering': 'off',
     '@typescript-eslint/no-empty-function': [

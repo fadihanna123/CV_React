@@ -10,11 +10,12 @@ import { store } from 'redux/store';
 import GlobalStyles from 'styles/global';
 
 if (process.env.NODE_ENV === 'development') {
+  // eslint-disable-next-line no-console
   console.log('Looks like we are in development mode!');
 }
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement,
+  document.getElementById('root') as HTMLElement
 );
 
 root.render(
@@ -25,5 +26,5 @@ root.render(
         <App />
       </Provider>
     </Router>
-  </React.StrictMode>,
+  </React.StrictMode>
 );
