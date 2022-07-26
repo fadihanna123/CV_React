@@ -30,7 +30,7 @@ export const transporter = nodemailer.createTransport({
 
 const whiteList = allowedDomains?.split(', ');
 
-const limiter = rateLimit({ windowMs: 3600000, max: 50 });
+const limiter = rateLimit({ windowMs: 3600000, max: 429 });
 
 const corsOptions = {
   origin: (origin: any, callback: any) => {
