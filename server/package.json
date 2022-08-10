@@ -3,6 +3,11 @@
   "version": "1.0.11",
   "license": "MIT",
   "private": "true",
+  "bugs": "https://github.com/fadihanna123/CV_React/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fadihanna123/CV_React/tree/main/server"
+  },
   "lastUpgrade": "20220703",
   "author": {
     "name": "Fadi Hanna",
