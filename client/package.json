@@ -2,6 +2,11 @@
   "name": "cv_react",
   "version": "0.1.16",
   "private": "true",
+  "bugs": "https://github.com/fadihanna123/CV_React/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fadihanna123/CV_React/tree/main/client"
+  },
   "author": {
     "name": "Fadi Hanna",
     "email": "fhanna181@gmail.com"
