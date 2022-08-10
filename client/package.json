@@ -1,6 +1,6 @@
 {
   "name": "cv_react",
-  "version": "0.1.15",
+  "version": "0.1.16",
   "private": "true",
   "author": {
     "name": "Fadi Hanna",
@@ -59,7 +59,8 @@
     "typescript": "^4.7.4"
   },
   "engines": {
-    "node": ">=14.17.0",
-    "npm": ">=6.0.0"
+    "node": ">=14.12.0",
+    "npm": "Please use pnpm instead of NPM to install dependencies",
+    "yarn": "Please use pnpm instead of Yarn to install dependencies"
   }
 }

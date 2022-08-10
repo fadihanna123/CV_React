@@ -1,6 +1,6 @@
 {
   "name": "cv-backend",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "license": "MIT",
   "private": "true",
   "lastUpgrade": "20220703",
@@ -46,7 +46,8 @@
     "typescript": "^4.7.4"
   },
   "engines": {
-    "node": ">=14.17.0",
-    "npm": ">=6.0.0"
+    "node": ">=14.12.0",
+    "npm": "Please use pnpm instead of NPM to install dependencies",
+    "yarn": "Please use pnpm instead of Yarn to install dependencies"
   }
 }
