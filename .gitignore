@@ -146,7 +146,6 @@ dist
 # Stores VSCode versions used for testing VSCode extensions
 .vscode/launch.json
 .vscode-test
-.vscode/extensions.json
 
 # Other files
 
