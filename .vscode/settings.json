@@ -1,4 +1,13 @@
 {
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/server/node_modules/**": true
+  },
+  "search.exclude": {
+    "**/client/node_modules": true
+  },
+  "git.ignoreLimitWarning": true
 }
