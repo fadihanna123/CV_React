@@ -4,10 +4,13 @@
   "files.watcherExclude": {
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,
-    "**/server/node_modules/**": true
+    "**/server/node_modules/**": true,
+    "**/client/node_modules/**": true
   },
   "search.exclude": {
-    "**/client/node_modules": true
+    "**/server/node_modules/**": true,
+    "**/client/node_modules/**": true
   },
-  "git.ignoreLimitWarning": true
+  "git.ignoreLimitWarning": true,
+  "terminal.integrated.defaultProfile.windows": "Git Bash"
 }
