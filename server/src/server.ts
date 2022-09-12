@@ -1,4 +1,5 @@
 import 'dotenv/config';
+import 'tasks';
 
 import routes from 'api/routes';
 import { listenFn } from 'controllers';

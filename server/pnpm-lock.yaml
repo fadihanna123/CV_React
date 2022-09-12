@@ -7,6 +7,7 @@ specifiers:
   '@types/luxon': ^3.0.1
   '@types/morgan': ^1.9.3
   '@types/node': ^18.7.15
+  '@types/node-cron': ^3.0.4
   '@types/nodemailer': ^6.4.5
   '@typescript-eslint/eslint-plugin': ^5.36.1
   '@typescript-eslint/parser': ^5.36.1
@@ -21,6 +22,7 @@ specifiers:
   helmet: ^6.0.0
   luxon: ^3.0.3
   morgan: ^1.10.0
+  node-cron: ^3.0.2
   nodemailer: ^6.7.8
   prettier: ^2.7.1
   prisma: ^4.3.1
@@ -46,6 +48,7 @@ devDependencies:
   '@types/luxon': 3.0.1
   '@types/morgan': 1.9.3
   '@types/node': 18.7.15
+  '@types/node-cron': 3.0.4
   '@types/nodemailer': 6.4.5
   '@typescript-eslint/eslint-plugin': 5.36.1_lbwfnm54o3pmr3ypeqp3btnera
   '@typescript-eslint/parser': 5.36.1_yqf6kl63nyoq5megxukfnom5rm
@@ -54,6 +57,7 @@ devDependencies:
   eslint-plugin-import: 2.26.0_wyxuyzvlfep3lsyoibc4fosfq4
   eslint-plugin-jsdoc: 39.3.6_eslint@8.23.0
   eslint-plugin-prefer-arrow: 1.2.3_eslint@8.23.0
+  node-cron: 3.0.2
   prettier: 2.7.1
   prisma: 4.3.1
   typescript: 4.8.2
@@ -220,6 +224,10 @@ packages:
     resolution: {integrity: sha512-BiLcfVqGBZCyNCnCH3F4o2GmDLrpy0HeBVnNlyZG4fo88ZiE9SoiBe3C+2ezuwbjlEyT+PDZ17//TAlRxAn75Q==}
     dependencies:
       '@types/node': 18.7.15
+    dev: true
+
+  /@types/node-cron/3.0.4:
+    resolution: {integrity: sha512-A2H+uz5ry4hohYjRe5mQSE/8Dx/HGw4WZ728JxhKUZ7z8CMvRuG2tpbzGHRGQCuQzz5aCNB1iXzPZYHd4BPHvw==}
     dev: true
 
   /@types/node/18.7.15:
@@ -1582,6 +1590,13 @@ packages:
     engines: {node: '>= 0.6'}
     dev: false
 
+  /node-cron/3.0.2:
+    resolution: {integrity: sha512-iP8l0yGlNpE0e6q1o185yOApANRe47UPbLf4YxfbiNHt/RU5eBcGB/e0oudruheSf+LQeDMezqC5BVAb5wwRcQ==}
+    engines: {node: '>=6.0.0'}
+    dependencies:
+      uuid: 8.3.2
+    dev: true
+
   /nodemailer/6.7.8:
     resolution: {integrity: sha512-2zaTFGqZixVmTxpJRCFC+Vk5eGRd/fYtvIR+dl5u9QXLTQWGIf48x/JXvo58g9sa0bU6To04XUv554Paykum3g==}
     engines: {node: '>=6.0.0'}
@@ -2110,6 +2125,11 @@ packages:
     resolution: {integrity: sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==}
     engines: {node: '>= 0.4.0'}
     dev: false
+
+  /uuid/8.3.2:
+    resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    hasBin: true
+    dev: true
 
   /vary/1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
