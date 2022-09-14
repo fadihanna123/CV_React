@@ -3,6 +3,14 @@ import { Request, Response } from 'express';
 import { logger } from 'tools';
 import { apiKey, authorizationKey, storeError } from 'utils';
 
+/**
+ * Get all menu items.
+ *
+ * @route GET /menu
+ * @param req
+ * @param res
+ */
+
 export const getMenu = async (req: Request, res: Response) => {
   if (
     req.get('apiKey') === apiKey &&

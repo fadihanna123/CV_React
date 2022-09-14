@@ -8,6 +8,14 @@ const initialState = {
   msg: '',
 };
 
+/**
+ * Contact-form reducer.
+ *
+ * @param state
+ * @param param1
+ * @returns Contact-form object.
+ */
+
 export const contactFormReducer = (
   state = initialState,
   { type, payload }: ActionTypes

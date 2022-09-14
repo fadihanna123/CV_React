@@ -1,6 +1,15 @@
 import { ErrorRequestHandler, Request, Response } from 'express';
 import { logger } from 'tools';
 
+/**
+ * Handle server errors.
+ *
+ * @param error
+ * @param _req
+ * @param res
+ * @returns ErrorRequestHandler.
+ */
+
 export const errorHandler: ErrorRequestHandler = (
   error: Error,
   _req: Request,

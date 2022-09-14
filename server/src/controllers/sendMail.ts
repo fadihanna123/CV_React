@@ -4,8 +4,19 @@ import { transporter } from 'server';
 import { logger } from 'tools';
 import { apiKey, authorizationKey, storeError, storeLog } from 'utils';
 
+/**
+ * Send a mail message.
+ *
+ * @route POST /mailit
+ * @param req
+ * @param res
+ */
+
 export const sendMail = (req: Request, res: Response): void => {
-  if (req.get('apiKey') === apiKey && req.get('Authorization') === authorizationKey) {
+  if (
+    req.get('apiKey') === apiKey &&
+    req.get('Authorization') === authorizationKey
+  ) {
     const { mail, fullname, phone, msg } = req.body;
 
     const mailData: IMailData = {
@@ -25,7 +36,9 @@ export const sendMail = (req: Request, res: Response): void => {
       }
 
       storeLog('Mail sent', 'POST', '/mailit');
-      res.status(200).send({ message: 'Mail sent', message_id: info.messageId });
+      res
+        .status(200)
+        .send({ message: 'Mail sent', message_id: info.messageId });
     });
   } else {
     storeError('No headers provided!', 'POST', '/mailit');
