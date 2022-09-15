@@ -14,11 +14,14 @@
     "email": "fhanna181@gmail.com"
   },
   "scripts": {
-    "start": "prisma db push && prisma db pull && prisma generate && ts-node-dev -r tsconfig-paths/register src/server",
-    "docs": "apidoc -i src/ -o docs/"
+    "start": "apidoc -i src/ -o docs/ && prisma db push && prisma db pull && prisma generate && ts-node-dev -r tsconfig-paths/register src/server"
   },
   "prisma": {
     "schema": "src/prisma/schema.prisma"
+  },
+  "apidoc": {
+    "name": "CV_React Docs",
+    "url": "https://localhost:5000"
   },
   "dependencies": {
     "@prisma/client": "^4.3.1",

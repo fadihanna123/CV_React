@@ -3,7 +3,6 @@
  * @api {post} /mailit Send mails
  * @apiName Send Mail
  * @apiGroup Contact
- * @apiHeader Content-Type Type of the content.
  * @apiHeader apiKey API-key.
  * @apiHeader Authorization Authorization key.
  * @apiHeaderExample {json} Header-Example:
@@ -20,4 +19,33 @@
  *                     Mail sent
  * @apiErrorExample Error-response:
  *                  FORBIDDEN
+ * @apiSampleRequest https://localhost:5000/mailit
+ */
+
+// Menu
+/**
+ * @api {get} /menu Get all menu items
+ * @apiName Get menu
+ * @apiGroup Menu
+ * @apiHeader apiKey API-key.
+ * @apiHeader Authorization Authorization key.
+ * @apiHeaderExample {json} Header-Example:
+ *     {
+ *       "apiKey" : "XXX",
+ *       "Authorization" : "XXX"
+ *     }
+ * @apiSuccessExample Success-Response:
+ *    [
+ *      {
+ *       "id": "1",
+ *       "title": "Erik",
+ *       "path": "Start",
+ *       "classname": "links",
+ *       "pathroute": "/Start"
+ *       }
+ *     ]
+
+ * @apiErrorExample Error-response:
+ *                  FORBIDDEN
+ * @apiSampleRequest https://localhost:5000/menu
  */
