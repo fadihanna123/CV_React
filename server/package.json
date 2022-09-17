@@ -1,7 +1,8 @@
 {
   "name": "cv-backend",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "license": "MIT",
+  "homepage": "https://localhost:5000",
   "private": "true",
   "bugs": "https://github.com/fadihanna123/CV_React/issues",
   "repository": {
