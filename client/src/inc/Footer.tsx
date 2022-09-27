@@ -11,11 +11,7 @@ const Footer: React.FC = () => (
         <h1>MittCV</h1>
       </Col>
       <Col>
-        <a
-          href={linkedinurl}
-          target='_blank'
-          rel='noopener noreferrer'
-        >
+        <a href={linkedinurl} target='_blank' rel='noopener noreferrer'>
           <Icon src={Linkedin} alt='Linkedin Ikon' />
         </a>
 

@@ -1,7 +1,7 @@
 import { ContactFormTypes } from 'models';
 import { Flip, toast } from 'react-toastify';
 import { Dispatch } from 'redux';
-import { setLoading } from 'redux/actions';
+import { setLoading } from 'redux/reducers';
 
 import { sendMail } from './api';
 

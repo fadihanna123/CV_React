@@ -1,25 +1,20 @@
-import { ActionTypes, Menu } from 'models';
-import { SET_MENU } from 'utils/constants';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { Menu } from 'models';
+import { RootState } from 'redux/store';
 
 const initialState: Menu[] = [];
 
-/**
- * Menu reducer.
- *
- * @param state
- * @param param1
- * @returns Menu array of objects.
- */
+export const menuSlice = createSlice({
+  name: 'menu',
+  initialState,
+  reducers: {
+    setMenu: (state, action: PayloadAction<Menu[]>) => {
+      return (state = action.payload);
+    },
+  },
+});
 
-export const menuReducer = (
-  state = initialState,
-  { type, payload }: ActionTypes
-) => {
-  switch (type) {
-    case SET_MENU:
-      return payload;
+export const { setMenu } = menuSlice.actions;
 
-    default:
-      return state;
-  }
-};
+export default menuSlice.reducer;
+export const getMenuState = (state: RootState) => state.menu;

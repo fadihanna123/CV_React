@@ -1,13 +1,11 @@
 import { contactMe, typer } from 'functions';
-import { ContactFormReducerTypes } from 'models';
 import { useDispatch, useSelector } from 'react-redux';
 import { Flip, ToastContainer } from 'react-toastify';
+import { getContactForm } from 'redux/reducers';
 import { Col10, Col25, ContactBlock, FormLabel, Input, MyTxtarea, Row, SendBtn } from 'styles';
 
 const ContactForm: React.FC = () => {
-  const contactForm = useSelector(
-    (state: ContactFormReducerTypes) => state.contactFormReducer,
-  );
+  const contactForm = useSelector(getContactForm);
 
   const dispatch = useDispatch();
 
@@ -23,9 +21,7 @@ const ContactForm: React.FC = () => {
             name='fullname'
             value={contactForm.fullname}
             onChange={(
-              e: React.ChangeEvent<
-                HTMLInputElement | HTMLTextAreaElement
-              >,
+              e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
             ) => typer(e, contactForm, dispatch)}
           />
         </Col25>
@@ -40,9 +36,7 @@ const ContactForm: React.FC = () => {
             name='mail'
             value={contactForm.mail}
             onChange={(
-              e: React.ChangeEvent<
-                HTMLInputElement | HTMLTextAreaElement
-              >,
+              e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
             ) => typer(e, contactForm, dispatch)}
           />
         </Col25>
@@ -57,9 +51,7 @@ const ContactForm: React.FC = () => {
             name='phone'
             value={contactForm.phone}
             onChange={(
-              e: React.ChangeEvent<
-                HTMLInputElement | HTMLTextAreaElement
-              >,
+              e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
             ) => typer(e, contactForm, dispatch)}
           />
         </Col25>
@@ -76,17 +68,12 @@ const ContactForm: React.FC = () => {
             rows={10}
             value={contactForm.msg}
             onChange={(
-              e: React.ChangeEvent<
-                HTMLInputElement | HTMLTextAreaElement
-              >,
+              e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
             ) => typer(e, contactForm, dispatch)}
           ></MyTxtarea>
         </Col25>
       </Row>
-      <SendBtn
-        type='submit'
-        onClick={() => contactMe(contactForm, dispatch)}
-      >
+      <SendBtn type='submit' onClick={() => contactMe(contactForm, dispatch)}>
         Skicka
       </SendBtn>
       <ToastContainer transition={Flip} />

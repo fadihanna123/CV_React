@@ -1,6 +1,6 @@
 import { ContactFormTypes } from 'models';
 import { Dispatch } from 'redux';
-import { setContactForm } from 'redux/actions';
+import { setContactForm } from 'redux/reducers';
 
 /**
  * Handle contact form values.

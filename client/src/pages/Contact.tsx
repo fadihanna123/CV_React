@@ -1,20 +1,16 @@
 import ContactForm from 'containers/ContactForm';
-import { LoadingReducerTypes } from 'models';
 import { useSelector } from 'react-redux';
+import { getLoading } from 'redux/reducers';
 import { Alert, ContactContent, ContactHeading, ContactText } from 'styles';
 
 const Contact: React.FC = () => {
-  const loading = useSelector(
-    (state: LoadingReducerTypes) => state.loadingReducer
-  );
+  const loading = useSelector(getLoading);
 
   return (
     <>
       <ContactContent>
         <ContactHeading>Kontakt</ContactHeading>
-        <ContactText>
-          Jag är glad att du vill kontakta mig
-        </ContactText>
+        <ContactText>Jag är glad att du vill kontakta mig</ContactText>
       </ContactContent>
       <ContactForm />
       {loading && (

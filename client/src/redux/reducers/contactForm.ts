@@ -1,30 +1,25 @@
-import { ActionTypes } from 'models';
-import { SET_CONTACT_FORM } from 'utils/constants';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { ContactFormTypes } from 'models';
+import { RootState } from 'redux/store';
 
-const initialState = {
+const initialState: ContactFormTypes = {
   fullname: '',
   mail: '',
   phone: '',
   msg: '',
 };
 
-/**
- * Contact-form reducer.
- *
- * @param state
- * @param param1
- * @returns Contact-form object.
- */
+export const contactFormSlice = createSlice({
+  name: 'contactForm',
+  initialState,
+  reducers: {
+    setContactForm: (state, action: PayloadAction<ContactFormTypes>) => {
+      return (state = action.payload);
+    },
+  },
+});
 
-export const contactFormReducer = (
-  state = initialState,
-  { type, payload }: ActionTypes
-) => {
-  switch (type) {
-    case SET_CONTACT_FORM:
-      return payload;
+export const { setContactForm } = contactFormSlice.actions;
 
-    default:
-      return state;
-  }
-};
+export default contactFormSlice.reducer;
+export const getContactForm = (state: RootState) => state.contactForm;

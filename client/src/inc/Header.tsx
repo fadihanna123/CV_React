@@ -1,7 +1,7 @@
 import Logo from 'assets/logo.jpg';
 import { MenuItem } from 'components/MenuItem';
 import { getMenu } from 'functions';
-import { Menu, MenuReducerTypes } from 'models';
+import { Menu } from 'models';
 import Contact from 'pages/Contact';
 import Projects from 'pages/Projects';
 import Start from 'pages/Start';
@@ -9,13 +9,11 @@ import { Fragment, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, Route, Routes } from 'react-router-dom';
 import { Flip, toast, ToastContainer } from 'react-toastify';
-import { setLoading, setMenu } from 'redux/actions';
+import { getMenuState, setLoading, setMenu } from 'redux/reducers';
 import { MainHeader, MainMenu } from 'ui';
 
 const Header: React.FC = () => {
-  const menu = useSelector(
-    (state: MenuReducerTypes) => state.menuReducer
-  );
+  const menu = useSelector(getMenuState);
 
   const dispatch = useDispatch();
 
