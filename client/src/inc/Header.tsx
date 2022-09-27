@@ -6,16 +6,16 @@ import Contact from 'pages/Contact';
 import Projects from 'pages/Projects';
 import Start from 'pages/Start';
 import { Fragment, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
 import { Link, Route, Routes } from 'react-router-dom';
 import { Flip, toast, ToastContainer } from 'react-toastify';
+import { useAppDispatch, useAppSelector } from 'redux/app';
 import { getMenuState, setLoading, setMenu } from 'redux/reducers';
 import { MainHeader, MainMenu } from 'ui';
 
 const Header: React.FC = () => {
-  const menu = useSelector(getMenuState);
+  const menu = useAppSelector(getMenuState);
 
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   useEffect(() => {
     let isMounted = true;

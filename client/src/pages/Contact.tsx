@@ -1,10 +1,10 @@
 import ContactForm from 'containers/ContactForm';
-import { useSelector } from 'react-redux';
+import { useAppSelector } from 'redux/app';
 import { getLoading } from 'redux/reducers';
 import { Alert, ContactContent, ContactHeading, ContactText } from 'styles';
 
 const Contact: React.FC = () => {
-  const loading = useSelector(getLoading);
+  const loading = useAppSelector(getLoading);
 
   return (
     <>

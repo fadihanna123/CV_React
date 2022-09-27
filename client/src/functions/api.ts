@@ -1,6 +1,6 @@
 import { request } from 'api';
 import { ContactFormTypes, MailData, Menu } from 'models';
-import { menu_api, sendMail_api } from 'utils/envs';
+import { menu_api, sendMail_api } from 'utils';
 
 /**
  * Send a mail message.

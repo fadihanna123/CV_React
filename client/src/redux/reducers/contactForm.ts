@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { ContactFormTypes } from 'models';
-import { RootState } from 'redux/store';
+import { RootState } from 'redux/app';
 
 const initialState: ContactFormTypes = {
   fullname: '',
