@@ -1,21 +1,13 @@
-version: 3
+version: 4
 updates:
-  # Enable version updates for npm
   - package-ecosystem: 'npm'
-    # Look for `package.json` and `lock` files in the `root` directory
-    directory: 'server/'
-    # Check the npm registry for updates every day (weekdays)
+    directory: '/server'
     schedule:
       interval: 'monthly'
-      day: 'monday'
 
-version: 3
+version: 4
 updates:
-  # Enable version updates for npm
   - package-ecosystem: 'npm'
-    # Look for `package.json` and `lock` files in the `root` directory
-    directory: 'client/'
-    # Check the npm registry for updates every day (weekdays)
+    directory: '/client'
     schedule:
       interval: 'monthly'
-      day: 'monday'
