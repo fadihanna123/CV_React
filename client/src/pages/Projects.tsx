@@ -1,7 +1,6 @@
 import Project3 from 'assets/2.PNG';
 import Project10 from 'assets/5.png';
 import Project8 from 'assets/6.PNG';
-import Project1 from 'assets/Soltia-2048x952.png';
 import {
   Card,
   ProjectImage,
@@ -21,15 +20,6 @@ const Projects: React.FC = () => (
       <ProjectsText>Här kan du se mina tidigare projekt.</ProjectsText>
     </ProjectsContent>
     <ProjectsRow>
-      <ProjectsCol>
-        <Card>
-          <ProjectTitle>Soltia</ProjectTitle>
-          <ProjectImage src={Project1} alt='Soltia' />
-          <ProjectLink target='_blank' href='https://soltia.com/'>
-            Webbplats
-          </ProjectLink>
-        </Card>
-      </ProjectsCol>
       <ProjectsCol>
         <Card>
           <ProjectTitle>Intranätet(Dashboard)</ProjectTitle>
