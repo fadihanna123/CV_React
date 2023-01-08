@@ -19,7 +19,7 @@
  *                     Mail sent
  * @apiErrorExample Error-response:
  *                  FORBIDDEN
- * @apiSampleRequest https://localhost:5000/mailit
+ * @apiSampleRequest http://localhost:5000/mailit
  */
 
 // Menu
@@ -47,5 +47,5 @@
 
  * @apiErrorExample Error-response:
  *                  FORBIDDEN
- * @apiSampleRequest https://localhost:5000/menu
+ * @apiSampleRequest http://localhost:5000/menu
  */

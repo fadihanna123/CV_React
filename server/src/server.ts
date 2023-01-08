@@ -6,14 +6,12 @@ import { listenFn } from 'controllers';
 import cors from 'cors';
 import express, { json, urlencoded } from 'express';
 import rateLimit from 'express-rate-limit';
-import fs from 'fs';
 import helmet from 'helmet';
-import https from 'https';
 import ip from 'ip';
 import morgan from 'morgan';
 import nodemailer from 'nodemailer';
 import { logger } from 'tools';
-import { allowedDomains, crtFile, errorHandler, keyFile, psw, serverPort, storeLog, uname } from 'utils';
+import { allowedDomains, errorHandler, psw, serverPort, storeLog, uname } from 'utils';
 
 const server = express();
 
@@ -45,11 +43,6 @@ const corsOptions = {
   },
 };
 
-const httpsOptions = {
-  key: fs.readFileSync(keyFile as string),
-  cert: fs.readFileSync(crtFile as string),
-};
-
 server.use((req, res, next) => {
   const ipAddress = ip.address();
 
@@ -76,4 +69,4 @@ server.use(routes);
 server.use((_, res) => res.send('This route does not exist!'));
 server.use(errorHandler);
 
-https.createServer(httpsOptions, server).listen(port, listenFn);
+server.listen(port, listenFn);
