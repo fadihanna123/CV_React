@@ -7,8 +7,8 @@ import { apiKey, authorizationKey, storeError } from 'utils';
  * Get all menu items.
  *
  * @route GET /menu
- * @param req
- * @param res
+ * @param {Request} req
+ * @param {Response} res
  */
 
 export const getMenu = async (req: Request, res: Response) => {
