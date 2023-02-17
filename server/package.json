@@ -1,6 +1,6 @@
 {
   "name": "cv-backend",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "license": "MIT",
   "homepage": "http://localhost:5000",
   "private": "true",
@@ -15,7 +15,10 @@
     "email": "fhanna181@gmail.com"
   },
   "scripts": {
-    "start": "pnpm dbDocs && apidoc -i src/ -o docs/ && prisma db push && prisma db pull && prisma generate && ts-node-dev -r tsconfig-paths/register src/server",
+    "dev": "pnpm dbDocs && apidoc -i src/ -o docs/ && pnpm seed && ts-node-dev -r tsconfig-paths/register src/server",
+    "seed": "prisma db push && prisma db pull && prisma generate",
+    "seed-delete": "prisma migrate reset",
+    "lint": "eslint .",
     "dbDocs": "npx prisma generate"
   },
   "prisma": {
