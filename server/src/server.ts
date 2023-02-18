@@ -11,7 +11,14 @@ import ip from 'ip';
 import morgan from 'morgan';
 import nodemailer from 'nodemailer';
 import { logger } from 'tools';
-import { allowedDomains, errorHandler, psw, serverPort, storeLog, uname } from 'utils';
+import {
+  allowedDomains,
+  errorHandler,
+  psw,
+  serverPort,
+  storeLog,
+  uname,
+} from 'utils';
 
 const server = express();
 
