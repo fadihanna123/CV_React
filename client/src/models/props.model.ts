@@ -1,3 +1,5 @@
+import React from 'react';
+
 export class MainFooterProps {
   constructor(payload?: any) {
     this.children = payload.children;

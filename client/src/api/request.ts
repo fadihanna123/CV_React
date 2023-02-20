@@ -2,9 +2,7 @@ import axios, { AxiosResponse } from 'axios';
 import { toast } from 'react-toastify';
 
 export const request = {
-  get: async <T>(
-    url: string
-  ): Promise<void | AxiosResponse<T, any>> => {
+  get: async <T>(url: string): Promise<void | AxiosResponse<T, any>> => {
     return await axios.get<T>(url).catch((error) => {
       if (error.response) {
         toast.error(error.response.data);

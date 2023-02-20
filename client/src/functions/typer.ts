@@ -1,6 +1,7 @@
 import { ContactFormTypes } from 'models';
 import { Dispatch } from 'redux';
 import { setContactForm } from 'redux/reducers';
+import React from 'react';
 
 /**
  * Handle contact form values.

@@ -1,5 +1,6 @@
 import Star from 'assets/star.png';
 import { Col, Icon } from 'styles';
+import React from 'react';
 
 const Icons: React.FC = () => (
   <>

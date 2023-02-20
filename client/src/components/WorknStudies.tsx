@@ -1,5 +1,14 @@
 import CountUp from 'react-countup';
-import { StudieCol, StudieHeading, StudieList, ThirdRow, WorkCol, WorkHeading, WorkList } from 'styles';
+import {
+  StudieCol,
+  StudieHeading,
+  StudieList,
+  ThirdRow,
+  WorkCol,
+  WorkHeading,
+  WorkList,
+} from 'styles';
+import React from 'react';
 
 const WorknStudies: React.FC = () => (
   <ThirdRow>
@@ -12,13 +21,7 @@ const WorknStudies: React.FC = () => (
           Soltia AB, Tumba
           <br />
           April
-          <CountUp
-            duration={1}
-            start={0}
-            end={2021}
-            className='count'
-          />
-          - Nu
+          <CountUp duration={1} start={0} end={2021} className='count' />- Nu
         </li>
 
         <li>
@@ -27,19 +30,9 @@ const WorknStudies: React.FC = () => (
           Kringelstan Webbyrå, Södertälje
           <br />
           November
-          <CountUp
-            duration={1}
-            start={0}
-            end={2020}
-            className='count'
-          />
+          <CountUp duration={1} start={0} end={2020} className='count' />
           - December
-          <CountUp
-            start={0}
-            end={2020}
-            className='count'
-            duration={1}
-          />
+          <CountUp start={0} end={2020} className='count' duration={1} />
         </li>
 
         <li>
@@ -48,19 +41,9 @@ const WorknStudies: React.FC = () => (
           Kringelstan Webbyrå, Södertälje
           <br />
           Oktober
-          <CountUp
-            duration={1}
-            start={0}
-            end={2020}
-            className='count'
-          />
+          <CountUp duration={1} start={0} end={2020} className='count' />
           - November
-          <CountUp
-            start={0}
-            end={2020}
-            className='count'
-            duration={1}
-          />
+          <CountUp start={0} end={2020} className='count' duration={1} />
         </li>
 
         <li>
@@ -69,19 +52,9 @@ const WorknStudies: React.FC = () => (
           Wendela Hebbegymnasiet, Södertälje
           <br />
           Augusti
-          <CountUp
-            duration={1}
-            start={0}
-            end={2020}
-            className='count'
-          />
+          <CountUp duration={1} start={0} end={2020} className='count' />
           - September
-          <CountUp
-            start={0}
-            end={2020}
-            className='count'
-            duration={1}
-          />
+          <CountUp start={0} end={2020} className='count' duration={1} />
         </li>
       </WorkList>
     </WorkCol>
@@ -94,19 +67,9 @@ const WorknStudies: React.FC = () => (
           Mittuniversitetet, Sundsvall
           <br />
           Augusti
-          <CountUp
-            duration={1}
-            start={0}
-            end={2018}
-            className='count'
-          />
+          <CountUp duration={1} start={0} end={2018} className='count' />
           - Juni
-          <CountUp
-            duration={1}
-            start={0}
-            end={2020}
-            className='count'
-          />
+          <CountUp duration={1} start={0} end={2020} className='count' />
         </li>
 
         <li>
@@ -115,19 +78,9 @@ const WorknStudies: React.FC = () => (
           Komvux, Södertälje
           <br />
           Augusti
-          <CountUp
-            duration={1}
-            start={0}
-            end={2013}
-            className='count'
-          />
+          <CountUp duration={1} start={0} end={2013} className='count' />
           - Mars
-          <CountUp
-            duration={1}
-            start={0}
-            end={2018}
-            className='count'
-          />
+          <CountUp duration={1} start={0} end={2018} className='count' />
         </li>
       </StudieList>
     </StudieCol>

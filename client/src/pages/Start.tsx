@@ -1,7 +1,14 @@
 import About from 'components/About';
 import Icons from 'components/Icons';
 import WorknStudies from 'components/WorknStudies';
-import { Row, SkillsHeading, Who, WhoContent, WhoHeading } from 'styles/startStyles';
+import {
+  Row,
+  SkillsHeading,
+  Who,
+  WhoContent,
+  WhoHeading,
+} from 'styles/startStyles';
+import React from 'react';
 
 const Start: React.FC = () => (
   <>

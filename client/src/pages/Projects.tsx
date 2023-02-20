@@ -12,6 +12,7 @@ import {
   ProjectsText,
   ProjectTitle,
 } from 'styles';
+import React from 'react';
 
 const Projects: React.FC = () => (
   <>

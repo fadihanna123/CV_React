@@ -2,6 +2,7 @@ import ContactForm from 'containers/ContactForm';
 import { useAppSelector } from 'redux/app';
 import { getLoading } from 'redux/reducers';
 import { Alert, ContactContent, ContactHeading, ContactText } from 'styles';
+import React from 'react';
 
 const Contact: React.FC = () => {
   const loading = useAppSelector(getLoading);

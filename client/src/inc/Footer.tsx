@@ -3,6 +3,7 @@ import Linkedin from 'assets/Linkedin.png';
 import { Col, Icon, Row } from 'styles/footerStyles';
 import { MainFooter } from 'ui';
 import { githubURL, linkedinurl } from 'utils/envs';
+import React from 'react';
 
 const Footer: React.FC = () => (
   <MainFooter>

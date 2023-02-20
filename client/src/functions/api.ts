@@ -10,7 +10,7 @@ import { menu_api, sendMail_api } from 'utils';
  */
 
 export const sendMail = async (contactForm: ContactFormTypes) =>
-  await request.post<MailData>(sendMail_api as string, contactForm);
+  await request.post<MailData>(sendMail_api, contactForm);
 
 /**
  * Get all menu items.
@@ -19,5 +19,5 @@ export const sendMail = async (contactForm: ContactFormTypes) =>
  */
 
 export const getMenu = async (): Promise<any> => {
-  return await request.get<Menu[]>(menu_api as string);
+  return await request.get<Menu[]>(menu_api);
 };

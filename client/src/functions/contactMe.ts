@@ -12,10 +12,10 @@ import { sendMail } from './api';
  * @param dispatch
  */
 
-export const contactMe = async (
+export const contactMe = (
   contactForm: ContactFormTypes,
   dispatch: Dispatch<any>
-): Promise<void> => {
+): void => {
   dispatch(setLoading(true));
 
   sendMail(contactForm)
