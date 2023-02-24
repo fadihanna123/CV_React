@@ -1,6 +1,6 @@
 {
   "name": "cv-backend",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "license": "MIT",
   "homepage": "http://localhost:5000",
   "private": "true",
@@ -15,11 +15,13 @@
     "email": "fhanna181@gmail.com"
   },
   "scripts": {
-    "dev": "pnpm dbDocs && apidoc -i src/ -o docs/ && pnpm seed && ts-node-dev -r tsconfig-paths/register src/server",
+    "dev": "ts-node-dev -r tsconfig-paths/register src/server",
     "seed": "prisma db push && prisma db pull && prisma generate",
     "seed-delete": "prisma migrate reset",
     "lint": "eslint .",
-    "dbDocs": "npx prisma generate"
+    "format": "prettier -w .",
+    "dbDocs": "npx prisma generate",
+    "docs": "apidoc -i src/ -o docs/"
   },
   "prisma": {
     "schema": "src/prisma/schema.prisma"
@@ -53,9 +55,11 @@
     "@typescript-eslint/parser": "^5.50.0",
     "dotenv": "^16.0.3",
     "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsdoc": "^39.7.5",
     "eslint-plugin-prefer-arrow": "^1.2.3",
+    "eslint-plugin-prettier": "^4.2.1",
     "ip": "^1.1.8",
     "node-cron": "^3.0.2",
     "prettier": "^2.8.3",

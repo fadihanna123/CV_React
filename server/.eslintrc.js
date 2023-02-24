@@ -8,6 +8,7 @@ const config = {
   extends: [
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    'plugin:prettier/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -22,6 +23,9 @@ const config = {
     '@typescript-eslint',
   ],
   rules: {
+    '@typescript-eslint/no-floating-promises': 'off',
+    '@typescript-eslint/no-unsafe-argument': 'off',
+    '@typescript-eslint/no-unsafe-call': 'off',
     'no-console': 'error',
     '@typescript-eslint/naming-convention': 'off',
     '@typescript-eslint/adjacent-overload-signatures': 'error',

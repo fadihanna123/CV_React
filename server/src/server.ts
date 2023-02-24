@@ -23,7 +23,7 @@ import {
 const server = express();
 
 // Settings
-export const port = parseInt(serverPort as string, 10) || 5000;
+export const port = serverPort || 5000;
 
 export const transporter = nodemailer.createTransport({
   host: 'smtp.gmail.com',
@@ -61,6 +61,7 @@ server.use((req, res, next) => {
     req.url
   );
 
+  // eslint-disable-next-line no-console
   console.log(`Method: ${req.method}, URL: ${req.url}, IP: ${ipAddress}`);
 
   next();

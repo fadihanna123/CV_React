@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to MittCV 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.24-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.26-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/fadihanna123/CV_React/blob/main/README.md" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>

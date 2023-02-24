@@ -15,6 +15,7 @@ const config = {
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'eslint:recommended',
     'plugin:react/recommended',
+    'plugin:prettier/recommended',
   ],
   globals: {
     JSX: 'readonly',
@@ -36,6 +37,7 @@ const config = {
     'react',
   ],
   rules: {
+    'react/react-in-jsx-scope': 0,
     '@typescript-eslint/no-unsafe-member-access': 'off',
     '@typescript-eslint/no-unsafe-argument': 'off',
     '@typescript-eslint/no-misused-promises': 'off',

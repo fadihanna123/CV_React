@@ -1,6 +1,6 @@
 {
   "name": "cv_react",
-  "version": "0.1.27",
+  "version": "0.1.28",
   "private": "true",
   "homepage": "https://localhost:3000",
   "bugs": "https://github.com/fadihanna123/CV_React/issues",
@@ -35,7 +35,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "format": "prettier -w ."
   },
   "browserslist": {
     "production": [
@@ -59,9 +60,11 @@
     "@typescript-eslint/eslint-plugin": "^5.50.0",
     "@typescript-eslint/parser": "^5.50.0",
     "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsdoc": "^39.7.5",
     "eslint-plugin-prefer-arrow": "^1.2.3",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "prettier": "^2.8.3",
     "react-redux": "^8.0.5",
