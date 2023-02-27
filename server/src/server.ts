@@ -1,4 +1,4 @@
-import 'dotenv/config';
+import 'dotenv/config.js';
 import 'tasks';
 
 import routes from 'api/routes';

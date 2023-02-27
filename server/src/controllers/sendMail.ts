@@ -11,7 +11,6 @@ import { apiKey, authorizationKey, storeError, storeLog } from 'utils';
  * @param req
  * @param res
  */
-
 export const sendMail = (req: Request, res: Response): void => {
   if (
     req.get('apiKey') === apiKey &&
@@ -31,8 +30,8 @@ export const sendMail = (req: Request, res: Response): void => {
 
     transporter.sendMail(new IMailData(mailData), (error, info) => {
       if (error) {
-        storeError((error as Error).message, 'POST', '/mailit');
-        return logger.error((error as Error).message);
+        storeError(error.message, 'POST', '/mailit');
+        return logger.error(error.message);
       }
 
       storeLog('Mail sent', 'POST', '/mailit');
