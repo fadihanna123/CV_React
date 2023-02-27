@@ -23,6 +23,7 @@ const config = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: ['tsconfig.json'],
+    ecmaVersion: 2023,
     sourceType: 'module',
     tsconfigRootDir: __dirname,
     ecmaFeatures: {
