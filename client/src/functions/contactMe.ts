@@ -1,8 +1,12 @@
 import { ContactFormTypes } from 'models';
-import { Flip, toast } from 'react-toastify';
-import { Dispatch } from 'redux';
-import { setLoading } from 'redux/reducers';
+import { toast } from 'react-toastify';
 
+import { Dispatch } from 'redux';
+import {
+  setContactFormAlert,
+  setContactFormErr,
+  setLoading,
+} from 'redux/reducers';
 import { sendMail } from './api';
 
 /**
@@ -11,14 +15,24 @@ import { sendMail } from './api';
  * @param contactForm
  * @param dispatch
  */
-
-export const contactMe = (
+export const contactMe = async (
   contactForm: ContactFormTypes,
   dispatch: Dispatch<any>
-): void => {
+) => {
   dispatch(setLoading(true));
 
-  sendMail(contactForm)
-    .catch((err) => toast.error((err as Error).message, { transition: Flip }))
-    .finally(() => dispatch(setLoading(false)));
+  try {
+    const { data } = await sendMail(contactForm);
+    dispatch(setContactFormAlert(true));
+
+    if ((data as any).type === 'error') {
+      dispatch(setContactFormErr((data as any).msg));
+    } else {
+      dispatch(setContactFormErr(''));
+    }
+  } catch (err) {
+    toast.error((err as Error).message);
+  }
+
+  dispatch(setLoading(false));
 };

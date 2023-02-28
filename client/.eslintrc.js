@@ -38,6 +38,8 @@ const config = {
     'react',
   ],
   rules: {
+    '@typescript-eslint/no-unsafe-call': 'off',
+    '@typescript-eslint/restrict-template-expressions': 'off',
     'react/react-in-jsx-scope': 0,
     '@typescript-eslint/no-unsafe-member-access': 'off',
     '@typescript-eslint/no-unsafe-argument': 'off',

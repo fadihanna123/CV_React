@@ -18,6 +18,5 @@ export const sendMail = async (contactForm: ContactFormTypes) =>
  * @returns Menu array of objects.
  */
 
-export const getMenu = async (): Promise<any> => {
-  return await request.get<Menu[]>(menu_api);
-};
+export const getMenu = async (): Promise<any> =>
+  await request.get<Menu[]>(menu_api);

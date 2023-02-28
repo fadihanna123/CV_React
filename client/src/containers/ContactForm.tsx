@@ -45,6 +45,7 @@ const ContactForm: React.FC = () => {
             id='mail'
             name='mail'
             value={contactForm.mail}
+            placeholder={'e.g name@gmail.com'}
             onChange={(
               e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
             ) => typer(e, contactForm, dispatch)}
@@ -60,6 +61,7 @@ const ContactForm: React.FC = () => {
             id='phone'
             name='phone'
             value={contactForm.phone}
+            placeholder={'e.g 073739944'}
             onChange={(
               e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
             ) => typer(e, contactForm, dispatch)}
@@ -77,6 +79,7 @@ const ContactForm: React.FC = () => {
             cols={50}
             rows={10}
             value={contactForm.msg}
+            placeholder={'e.g Tja! 😋'}
             onChange={(
               e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
             ) => typer(e, contactForm, dispatch)}

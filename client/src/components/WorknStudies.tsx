@@ -16,16 +16,49 @@ const WorknStudies: React.FC = () => (
       <WorkHeading>Arbetsliverfarenhet</WorkHeading>
       <WorkList>
         <li>
+          <b>Systemutvecklare - Grundare</b>
+          <br />
+          Let&apos;s code
+          <br />
+          Oktober
+          <CountUp duration={1} start={0} end={2022} className='count' />-
+          Januari
+          <CountUp duration={1} start={0} end={2023} className='count' />
+        </li>
+
+        <li>
+          <b>Data admin - konsult</b>
+          <br />
+          Academic Work
+          <br />
+          Oktober
+          <CountUp duration={1} start={0} end={2022} className='count' />-
+          November
+          <CountUp duration={1} start={0} end={2022} className='count' />
+        </li>
+
+        <li>
+          <b>Systemutvecklare</b>
+          <br />
+          Rektron, Solna
+          <br />
+          Januari
+          <CountUp duration={1} start={0} end={2022} className='count' />- July
+          <CountUp duration={1} start={0} end={2022} className='count' />
+        </li>
+
+        <li>
           <b>Javascript utvecklare</b>
           <br />
           Soltia AB, Tumba
           <br />
           April
-          <CountUp duration={1} start={0} end={2021} className='count' />- Nu
+          <CountUp duration={1} start={0} end={2021} className='count' />-
+          December 2021
         </li>
 
         <li>
-          <b>PHP utvecklare</b>
+          <b>PHP utvecklare - konsult</b>
           <br />
           Kringelstan Webbyrå, Södertälje
           <br />
@@ -61,6 +94,17 @@ const WorknStudies: React.FC = () => (
     <StudieCol>
       <StudieHeading>Tidigare utbildningar</StudieHeading>
       <StudieList>
+        <li>
+          <b>Learn Front end Development </b>
+          <br />
+          W3schools
+          <br />
+          Februari
+          <CountUp duration={1} start={0} end={2023} className='count' />
+          - Februari
+          <CountUp duration={1} start={0} end={2023} className='count' />
+        </li>
+
         <li>
           <b>Webbutvecklingsprogrammet</b>
           <br />

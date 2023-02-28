@@ -1,11 +1,17 @@
-const { PORT, USERNAME, PASSWORD, ALLOWEDOMAINS, APIKEY, AUTHORIZATION } =
-  process.env;
+const {
+  PORT,
+  MAIL_USERNAME,
+  MAIL_PASSWORD,
+  ALLOWEDOMAINS,
+  APIKEY,
+  AUTHORIZATION,
+} = process.env;
 
 export const serverPort = PORT;
 
-export const uname = USERNAME;
+export const uname = MAIL_USERNAME;
 
-export const psw = PASSWORD;
+export const psw = MAIL_PASSWORD;
 
 export const allowedDomains = ALLOWEDOMAINS;
 

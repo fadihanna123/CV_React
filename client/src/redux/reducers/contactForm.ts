@@ -13,9 +13,8 @@ export const contactFormSlice = createSlice({
   name: 'contactForm',
   initialState,
   reducers: {
-    setContactForm: (state, action: PayloadAction<ContactFormTypes>) => {
-      return (state = action.payload);
-    },
+    setContactForm: (state, action: PayloadAction<ContactFormTypes>) =>
+      (state = action.payload),
   },
 });
 

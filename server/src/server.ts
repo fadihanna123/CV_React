@@ -1,4 +1,4 @@
-import 'dotenv/config.js';
+import dotenv from 'dotenv';
 import 'tasks';
 
 import routes from 'api/routes';
@@ -20,6 +20,12 @@ import {
   uname,
 } from 'utils';
 
+/**
+ * @author Fadi Hanna<fhanna181@gmail.com>
+ */
+
+dotenv.config();
+
 const server = express();
 
 // Settings
@@ -28,12 +34,12 @@ export const port = serverPort || 5000;
 export const transporter = nodemailer.createTransport({
   host: 'smtp.gmail.com',
   port: 465,
-  secure: false,
+  secure: true,
   auth: {
     user: uname,
     pass: psw,
   },
-  tls: { rejectUnauthorized: false },
+  tls: { rejectUnauthorized: true },
 });
 
 const whiteList = allowedDomains?.split(', ');

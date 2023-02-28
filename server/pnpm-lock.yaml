@@ -10,6 +10,7 @@ specifiers:
   '@types/node': ^18.11.18
   '@types/node-cron': ^3.0.7
   '@types/nodemailer': ^6.4.7
+  '@types/validator': ^13.7.12
   '@typescript-eslint/eslint-plugin': ^5.50.0
   '@typescript-eslint/parser': ^5.50.0
   cors: ^2.8.5
@@ -34,6 +35,7 @@ specifiers:
   prisma-docs-generator: ^0.5.0
   tsconfig-paths: ^4.1.2
   typescript: ^4.9.5
+  validator: ^13.9.0
   winston: ^3.8.2
 
 dependencies:
@@ -46,6 +48,7 @@ dependencies:
   morgan: 1.10.0
   nodemailer: 6.9.1
   tsconfig-paths: 4.1.2
+  validator: 13.9.0
   winston: 3.8.2
 
 devDependencies:
@@ -57,6 +60,7 @@ devDependencies:
   '@types/node': 18.11.18
   '@types/node-cron': 3.0.7
   '@types/nodemailer': 6.4.7
+  '@types/validator': 13.7.12
   '@typescript-eslint/eslint-plugin': 5.50.0_go4drrxstycfikanvu45pi4vgq
   '@typescript-eslint/parser': 5.50.0_4vsywjlpuriuw3tl5oq6zy5a64
   dotenv: 16.0.3
@@ -479,6 +483,10 @@ packages:
     dependencies:
       '@types/mime': 3.0.1
       '@types/node': 18.11.18
+    dev: true
+
+  /@types/validator/13.7.12:
+    resolution: {integrity: sha512-YVtyAPqpefU+Mm/qqnOANW6IkqKpCSrarcyV269C8MA8Ux0dbkEuQwM/4CjL47kVEM2LgBef/ETfkH+c6+moFA==}
     dev: true
 
   /@typescript-eslint/eslint-plugin/5.50.0_go4drrxstycfikanvu45pi4vgq:
@@ -3626,6 +3634,11 @@ packages:
       spdx-correct: 3.1.1
       spdx-expression-parse: 3.0.1
     dev: true
+
+  /validator/13.9.0:
+    resolution: {integrity: sha512-B+dGG8U3fdtM0/aNK4/X8CXq/EcxU2WPrPEkJGslb47qyHsxmbggTWK0yEA4qnYVNF+nxNlN88o14hIcPmSIEA==}
+    engines: {node: '>= 0.10'}
+    dev: false
 
   /vary/1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}

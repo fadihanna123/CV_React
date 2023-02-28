@@ -24,7 +24,8 @@ const About: React.FC = () => (
         <br /> Backend (PHP) samt Frontend utveckling (JavaScript, React,
         TypeScript,
         <br />
-        HTML, CSS etc.). Har ni några funderingar är ni välkomna att höra av er.
+        HTML, CSS etc.). <br />
+        Har ni några funderingar är ni välkomna att höra av er. &#x1F4F1;
       </AboutTxt>
     </Col50>
     <Col25>

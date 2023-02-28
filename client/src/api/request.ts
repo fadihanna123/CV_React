@@ -21,20 +21,7 @@ export const request = {
     url: string,
     data: any,
     headers?: { headers: Record<string, never> }
-  ) => {
-    await axios.post<T>(url, data, headers).catch((error) => {
-      if (error.response) {
-        toast.error(error.response.data);
-        toast.error(error.response.status);
-        toast.error(error.response.headers);
-      } else if (error.request) {
-        toast.error(error.request);
-      } else {
-        toast.error('Error', error.message);
-      }
-      toast.error(error.config);
-    });
-  },
+  ) => await axios.post<T>(url, data, headers),
 
   put: async <T>(
     url: string,

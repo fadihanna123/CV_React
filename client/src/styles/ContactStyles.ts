@@ -1,5 +1,6 @@
 import Coding from 'assets/coding.jpg';
 import styled from 'styled-components';
+import { AlertProps } from 'types';
 
 export const Row = styled.div`
   display: flex;
@@ -111,7 +112,7 @@ export const Col25 = styled.div`
   transition: 0.3s;
 
   @media (max-width: 1800px) {
-    width: 100%;
+    width: 98%;
   }
 `;
 
@@ -124,7 +125,7 @@ export const ContactContent = styled.div`
   font-style: italic;
   background-size: cover;
   margin-bottom: 100px;
-  transition: 0.3s;
+  transition: 0.3s all;
 
   @media (max-width: 1800px) {
     background-size: cover;
@@ -149,13 +150,14 @@ export const ContactHeading = styled.h1`
   }
 `;
 
-export const Alert = styled.div`
+export const Alert = styled.div<AlertProps>`
   text-align: center;
-  color: #5cb85c;
-  background: #292b2c;
+  font-size: 20px;
+  color: ${(props) => (props.error ? 'red' : '#5cb85c')};
+  background: #000;
   margin: 10px;
   padding: 10px;
-  transition: 0.3s;
+  transition: 0.3s all;
 `;
 
 export const ContactText = styled.p`
