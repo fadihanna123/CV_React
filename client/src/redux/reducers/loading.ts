@@ -1,13 +1,13 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 import { RootState } from 'redux/app/store';
 
-const initialState: boolean = false;
+const initialState = false;
 
 export const loadingSlice = createSlice({
   name: 'contactForm',
   initialState,
   reducers: {
-    setLoading: (state, action: PayloadAction<boolean>) => {
+    setLoading: (state, action) => {
       return (state = action.payload);
     },
   },

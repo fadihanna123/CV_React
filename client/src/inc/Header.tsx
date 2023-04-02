@@ -5,13 +5,12 @@ import { Menu } from 'models';
 import Contact from 'pages/Contact';
 import Projects from 'pages/Projects';
 import Start from 'pages/Start';
-import { Fragment, useEffect } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 import { Flip, toast, ToastContainer } from 'react-toastify';
 import { useAppDispatch, useAppSelector } from 'redux/app';
 import { getMenuState, setLoading, setMenu } from 'redux/reducers';
 import { MainHeader, MainMenu } from 'ui';
-import React from 'react';
 
 const Header: React.FC = () => {
   const menu = useAppSelector(getMenuState);

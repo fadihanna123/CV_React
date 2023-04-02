@@ -1,13 +1,13 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 import { RootState } from 'redux/app';
 
-const initialState: string = '';
+const initialState = '';
 
 export const contactFormErrSlice = createSlice({
   name: 'contactFormErr',
   initialState,
   reducers: {
-    setContactFormErr: (state, action: PayloadAction<string>) => {
+    setContactFormErr: (state, action) => {
       return (state = action.payload);
     },
   },
