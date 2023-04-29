@@ -18,6 +18,7 @@
     "dev": "ts-node-dev -r tsconfig-paths/register src/server",
     "seed": "prisma db push && prisma db pull && prisma generate",
     "seed-delete": "prisma migrate reset",
+    "seed-migrate" : "prisma migrate dev",
     "lint": "eslint .",
     "format": "prettier -w .",
     "dbDocs": "npx prisma generate",

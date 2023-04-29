@@ -15,12 +15,13 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "paths": {
       "@core/*": ["src/*"],
       "@assets/*": ["src/assets/*"]
-    }
+    },
+    "incremental": true
   },
-  "include": ["src/**/*"],
-  "files": [".eslintrc.js"]
+  "include": ["src/**/*", ".eslintrc.js"],
+  "exclude": ["node_modules"]
 }

@@ -1,30 +1,24 @@
+import React from 'react';
+import { Provider } from 'react-redux';
 import 'normalize.css';
 import 'react-toastify/dist/ReactToastify.css';
-
-import App from 'containers/App';
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { Provider } from 'react-redux';
+import GlobalStyles from 'styles/global';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { store } from 'redux/app';
-import GlobalStyles from 'styles/global';
+import './styles';
+import ReactDom from 'react-dom/client';
+import App from 'containers/App';
 
-if (process.env.NODE_ENV === 'development') {
-  // eslint-disable-next-line no-console
-  console.log('Looks like we are in development mode!');
-}
-
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+const el = document.getElementById('root') as HTMLDivElement;
+const root = ReactDom.createRoot(el);
 
 root.render(
-  <React.StrictMode>
-    <Router>
-      <GlobalStyles />
-      <Provider store={store}>
+  <>
+    <GlobalStyles />
+    <Provider store={store}>
+      <Router>
         <App />
-      </Provider>
-    </Router>
-  </React.StrictMode>
+      </Router>
+    </Provider>
+  </>
 );

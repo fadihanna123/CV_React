@@ -1,5 +1,4 @@
 import { contactMe, typer } from 'functions';
-import { Flip, ToastContainer } from 'react-toastify';
 import { useAppDispatch, useAppSelector } from 'redux/app';
 import { getContactForm } from 'redux/reducers';
 import {
@@ -13,6 +12,7 @@ import {
   SendBtn,
 } from 'styles';
 import React from 'react';
+import { Flip, ToastContainer } from 'react-toastify';
 
 const ContactForm: React.FC = () => {
   const contactForm = useAppSelector(getContactForm);

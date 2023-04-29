@@ -1,4 +1,3 @@
-import CountUp from 'react-countup';
 import {
   StudieCol,
   StudieHeading,
@@ -9,6 +8,7 @@ import {
   WorkList,
 } from 'styles';
 import React from 'react';
+import CountUp from 'react-countup';
 
 const WorknStudies: React.FC = () => (
   <ThirdRow>

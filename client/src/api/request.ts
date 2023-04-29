@@ -13,6 +13,7 @@ export const request = {
       } else {
         toast.error('Error', error.message);
       }
+
       toast.error(error.config);
     });
   },
@@ -38,6 +39,7 @@ export const request = {
       } else {
         toast.error('Error', error.message);
       }
+
       toast.error(error.config);
     });
   },
@@ -56,6 +58,7 @@ export const request = {
       } else {
         toast.error('Error', error.message);
       }
+
       toast.error(error.config);
     });
   },

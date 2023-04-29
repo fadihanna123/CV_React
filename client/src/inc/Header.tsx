@@ -1,17 +1,18 @@
 import Logo from 'assets/logo.jpg';
-import { MenuItem } from 'components/MenuItem';
+import { MenuItem } from 'containers/MenuItem';
 import { getMenu } from 'functions';
 import { Menu } from 'models';
-import Contact from 'pages/Contact';
-import Projects from 'pages/Projects';
-import Start from 'pages/Start';
+import Contact from 'containers/Contact';
+import Projects from 'components/Projects';
+import Start from 'components/Start';
 import { Fragment, useEffect } from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
-import { Flip, toast, ToastContainer } from 'react-toastify';
 import { useAppDispatch, useAppSelector } from 'redux/app';
 import { getMenuState, setLoading, setMenu } from 'redux/reducers';
-import { MainHeader, MainMenu } from 'ui';
 import React from 'react';
+import { MainHeader } from 'ui/MainHeader';
+import { MainMenu } from 'ui/MainMenu';
+import { Flip, ToastContainer, toast } from 'react-toastify';
 
 const Header: React.FC = () => {
   const menu = useAppSelector(getMenuState);

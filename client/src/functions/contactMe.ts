@@ -1,5 +1,4 @@
 import { ContactFormTypes } from 'models';
-import { toast } from 'react-toastify';
 
 import { Dispatch } from 'redux';
 import {
@@ -8,6 +7,7 @@ import {
   setLoading,
 } from 'redux/reducers';
 import { sendMail } from './api';
+import { toast } from 'react-toastify';
 
 /**
  * Contact functionality.

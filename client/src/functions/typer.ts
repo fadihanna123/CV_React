@@ -11,7 +11,6 @@ import React from 'react';
  * @param dispatch
  * @returns Object.
  */
-
 export const typer = (
   e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   contactForm: ContactFormTypes,
