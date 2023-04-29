@@ -1,6 +1,5 @@
 import { ContactFormTypes } from 'models';
 
-import { Dispatch } from 'redux';
 import {
   setContactFormAlert,
   setContactFormErr,
@@ -12,12 +11,12 @@ import { toast } from 'react-toastify';
 /**
  * Contact functionality.
  *
- * @param contactForm
- * @param dispatch
+ * @param { ContactFormTypes } contactForm
+ * @param { any } dispatch
  */
 export const contactMe = async (
   contactForm: ContactFormTypes,
-  dispatch: Dispatch<any>
+  dispatch: any
 ) => {
   dispatch(setLoading(true));
 

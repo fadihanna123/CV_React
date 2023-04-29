@@ -12,7 +12,7 @@ const config = {
       version: 'detect'
     }
   },
-  extends: ['plugin:@typescript-eslint/recommended', 'eslint:recommended', 'plugin:react/recommended', 'plugin:prettier/recommended', 'prettier', 'plugin:storybook/recommended'],
+  extends: ['plugin:@typescript-eslint/recommended', 'eslint:recommended', 'plugin:react/recommended', 'plugin:prettier/recommended', 'plugin:storybook/recommended','prettier'],
   globals: {
     JSX: 'readonly'
   },
@@ -21,7 +21,6 @@ const config = {
     project: ['tsconfig.json'],
     ecmaVersion: 'latest',
     sourceType: 'module',
-    tsconfigRootDir: __dirname,
     ecmaFeatures: {
       jsx: true
     }

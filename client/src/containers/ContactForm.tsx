@@ -30,6 +30,7 @@ const ContactForm: React.FC = () => {
             id='fullname'
             name='fullname'
             value={contactForm.fullname}
+            placeholder='e.g Erik Eriksson'
             onChange={(
               e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
             ) => typer(e, contactForm, dispatch)}

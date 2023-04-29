@@ -1,13 +1,13 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 import { RootState } from 'redux/app';
 
-const initialState: boolean = false;
+const initialState = false;
 
 export const contactFormAlertSlice = createSlice({
   name: 'contactFormAlert',
   initialState,
   reducers: {
-    setContactFormAlert: (state, action: PayloadAction<boolean>) => {
+    setContactFormAlert: (state, action) => {
       return (state = action.payload);
     },
   },

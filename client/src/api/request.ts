@@ -1,8 +1,8 @@
-import axios, { AxiosResponse } from 'axios';
+import axios from 'axios';
 import { toast } from 'react-toastify';
 
 export const request = {
-  get: async <T>(url: string): Promise<void | AxiosResponse<T, any>> => {
+  get: async <T>(url: string) => {
     return await axios.get<T>(url).catch((error) => {
       if (error.response) {
         toast.error(error.response.data);
@@ -20,13 +20,13 @@ export const request = {
 
   post: async <T>(
     url: string,
-    data: any,
+    data: unknown,
     headers?: { headers: Record<string, never> }
   ) => await axios.post<T>(url, data, headers),
 
   put: async <T>(
     url: string,
-    data: any,
+    data: unknown,
     headers?: { headers: Record<string, never> }
   ) => {
     await axios.put<T>(url, data, headers).catch((error) => {

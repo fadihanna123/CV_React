@@ -1,4 +1,4 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 import { Menu } from 'models';
 import { RootState } from 'redux/app/store';
 
@@ -8,7 +8,7 @@ export const menuSlice = createSlice({
   name: 'menu',
   initialState,
   reducers: {
-    setMenu: (state, action: PayloadAction<Menu[]>) => {
+    setMenu: (state, action) => {
       return (state = action.payload);
     },
   },

@@ -1,5 +1,4 @@
 import { ContactFormTypes } from 'models';
-import { Dispatch } from 'redux';
 import { setContactForm } from 'redux/reducers';
 import React from 'react';
 
@@ -14,7 +13,7 @@ import React from 'react';
 export const typer = (
   e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   contactForm: ContactFormTypes,
-  dispatch: Dispatch<any>
+  dispatch: any
 ) =>
   dispatch(
     setContactForm({
