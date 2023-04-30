@@ -1,14 +1,17 @@
 import { Meta } from '@storybook/react';
+import { MenuProps } from 'models';
 import { MainMenu } from 'ui/MainMenu';
 
-const meta: Meta = {
+const meta: Meta<typeof MainMenu> = {
   title: 'MainMenu',
   component: MainMenu,
 };
 
 export default meta;
 
-const Template = (args: any) => <MainMenu {...args} />;
+const Template = (args: JSX.IntrinsicAttributes & MenuProps) => (
+  <MainMenu {...args} />
+);
 
 export const Default: any = Template.bind({});
 

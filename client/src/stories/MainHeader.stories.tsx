@@ -1,14 +1,17 @@
 import { Meta } from '@storybook/react';
+import { MainHeaderProps } from 'models';
 import { MainHeader } from 'ui/MainHeader';
 
-const meta: Meta = {
+const meta: Meta<typeof MainHeader> = {
   title: 'MainHeader',
   component: MainHeader,
 };
 
 export default meta;
 
-const Template = (args: any) => <MainHeader {...args} />;
+const Template = (args: JSX.IntrinsicAttributes & MainHeaderProps) => (
+  <MainHeader {...args} />
+);
 
 export const Default: any = Template.bind({});
 
