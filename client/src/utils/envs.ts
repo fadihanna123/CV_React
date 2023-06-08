@@ -1,23 +1,23 @@
 const {
-  NEXT_PUBLIC_BACKEND_URL,
-  NEXT_PUBLIC_MENU,
-  NEXT_PUBLIC_SEND_MAIL,
-  NEXT_PUBLIC_LINKEDIN_URL,
-  NEXT_PUBLIC_GITHUB_URL,
-  NEXT_PUBLIC_API_KEY,
-  NEXT_PUBLIC_AUTHORIZATION,
+  REACT_APP_PUBLIC_BACKEND_URL,
+  REACT_APP_PUBLIC_MENU,
+  REACT_APP_PUBLIC_SEND_MAIL,
+  REACT_APP_PUBLIC_LINKEDIN_URL,
+  REACT_APP_PUBLIC_GITHUB_URL,
+  REACT_APP_PUBLIC_API_KEY,
+  REACT_APP_PUBLIC_AUTHORIZATION,
 } = process.env;
 
-export const backendURL = NEXT_PUBLIC_BACKEND_URL;
+export const backendURL = REACT_APP_PUBLIC_BACKEND_URL;
 
-export const apiKey = NEXT_PUBLIC_API_KEY;
+export const apiKey = REACT_APP_PUBLIC_API_KEY;
 
-export const authorizationKey = NEXT_PUBLIC_AUTHORIZATION;
+export const authorizationKey = REACT_APP_PUBLIC_AUTHORIZATION;
 
-export const sendMail_api = NEXT_PUBLIC_SEND_MAIL;
+export const sendMail_api = REACT_APP_PUBLIC_SEND_MAIL;
 
-export const menu_api = NEXT_PUBLIC_MENU;
+export const menu_api = REACT_APP_PUBLIC_MENU;
 
-export const linkedinurl = NEXT_PUBLIC_LINKEDIN_URL;
+export const linkedinurl = REACT_APP_PUBLIC_LINKEDIN_URL;
 
-export const githubURL = NEXT_PUBLIC_GITHUB_URL;
+export const githubURL = REACT_APP_PUBLIC_GITHUB_URL;

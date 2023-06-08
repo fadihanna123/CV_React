@@ -5,7 +5,7 @@ import { Container } from 'styles';
 import { apiKey, authorizationKey, backendURL } from 'utils/envs';
 import React from 'react';
 
-const globalHeader = 'application/json';
+const globalHeader: string = 'application/json';
 
 axios.defaults.baseURL = backendURL;
 axios.defaults.headers.common['Content-Type'] = globalHeader;

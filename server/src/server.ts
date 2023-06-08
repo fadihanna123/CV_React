@@ -19,6 +19,7 @@ import {
   storeLog,
   uname,
 } from 'utils';
+import { connectDb } from 'db';
 
 /**
  * @author Fadi Hanna<fhanna181@gmail.com>
@@ -73,6 +74,7 @@ server.use((req, res, next) => {
   next();
 });
 
+connectDb();
 server.use(morgan('dev'));
 server.use(limiter);
 server.use(helmet());

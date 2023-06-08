@@ -26,6 +26,8 @@ const config = {
     indent: ['error', 2],
     quotes: ['error', 'single'],
     semi: ['error', 'always'],
+    'import/no-unresolved': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
   },
 };
 
