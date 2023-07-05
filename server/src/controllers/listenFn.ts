@@ -8,5 +8,5 @@ import { storeLog } from 'utils';
 
 export const listenFn = () => {
   storeLog(`Server listening on port ${port}...`, '', '/');
-  logger.debug(`Server listening on port ${port}...`);
+  logger.info(`Server listening on port ${port}...`);
 };

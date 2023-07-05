@@ -1,3 +1,5 @@
+/* eslint-disable jsdoc/tag-lines */
+/* eslint-disable jsdoc/check-types */
 // Mails
 /**
  * @api {post} /mailit Send mails

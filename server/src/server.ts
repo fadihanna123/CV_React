@@ -49,7 +49,7 @@ const limiter = rateLimit({ windowMs: 3600000, max: 429 });
 
 const corsOptions = {
   origin: (origin: any, callback: any) => {
-    if (whiteList?.indexOf(origin) !== -1 || !origin) {
+    if (whiteList.indexOf(origin) !== -1 || !origin) {
       callback(null, true);
     } else {
       callback(new Error('Not allowed by CORS'));

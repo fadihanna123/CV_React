@@ -22,6 +22,7 @@ const config = {
   },
   plugins: ['@typescript-eslint', 'jsdoc', 'import', 'prefer-arrow'],
   rules: {
+    'jsdoc/check-tag-names': 'off',
     'no-console': 'error',
     indent: ['error', 2],
     quotes: ['error', 'single'],

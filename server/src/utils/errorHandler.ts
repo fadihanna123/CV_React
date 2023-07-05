@@ -3,7 +3,6 @@ import { logger } from 'tools';
 
 /**
  * Handle server errors.
- *
  * @param error
  * @param _req
  * @param res

@@ -20,7 +20,8 @@
       "@core/*": ["src/*"],
       "@assets/*": ["src/assets/*"]
     },
-    "incremental": true
+    "incremental": true,
+    "sourceMap": true
   },
   "include": ["src/**/*", ".eslintrc.js"],
   "exclude": ["node_modules"]

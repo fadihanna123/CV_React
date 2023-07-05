@@ -12,11 +12,10 @@ import Validator from 'validator';
 
 /**
  * Send a mail message.
- *
  * @route POST /mailit
- * @param { TypedRequest<ContactFormData> } req
- * @param { Response } res
- * @returns { Promise<void> } Promise
+ * @param req - Request
+ * @param res - Response
+ * @returns Promise
  */
 export const sendMail = async (
   req: TypedRequest<ContactFormData>,

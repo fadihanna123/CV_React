@@ -3,7 +3,6 @@ import { DateTime } from 'luxon';
 
 /**
  * Store logs in the database.
- *
  * @param message
  * @param method
  * @param located
