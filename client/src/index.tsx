@@ -12,6 +12,13 @@ import App from 'containers/App';
 const el = document.getElementById('root') as HTMLDivElement;
 const root = ReactDom.createRoot(el);
 
+if (
+  !process.env.REACT_APP_PUBLIC_API_KEY ||
+  !process.env.REACT_APP_PUBLIC_AUTHORIZATION
+) {
+  throw new Error('Missing keys? Add them and restart the app.');
+}
+
 root.render(
   <>
     <GlobalStyles />

@@ -29,6 +29,10 @@ dotenv.config();
 
 const server = express();
 
+if (!process.env.APIKEY || !process.env.AUTHORIZATION) {
+  throw new Error('Missing keys? Add them and restart the app.');
+}
+
 // Settings
 export const port = serverPort || 5000;
 
