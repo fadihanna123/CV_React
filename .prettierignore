@@ -4,5 +4,7 @@ server/pnpm-lock.yaml
 client/pnpm-lock.yaml
 client/README.md
 client/build/*
+dbDocs/
+docs/
 AUTHORS
 README.md

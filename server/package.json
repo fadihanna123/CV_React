@@ -1,6 +1,6 @@
 {
   "name": "mitt_cv-backend",
-  "version": "1.0.31",
+  "version": "1.0.33",
   "license": "MIT",
   "homepage": "http://localhost:5000",
   "private": "true",
@@ -9,20 +9,18 @@
     "type": "git",
     "url": "https://github.com/fadihanna123/CV_React/tree/main/server"
   },
-  "lastUpgrade": "20230705",
+  "lastUpgrade": "20231013",
   "author": {
     "name": "Fadi Hanna",
     "email": "fhanna181@gmail.com"
   },
   "scripts": {
     "dev": "ts-node-dev -r tsconfig-paths/register src/server",
-    "seed": "prisma db push && prisma db pull && prisma generate",
+    "postinstall": "prisma db push && prisma db pull && prisma generate && apidoc -i src/ -o docs/",
     "seed-delete": "prisma migrate reset",
     "seed-migrate": "prisma migrate dev",
     "lint": "eslint --ext .ts .",
-    "format": "prettier -w .",
-    "dbDocs": "npx prisma generate",
-    "docs": "apidoc -i src/ -o docs/"
+    "format": "prettier -w ."
   },
   "prisma": {
     "schema": "src/prisma/schema.prisma"
@@ -32,49 +30,48 @@
     "url": "http://localhost:5000"
   },
   "dependencies": {
-    "@prisma/client": "^4.16.2",
+    "@prisma/client": "^5.4.2",
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "express-rate-limit": "^6.7.0",
+    "express-rate-limit": "^7.1.1",
     "helmet": "^7.0.0",
-    "luxon": "^3.3.0",
+    "luxon": "^3.4.3",
     "morgan": "^1.10.0",
-    "nodemailer": "^6.9.3",
+    "nodemailer": "^6.9.6",
     "tsconfig-paths": "^4.2.0",
-    "validator": "^13.9.0",
-    "winston": "^3.9.0"
+    "validator": "^13.11.0",
+    "winston": "^3.11.0"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.13",
-    "@types/eslint": "^8.40.2",
-    "@types/express": "^4.17.17",
-    "@types/ip": "^1.1.0",
-    "@types/luxon": "^3.3.0",
-    "@types/morgan": "^1.9.4",
-    "@types/node": "^20.3.3",
-    "@types/node-cron": "^3.0.8",
-    "@types/nodemailer": "^6.4.8",
-    "@types/validator": "^13.7.17",
-    "@typescript-eslint/eslint-plugin": "^5.61.0",
-    "@typescript-eslint/parser": "^5.61.0",
+    "@types/cors": "^2.8.14",
+    "@types/eslint": "^8.44.4",
+    "@types/express": "^4.17.19",
+    "@types/ip": "^1.1.1",
+    "@types/luxon": "^3.3.2",
+    "@types/morgan": "^1.9.6",
+    "@types/node": "^20.8.5",
+    "@types/node-cron": "^3.0.9",
+    "@types/nodemailer": "^6.4.11",
+    "@types/validator": "^13.11.3",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
     "dotenv": "^16.3.1",
-    "eslint": "^8.44.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-jsdoc": "^46.4.3",
+    "eslint": "^8.51.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-jsdoc": "^46.8.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prefer-arrow": "^1.2.3",
-    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-prettier": "^5.0.1",
     "ip": "^1.1.8",
     "node-cron": "^3.0.2",
-    "prettier": "^2.8.8",
-    "prisma": "^4.16.2",
+    "prettier": "^3.0.3",
+    "prisma": "^5.4.2",
     "prisma-docs-generator": "^0.8.0",
-    "typescript": "^5.1.6"
+    "typescript": "^5.2.2"
   },
   "engines": {
-    "node": ">=14.12.0",
-    "npm": "Please use pnpm instead of NPM to install dependencies",
-    "yarn": "Please use pnpm instead of Yarn to install dependencies"
+    "node": ">=16.0.0",
+    "npm": "Please use pnpm instead of NPM to install dependencies"
   }
 }

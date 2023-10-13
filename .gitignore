@@ -54,6 +54,10 @@ bower_components
 
 build/Release
 
+# Docs
+server/docs
+server/dbDocs
+
 # Dependency directories
 
 node_modules/
@@ -113,6 +117,9 @@ client/.env
 
 .nuxt
 dist
+
+# Storybook
+client/storybook-static
 
 # Gatsby files
 

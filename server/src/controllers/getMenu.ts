@@ -16,6 +16,11 @@ export const getMenu = async (req: Request, res: Response) => {
     req.get('Authorization') === authorizationKey
   ) {
     const getList = await prisma.menu.findMany();
+    if (getList.length === 0) {
+      storeError('No menu links exist.', 'GET', '/menu');
+      logger.error('No menu links exist.');
+    }
+
     res.json(getList);
   } else {
     storeError('No headers provided!', 'GET', '/menu');
