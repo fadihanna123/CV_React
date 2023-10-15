@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { Menu } from 'models';
 import { RootState } from 'redux/app/store';
 
 const initialState: Menu[] = [];

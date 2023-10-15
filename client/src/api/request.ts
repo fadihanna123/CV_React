@@ -1,65 +1,36 @@
 import axios from 'axios';
-import { toast } from 'react-toastify';
+import { apiKey, authorizationKey, backendURL } from 'utils/envs';
+
+const globalHeader: ContentTypeHeaders = 'application/json';
+
+axios.defaults.baseURL = backendURL;
+axios.defaults.headers.common['Content-Type'] = globalHeader;
+axios.defaults.headers.common.apiKey = apiKey;
+axios.defaults.headers.common.authorization = authorizationKey;
 
 export const request = {
-  get: async <T>(url: string) => {
-    return await axios.get<T>(url).catch((error) => {
-      if (error.response) {
-        toast.error(error.response.data);
-        toast.error(error.response.status);
-        toast.error(error.response.headers);
-      } else if (error.request) {
-        toast.error(error.request);
-      } else {
-        toast.error('Error', error.message);
-      }
-
-      toast.error(error.config);
-    });
+  get: async <T>(url: Paths) => {
+    return await axios.get<T>(url);
   },
 
   post: async <T>(
-    url: string,
+    url: Paths,
     data: unknown,
     headers?: { headers: Record<string, never> }
   ) => await axios.post<T>(url, data, headers),
 
   put: async <T>(
-    url: string,
+    url: Paths,
     data: unknown,
     headers?: { headers: Record<string, never> }
   ) => {
-    await axios.put<T>(url, data, headers).catch((error) => {
-      if (error.response) {
-        toast.error(error.response.data);
-        toast.error(error.response.status);
-        toast.error(error.response.headers);
-      } else if (error.request) {
-        toast.error(error.request);
-      } else {
-        toast.error('Error', error.message);
-      }
-
-      toast.error(error.config);
-    });
+    await axios.put<T>(url, data, headers);
   },
 
   delete: async <T>(
-    url: string,
+    url: Paths,
     headers?: { headers: Record<string, never> }
   ) => {
-    await axios.delete<T>(url, headers).catch((error) => {
-      if (error.response) {
-        toast.error(error.response.data);
-        toast.error(error.response.status);
-        toast.error(error.response.headers);
-      } else if (error.request) {
-        toast.error(error.request);
-      } else {
-        toast.error('Error', error.message);
-      }
-
-      toast.error(error.config);
-    });
+    await axios.delete<T>(url, headers);
   },
 };

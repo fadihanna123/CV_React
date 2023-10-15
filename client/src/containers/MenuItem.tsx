@@ -1,4 +1,3 @@
-import { Menu } from 'models';
 import { Link } from 'react-router-dom';
 import React from 'react';
 import { useAppDispatch } from 'redux/app';

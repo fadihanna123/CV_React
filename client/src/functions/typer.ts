@@ -1,4 +1,3 @@
-import { ContactFormTypes } from 'models';
 import { setContactForm } from 'redux/reducers';
 import React from 'react';
 

@@ -1,7 +1,6 @@
 import Logo from 'assets/logo.jpg';
 import { MenuItem } from 'containers/MenuItem';
 import { getMenu } from 'functions';
-import { Menu } from 'models';
 import React, { Fragment, useEffect } from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from 'redux/app';
@@ -22,10 +21,10 @@ const Header: React.FC = () => {
     let isMounted = true;
 
     getMenu()
-      .then(({ data }: { data: Menu[] }) => {
+      .then((data) => {
         if (isMounted) {
           dispatch(setLoading(true));
-          dispatch(setMenu(data));
+          dispatch(setMenu(data?.data));
         } else {
           return null;
         }

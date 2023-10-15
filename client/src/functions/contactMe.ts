@@ -1,11 +1,9 @@
-import { ContactFormTypes } from 'models';
-
 import {
   setContactFormAlert,
   setContactFormErr,
   setLoading,
 } from 'redux/reducers';
-import { sendMail } from './api';
+import { sendMail } from './apiStore';
 import { toast } from 'react-toastify';
 
 /**
@@ -21,7 +19,7 @@ export const contactMe = async (
   dispatch(setLoading(true));
 
   try {
-    const { data } = await sendMail(contactForm);
+    const data = await sendMail(contactForm);
     dispatch(setContactFormAlert(true));
 
     if ((data as any).type === 'error') {

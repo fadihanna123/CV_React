@@ -1,4 +1,3 @@
-import { MenuProps } from 'models';
 import React from 'react';
 import { Navbar } from 'styles';
 import PropTypes from 'prop-types';

@@ -1,4 +1,3 @@
-import { MainFooterProps } from 'models';
 import React from 'react';
 import { FooterBlock } from 'styles/footerStyles';
 import PropTypes from 'prop-types';
