@@ -2,7 +2,6 @@ import { Response } from 'express';
 import { IMailData } from 'models';
 import { transporter } from 'server';
 import { logger } from 'tools';
-import { ContactFormData, TypedRequest } from 'types';
 import { apiKey, authorizationKey, storeError, storeLog } from 'utils';
 import Validator from 'validator';
 

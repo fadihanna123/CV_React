@@ -1,3 +1,5 @@
+import { Request } from 'express';
+
 declare global {
   namespace NodeJS {
     interface ProcessEnv {
@@ -10,6 +12,17 @@ declare global {
       AUTHORIZATION: string;
       NODE_ENV: 'development' | 'production';
     }
+  }
+
+  interface TypedRequest<T> extends Request {
+    body: T;
+  }
+
+  interface ContactFormData {
+    mail: string;
+    fullname: string;
+    phone: string;
+    msg: string;
   }
 }
 

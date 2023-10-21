@@ -1,2 +1,1 @@
-export * from './env.d';
-export * from './requestBody';
+export * from './global.d';
