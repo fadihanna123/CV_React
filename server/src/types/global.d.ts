@@ -24,6 +24,13 @@ declare global {
     phone: string;
     msg: string;
   }
+
+  interface IMailData {
+    from: string;
+    to: string;
+    subject: string;
+    html: string;
+  }
 }
 
 export {};

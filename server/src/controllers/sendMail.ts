@@ -1,5 +1,4 @@
 import { Response } from 'express';
-import { IMailData } from 'models';
 import { transporter } from 'server';
 import { logger } from 'tools';
 import { apiKey, authorizationKey, storeError, storeLog } from 'utils';

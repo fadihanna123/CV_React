@@ -6,14 +6,14 @@ export const Icon = styled.img`
   margin-top: 20px;
   width: auto;
   height: auto;
-  transition: 0.3s;
+  transition: 0.3s all;
 `;
 
 export const FooterBlock = styled.footer`
   background: #f5f5f5;
   text-align: center;
   font-style: italic;
-  transition: 0.3s;
+  transition: 0.3s all;
 `;
 
 export const Row = styled.div`

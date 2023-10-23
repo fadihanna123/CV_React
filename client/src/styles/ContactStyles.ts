@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const Row = styled.div`
   display: flex;
   justify-content: center;
-  transition: 0.3s;
+  transition: 0.3s all;
 
   @media (max-width: 1800px) {
     flex-direction: column;
@@ -12,27 +12,18 @@ export const Row = styled.div`
 `;
 
 export const SendBtn = styled.button`
-  margin: 10px;
   padding: 15px;
-  background: black;
-  color: white;
-  display: flex;
-  margin: 0 auto;
+  background: #000;
+  color: #fff;
   border-radius: 15px;
   font-size: 17px;
-  transition: 0.3s;
-
-  &:hover {
-    background: black;
-    color: white;
-    transition: 0.3s;
-  }
+  transition: 0.3s all;
 `;
 
 export const ContactBlock = styled.div`
   text-align: center;
   font-style: italic;
-  transition: 0.3s;
+  transition: 0.3s all;
 `;
 
 export const Input = styled.input`
@@ -60,7 +51,7 @@ export const Input = styled.input`
       0 1px 1px rgba(0, 0, 0, 0.075) inset,
       0 0 8px lightblue;
     outline: 0 none;
-    transition: 0.3s;
+    transition: 0.3s all;
   }
 `;
 
@@ -89,7 +80,7 @@ export const MyTxtarea = styled.textarea`
       0 1px 1px rgba(0, 0, 0, 0.075) inset,
       0 0 8px lightblue;
     outline: 0 none;
-    transition: 0.3s;
+    transition: 0.3s all;
   }
 `;
 
@@ -98,7 +89,7 @@ export const FormLabel = styled.label`
   margin: 10px;
   font-weight: bold;
   font-size: 19px;
-  transition: 0.3s;
+  transition: 0.3s all;
 
   @media (max-width: 1800px) {
     text-align: center;
@@ -107,7 +98,7 @@ export const FormLabel = styled.label`
 
 export const Col10 = styled.div`
   width: 10%;
-  transition: 0.3s;
+  transition: 0.3s all;
 
   @media (max-width: 1800px) {
     width: 100%;
@@ -116,7 +107,7 @@ export const Col10 = styled.div`
 
 export const Col25 = styled.div`
   width: 25%;
-  transition: 0.3s;
+  transition: 0.3s all;
 
   @media (max-width: 1800px) {
     width: 98%;
@@ -126,7 +117,7 @@ export const Col25 = styled.div`
 export const ContactContent = styled.div`
   background: url(${Coding});
   height: 400px;
-  color: white;
+  color: #fff;
   text-align: center;
   font-size: 32px;
   font-style: italic;
@@ -147,7 +138,7 @@ export const ContactHeading = styled.h1`
   padding-top: 130px;
   height: 0;
   padding-right: 280px;
-  transition: 0.3s;
+  transition: 0.3s all;
 
   @media (max-width: 1800px) {
     margin: 0;
@@ -170,10 +161,10 @@ export const Alert = styled.div<AlertProps>`
 export const ContactText = styled.p`
   text-align: center;
   font-style: italic;
-  color: white;
+  color: #fff;
   padding-top: 60px;
   padding-right: 300px;
-  transition: 0.3s;
+  transition: 0.3s all;
 
   @media (max-width: 1800px) {
     margin: 0;

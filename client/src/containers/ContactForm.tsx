@@ -62,7 +62,7 @@ const ContactForm: React.FC = () => {
             id='phone'
             name='phone'
             value={contactForm.phone}
-            placeholder={'e.g 073739944'}
+            placeholder={'e.g 073-73 99 44'}
             onChange={(
               e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
             ) => typer(e, contactForm, dispatch)}

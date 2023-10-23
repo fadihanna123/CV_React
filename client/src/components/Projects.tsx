@@ -49,6 +49,12 @@ const Projects: React.FC = () => (
           >
             Github
           </ProjectLink>
+          <ProjectLink
+            target='_blank'
+            href='https://funny-moxie-323a72.netlify.app'
+          >
+            Website
+          </ProjectLink>
         </Card>
       </ProjectsCol>
       <ProjectsCol>
@@ -63,7 +69,7 @@ const Projects: React.FC = () => (
           </ProjectLink>
           <ProjectLink
             target='_blank'
-            href='https://fadihanna123.github.io/DatahjalpProjekt/index.html'
+            href='https://fadihanna123.github.io/DatahjalpProjekt/'
           >
             Webbplats
           </ProjectLink>

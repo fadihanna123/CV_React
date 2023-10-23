@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const TxtRow = styled.div`
   display: flex;
   justify-content: center;
-  transition: 0.3s;
+  transition: 0.3s all;
 
   @media (max-width: 1800px) {
     flex-direction: column;
@@ -15,7 +15,7 @@ export const Col25 = styled.div`
   width: 25%;
   margin-top: 100px;
   margin-left: 50px;
-  transition: 0.3s;
+  transition: 0.3s all;
 
   @media (max-width: 1800px) {
     width: 100%;
@@ -25,7 +25,7 @@ export const Col25 = styled.div`
 
 export const Col50 = styled.div`
   width: 50%;
-  transition: 0.3s;
+  transition: 0.3s all;
 
   @media (max-width: 1800px) {
     width: 100%;
@@ -37,7 +37,7 @@ export const AboutTxt = styled.p`
   text-align: center;
   font-size: 32px;
   margin-top: 100px;
-  transition: 0.3s;
+  transition: 0.3s all;
 `;
 
 export const ProfilePhoto = styled.img`
@@ -46,7 +46,7 @@ export const ProfilePhoto = styled.img`
   max-height: 90%;
   height: auto;
   margin: 10px;
-  transition: 0.3s;
+  transition: 0.3s all;
 
   @media (max-width: 1800px) {
     width: 100%;

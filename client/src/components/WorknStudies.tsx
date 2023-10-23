@@ -16,14 +16,42 @@ const WorknStudies: React.FC = () => (
       <WorkHeading>Arbetsliverfarenhet</WorkHeading>
       <WorkList>
         <li>
+          <b>Datakonsult - Grundare</b>
+          <br />
+          Södertälje Techhouse
+          <br />
+          Oktober
+          <CountUp
+            separator=''
+            duration={1}
+            start={2023}
+            end={2023}
+            className='count'
+          />
+          - Now
+        </li>
+
+        <li>
           <b>Systemutvecklare - Grundare</b>
           <br />
           Let&apos;s code
           <br />
           Oktober
-          <CountUp duration={1} start={0} end={2022} className='count' />-
-          Januari
-          <CountUp duration={1} start={0} end={2023} className='count' />
+          <CountUp
+            separator=''
+            duration={1}
+            start={0}
+            end={2022}
+            className='count'
+          />
+          - Januari
+          <CountUp
+            separator=''
+            duration={1}
+            start={0}
+            end={2023}
+            className='count'
+          />
         </li>
 
         <li>
@@ -32,9 +60,21 @@ const WorknStudies: React.FC = () => (
           Academic Work
           <br />
           Oktober
-          <CountUp duration={1} start={0} end={2022} className='count' />-
-          November
-          <CountUp duration={1} start={0} end={2022} className='count' />
+          <CountUp
+            separator=''
+            duration={1}
+            start={0}
+            end={2022}
+            className='count'
+          />
+          - November
+          <CountUp
+            separator=''
+            duration={1}
+            start={0}
+            end={2022}
+            className='count'
+          />
         </li>
 
         <li>
@@ -43,8 +83,21 @@ const WorknStudies: React.FC = () => (
           Rektron, Solna
           <br />
           Januari
-          <CountUp duration={1} start={0} end={2022} className='count' />- July
-          <CountUp duration={1} start={0} end={2022} className='count' />
+          <CountUp
+            separator=''
+            duration={1}
+            start={0}
+            end={2022}
+            className='count'
+          />
+          - July
+          <CountUp
+            separator=''
+            duration={1}
+            start={0}
+            end={2022}
+            className='count'
+          />
         </li>
 
         <li>
@@ -53,8 +106,14 @@ const WorknStudies: React.FC = () => (
           Soltia AB, Tumba
           <br />
           April
-          <CountUp duration={1} start={0} end={2021} className='count' />-
-          December 2021
+          <CountUp
+            separator=''
+            duration={1}
+            start={0}
+            end={2021}
+            className='count'
+          />
+          - December 2021
         </li>
 
         <li>
@@ -63,9 +122,21 @@ const WorknStudies: React.FC = () => (
           Kringelstan Webbyrå, Södertälje
           <br />
           November
-          <CountUp duration={1} start={0} end={2020} className='count' />
+          <CountUp
+            separator=''
+            duration={1}
+            start={0}
+            end={2020}
+            className='count'
+          />
           - December
-          <CountUp start={0} end={2020} className='count' duration={1} />
+          <CountUp
+            separator=''
+            start={0}
+            end={2020}
+            className='count'
+            duration={1}
+          />
         </li>
 
         <li>
@@ -74,9 +145,21 @@ const WorknStudies: React.FC = () => (
           Kringelstan Webbyrå, Södertälje
           <br />
           Oktober
-          <CountUp duration={1} start={0} end={2020} className='count' />
+          <CountUp
+            separator=''
+            duration={1}
+            start={0}
+            end={2020}
+            className='count'
+          />
           - November
-          <CountUp start={0} end={2020} className='count' duration={1} />
+          <CountUp
+            separator=''
+            start={0}
+            end={2020}
+            className='count'
+            duration={1}
+          />
         </li>
 
         <li>
@@ -85,9 +168,21 @@ const WorknStudies: React.FC = () => (
           Wendela Hebbegymnasiet, Södertälje
           <br />
           Augusti
-          <CountUp duration={1} start={0} end={2020} className='count' />
+          <CountUp
+            separator=''
+            duration={1}
+            start={0}
+            end={2020}
+            className='count'
+          />
           - September
-          <CountUp start={0} end={2020} className='count' duration={1} />
+          <CountUp
+            separator=''
+            start={0}
+            end={2020}
+            className='count'
+            duration={1}
+          />
         </li>
       </WorkList>
     </WorkCol>
@@ -100,9 +195,21 @@ const WorknStudies: React.FC = () => (
           W3schools
           <br />
           Februari
-          <CountUp duration={1} start={0} end={2023} className='count' />
+          <CountUp
+            separator=''
+            duration={1}
+            start={0}
+            end={2023}
+            className='count'
+          />
           - Februari
-          <CountUp duration={1} start={0} end={2023} className='count' />
+          <CountUp
+            separator=''
+            duration={1}
+            start={0}
+            end={2023}
+            className='count'
+          />
         </li>
 
         <li>
@@ -111,9 +218,21 @@ const WorknStudies: React.FC = () => (
           Mittuniversitetet, Sundsvall
           <br />
           Augusti
-          <CountUp duration={1} start={0} end={2018} className='count' />
+          <CountUp
+            separator=''
+            duration={1}
+            start={0}
+            end={2018}
+            className='count'
+          />
           - Juni
-          <CountUp duration={1} start={0} end={2020} className='count' />
+          <CountUp
+            separator=''
+            duration={1}
+            start={0}
+            end={2020}
+            className='count'
+          />
         </li>
 
         <li>
@@ -122,9 +241,21 @@ const WorknStudies: React.FC = () => (
           Komvux, Södertälje
           <br />
           Augusti
-          <CountUp duration={1} start={0} end={2013} className='count' />
+          <CountUp
+            separator=''
+            duration={1}
+            start={0}
+            end={2013}
+            className='count'
+          />
           - Mars
-          <CountUp duration={1} start={0} end={2018} className='count' />
+          <CountUp
+            separator=''
+            duration={1}
+            start={0}
+            end={2018}
+            className='count'
+          />
         </li>
       </StudieList>
     </StudieCol>
