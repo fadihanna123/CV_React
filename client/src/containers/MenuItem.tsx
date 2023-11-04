@@ -3,7 +3,7 @@ import React from 'react';
 import { useAppDispatch } from 'redux/app';
 import { setContactForm, setContactFormAlert } from 'redux/reducers';
 
-export const MenuItem: React.FC<{
+const MenuItem: React.FC<{
   item: Menu;
 }> = ({ item }: { item: Menu }) => {
   const dispatch = useAppDispatch();
@@ -28,3 +28,5 @@ export const MenuItem: React.FC<{
     </Link>
   );
 };
+
+export default MenuItem;

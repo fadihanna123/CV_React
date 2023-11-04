@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { RootState } from 'redux/app/store';
 
-const initialState = false;
+const initialState = true;
 
 export const loadingSlice = createSlice({
   name: 'contactForm',

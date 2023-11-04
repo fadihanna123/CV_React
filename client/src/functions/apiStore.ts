@@ -4,9 +4,11 @@ import { errorHandler } from './helper';
 
 /**
  * Send a mail message.
- *
+ * @function sendMail
+ * @async
  * @param contactForm
  * @returns Promise.
+ * @example sendMail( { fullname: "Erik"; mail: "erik@gmail.com"; phone: "07547XXX"; msg: "HELLO"; })
  */
 export const sendMail = async (contactForm: ContactFormTypes) => {
   try {
@@ -18,13 +20,17 @@ export const sendMail = async (contactForm: ContactFormTypes) => {
 
 /**
  * Get all menu items.
- *
- * @returns Menu array of objects.
+ * @function getMenu()
+ * @async
+ * @returns { Promise<Menu[] | undefined> } Menu array of objects.
+ * @example getMenu();
  */
-
-export const getMenu = async () => {
+export const getMenu = async (): Promise<Menu[] | undefined> => {
   try {
-    return await request.get<Menu[]>(menu_api as Paths);
+    const { data } = await request.get<Menu[]>(menu_api as Paths);
+    // eslint-disable-next-line no-console
+    console.log('Menu: ', data);
+    return data;
   } catch (error) {
     errorHandler(error);
   }

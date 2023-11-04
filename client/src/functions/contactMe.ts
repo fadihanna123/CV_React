@@ -29,7 +29,7 @@ export const contactMe = async (
     }
   } catch (err) {
     toast.error((err as Error).message);
+  } finally {
+    dispatch(setLoading(false));
   }
-
-  dispatch(setLoading(false));
 };

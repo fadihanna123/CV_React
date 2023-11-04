@@ -13,6 +13,11 @@ export default createGlobalStyle`
     transition: 0.3s;
   }
 
+  label
+  {
+    text-align: left;
+  }
+
   img
   {
     max-width: 100%;

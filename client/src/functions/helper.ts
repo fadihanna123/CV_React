@@ -12,6 +12,7 @@ const errorHandler = (error: any) => {
   }
 
   toast.error(error.config);
+  throw new Error((error as Error).message);
 };
 
 export { errorHandler };

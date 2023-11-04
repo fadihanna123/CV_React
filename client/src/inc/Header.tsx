@@ -1,44 +1,15 @@
 import Logo from 'assets/logo.jpg';
-import { MenuItem } from 'containers/MenuItem';
-import { getMenu } from 'functions';
-import React, { Fragment, useEffect } from 'react';
+import { Contact, MenuItem } from 'containers';
+import React, { Fragment } from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
-import { useAppDispatch, useAppSelector } from 'redux/app';
-import { getMenuState, setLoading, setMenu } from 'redux/reducers';
-import { Flip, ToastContainer, toast } from 'react-toastify';
-import { MainHeader } from 'ui/MainHeader';
-import { MainMenu } from 'ui/MainMenu';
-import Start from 'components/Start';
-import Projects from 'components/Projects';
-import Contact from 'containers/Contact';
+import { ToastContainer } from 'react-toastify';
+import { MainHeader, MainMenu } from 'ui';
+import { Start, Projects } from 'components';
+import { useAppSelector } from 'redux/app';
+import { getMenuState } from 'redux/reducers';
 
 const Header: React.FC = () => {
   const menu = useAppSelector(getMenuState);
-
-  const dispatch = useAppDispatch();
-
-  useEffect(() => {
-    let isMounted = true;
-
-    getMenu()
-      .then((data) => {
-        if (isMounted) {
-          dispatch(setLoading(true));
-          dispatch(setMenu(data?.data));
-        } else {
-          return null;
-        }
-      })
-      .catch((err) => {
-        toast.error((err as Error).message, { transition: Flip });
-      })
-      .finally(() => {
-        dispatch(setLoading(false));
-      });
-    return () => {
-      isMounted = false;
-    };
-  }, []);
 
   return (
     <>

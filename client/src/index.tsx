@@ -7,7 +7,9 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { store } from 'redux/app';
 import './styles';
 import ReactDom from 'react-dom/client';
-import App from 'containers/App';
+
+// Components
+import { App } from 'containers';
 
 const el = document.getElementById('root') as HTMLDivElement;
 const root = ReactDom.createRoot(el);
