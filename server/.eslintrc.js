@@ -6,7 +6,7 @@
 const config = {
   env: {
     node: true,
-    es2022: true,
+    es2023: true,
   },
   extends: [
     'eslint:recommended',
@@ -15,6 +15,8 @@ const config = {
     'plugin:jsdoc/recommended-error',
     'plugin:jsdoc/recommended-typescript',
     'plugin:import/recommended',
+    'prisma',
+    'plugin:editorconfig/all',
     'prettier',
   ],
   parser: '@typescript-eslint/parser',
@@ -22,8 +24,15 @@ const config = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['@typescript-eslint', 'jsdoc', 'import', 'prefer-arrow'],
+  plugins: [
+    '@typescript-eslint',
+    'jsdoc',
+    'import',
+    'prefer-arrow',
+    'editorconfig',
+  ],
   rules: {
+    'tsdoc/syntax': 'off',
     'jsdoc/check-tag-names': 'off',
     'no-console': 'error',
     indent: ['error', 2],

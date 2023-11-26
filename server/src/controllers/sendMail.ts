@@ -1,4 +1,4 @@
-import { Response } from 'express';
+import type { Response } from 'express';
 import { transporter } from 'server';
 import { logger } from 'tools';
 import { apiKey, authorizationKey, storeError, storeLog } from 'utils';
@@ -48,7 +48,7 @@ export const sendMail = async (
     if (!Validator.isMobilePhone(phone, ['sv-SE'])) {
       res.json({
         type: 'error',
-        msg: 'Mobilnummret är inte korrekt skriven! &#128531;',
+        msg: 'Mobilnummret är inte korrekt skriven!',
       });
       return;
     }

@@ -1,4 +1,4 @@
-import { ErrorRequestHandler, Request, Response } from 'express';
+import type { ErrorRequestHandler, Request, Response } from 'express';
 import { logger } from 'tools';
 
 /**

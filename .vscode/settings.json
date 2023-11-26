@@ -4,11 +4,9 @@
   "files.watcherExclude": {
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,
-    "**/server/node_modules/**": true,
     "**/client/node_modules/**": true
   },
   "search.exclude": {
-    "**/server/node_modules/**": true,
     "**/client/node_modules/**": true
   },
   "git.ignoreLimitWarning": true,

@@ -1,5 +1,5 @@
 import { prisma } from 'db';
-import { Request, Response } from 'express';
+import type { Request, Response } from 'express';
 import { logger } from 'tools';
 import { apiKey, authorizationKey, storeError } from 'utils';
 

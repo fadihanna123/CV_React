@@ -1,9 +1,9 @@
-import dotenv from 'dotenv';
 import 'tasks';
-
 import routes from 'api/routes';
 import { listenFn } from 'controllers';
 import cors from 'cors';
+import { connectDb } from 'db';
+import dotenv from 'dotenv';
 import express, { json, urlencoded } from 'express';
 import rateLimit from 'express-rate-limit';
 import helmet from 'helmet';
@@ -19,7 +19,6 @@ import {
   storeLog,
   uname,
 } from 'utils';
-import { connectDb } from 'db';
 
 /**
  * @author Fadi Hanna<fhanna181@gmail.com>
@@ -35,6 +34,8 @@ if (!process.env.APIKEY || !process.env.AUTHORIZATION) {
 
 // Settings
 export const port = serverPort || 5000;
+// eslint-disable-next-line no-console
+console.log(uname, psw);
 
 export const transporter = nodemailer.createTransport({
   host: 'smtp.gmail.com',

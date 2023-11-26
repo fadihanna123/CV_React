@@ -5,7 +5,7 @@
 const config = {
   env: {
     browser: true,
-    es2022: true,
+    es2023: true,
   },
   root: true,
   settings: {
@@ -19,6 +19,7 @@ const config = {
     'plugin:react/recommended',
     'plugin:prettier/recommended',
     'plugin:storybook/recommended',
+    'plugin:editorconfig/all',
     'prettier',
   ],
   globals: {
@@ -40,14 +41,19 @@ const config = {
     '@html-eslint',
     'html',
     'react',
+    'editorconfig',
   ],
   rules: {
+    '@typescript-eslint/no-var-requires': 'off',
     'prettier/prettier': [
       'off',
       {
         singleQuote: true,
       },
     ],
+    '@typescript-eslint/no-unused-vars': 'off',
+    'no-unused-vars': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
     '@html-eslint/indent': ['error', 2],
     '@typescript-eslint/no-unsafe-call': 'off',
     '@typescript-eslint/restrict-template-expressions': 'off',
@@ -58,7 +64,6 @@ const config = {
     '@typescript-eslint/no-unsafe-assignment': 'off',
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
-    'no-console': 'error',
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/array-type': [
       'error',
@@ -94,12 +99,7 @@ const config = {
     ],
     '@typescript-eslint/consistent-type-assertions': 'error',
     '@typescript-eslint/member-ordering': 'off',
-    '@typescript-eslint/no-empty-function': [
-      'error',
-      {
-        allow: ['constructors'],
-      },
-    ],
+    '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-empty-interface': 'error',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-misused-new': 'error',
@@ -113,7 +113,6 @@ const config = {
     ],
     '@typescript-eslint/no-unused-expressions': 'error',
     '@typescript-eslint/no-use-before-define': 'off',
-    '@typescript-eslint/no-var-requires': 'error',
     '@typescript-eslint/prefer-for-of': 'error',
     '@typescript-eslint/prefer-function-type': 'error',
     '@typescript-eslint/prefer-namespace-keyword': 'error',
@@ -162,12 +161,7 @@ const config = {
     'no-cond-assign': 'error',
     'no-debugger': 'error',
     'no-empty': 'error',
-    'no-empty-function': [
-      'error',
-      {
-        allow: ['constructors'],
-      },
-    ],
+    'no-empty-function': 0,
     'no-eval': 'error',
     'no-fallthrough': 'off',
     '@typescript-eslint/no-inferrable-types': 'off',
