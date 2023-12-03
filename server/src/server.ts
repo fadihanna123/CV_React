@@ -1,24 +1,14 @@
 import 'tasks';
 import routes from 'api/routes';
 import { listenFn } from 'controllers';
-import cors from 'cors';
 import { connectDb } from 'db';
 import dotenv from 'dotenv';
 import express, { json, urlencoded } from 'express';
 import rateLimit from 'express-rate-limit';
 import helmet from 'helmet';
-import ip from 'ip';
-import morgan from 'morgan';
 import nodemailer from 'nodemailer';
 import { logger } from 'tools';
-import {
-  allowedDomains,
-  errorHandler,
-  psw,
-  serverPort,
-  storeLog,
-  uname,
-} from 'utils';
+import { errorHandler, psw, serverPort, storeLog, uname } from 'utils';
 
 /**
  * @author Fadi Hanna<fhanna181@gmail.com>
@@ -48,42 +38,22 @@ export const transporter = nodemailer.createTransport({
   tls: { rejectUnauthorized: true },
 });
 
-const whiteList = allowedDomains?.split(', ');
-
 const limiter = rateLimit({ windowMs: 3600000, max: 429 });
 
-const corsOptions = {
-  origin: (origin: any, callback: any) => {
-    if (whiteList.indexOf(origin) !== -1 || !origin) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
-};
-
 server.use((req, res, next) => {
-  const ipAddress = ip.address();
+  logger.info(`Method: ${req.method}, URL: ${req.url}`);
 
-  logger.info(`Method: ${req.method}, URL: ${req.url}, IP: ${ipAddress}`);
-
-  storeLog(
-    `Method: ${req.method}, URL: ${req.url}, IP: ${ipAddress}`,
-    req.method,
-    req.url
-  );
+  storeLog(`Method: ${req.method}, URL: ${req.url}`, req.method, req.url);
 
   // eslint-disable-next-line no-console
-  console.log(`Method: ${req.method}, URL: ${req.url}, IP: ${ipAddress}`);
+  console.log(`Method: ${req.method}, URL: ${req.url}`);
 
   next();
 });
 
 connectDb();
-server.use(morgan('dev'));
 server.use(limiter);
 server.use(helmet());
-server.use(cors(corsOptions));
 server.use(json({ type: 'application/json', limit: '1kb' }));
 server.use(urlencoded({ extended: true }));
 server.use(routes);

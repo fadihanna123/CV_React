@@ -1,6 +1,5 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import 'normalize.css';
 import 'react-toastify/dist/ReactToastify.css';
 import GlobalStyles from 'styles/global';
 import { BrowserRouter as Router } from 'react-router-dom';
