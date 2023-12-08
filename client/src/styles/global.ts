@@ -13,6 +13,10 @@ export default createGlobalStyle`
     transition: 0.3s;
   }
 
+  ::-webkit-input-placeholder {
+    text-transform: none;
+  }
+
   label
   {
     text-align: left;

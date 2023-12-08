@@ -8,7 +8,15 @@ import rateLimit from 'express-rate-limit';
 import helmet from 'helmet';
 import nodemailer from 'nodemailer';
 import { logger } from 'tools';
-import { errorHandler, psw, serverPort, storeLog, uname } from 'utils';
+import {
+  allowedURLs,
+  errorHandler,
+  psw,
+  serverPort,
+  storeLog,
+  uname,
+} from 'utils';
+import cors, { CorsOptions } from 'cors';
 
 /**
  * @author Fadi Hanna<fhanna181@gmail.com>
@@ -17,6 +25,18 @@ import { errorHandler, psw, serverPort, storeLog, uname } from 'utils';
 dotenv.config();
 
 const server = express();
+
+const whiteList = allowedURLs?.split(', ');
+
+const corsOptions: CorsOptions = {
+  origin: (origin, callback) => {
+    if (whiteList?.indexOf(origin as string) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+};
 
 if (!process.env.APIKEY || !process.env.AUTHORIZATION) {
   throw new Error('Missing keys? Add them and restart the app.');
@@ -53,6 +73,7 @@ server.use((req, res, next) => {
 
 connectDb();
 server.use(limiter);
+server.use(cors(corsOptions));
 server.use(helmet());
 server.use(json({ type: 'application/json', limit: '1kb' }));
 server.use(urlencoded({ extended: true }));

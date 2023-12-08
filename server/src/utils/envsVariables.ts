@@ -18,3 +18,5 @@ export const allowedDomains = ALLOWEDOMAINS;
 export const apiKey = APIKEY;
 
 export const authorizationKey = AUTHORIZATION;
+
+export const allowedURLs = ALLOWEDOMAINS;

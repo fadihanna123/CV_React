@@ -29,17 +29,19 @@ export const ContactBlock = styled.div`
 export const Input = styled.input`
   display: block;
   width: 100%;
+  height: 35px;
   min-height: calc(1.5em + 0.75rem + 2px);
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
+  padding: 1%;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid gray;
+  border: 1px solid #000;
   appearance: none;
-  border-radius: 0.25rem;
+  border-radius: 8px;
+  text-indent: 10px;
   margin-bottom: 10px;
   transition:
     border-color 0.15s ease-in-out,
@@ -59,7 +61,7 @@ export const MyTxtarea = styled.textarea`
   display: block;
   width: 100%;
   min-height: calc(1.5em + 0.75rem + 2px);
-  padding: 0.375rem 0.75rem;
+  padding: 1%;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -70,6 +72,7 @@ export const MyTxtarea = styled.textarea`
   appearance: none;
   border-radius: 0.25rem;
   margin-bottom: 10px;
+  text-indent: 10px;
   transition:
     border-color 0.15s ease-in-out,
     box-shadow 0.15s ease-in-out;

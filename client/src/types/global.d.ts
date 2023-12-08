@@ -46,6 +46,7 @@ declare global {
     path: string;
     classname: string;
     pathroute: string;
+    icon: string;
   }
 
   interface MainFooterProps {

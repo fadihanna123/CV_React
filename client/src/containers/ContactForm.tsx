@@ -30,10 +30,13 @@ const ContactForm: React.FC = () => {
             id='fullname'
             name='fullname'
             value={contactForm.fullname}
+            style={{ textTransform: 'capitalize' }}
             placeholder='e.g Erik Eriksson'
             onChange={(
               e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-            ) => typer(e, contactForm, dispatch)}
+            ) => {
+              typer(e, contactForm, dispatch);
+            }}
           />
         </Col25>
       </Row>
@@ -83,7 +86,7 @@ const ContactForm: React.FC = () => {
             placeholder={'e.g Tja! 😋'}
             onChange={(
               e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-            ) => typer(e, contactForm, dispatch)}
+            ) => typer(e, contactForm, dispatch, true)}
           ></MyTxtarea>
         </Col25>
       </Row>

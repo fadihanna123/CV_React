@@ -24,7 +24,7 @@ const MenuItem: React.FC<{
         dispatch(setContactFormAlert(false));
       }}
     >
-      {item.title}
+      <i className={item.icon}></i> {item.title}
     </Link>
   );
 };

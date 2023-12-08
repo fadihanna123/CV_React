@@ -18,6 +18,7 @@ model menu {
   path      String
   classname String
   pathroute String
+  icon      String
 }
 
 model logs {

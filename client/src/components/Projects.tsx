@@ -29,13 +29,13 @@ const Projects: React.FC = () => (
             target='_blank'
             href='https://github.com/fadihanna123/Intranat'
           >
-            Github
+            <i className='fa-brands fa-github'></i>
           </ProjectLink>
           <ProjectLink
             target='_blank'
             href='https://intranet.gssonsel.se.185-133-206-116.bb.kringelstan.se/index.php'
           >
-            Webbplats
+            <i className='fa-solid fa-globe'></i>
           </ProjectLink>
         </Card>
       </ProjectsCol>
@@ -47,13 +47,13 @@ const Projects: React.FC = () => (
             target='_blank'
             href='https://github.com/fadihanna123/PixaBayFinder'
           >
-            Github
+            <i className='fa-brands fa-github'></i>
           </ProjectLink>
           <ProjectLink
             target='_blank'
             href='https://funny-moxie-323a72.netlify.app'
           >
-            Website
+            <i className='fa-solid fa-globe'></i>
           </ProjectLink>
         </Card>
       </ProjectsCol>
@@ -65,13 +65,13 @@ const Projects: React.FC = () => (
             target='_blank'
             href='https://github.com/fadihanna123/DatahjalpProjekt'
           >
-            Github
+            <i className='fa-brands fa-github'></i>
           </ProjectLink>
           <ProjectLink
             target='_blank'
             href='https://fadihanna123.github.io/DatahjalpProjekt/'
           >
-            Webbplats
+            <i className='fa-solid fa-globe'></i>
           </ProjectLink>
         </Card>
       </ProjectsCol>
