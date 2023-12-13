@@ -15,7 +15,7 @@
     "email": "fhanna181@gmail.com"
   },
   "scripts": {
-    "dev": "ts-node-dev -r tsconfig-paths/register src/server",
+    "dev": "ts-node -r tsconfig-paths/register src/server",
     "postinstall": "prisma db push && prisma db pull && prisma generate && apidoc -i src/ -o docs/",
     "seed-delete": "prisma migrate reset",
     "seed-migrate": "prisma migrate dev",

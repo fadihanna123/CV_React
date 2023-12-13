@@ -6,6 +6,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { store } from 'redux/app';
 import './styles';
 import ReactDom from 'react-dom/client';
+import { QueryClient, QueryClientProvider } from 'react-query';
 
 // Components
 import { App } from 'containers';
@@ -24,13 +25,17 @@ if (!REACT_APP_PUBLIC_API_KEY || !REACT_APP_PUBLIC_AUTHORIZATION) {
   throw new Error('Missing keys? Add them and restart the app.');
 }
 
+const queryClient = new QueryClient();
+
 root.render(
   <>
     <GlobalStyles />
     <Provider store={store}>
-      <Router>
-        <App />
-      </Router>
+      <QueryClientProvider client={queryClient}>
+        <Router>
+          <App />
+        </Router>
+      </QueryClientProvider>
     </Provider>
   </>
 );

@@ -1,29 +1,26 @@
 import { Container } from 'styles';
-import React, { useEffect } from 'react';
+import React from 'react';
 
 // Components
 import { Header, Footer } from 'inc';
-import { useAppDispatch, useAppSelector } from 'redux/app';
-import { getLoading, setLoading, setMenu } from 'redux/reducers';
+import { useAppDispatch } from 'redux/app';
+import { setLoading, setMenu } from 'redux/reducers';
 import ClipLoader from 'react-spinners/ClipLoader';
 import { getMenu } from 'functions';
 import { CSSProperties } from 'styled-components';
+import { useQuery } from 'react-query';
 
 const App: React.FC = () => {
-  const loading = useAppSelector(getLoading);
+  const { isLoading, data: menuData } = useQuery('repoData', getMenu);
 
   const dispatch = useAppDispatch();
 
-  const getMenuData = async () => {
-    const menuData = await getMenu();
-    dispatch(setMenu(menuData));
-  };
-
-  useEffect(() => {
+  if (isLoading) {
     dispatch(setLoading(true));
-    getMenuData();
+  } else {
     dispatch(setLoading(false));
-  }, []);
+    dispatch(setMenu(menuData));
+  }
 
   const override: CSSProperties = {
     display: 'block',
@@ -33,9 +30,9 @@ const App: React.FC = () => {
 
   return (
     <Container>
-      {loading ? (
+      {isLoading ? (
         <ClipLoader
-          loading={loading}
+          loading={isLoading}
           size={150}
           aria-label='Loading Spinner'
           data-testid='loader'
