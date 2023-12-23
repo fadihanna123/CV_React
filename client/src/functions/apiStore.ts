@@ -29,7 +29,7 @@ export const getMenu = async (): Promise<Menu[] | undefined> => {
   try {
     const { data } = await request.get<Menu[]>(menu_api as Paths);
     // eslint-disable-next-line no-console
-    console.log('Menu: ', data);
+    console.log('🔗 Menu: ', data);
     return data;
   } catch (error) {
     errorHandler(error);

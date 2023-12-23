@@ -44,8 +44,6 @@ if (!process.env.APIKEY || !process.env.AUTHORIZATION) {
 
 // Settings
 export const port = serverPort || 5000;
-// eslint-disable-next-line no-console
-console.log(uname, psw);
 
 export const transporter = nodemailer.createTransport({
   host: 'smtp.gmail.com',
