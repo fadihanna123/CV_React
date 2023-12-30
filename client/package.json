@@ -1,6 +1,6 @@
 {
   "name": "cv_react",
-  "version": "0.1.37",
+  "version": "0.1.38",
   "private": "true",
   "homepage": "https://localhost:3000",
   "bugs": "https://github.com/fadihanna123/CV_React/issues",
@@ -15,8 +15,6 @@
   "license": "MIT",
   "lastUpgrade": "20231012",
   "dependencies": {
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
     "@types/react-dom": "^18.2.17",
     "axios": "^1.6.2",
     "react": "^18.2.0",
@@ -54,17 +52,14 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@redux-devtools/extension": "^3.2.6",
     "@reduxjs/toolkit": "^1.9.7",
     "@storybook/addon-essentials": "7.6.3",
     "@storybook/addon-interactions": "7.6.3",
     "@storybook/addon-links": "7.6.3",
-    "@storybook/blocks": "7.6.3",
     "@storybook/cli": "^7.6.3",
     "@storybook/preset-create-react-app": "7.6.3",
     "@storybook/react": "7.6.3",
     "@storybook/react-webpack5": "7.6.3",
-    "@storybook/testing-library": "0.2.2",
     "@types/node": "^20.10.3",
     "@types/react": "^18.2.41",
     "@types/react-router-dom": "^5.3.3",
@@ -85,7 +80,7 @@
     "typescript": "^5.3.2"
   },
   "engines": {
-    "node": ">=16.0.0",
+    "node": ">=16.0.0 <=21.x.x",
     "npm": "Please use pnpm instead of NPM to install dependencies"
   },
   "eslintConfig": {
