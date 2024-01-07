@@ -21,7 +21,9 @@ export const getMenu = async (req: Request, res: Response) => {
       logger.error('No menu links exist.');
     }
 
-    res.json(getList);
+    setTimeout(() => {
+      res.json(getList);
+    }, 2000);
   } else {
     storeError('No headers provided!', 'GET', '/menu');
     logger.error('No headers provided on GET /menu!');

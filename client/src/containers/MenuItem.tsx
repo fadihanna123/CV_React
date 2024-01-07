@@ -24,7 +24,7 @@ const MenuItem: React.FC<{
         dispatch(setContactFormAlert(false));
       }}
     >
-      <i className={item.icon}></i> {item.title}
+      <i className={`fa-solid ${item.icon}`}></i> {item.title}
     </Link>
   );
 };
