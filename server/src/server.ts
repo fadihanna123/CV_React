@@ -3,7 +3,7 @@ import routes from 'api/routes';
 import { listenFn } from 'controllers';
 import { connectDb } from 'db';
 import dotenv from 'dotenv';
-import express, { json, urlencoded } from 'express';
+import express, { json, urlencoded, Application } from 'express';
 import rateLimit from 'express-rate-limit';
 import helmet from 'helmet';
 import nodemailer from 'nodemailer';
@@ -24,7 +24,7 @@ import cors, { CorsOptions } from 'cors';
 
 dotenv.config();
 
-const server = express();
+const server: Application = express();
 
 const whiteList = allowedURLs?.split(', ');
 
@@ -69,14 +69,22 @@ server.use((req, res, next) => {
   next();
 });
 
+// Connect to database.
 connectDb();
+// Add rate limiter to limit requests.
 server.use(limiter);
+// Add cors to the server and handle who can access to the server.
 server.use(cors(corsOptions));
+// Add secuirty middleware and parse JSON data to the server.
 server.use(helmet());
 server.use(json({ type: 'application/json', limit: '1kb' }));
 server.use(urlencoded({ extended: true }));
+// Add routes to the server.
 server.use(routes);
+// Handle if user get access to unknown route.
 server.use((_, res) => res.send('This route does not exist!'));
+// Handle server errors.
 server.use(errorHandler);
 
+// Start the server.
 server.listen(port, listenFn);
