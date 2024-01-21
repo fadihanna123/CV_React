@@ -5,8 +5,8 @@ import { Link, Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import { MainHeader, MainMenu } from 'ui';
 import { Start, Projects } from 'components';
-import { useAppSelector } from 'redux/app';
-import { getMenuState } from 'redux/reducers';
+import { useAppSelector } from '../redux/app';
+import { getMenuState } from '../redux/reducers';
 
 const Header: React.FC = () => {
   const menu = useAppSelector(getMenuState);

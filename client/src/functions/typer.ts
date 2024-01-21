@@ -1,4 +1,4 @@
-import { setContactForm } from 'redux/reducers';
+import { setContactForm } from '../redux/reducers';
 import React from 'react';
 import { capitalizeFirstLetter } from './helper';
 

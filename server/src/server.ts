@@ -38,7 +38,7 @@ const corsOptions: CorsOptions = {
   },
 };
 
-if (!process.env.APIKEY || !process.env.AUTHORIZATION) {
+if (!process.env['APIKEY'] || !process.env['AUTHORIZATION']) {
   throw new Error('Missing keys? Add them and restart the app.');
 }
 

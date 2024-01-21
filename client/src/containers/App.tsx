@@ -3,12 +3,12 @@ import React from 'react';
 
 // Components
 import { Header, Footer } from 'inc';
-import { useAppDispatch } from 'redux/app';
-import { setLoading, setMenu } from 'redux/reducers';
-import ClipLoader from 'react-spinners/ClipLoader';
+import { useAppDispatch } from '../redux/app';
+import { setLoading, setMenu } from '../redux/reducers';
 import { getMenu } from 'functions';
 import { CSSProperties } from 'styled-components';
 import { useQuery } from 'react-query';
+import { PacmanLoader } from 'react-spinners';
 
 const App: React.FC = () => {
   const { isLoading, data: menuData } = useQuery('repoData', getMenu);
@@ -23,20 +23,23 @@ const App: React.FC = () => {
   }
 
   const override: CSSProperties = {
-    display: 'block',
-    margin: '0 auto',
-    borderColor: 'red',
+    position: 'fixed',
+    left: 0,
+    right: 0,
+    top: 0,
+    bottom: 0,
+    margin: 'auto',
   };
 
   return (
     <Container>
       {isLoading ? (
-        <ClipLoader
+        <PacmanLoader
           loading={isLoading}
-          size={150}
           aria-label='Loading Spinner'
           data-testid='loader'
           cssOverride={override}
+          size={50}
         />
       ) : (
         <>

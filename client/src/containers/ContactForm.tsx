@@ -1,6 +1,6 @@
 import { contactMe, typer } from 'functions';
-import { useAppDispatch, useAppSelector } from 'redux/app';
-import { getContactForm } from 'redux/reducers';
+import { useAppDispatch, useAppSelector } from '../redux/app';
+import { getContactForm } from '../redux/reducers';
 import {
   Col10,
   Col25,

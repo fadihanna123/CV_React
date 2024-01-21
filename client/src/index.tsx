@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import 'react-toastify/dist/ReactToastify.css';
 import GlobalStyles from 'styles/global';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { store } from 'redux/app';
+import { store } from './redux/app';
 import './styles';
 import ReactDom from 'react-dom/client';
 import { QueryClient, QueryClientProvider } from 'react-query';

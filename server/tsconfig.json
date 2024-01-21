@@ -1,4 +1,7 @@
 {
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"],
+  "files": ["src/types/global.d.ts"],
   "ts-node": {
     "files": true
   },
@@ -40,8 +43,5 @@
     "paths": {
       "@core/*": ["src/*"]
     }
-  },
-  "include": ["src/**/*"],
-  "files": ["src/types/global.d.ts"],
-  "exclude": ["node_modules"]
+  }
 }
