@@ -24,6 +24,7 @@ import cors, { CorsOptions } from 'cors';
 
 dotenv.config();
 
+// deepcode ignore UseCsurfForExpress: Csurf package is deprecated.
 const server: Application = express();
 
 const whiteList = allowedURLs?.split(', ');
