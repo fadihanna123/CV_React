@@ -18,8 +18,8 @@ const App: React.FC = () => {
   if (isLoading) {
     dispatch(setLoading(true));
   } else {
-    dispatch(setLoading(false));
     dispatch(setMenu(menuData));
+    dispatch(setLoading(false));
   }
 
   const override: CSSProperties = {
