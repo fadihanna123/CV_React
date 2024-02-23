@@ -1,0 +1,9 @@
+@base = http://localhost:{{PORT}}
+###
+GET {{base}}/menu
+APIKEY : {{APIKEY}}
+AUTHORIZATION : {{AUTHORIZATION}}
+###
+POST {{base}}/mailit
+APIKEY : {{APIKEY}}
+AUTHORIZATION : {{AUTHORIZATION}}

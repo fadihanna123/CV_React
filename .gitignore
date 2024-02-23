@@ -2,9 +2,6 @@
 
 # Edit at https://www.toptal.com/developers/gitignore?templates=node
 
-# HTTP
-server/api.http
-
 ### Node
 
 # Logs
