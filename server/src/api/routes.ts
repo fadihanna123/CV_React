@@ -4,9 +4,9 @@ import { Router } from 'express';
 const router: Router = Router();
 
 // Get all menu items.
-router.get('/menu', getMenu);
+router.get<Routes>('/menu', getMenu);
 
 // Send a mail message.
-router.post('/mailit', sendMail);
+router.post<Routes>('/mailit', sendMail);
 
 export default router;

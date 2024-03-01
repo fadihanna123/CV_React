@@ -31,6 +31,8 @@ declare global {
     subject: string;
     html: string;
   }
+
+  type Routes = '/menu' | '/mailit';
 }
 
 export {};
