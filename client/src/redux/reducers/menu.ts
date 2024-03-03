@@ -8,7 +8,8 @@ export const menuSlice = createSlice({
   initialState,
   reducers: {
     setMenu: (state, action) => {
-      return (state = action.payload);
+      state = action.payload;
+      return state;
     },
   },
 });

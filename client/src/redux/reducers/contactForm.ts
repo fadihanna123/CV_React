@@ -12,7 +12,10 @@ export const contactFormSlice = createSlice({
   name: 'contactForm',
   initialState,
   reducers: {
-    setContactForm: (state, action) => (state = action.payload),
+    setContactForm: (state, action) => {
+      state = action.payload;
+      return state;
+    },
   },
 });
 

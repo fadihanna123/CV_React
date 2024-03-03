@@ -8,7 +8,8 @@ export const contactFormErrSlice = createSlice({
   initialState,
   reducers: {
     setContactFormErr: (state, action) => {
-      return (state = action.payload);
+      state = action.payload;
+      return state;
     },
   },
 });

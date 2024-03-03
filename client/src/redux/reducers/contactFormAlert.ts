@@ -8,7 +8,8 @@ export const contactFormAlertSlice = createSlice({
   initialState,
   reducers: {
     setContactFormAlert: (state, action) => {
-      return (state = action.payload);
+      state = action.payload;
+      return state;
     },
   },
 });
