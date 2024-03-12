@@ -59,7 +59,7 @@
     "@storybook/cli": "^7.6.17",
     "@storybook/preset-create-react-app": "7.6.17",
     "@storybook/react": "7.6.17",
-    "@storybook/react-webpack5": "7.6.17",
+    "@storybook/react-webpack5": "8.0.0",
     "@types/node": "^20.11.25",
     "@types/react": "^18.2.64",
     "@types/react-router-dom": "^5.3.3",
