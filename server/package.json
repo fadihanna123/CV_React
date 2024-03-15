@@ -15,7 +15,8 @@
   },
   "scripts": {
     "dev": "ts-node-dev -r tsconfig-paths/register src/server",
-    "postinstall": "prisma db push && prisma db pull && prisma generate && apidoc -i src/ -o docs/",
+    "seed": "prisma db push && prisma db pull && prisma generate && apidoc -i src/ -o docs/",
+    "postinstall": "yarn seed",
     "seed-delete": "prisma migrate reset",
     "seed-migrate": "prisma migrate dev",
     "lint": "eslint --ext .ts .",
