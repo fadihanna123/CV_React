@@ -1,0 +1,47 @@
+version: "3.8"
+
+services:
+  db:
+    image: mysql:latest
+    container_name: cv_react_db
+    restart: unless-stopped
+    ports:
+      - 3307:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DB: cv_react_docker
+    volumes:
+      - cv_react-data:/var/lib/mysql
+
+  adminer:
+    image: adminer:latest
+    container_name: cv_react_db_admin
+    ports:
+      - 8080:8080
+    restart: unless-stopped
+    volumes:
+      - cv_react-admin:/var/lib/db/data
+
+  api:
+    build: ./server
+    container_name: cv_react_backend
+    ports:
+      - 5000:5000
+    env_file:
+      - ./server/.env.prod
+    restart: unless-stopped
+    links:
+      - db
+
+  web:
+    build: ./client
+    container_name: cv_react_frontend
+    ports:
+      - 3000:3000
+    restart: unless-stopped
+    links:
+      - api
+
+volumes:
+  cv_react-data:
+  cv_react-admin:
