@@ -16,7 +16,7 @@
   "lastUpgrade": "20231012",
   "dependencies": {
     "@types/react-dom": "^18.2.22",
-    "axios": "^1.6.7",
+    "axios": "^1.6.8",
     "react": "^18.2.0",
     "react-countup": "^6.5.0",
     "react-dom": "^18.2.0",
@@ -24,7 +24,7 @@
     "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
     "react-spinners": "^0.13.8",
-    "react-toastify": "^10.0.4",
+    "react-toastify": "^10.0.5",
     "redux": "^5.0.1",
     "styled-components": "6.1.8"
   },
