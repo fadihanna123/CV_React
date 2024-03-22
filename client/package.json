@@ -52,7 +52,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@reduxjs/toolkit": "^2.2.1",
+    "@reduxjs/toolkit": "^2.2.2",
     "@storybook/addon-essentials": "8.0.4",
     "@storybook/addon-interactions": "8.0.0",
     "@storybook/addon-links": "8.0.4",
