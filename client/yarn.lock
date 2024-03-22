@@ -2726,13 +2726,13 @@
   resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-8.0.4.tgz#0701a71dfc0bcfa178e7175a00aadd78b965629c"
   integrity sha512-cALLHuX53vLQsoJamGRlquh2pfhPq9copXou2JTmFT6mrCcipo77SzhBDfeeuhaGv6vUWPfmGjPBEHXWGPe4+g==
 
-"@storybook/preset-create-react-app@8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@storybook/preset-create-react-app/-/preset-create-react-app-8.0.0.tgz#75d8970f266fbaf68df24bd1b0142864ffd494ce"
-  integrity sha512-g+SfeNKmHo8iGIB2VRX2pcSo1NZ3DvJvm1EjxvChWYUNc87ajvTLg/2UWTLgwtZ/aTRfvn07FWQUrpNcC9Lg7w==
+"@storybook/preset-create-react-app@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@storybook/preset-create-react-app/-/preset-create-react-app-8.0.4.tgz#b1c24e16bc738d2862bac6262b0ec90a31828146"
+  integrity sha512-qI+Oydkq26gOFRY/+rx1WYGH12VnXwP6MG03uS7RjiGI/xi12oBU9Zuy6IHJ4hV2gb/90usNZTkgMKJoFs25Uw==
   dependencies:
     "@pmmmwh/react-refresh-webpack-plugin" "^0.5.1"
-    "@storybook/types" "8.0.0"
+    "@storybook/types" "8.0.4"
     "@types/semver" "^7.5.6"
     pnp-webpack-plugin "^1.7.0"
     semver "^7.5.4"
