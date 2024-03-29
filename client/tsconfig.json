@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "esNext",
+    "target": "es6",
     "baseUrl": "src",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -10,11 +10,11 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "noEmit": false,
     "alwaysStrict": true,
     "jsx": "preserve",
     "allowUnreachableCode": false,
@@ -38,6 +38,7 @@
     "noUnusedLocals": true,
     "noUncheckedIndexedAccess": true,
     "removeComments": true,
+    "outDir": "dist",
     "paths": {
       "@core/*": ["src/*"],
       "@assets/*": ["src/assets/*"]
