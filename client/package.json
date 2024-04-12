@@ -15,7 +15,7 @@
   "license": "MIT",
   "lastUpgrade": "20231012",
   "dependencies": {
-    "@types/react-dom": "^18.2.22",
+    "@types/react-dom": "^18.2.24",
     "axios": "^1.6.8",
     "react": "^18.2.0",
     "react-countup": "^6.5.3",
@@ -55,7 +55,7 @@
     "@reduxjs/toolkit": "^2.2.2",
     "@storybook/addon-essentials": "8.0.4",
     "@storybook/addon-interactions": "8.0.4",
-    "@storybook/addon-links": "8.0.4",
+    "@storybook/addon-links": "8.0.6",
     "@storybook/cli": "^8.0.6",
     "@storybook/preset-create-react-app": "8.0.4",
     "@storybook/react": "8.0.4",
