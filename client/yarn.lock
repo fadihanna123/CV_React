@@ -2850,33 +2850,6 @@
     "@storybook/react" "8.0.8"
     "@types/node" "^18.0.0"
 
-"@storybook/react@8.0.4":
-  version "8.0.4"
-  resolved "https://registry.yarnpkg.com/@storybook/react/-/react-8.0.4.tgz#8789dfbc17103ea996123ec8e91f5fe53438de6e"
-  integrity sha512-p4wQSJIhG48UD2fZ6tFDT9zaqrVnvZxjV18+VjSi3dez/pDoEMJ3SWZWcmeDenKwvvk+SPdRH7k5mUHW1Rh0xg==
-  dependencies:
-    "@storybook/client-logger" "8.0.4"
-    "@storybook/docs-tools" "8.0.4"
-    "@storybook/global" "^5.0.0"
-    "@storybook/preview-api" "8.0.4"
-    "@storybook/react-dom-shim" "8.0.4"
-    "@storybook/types" "8.0.4"
-    "@types/escodegen" "^0.0.6"
-    "@types/estree" "^0.0.51"
-    "@types/node" "^18.0.0"
-    acorn "^7.4.1"
-    acorn-jsx "^5.3.1"
-    acorn-walk "^7.2.0"
-    escodegen "^2.1.0"
-    html-tags "^3.1.0"
-    lodash "^4.17.21"
-    prop-types "^15.7.2"
-    react-element-to-jsx-string "^15.0.0"
-    semver "^7.3.7"
-    ts-dedent "^2.0.0"
-    type-fest "~2.19"
-    util-deprecate "^1.0.2"
-
 "@storybook/react@8.0.8":
   version "8.0.8"
   resolved "https://registry.yarnpkg.com/@storybook/react/-/react-8.0.8.tgz#04374fd813e87763678c0c34eb1f2b91b01525e4"
