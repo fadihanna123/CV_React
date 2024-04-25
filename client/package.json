@@ -15,7 +15,7 @@
   "license": "MIT",
   "lastUpgrade": "20231012",
   "dependencies": {
-    "@types/react-dom": "^18.2.24",
+    "@types/react-dom": "^18.2.25",
     "axios": "^1.6.8",
     "react": "^18.2.0",
     "react-countup": "^6.5.3",
