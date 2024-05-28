@@ -1,7 +1,8 @@
 FROM node:lts
-WORKDIR /node
-COPY ./ .
-RUN npm i -g apidoc prisma ts-node-dev
+WORKDIR /backend
+COPY package.json .
 RUN yarn
+COPY . .
+RUN npm i -g apidoc prisma ts-node-dev
 EXPOSE 5000
 CMD yarn dev
