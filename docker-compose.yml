@@ -14,7 +14,7 @@ services:
       - cv_react_db-data:/var/lib/mysql
 
   adminer:
-    image: adminer:latest
+    image: adminer:standalone
     container_name: cv_react_db_admin
     ports:
       - 8080:8080
