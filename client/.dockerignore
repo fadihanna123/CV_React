@@ -1,0 +1,21 @@
+# Dependencies
+node_modules
+
+# Docker
+Dockerfile
+
+# Enviroment
+.env
+
+# Linting
+.eslintrc.js
+
+# Public assets
+public/manifest.json
+public/robots.txt
+
+# Git
+.gitignore
+
+# Readme
+README.md

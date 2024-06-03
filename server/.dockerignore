@@ -1,0 +1,18 @@
+# Dependencies
+node_modules
+
+# Docker
+Dockerfile
+
+# Docs
+dbDocs
+docs
+
+# Logs
+src/logs
+
+# Enviroment
+.env
+
+# Linting
+.eslintrc.js
