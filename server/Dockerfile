@@ -4,5 +4,5 @@ COPY package.json .
 RUN npm i --ignore-scripts -g apidoc prisma ts-node-dev
 RUN yarn
 COPY . .
-EXPOSE 5000
+EXPOSE ${DEV_PORT}
 CMD yarn dev

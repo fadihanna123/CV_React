@@ -13,14 +13,19 @@ services:
     volumes:
       - cv_react_db-data:/var/lib/mysql
 
-  adminer:
-    image: adminer:standalone
+  db_admin:
+    image: phpmyadmin
     container_name: cv_react_db_admin
     ports:
-      - 8080:8080
+      - 8080:80
     restart: unless-stopped
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: root
     volumes:
       - cv_react_db-admin:/var/lib/db/data
+    depends_on:
+      - db
 
   api:
     build: ./server
@@ -28,10 +33,14 @@ services:
     ports:
       - 5000:5000
     env_file:
-      - ./server/.env.production
+      - ./server/.docker.env
     restart: unless-stopped
+    volumes:
+      - ./server/:/backend
+      - /backend/node_modules
     links:
       - db
+    command: yarn dev
 
   web:
     build: ./client
@@ -40,9 +49,13 @@ services:
       - 3000:3000
     restart: unless-stopped
     env_file:
-      - ./client/.env.production
+      - ./client/.docker.env
+    volumes:
+      - ./client/:/frontend
+      - /frontend/node_modules
     links:
       - api
+    command: yarn dev
 
 volumes:
   cv_react_db-data:

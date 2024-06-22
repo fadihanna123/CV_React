@@ -1,5 +1,5 @@
 import type { ErrorRequestHandler, Request, Response } from 'express';
-import { logger } from 'tools';
+import { logger } from '../tools';
 
 /**
  * Handle server errors.

@@ -1,4 +1,4 @@
-import { getMenu, sendMail } from 'controllers';
+import { getMenu, sendMail } from '../controllers';
 import { Router } from 'express';
 
 const router: Router = Router();

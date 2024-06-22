@@ -1,7 +1,7 @@
 import type { Response } from 'express';
-import { transporter } from 'server';
-import { logger } from 'tools';
-import { apiKey, authorizationKey, storeError, storeLog } from 'utils';
+import { transporter } from '../server';
+import { logger } from '../tools';
+import { apiKey, authorizationKey, storeError, storeLog } from '../utils';
 import Validator from 'validator';
 
 /**

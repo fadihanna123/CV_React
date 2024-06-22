@@ -1,13 +1,13 @@
-import 'tasks';
-import routes from 'api/routes';
-import { listenFn } from 'controllers';
-import { connectDb } from 'db';
+import './tasks';
+import routes from './api/routes';
+import { listenFn } from './controllers';
+import { connectDb } from './db';
 import dotenv from 'dotenv';
 import express, { json, urlencoded, Application } from 'express';
 import rateLimit from 'express-rate-limit';
 import helmet from 'helmet';
 import nodemailer from 'nodemailer';
-import { logger } from 'tools';
+import { logger } from './tools';
 import {
   allowedURLs,
   errorHandler,
@@ -15,7 +15,7 @@ import {
   serverPort,
   storeLog,
   uname,
-} from 'utils';
+} from './utils';
 import cors, { CorsOptions } from 'cors';
 
 /**

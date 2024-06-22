@@ -51,7 +51,7 @@ const Projects: React.FC = () => (
           </ProjectLink>
           <ProjectLink
             target='_blank'
-            href='https://funny-moxie-323a72.netlify.app'
+            href='https://pixabayfinderx.netlify.app/'
           >
             <i className='fa-solid fa-globe'></i>
           </ProjectLink>

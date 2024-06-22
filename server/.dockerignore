@@ -13,6 +13,7 @@ src/logs
 
 # Enviroment
 .env
+.docker.env
 
 # Linting
 .eslintrc.js

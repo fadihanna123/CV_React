@@ -1,7 +1,7 @@
-import { prisma } from 'db';
+import { prisma } from '../db';
 import type { Request, Response } from 'express';
-import { logger } from 'tools';
-import { apiKey, authorizationKey, storeError } from 'utils';
+import { logger } from '../tools';
+import { apiKey, authorizationKey, storeError } from '../utils';
 
 /**
  * Get all menu items.
