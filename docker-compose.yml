@@ -1,6 +1,6 @@
 services:
   db:
-    image: mysql:latest
+    image: mysql:lts-oraclelinux9
     container_name: cv_react_db
     restart: unless-stopped
     ports:
@@ -14,7 +14,7 @@ services:
       - cv_react_db-data:/var/lib/mysql
 
   db_admin:
-    image: phpmyadmin
+    image: phpmyadmin:fpm-alpine
     container_name: cv_react_db_admin
     ports:
       - 8080:80
