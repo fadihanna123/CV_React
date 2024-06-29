@@ -3,6 +3,7 @@ node_modules
 
 # Docker
 Dockerfile
+.dockerignore
 
 # Docs
 dbDocs
@@ -17,3 +18,4 @@ src/logs
 
 # Linting
 .eslintrc.js
+.editorconfig

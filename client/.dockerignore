@@ -3,6 +3,7 @@ node_modules
 
 # Docker
 Dockerfile
+.dockerignore
 
 # Enviroment
 .env
@@ -10,6 +11,7 @@ Dockerfile
 
 # Linting
 .eslintrc.js
+.editorconfig
 
 # Public assets
 public/manifest.json
