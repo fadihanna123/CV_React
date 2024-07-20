@@ -4,7 +4,7 @@
     {
       "label": "Install Dependencies - Server",
       "type": "shell",
-      "command": "yarn --emoji",
+      "command": "yarn --emoji --silent --production --ignore-scripts",
       "presentation": {
         "reveal": "silent",
         "close": true
@@ -16,7 +16,7 @@
     {
       "label": "Install Dependencies - Client",
       "type": "shell",
-      "command": "yarn --emoji",
+      "command": "yarn --emoji --silent --production --ignore-scripts",
       "presentation": {
         "reveal": "silent",
         "close": true
@@ -28,7 +28,7 @@
     {
       "label": "Remove dependencies - Server",
       "type": "shell",
-      "command": "rm -rf node_modules dist build",
+      "command": "rimraf node_modules dist build",
       "presentation": {
         "reveal": "silent",
         "close": true
@@ -40,7 +40,7 @@
     {
       "label": "Remove dependencies - Client",
       "type": "shell",
-      "command": "rm -rf node_modules dist build",
+      "command": "rimraf node_modules dist build",
       "presentation": {
         "reveal": "silent",
         "close": true
