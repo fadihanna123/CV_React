@@ -1,4 +1,4 @@
-import { Icons } from 'components';
+import Icons from 'components/Icons';
 import React from 'react';
 import { Row } from 'styles';
 import { SkillsHeading } from 'styles/startStyles';

@@ -2,7 +2,8 @@ import { Container } from 'styles';
 import React from 'react';
 
 // Components
-import { Header, Footer } from 'inc';
+import Header from 'inc/Header';
+import Footer from 'inc/Footer';
 import { useAppDispatch } from '../redux/app';
 import { setLoading, setMenu } from '../redux/reducers';
 import { getMenu } from 'functions';

@@ -10,22 +10,12 @@ const About: React.FC = () => (
         Jag är en glad, social person som trivs med livet och har hjärtat på
         rätt
         <br />
-        plats! Föddes i Syrien där jag studerade i åtta år. Kom till Sverige för
-        <br />
-        över 10 år sedan. När jag kom hit 2007 började intressera mig för
-        <br />
-        Webbutveckling, och sedan dess är jag fast. Har utbildat mig till
-        <br />
-        utvecklare, med fokus på webbutveckling. Just nu arbetar jag med
-        <br />
-        JavaScript (React), TypeScript, HTML, CSS, Strapi m.m. Men jag själv
-        <br />
-        skulle kalla mig för en Fullstack utvecklare, då jag arbetat både med
-        <br /> Backend (PHP) samt Frontend utveckling (JavaScript, React,
-        TypeScript,
-        <br />
-        HTML, CSS etc.). <br />
-        Har ni några funderingar är ni välkomna att höra av er. &#x1F4F1;
+        plats! Sedan år 2010 blev jag genast intresserad av webbutveckling, och
+        har fortsatt med det spåret sedan dess. NJag har utbildat mig till
+        utvecklare, med fokus på webbutveckling. Jag skulle kalla mig en
+        Fullstack utvecklare, eftersom jag arbetade med båda Backend (PHP, Node
+        JS) och frontend-utveckling (JavaScript, React, Angular, TypeScript,
+        HTML, CSS, etc.).
       </AboutTxt>
     </Col50>
     <Col25>

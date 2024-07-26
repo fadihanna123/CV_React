@@ -8,6 +8,22 @@ const Work: React.FC = () => {
       <WorkHeading>Arbetsliverfarenhet</WorkHeading>
       <WorkList>
         <li>
+          <b>Fullstack utvecklare - Praktik</b>
+          <br />
+          Luday
+          <br />
+          April
+          <CountUp
+            separator=''
+            duration={1}
+            start={2024}
+            end={2024}
+            className='count'
+          />
+          - Nu
+        </li>
+
+        <li>
           <b>Datakonsult - Grundare</b>
           <br />
           Södertälje Techhouse
@@ -20,30 +36,7 @@ const Work: React.FC = () => {
             end={2023}
             className='count'
           />
-          - Now
-        </li>
-
-        <li>
-          <b>Systemutvecklare - Grundare</b>
-          <br />
-          Let&apos;s code
-          <br />
-          Oktober
-          <CountUp
-            separator=''
-            duration={1}
-            start={0}
-            end={2022}
-            className='count'
-          />
-          - Januari
-          <CountUp
-            separator=''
-            duration={1}
-            start={0}
-            end={2023}
-            className='count'
-          />
+          - Nu
         </li>
 
         <li>

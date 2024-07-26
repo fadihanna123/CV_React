@@ -1,6 +1,6 @@
 import Github from 'assets/Github.png';
 import { Col, Icon, Row } from 'styles/footerStyles';
-import { MainFooter } from 'ui';
+import MainFooter from 'ui/MainFooter';
 import { githubURL } from 'utils';
 import React from 'react';
 

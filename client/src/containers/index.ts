@@ -1,4 +1,4 @@
-export { default as App } from './App';
-export { default as Contact } from './Contact';
-export { default as ContactForm } from './ContactForm';
-export { default as MenuItem } from './MenuItem';
+export * from './App';
+export * from './Contact';
+export * from './ContactForm';
+export * from './MenuItem';

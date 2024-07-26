@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { MainFooter } from 'ui';
+import MainFooter from 'ui/MainFooter';
 
 const meta: Meta<typeof MainFooter> = {
   title: 'MainFooter',

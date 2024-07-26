@@ -1,10 +1,13 @@
 import Logo from 'assets/logo.jpg';
-import { Contact, MenuItem } from 'containers';
+import Contact from 'containers/Contact';
+import MenuItem from 'containers/MenuItem';
 import React, { Fragment } from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
-import { MainHeader, MainMenu } from 'ui';
-import { Start, Projects } from 'components';
+import MainHeader from 'ui/MainHeader';
+import MainMenu from 'ui/MainMenu';
+import Start from 'components/Home';
+import Projects from 'components/Projects';
 import { useAppSelector } from '../redux/app';
 import { getMenuState } from '../redux/reducers';
 

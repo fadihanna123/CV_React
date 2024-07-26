@@ -1,6 +1,7 @@
 import { ThirdRow } from 'styles';
 import React from 'react';
-import { Studies, Work } from './Start';
+import Studies from './Start/Studies';
+import Work from './Start/Work';
 
 const WorknStudies: React.FC = () => {
   return (

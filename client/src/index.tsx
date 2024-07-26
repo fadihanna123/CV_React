@@ -9,7 +9,7 @@ import ReactDom from 'react-dom/client';
 import { QueryClient, QueryClientProvider } from 'react-query';
 
 // Components
-import { App } from 'containers';
+import App from 'containers/App';
 
 const { NODE_ENV, REACT_APP_PUBLIC_API_KEY, REACT_APP_PUBLIC_AUTHORIZATION } =
   process.env;

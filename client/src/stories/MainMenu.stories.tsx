@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { MainMenu } from 'ui';
+import MainMenu from 'ui/MainMenu';
 
 const meta: Meta<typeof MainMenu> = {
   title: 'MainMenu',
