@@ -4,17 +4,16 @@ import React from 'react';
 // Components
 import Header from 'inc/Header';
 import Footer from 'inc/Footer';
-import { useAppDispatch } from '../redux/app';
 import { setLoading, setMenu } from '../redux/reducers';
 import { getMenu } from 'functions';
 import { CSSProperties } from 'styled-components';
 import { useQuery } from 'react-query';
 import { PacmanLoader } from 'react-spinners';
+import useReduxConsts from 'hooks/useReduxConsts';
 
 const App: React.FC = () => {
+  const { dispatch } = useReduxConsts();
   const { isLoading, data: menuData } = useQuery('repoData', getMenu);
-
-  const dispatch = useAppDispatch();
 
   if (isLoading) {
     dispatch(setLoading(true));

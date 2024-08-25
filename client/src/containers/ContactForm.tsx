@@ -1,6 +1,4 @@
 import { contactMe, typer } from 'functions';
-import { useAppDispatch, useAppSelector } from '../redux/app';
-import { getContactForm } from '../redux/reducers';
 import {
   Col10,
   Col25,
@@ -13,11 +11,10 @@ import {
 } from 'styles';
 import React from 'react';
 import { Flip, ToastContainer } from 'react-toastify';
+import useReduxConsts from 'hooks/useReduxConsts';
 
 const ContactForm: React.FC = () => {
-  const contactForm = useAppSelector(getContactForm);
-
-  const dispatch = useAppDispatch();
+  const { contactForm, dispatch } = useReduxConsts();
 
   return (
     <ContactBlock>

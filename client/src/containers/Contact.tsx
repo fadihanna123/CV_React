@@ -1,13 +1,11 @@
 import ContactForm from 'containers/ContactForm';
-import { useAppSelector } from '../redux/app';
-import { getContactFormAlert, getContactFormErr } from '../redux/reducers';
 import { Alert, ContactContent, ContactHeading, ContactText } from 'styles';
 import React from 'react';
 import HTMLReactParser from 'html-react-parser';
+import useReduxConsts from 'hooks/useReduxConsts';
 
 const Contact: React.FC = () => {
-  const contactFormErr = useAppSelector(getContactFormErr);
-  const contactFormAlert = useAppSelector(getContactFormAlert);
+  const { contactFormAlert, contactFormErr } = useReduxConsts();
 
   return (
     <>

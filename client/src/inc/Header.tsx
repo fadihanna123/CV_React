@@ -8,11 +8,10 @@ import MainHeader from 'ui/MainHeader';
 import MainMenu from 'ui/MainMenu';
 import Start from 'components/Home';
 import Projects from 'components/Projects';
-import { useAppSelector } from '../redux/app';
-import { getMenuState } from '../redux/reducers';
+import useReduxConsts from 'hooks/useReduxConsts';
 
 const Header: React.FC = () => {
-  const menu = useAppSelector(getMenuState);
+  const { menu } = useReduxConsts();
 
   return (
     <>

@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
-import { useAppDispatch } from '../redux/app';
 import { setContactForm, setContactFormAlert } from '../redux/reducers';
+import useReduxConsts from 'hooks/useReduxConsts';
 
 const MenuItem: React.FC<{
   item: Menu;
 }> = ({ item }: { item: Menu }) => {
-  const dispatch = useAppDispatch();
+  const { dispatch } = useReduxConsts();
 
   return (
     <Link

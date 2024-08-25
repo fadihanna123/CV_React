@@ -65,6 +65,7 @@ export default [
     },
 
     rules: {
+      'editorconfig/linebreak-style': 'off',
       '@typescript-eslint/no-var-requires': 'off',
 
       'prettier/prettier': [
