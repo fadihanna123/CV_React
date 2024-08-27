@@ -6,7 +6,7 @@ export const Row = styled.div`
   justify-content: center;
   transition: 0.3s all;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1020px) {
     flex-direction: column;
   }
 `;
@@ -94,7 +94,7 @@ export const FormLabel = styled.label`
   font-size: 19px;
   transition: 0.3s all;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1020px) {
     text-align: center;
   }
 `;
@@ -103,7 +103,7 @@ export const Col10 = styled.div`
   width: 10%;
   transition: 0.3s all;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1020px) {
     width: 100%;
   }
 `;
@@ -112,7 +112,7 @@ export const Col25 = styled.div`
   width: 25%;
   transition: 0.3s all;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1020px) {
     width: 98%;
   }
 `;
@@ -128,7 +128,7 @@ export const ContactContent = styled.div`
   margin-bottom: 100px;
   transition: 0.3s all;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1020px) {
     background-size: cover;
     height: 220px;
   }
@@ -143,7 +143,7 @@ export const ContactHeading = styled.h1`
   padding-right: 280px;
   transition: 0.3s all;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1020px) {
     margin: 0;
     padding: 0;
     height: 100px;
@@ -169,7 +169,7 @@ export const ContactText = styled.p`
   padding-right: 300px;
   transition: 0.3s all;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1020px) {
     margin: 0;
     padding: 1px;
   }

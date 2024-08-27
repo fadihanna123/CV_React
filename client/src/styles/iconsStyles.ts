@@ -15,7 +15,7 @@ export const Col = styled.div`
   line-height: 2em;
   transition: 0.3s;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1020px) {
     width: 100%;
     text-align: center;
   }

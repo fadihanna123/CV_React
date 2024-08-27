@@ -5,7 +5,7 @@ export const TxtRow = styled.div`
   justify-content: center;
   transition: 0.3s all;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1020px) {
     flex-direction: column;
     width: 100%;
   }
@@ -17,7 +17,7 @@ export const Col25 = styled.div`
   margin-left: 50px;
   transition: 0.3s all;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1020px) {
     width: 100%;
     margin: 0;
   }
@@ -27,7 +27,7 @@ export const Col50 = styled.div`
   width: 50%;
   transition: 0.3s all;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1020px) {
     width: 100%;
     margin: 0;
   }
@@ -48,7 +48,7 @@ export const ProfilePhoto = styled.img`
   margin: 10px;
   transition: 0.3s all;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1020px) {
     width: 100%;
     margin: 0;
   }

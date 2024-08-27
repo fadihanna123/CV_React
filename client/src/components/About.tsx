@@ -1,5 +1,4 @@
 import ProfileBild from 'assets/Profilbild.jpg';
-import { Col25 } from 'styles';
 import { AboutTxt, Col50, ProfilePhoto, TxtRow } from 'styles/aboutStyles';
 import React from 'react';
 
@@ -18,14 +17,14 @@ const About: React.FC = () => (
         HTML, CSS, etc.).
       </AboutTxt>
     </Col50>
-    <Col25>
+    <Col50>
       <ProfilePhoto
         src={ProfileBild}
         aria-label='Profilbild'
         loading='lazy'
         alt='Profilbild'
       />
-    </Col25>
+    </Col50>
   </TxtRow>
 );
 

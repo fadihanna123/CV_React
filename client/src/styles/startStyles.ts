@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 export const WhoContent = styled.div`
   background: url(${Coding});
-  height: 400px;
   color: #fff;
   text-align: center;
   font-size: 32px;
@@ -11,7 +10,7 @@ export const WhoContent = styled.div`
   background-size: cover;
   transition: 0.3s;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1020px) {
     background-size: cover;
     height: 300px;
   }
@@ -26,7 +25,7 @@ export const WhoHeading = styled.h1`
   padding-right: 280px;
   transition: 0.3s;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1020px) {
     margin: 0;
     padding: 0;
     height: 100px;
@@ -38,10 +37,10 @@ export const Who = styled.p`
   font-style: italic;
   color: #fff;
   padding-top: 60px;
-  padding-right: 300px;
+  padding-right: 500px;
   transition: 0.3s;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1020px) {
     margin: 0;
     padding: 1px;
   }
@@ -51,13 +50,17 @@ export const SkillsHeading = styled.h1`
   font-style: italic;
   height: 50px;
   font-size: 32px;
-  margin-left: 750px;
   transition: 0.3s;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1020px) {
     margin: 0;
     text-align: center;
   }
+`;
+
+export const SkillsHeadingContainer = styled.h1`
+  display: flex;
+  justify-content: center;
 `;
 
 export const Row = styled.div`

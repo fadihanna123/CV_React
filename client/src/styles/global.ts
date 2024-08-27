@@ -36,7 +36,7 @@ export default createGlobalStyle`
     transition: 0.3s;
   }
 
-  @media (max-width: 1500px)
+  @media (max-width: 1020px)
   {
     body
     {

@@ -22,7 +22,7 @@ export const Row = styled.div`
   flex-direction: row;
   transition: 0.3s;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1020px) {
     flex-direction: column;
   }
 `;
@@ -31,7 +31,7 @@ export const Col = styled.div`
   width: 20%;
   transition: 0.3s;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1020px) {
     width: 100%;
   }
 `;

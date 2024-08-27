@@ -1,12 +1,14 @@
 import Icons from 'components/Icons';
 import React from 'react';
 import { Row } from 'styles';
-import { SkillsHeading } from 'styles/startStyles';
+import { SkillsHeading, SkillsHeadingContainer } from 'styles/startStyles';
 
 const Skills: React.FC = () => {
   return (
     <>
-      <SkillsHeading>Kompetenser</SkillsHeading>
+      <SkillsHeadingContainer>
+        <SkillsHeading>Kompetenser</SkillsHeading>
+      </SkillsHeadingContainer>
       <br />
       <Row>
         <Icons />

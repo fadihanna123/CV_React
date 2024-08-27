@@ -28,7 +28,7 @@ export const Navbar = styled.nav`
     transition: 0.3s;
   }
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1020px) {
     flex-direction: column;
     transition: 0.3s;
 

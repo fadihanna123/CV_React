@@ -9,7 +9,7 @@ export const ProjectsText = styled.p`
   padding-right: 300px;
   transition: 0.3s;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1020px) {
     margin: 0;
     padding: 1px;
   }
@@ -25,7 +25,7 @@ export const ProjectsContent = styled.div`
   background-size: cover;
   transition: 0.3s;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1020px) {
     background-size: cover;
     height: 220px;
   }
@@ -40,7 +40,7 @@ export const ProjectsHeading = styled.h1`
   padding-right: 280px;
   transition: 0.3s;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1020px) {
     margin: 0;
     padding: 0;
     height: 100px;
@@ -54,23 +54,22 @@ export const ProjectsRow = styled.div`
   margin-top: 50px;
   transition: 0.3s;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1020px) {
     flex-direction: column;
   }
 `;
 
 export const ProjectsCol = styled.div`
-  width: 25%;
+  width: 50%;
   transition: 0.3s;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1020px) {
     width: 100%;
   }
 `;
 
 export const Card = styled.div`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
   padding: 2px 16px;
   margin: 10px;
   text-align: center;
@@ -98,7 +97,7 @@ export const ProjectTitle = styled.h1`
   text-align: center;
   transition: 0.3s;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1020px) {
     font-size: 25px;
   }
 `;
@@ -115,7 +114,7 @@ export const ProjectLink = styled.a`
     transition: 0.3s;
   }
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1020px) {
     display: flex;
     flex-direction: column;
   }
