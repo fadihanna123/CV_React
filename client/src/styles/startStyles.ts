@@ -58,7 +58,7 @@ export const SkillsHeading = styled.h1`
   }
 `;
 
-export const SkillsHeadingContainer = styled.h1`
+export const SkillsHeadingContainer = styled.div`
   display: flex;
   justify-content: center;
 `;

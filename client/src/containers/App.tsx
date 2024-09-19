@@ -1,5 +1,5 @@
 import { Container } from 'styles';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 // Components
 import Header from 'inc/Header';
@@ -15,12 +15,14 @@ const App: React.FC = () => {
   const { dispatch } = useReduxConsts();
   const { isLoading, data: menuData } = useQuery('repoData', getMenu);
 
-  if (isLoading) {
-    dispatch(setLoading(true));
-  } else {
-    dispatch(setMenu(menuData));
-    dispatch(setLoading(false));
-  }
+  useEffect(() => {
+    if (isLoading) {
+      dispatch(setLoading(true));
+    } else {
+      dispatch(setMenu(menuData));
+      dispatch(setLoading(false));
+    }
+  }, []);
 
   const override: CSSProperties = {
     position: 'fixed',
