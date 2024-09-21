@@ -10,7 +10,7 @@ const createStar: React.FC<{ count: number; alt: string }> = ({
 }) => {
   const grids: React.JSX.Element[] = [];
   for (let i = 1; i <= count; i++) {
-    grids.push(<Icon key={i} src={Star} alt='react' />);
+    grids.push(<Icon key={i} src={Star} alt={alt} />);
   }
 
   return grids;
