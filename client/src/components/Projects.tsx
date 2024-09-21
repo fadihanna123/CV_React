@@ -1,6 +1,3 @@
-import Project3 from 'assets/2.png';
-import Project10 from 'assets/5.png';
-import Project8 from 'assets/6.png';
 import {
   Card,
   ProjectImage,
@@ -13,6 +10,7 @@ import {
   ProjectTitle,
 } from 'styles';
 import React from 'react';
+import { projectList } from 'utils/consts';
 
 const Projects: React.FC = () => (
   <>
@@ -21,60 +19,22 @@ const Projects: React.FC = () => (
       <ProjectsText>Här kan du se mina tidigare projekt.</ProjectsText>
     </ProjectsContent>
     <ProjectsRow>
-      <ProjectsCol>
-        <Card>
-          <ProjectTitle>Intranätet(Dashboard)</ProjectTitle>
-          <ProjectImage src={Project3} alt='Intranätsprojekt' />
-          <ProjectLink
-            target='_blank'
-            href='https://github.com/fadihanna123/Intranat'
-          >
-            <i className='fa-brands fa-github'></i>
-          </ProjectLink>
-          <ProjectLink
-            target='_blank'
-            href='https://intranet.gssonsel.se.185-133-206-116.bb.kringelstan.se/index.php'
-          >
-            <i className='fa-solid fa-globe'></i>
-          </ProjectLink>
-        </Card>
-      </ProjectsCol>
-      <ProjectsCol>
-        <Card>
-          <ProjectTitle>PixabayFinder</ProjectTitle>
-          <ProjectImage src={Project8} alt='PixabayFinder' />
-          <ProjectLink
-            target='_blank'
-            href='https://github.com/fadihanna123/PixaBayFinder'
-          >
-            <i className='fa-brands fa-github'></i>
-          </ProjectLink>
-          <ProjectLink
-            target='_blank'
-            href='https://pixabayfinderx.netlify.app/'
-          >
-            <i className='fa-solid fa-globe'></i>
-          </ProjectLink>
-        </Card>
-      </ProjectsCol>
-      <ProjectsCol>
-        <Card>
-          <ProjectTitle>Datahjälp</ProjectTitle>
-          <ProjectImage src={Project10} alt='Datahjälpsprojekt' />
-          <ProjectLink
-            target='_blank'
-            href='https://github.com/fadihanna123/DatahjalpProjekt'
-          >
-            <i className='fa-brands fa-github'></i>
-          </ProjectLink>
-          <ProjectLink
-            target='_blank'
-            href='https://fadihanna123.github.io/DatahjalpProjekt/'
-          >
-            <i className='fa-solid fa-globe'></i>
-          </ProjectLink>
-        </Card>
-      </ProjectsCol>
+      {projectList.map((project: ProjectList) => {
+        return (
+          <ProjectsCol key={project.id}>
+            <Card>
+              <ProjectTitle>{project.title}</ProjectTitle>
+              <ProjectImage src={project.image.path} alt={project.image.alt} />
+              <ProjectLink target='_blank' href={project.links.githubURL}>
+                <i className='fa-brands fa-github'></i>
+              </ProjectLink>
+              <ProjectLink target='_blank' href={project.links.URL}>
+                <i className='fa-solid fa-globe'></i>
+              </ProjectLink>
+            </Card>
+          </ProjectsCol>
+        );
+      })}
     </ProjectsRow>
   </>
 );

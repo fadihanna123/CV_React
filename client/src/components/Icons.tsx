@@ -1,6 +1,6 @@
-import Star from 'assets/star.png';
-import { Col, Icon } from 'styles';
+import { Col } from 'styles';
 import React from 'react';
+import CreateStar from './CreateStar';
 
 const Icons: React.FC = () => (
   <>
@@ -34,163 +34,34 @@ const Icons: React.FC = () => (
       <br /> Gulp
       <br /> Agil
     </Col>
+
     <Col>
-      <Icon src={Star} alt='react'></Icon>
-      <Icon src={Star} alt='react'></Icon>
-      <Icon src={Star} alt='react'></Icon>
-      <Icon src={Star} alt='react'></Icon>
-      <br />
-
-      <Icon src={Star} alt='Javascript'></Icon>
-      <Icon src={Star} alt='Javascript'></Icon>
-      <Icon src={Star} alt='Javascript'></Icon>
-      <Icon src={Star} alt='Javascript'></Icon>
-      <br />
-
-      <Icon src={Star} alt='PHP'></Icon>
-      <Icon src={Star} alt='PHP'></Icon>
-      <Icon src={Star} alt='PHP'></Icon>
-      <Icon src={Star} alt='PHP'></Icon>
-      <Icon src={Star} alt='PHP'></Icon>
-      <br />
-
-      <Icon src={Star} alt='ReactNative'></Icon>
-      <Icon src={Star} alt='ReactNative'></Icon>
-      <Icon src={Star} alt='ReactNative'></Icon>
-      <br />
-
-      <Icon src={Star} alt='wp'></Icon>
-      <Icon src={Star} alt='wp'></Icon>
-      <Icon src={Star} alt='wp'></Icon>
-      <br />
-
-      <Icon src={Star} alt='ASPNET'></Icon>
-      <Icon src={Star} alt='ASPNET'></Icon>
-      <Icon src={Star} alt='ASPNET'></Icon>
-      <Icon src={Star} alt='ASPNET'></Icon>
-      <br />
-
-      <Icon src={Star} alt='Typescript'></Icon>
-      <Icon src={Star} alt='Typescript'></Icon>
-      <Icon src={Star} alt='Typescript'></Icon>
-      <br />
-
-      <Icon src={Star} alt='NodeJS'></Icon>
-      <Icon src={Star} alt='NodeJS'></Icon>
-      <Icon src={Star} alt='NodeJS'></Icon>
-      <Icon src={Star} alt='NodeJS'></Icon>
-      <Icon src={Star} alt='NodeJS'></Icon>
-      <br />
-
-      <Icon src={Star} alt='SQL'></Icon>
-      <Icon src={Star} alt='SQL'></Icon>
-      <Icon src={Star} alt='SQL'></Icon>
-      <Icon src={Star} alt='SQL'></Icon>
-      <Icon src={Star} alt='SQL'></Icon>
-      <br />
-
-      <Icon src={Star} alt='Mongodb'></Icon>
-      <Icon src={Star} alt='Mongodb'></Icon>
-      <Icon src={Star} alt='Mongodb'></Icon>
-      <Icon src={Star} alt='Mongodb'></Icon>
-      <Icon src={Star} alt='Mongodb'></Icon>
-      <br />
-
-      <Icon src={Star} alt='HTML'></Icon>
-      <Icon src={Star} alt='HTML'></Icon>
-      <Icon src={Star} alt='HTML'></Icon>
-      <Icon src={Star} alt='HTML'></Icon>
-      <Icon src={Star} alt='HTML'></Icon>
-      <br />
-
-      <Icon src={Star} alt='CSS'></Icon>
-      <Icon src={Star} alt='CSS'></Icon>
-      <Icon src={Star} alt='CSS'></Icon>
-      <Icon src={Star} alt='CSS'></Icon>
-      <Icon src={Star} alt='CSS'></Icon>
-      <br />
-
-      <Icon src={Star} alt='Sass'></Icon>
-      <Icon src={Star} alt='Sass'></Icon>
-      <Icon src={Star} alt='Sass'></Icon>
-      <br />
-
-      <Icon src={Star} alt='Bootstrap'></Icon>
-      <Icon src={Star} alt='Bootstrap'></Icon>
-      <Icon src={Star} alt='Bootstrap'></Icon>
-      <Icon src={Star} alt='Bootstrap'></Icon>
-      <br />
-
-      <Icon src={Star} alt='PugJS'></Icon>
-      <Icon src={Star} alt='PugJS'></Icon>
-      <Icon src={Star} alt='PugJS'></Icon>
-      <br />
-
-      <Icon src={Star} alt='Git'></Icon>
-      <Icon src={Star} alt='Git'></Icon>
-      <Icon src={Star} alt='Git'></Icon>
-      <Icon src={Star} alt='Git'></Icon>
-      <br />
-
-      <Icon src={Star} alt='jQuery'></Icon>
-      <Icon src={Star} alt='jQuery'></Icon>
-      <Icon src={Star} alt='jQuery'></Icon>
-      <Icon src={Star} alt='jQuery'></Icon>
-      <Icon src={Star} alt='jQuery'></Icon>
-      <br />
-
-      <Icon src={Star} alt='Json'></Icon>
-      <Icon src={Star} alt='Json'></Icon>
-      <Icon src={Star} alt='Json'></Icon>
-      <br />
-
-      <Icon src={Star} alt='Rest'></Icon>
-      <Icon src={Star} alt='Rest'></Icon>
-      <Icon src={Star} alt='Rest'></Icon>
-      <Icon src={Star} alt='Rest'></Icon>
-      <br />
-
-      <Icon src={Star} alt='CMS'></Icon>
-      <Icon src={Star} alt='CMS'></Icon>
-      <Icon src={Star} alt='CMS'></Icon>
-      <Icon src={Star} alt='CMS'></Icon>
-      <br />
-
-      <Icon src={Star} alt='Adobe Ph'></Icon>
-      <Icon src={Star} alt='Adobe Ph'></Icon>
-      <Icon src={Star} alt='Adobe Ph'></Icon>
-      <Icon src={Star} alt='Adobe Ph'></Icon>
-      <br />
-
-      <Icon src={Star} alt='Adobe XD'></Icon>
-      <Icon src={Star} alt='Adobe XD'></Icon>
-      <Icon src={Star} alt='Adobe XD'></Icon>
-      <Icon src={Star} alt='Adobe XD'></Icon>
-      <br />
-
-      <Icon src={Star} alt='Heroku'></Icon>
-      <Icon src={Star} alt='Heroku'></Icon>
-      <Icon src={Star} alt='Heroku'></Icon>
-      <Icon src={Star} alt='Heroku'></Icon>
-      <br />
-
-      <Icon src={Star} alt='C#'></Icon>
-      <Icon src={Star} alt='C#'></Icon>
-      <Icon src={Star} alt='C#'></Icon>
-      <Icon src={Star} alt='C#'></Icon>
-      <br />
-
-      <Icon src={Star} alt='Gulp'></Icon>
-      <Icon src={Star} alt='Gulp'></Icon>
-      <Icon src={Star} alt='Gulp'></Icon>
-      <Icon src={Star} alt='Gulp'></Icon>
-      <br />
-
-      <Icon src={Star} alt='Agil'></Icon>
-      <Icon src={Star} alt='Agil'></Icon>
-      <Icon src={Star} alt='Agil'></Icon>
-      <Icon src={Star} alt='Agil'></Icon>
-      <br />
+      <CreateStar count={2} alt='React' /> <br />
+      <CreateStar count={4} alt='Javascript' /> <br />
+      <CreateStar count={5} alt='PHP' /> <br />
+      <CreateStar count={3} alt='ReactNative' /> <br />
+      <CreateStar count={3} alt='wp' /> <br />
+      <CreateStar count={4} alt='ASPNET' /> <br />
+      <CreateStar count={3} alt='Typescript' /> <br />
+      <CreateStar count={5} alt='NodeJS' /> <br />
+      <CreateStar count={5} alt='SQL' /> <br />
+      <CreateStar count={5} alt='Mongodb' /> <br />
+      <CreateStar count={5} alt='HTML' /> <br />
+      <CreateStar count={5} alt='CSS' /> <br />
+      <CreateStar count={3} alt='Scss' /> <br />
+      <CreateStar count={4} alt='Bootstrap' /> <br />
+      <CreateStar count={2} alt='PugJS' /> <br />
+      <CreateStar count={4} alt='Git' /> <br />
+      <CreateStar count={5} alt='jQuery' /> <br />
+      <CreateStar count={3} alt='Json' /> <br />
+      <CreateStar count={4} alt='Rest' /> <br />
+      <CreateStar count={4} alt='CMS' /> <br />
+      <CreateStar count={4} alt='Adobe Ph' /> <br />
+      <CreateStar count={4} alt='Adobe XD' /> <br />
+      <CreateStar count={4} alt='Heroku' /> <br />
+      <CreateStar count={4} alt='C#' /> <br />
+      <CreateStar count={4} alt='Gulp' /> <br />
+      <CreateStar count={4} alt='Agil' /> <br />
     </Col>
   </>
 );

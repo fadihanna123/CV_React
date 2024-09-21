@@ -44,7 +44,6 @@ export const StudieHeading = styled.h1`
 `;
 
 export const StudieCol = styled.div`
-  width: 15%;
   line-height: 2em;
   transition: 0.3s;
 

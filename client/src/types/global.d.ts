@@ -60,6 +60,43 @@ declare global {
   interface MenuProps {
     children: React.ReactNode;
   }
+
+  interface ProjectList {
+    id: number;
+    title: string;
+    image: {
+      path: string;
+      alt: string;
+    };
+    links: {
+      githubURL: string;
+      URL: string;
+    };
+  }
+
+  interface StudioList {
+    id: number;
+    title: string;
+    schoolName: string;
+    city?: string;
+    start: {
+      month: string;
+      year: number;
+    };
+    end: { month: string; year: number };
+  }
+
+  interface WorkList {
+    id: number;
+    title: string;
+    workPlace: string;
+    city?: string;
+    start: {
+      month: string;
+      year: number;
+    };
+    end: { month: string; year: number };
+  }
 }
 
 export {};
