@@ -18,6 +18,3 @@ node_modules/
 
 # Storybook
 storybook-static
-
-# Stores VSCode versions used for testing VSCode extensions
-launch.json

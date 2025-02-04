@@ -9,5 +9,10 @@
     "dev": "concurrently \"cd server && yarn dev\" \"cd client && yarn dev\"",
     "seed": "cd server && yarn seed",
     "clear": "rimraf node_modules && cd server && rimraf node_modules && cd .. && cd client && rimraf node_modules build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.3"
   }
 }
