@@ -1,4 +1,4 @@
-import Coding from 'assets/coding.jpg';
+import Coding from '@assets/coding.jpg';
 import styled from 'styled-components';
 
 export const ProjectsText = styled.p`

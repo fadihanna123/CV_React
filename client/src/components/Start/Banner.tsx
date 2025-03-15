@@ -1,5 +1,7 @@
 import React from 'react';
-import { Who, WhoContent, WhoHeading } from 'styles/startStyles';
+
+// Components
+import { Who, WhoContent, WhoHeading } from '@styles/startStyles';
 
 const Banner = () => {
   return (

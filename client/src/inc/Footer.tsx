@@ -1,8 +1,10 @@
-import Github from 'assets/Github.png';
-import { Col, Icon, Row } from 'styles/footerStyles';
-import MainFooter from 'ui/MainFooter';
-import { githubURL } from 'utils';
 import React from 'react';
+
+// Components
+import Github from '@assets/Github.png';
+import { Col, Icon, Row } from '@styles/footerStyles';
+import MainFooter from '@ui/MainFooter';
+import { githubURL } from '@utils/index';
 
 const Footer: React.FC = () => (
   <MainFooter>

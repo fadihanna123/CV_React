@@ -8,9 +8,9 @@ import {
   ProjectsRow,
   ProjectsText,
   ProjectTitle,
-} from 'styles';
+} from '@styles/index';
 import React from 'react';
-import { projectList } from 'utils/consts';
+import { projectList } from '@utils/consts';
 
 const Projects: React.FC = () => (
   <>

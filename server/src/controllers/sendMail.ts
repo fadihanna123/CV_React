@@ -1,7 +1,7 @@
 import type { Response } from 'express';
 import { transporter } from '../server';
 import { logger } from '../tools';
-import { apiKey, authorizationKey, storeError, storeLog } from '../utils';
+import { apiKey, storeError, storeLog } from '../utils';
 import Validator from 'validator';
 
 /**
@@ -19,10 +19,7 @@ export const sendMail = async (
   req: TypedRequest<ContactFormData>,
   res: Response
 ): Promise<void> => {
-  if (
-    req.get('apiKey') === apiKey &&
-    req.get('Authorization') === authorizationKey
-  ) {
+  if (req.get('apiKey') === apiKey) {
     const { mail, fullname, phone, msg } = req.body;
 
     if (
@@ -65,7 +62,7 @@ export const sendMail = async (
 
     try {
       await transporter.sendMail(mailData);
-      storeLog('Mail sent', 'POST', '/mailit');
+      storeLog('Mail sent', 'POST', '/api/mailit');
       res.json({
         type: 'success',
         msg: `Tack för att du kontaktar mig.
@@ -76,7 +73,7 @@ export const sendMail = async (
       `,
       });
     } catch (error) {
-      storeError((error as Error).message, 'POST', '/mailit');
+      storeError((error as Error).message, 'POST', '/api/mailit');
       logger.error((error as Error).message);
       res.json({
         type: 'error',
@@ -84,8 +81,8 @@ export const sendMail = async (
       });
     }
   } else {
-    storeError('No headers provided!', 'POST', '/mailit');
-    logger.error('No headers provided on POST /mailit!');
+    storeError('No headers provided!', 'POST', '/api/mailit');
+    logger.error('No headers provided on POST /api/mailit!');
 
     res.json({ message: 'FORBIDDEN' });
   }

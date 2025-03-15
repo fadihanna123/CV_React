@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
 import { setContactForm, setContactFormAlert } from '../redux/reducers';
-import useReduxConsts from 'hooks/useReduxConsts';
+import useReduxConsts from '@hooks/useReduxConsts';
 
 const MenuItem: React.FC<{
   item: Menu;
@@ -21,6 +21,7 @@ const MenuItem: React.FC<{
             phone: '',
           })
         );
+
         dispatch(setContactFormAlert(false));
       }}
     >

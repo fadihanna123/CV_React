@@ -1,8 +1,13 @@
-import ContactForm from 'containers/ContactForm';
-import { Alert, ContactContent, ContactHeading, ContactText } from 'styles';
+import ContactForm from '@containers/ContactForm';
+import {
+  Alert,
+  ContactContent,
+  ContactHeading,
+  ContactText,
+} from '@styles/index';
 import React from 'react';
 import HTMLReactParser from 'html-react-parser';
-import useReduxConsts from 'hooks/useReduxConsts';
+import useReduxConsts from '@hooks/useReduxConsts';
 
 const Contact: React.FC = () => {
   const { contactFormAlert, contactFormErr } = useReduxConsts();

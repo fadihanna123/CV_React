@@ -1,6 +1,6 @@
-import Project3 from 'assets/2.png';
-import Project10 from 'assets/5.png';
-import Project8 from 'assets/6.png';
+import Project3 from '@assets/2.PNG';
+import Project10 from '@assets/5.png';
+import Project8 from '@assets/6.PNG';
 
 const workList: WorkList[] = [
   {

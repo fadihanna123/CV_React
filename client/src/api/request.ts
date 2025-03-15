@@ -1,12 +1,11 @@
 import axios from 'axios';
-import { apiKey, authorizationKey, backendURL } from 'utils/envs';
+import { apiKey, backendURL } from '@utils/envs';
 
 const globalHeader: ContentTypeHeaders = 'application/json';
 
 axios.defaults.baseURL = backendURL;
 axios.defaults.headers.common['Content-Type'] = globalHeader;
 axios.defaults.headers.common.apiKey = apiKey;
-axios.defaults.headers.common.authorization = authorizationKey;
 
 export const request = {
   get: async <T>(url: Paths) => {

@@ -1,7 +1,7 @@
 import { prisma } from '../db';
 import type { Request, Response } from 'express';
 import { logger } from '../tools';
-import { apiKey, authorizationKey, storeError } from '../utils';
+import { apiKey, storeError } from '../utils';
 
 /**
  * Get all menu items.
@@ -11,13 +11,10 @@ import { apiKey, authorizationKey, storeError } from '../utils';
  */
 
 export const getMenu = async (req: Request, res: Response) => {
-  if (
-    req.get('apiKey') === apiKey &&
-    req.get('Authorization') === authorizationKey
-  ) {
+  if (req.get('apiKey') === apiKey) {
     const getList = await prisma.menu.findMany();
     if (getList.length === 0) {
-      storeError('No menu links exist.', 'GET', '/menu');
+      storeError('No menu links exist.', 'GET', '/api/menu');
       logger.error('No menu links exist.');
     }
 
@@ -25,8 +22,8 @@ export const getMenu = async (req: Request, res: Response) => {
       res.json(getList);
     }, 2000);
   } else {
-    storeError('No headers provided!', 'GET', '/menu');
-    logger.error('No headers provided on GET /menu!');
+    storeError('No headers provided!', 'GET', '/api/menu');
+    logger.error('No headers provided on GET /api/menu!');
 
     res.json({ message: 'FORBIDDEN' });
   }

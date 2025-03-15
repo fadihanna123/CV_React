@@ -1,7 +1,9 @@
 import React from 'react';
 import CountUp from 'react-countup';
-import { WorkCol, WorkHeading, WorkList } from 'styles';
-import { workList } from 'utils/consts';
+
+// Components
+import { WorkCol, WorkHeading, WorkList } from '@styles/index';
+import { workList } from '@utils/consts';
 
 const Work: React.FC = () => {
   return (

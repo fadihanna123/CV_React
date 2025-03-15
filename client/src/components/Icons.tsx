@@ -1,5 +1,7 @@
-import { Col } from 'styles';
 import React from 'react';
+
+// Components
+import { Col } from '@styles/index';
 import CreateStar from './CreateStar';
 
 const Icons: React.FC = () => (

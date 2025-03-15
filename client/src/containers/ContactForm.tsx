@@ -1,4 +1,8 @@
-import { contactMe, typer } from 'functions';
+import React from 'react';
+import { Flip, ToastContainer } from 'react-toastify';
+
+// Components
+import { contactMe, typer } from '@functions/index';
 import {
   Col10,
   Col25,
@@ -8,10 +12,8 @@ import {
   MyTxtarea,
   Row,
   SendBtn,
-} from 'styles';
-import React from 'react';
-import { Flip, ToastContainer } from 'react-toastify';
-import useReduxConsts from 'hooks/useReduxConsts';
+} from '@styles/index';
+import useReduxConsts from '@hooks/useReduxConsts';
 
 const ContactForm: React.FC = () => {
   const { contactForm, dispatch } = useReduxConsts();

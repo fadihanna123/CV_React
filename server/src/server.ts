@@ -81,7 +81,7 @@ server.use(helmet());
 server.use(json({ type: 'application/json', limit: '1kb' }));
 server.use(urlencoded({ extended: true }));
 // Add routes to the server.
-server.use(routes);
+server.use('/api/', routes);
 // Handle if user get access to unknown route.
 server.use((_, res) => res.send('This route does not exist!'));
 // Handle server errors.

@@ -1,5 +1,7 @@
 import React from 'react';
-import { FooterBlock } from 'styles/footerStyles';
+
+// Components
+import { FooterBlock } from '@styles/footerStyles';
 
 const MainFooter: React.FC<MainFooterProps> = ({
   children,

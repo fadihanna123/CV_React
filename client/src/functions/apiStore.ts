@@ -1,5 +1,5 @@
-import { request } from 'api';
-import { menu_api, sendMail_api } from 'utils';
+import { request } from '@api/index';
+import { menu_api, sendMail_api } from '@utils/index';
 import { errorHandler } from './helper';
 
 /**

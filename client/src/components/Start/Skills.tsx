@@ -1,7 +1,9 @@
-import Icons from 'components/Icons';
 import React from 'react';
-import { Row } from 'styles';
-import { SkillsHeading, SkillsHeadingContainer } from 'styles/startStyles';
+
+// Components
+import Icons from '@components/Icons';
+import { Row } from '@styles/index';
+import { SkillsHeading, SkillsHeadingContainer } from '@styles/startStyles';
 
 const Skills: React.FC = () => {
   return (

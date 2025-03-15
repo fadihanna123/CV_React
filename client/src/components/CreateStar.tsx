@@ -1,5 +1,5 @@
-import { Icon } from 'styles';
-import Star from 'assets/star.png';
+import { Icon } from '@styles/index';
+import Star from '@assets/star.png';
 
 const createStar: React.FC<{ count: number; alt: string }> = ({
   count,

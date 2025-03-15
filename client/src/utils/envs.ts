@@ -1,23 +1,20 @@
 const {
-  REACT_APP_PUBLIC_BACKEND_URL,
-  REACT_APP_PUBLIC_MENU,
-  REACT_APP_PUBLIC_SEND_MAIL,
-  REACT_APP_PUBLIC_LINKEDIN_URL,
-  REACT_APP_PUBLIC_GITHUB_URL,
-  REACT_APP_PUBLIC_API_KEY,
-  REACT_APP_PUBLIC_AUTHORIZATION,
-} = process.env;
+  VITE_PUBLIC_BACKEND_URL,
+  VITE_PUBLIC_MENU,
+  VITE_PUBLIC_SEND_MAIL,
+  VITE_PUBLIC_GITHUB_URL,
+  VITE_PUBLIC_API_KEY,
+  NODE_ENV,
+} = import.meta.env;
 
-export const backendURL = REACT_APP_PUBLIC_BACKEND_URL;
+export const backendURL = VITE_PUBLIC_BACKEND_URL;
 
-export const apiKey = REACT_APP_PUBLIC_API_KEY;
+export const mode = NODE_ENV;
 
-export const authorizationKey = REACT_APP_PUBLIC_AUTHORIZATION;
+export const apiKey = VITE_PUBLIC_API_KEY;
 
-export const sendMail_api = REACT_APP_PUBLIC_SEND_MAIL;
+export const sendMail_api = VITE_PUBLIC_SEND_MAIL;
 
-export const menu_api = REACT_APP_PUBLIC_MENU;
+export const menu_api = VITE_PUBLIC_MENU;
 
-export const linkedinurl = REACT_APP_PUBLIC_LINKEDIN_URL;
-
-export const githubURL = REACT_APP_PUBLIC_GITHUB_URL;
+export const githubURL = VITE_PUBLIC_GITHUB_URL;

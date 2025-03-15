@@ -1,5 +1,7 @@
-import { ThirdRow } from 'styles';
 import React from 'react';
+
+// Components
+import { ThirdRow } from '@styles/index';
 import Studies from './Start/Studies';
 import Work from './Start/Work';
 

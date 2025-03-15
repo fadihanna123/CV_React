@@ -1,7 +1,9 @@
 import React from 'react';
 import CountUp from 'react-countup';
-import { StudieCol, StudieHeading, StudieList } from 'styles';
-import { studieList } from 'utils/consts';
+
+// Components
+import { StudieCol, StudieHeading, StudieList } from '@styles/index';
+import { studieList } from '@utils/consts';
 
 const Studies: React.FC = () => {
   return (

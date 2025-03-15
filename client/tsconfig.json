@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "baseUrl": "src",
+    "baseUrl": "./",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -34,18 +34,27 @@
     "strictFunctionTypes": true,
     "strictPropertyInitialization": true,
     "useUnknownInCatchVariables": false,
-    "rootDir": "src",
+    "rootDir": "./",
     "noUnusedLocals": true,
     "noUncheckedIndexedAccess": true,
     "removeComments": true,
     "outDir": "dist",
     "paths": {
-      "@core/*": ["src/*"],
-      "@assets/*": ["src/assets/*"]
+      "@core/*": ["./src/*"],
+      "@api/*": ["./src/api/*"],
+      "@inc/*": ["./src/inc/*"],
+      "@functions/*": ["./src/functions/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@components/*": ["./src/components/*"],
+      "@containers/*": ["./src/containers/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@ui/*": ["./src/ui/*"]
     },
     "incremental": true,
     "sourceMap": true
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "main.tsx"],
   "exclude": ["node_modules"]
 }

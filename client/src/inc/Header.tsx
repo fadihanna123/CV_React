@@ -1,14 +1,14 @@
-import Logo from 'assets/logo.jpg';
-import Contact from 'containers/Contact';
-import MenuItem from 'containers/MenuItem';
+import Logo from '@assets/logo.jpg';
+import Contact from '@containers/Contact';
+import MenuItem from '@containers/MenuItem';
 import React, { Fragment } from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
-import MainHeader from 'ui/MainHeader';
-import MainMenu from 'ui/MainMenu';
-import Start from 'components/Home';
-import Projects from 'components/Projects';
-import useReduxConsts from 'hooks/useReduxConsts';
+import MainHeader from '@ui/MainHeader';
+import MainMenu from '@ui/MainMenu';
+import Start from '@components/Home';
+import Projects from '@components/Projects';
+import useReduxConsts from '@hooks/useReduxConsts';
 
 const Header: React.FC = () => {
   const { menu } = useReduxConsts();
@@ -17,14 +17,15 @@ const Header: React.FC = () => {
     <>
       <MainHeader>
         <MainMenu>
-          {menu.map((item: Menu, i: number) => (
-            <Fragment key={item.id}>
+          {menu.map((menuItem: Menu, i: number) => (
+            <Fragment key={menuItem.id}>
               {i === 0 && (
-                <Link to={item.pathroute}>
+                <Link to={menuItem.pathroute}>
                   <img src={Logo} alt='Logotypen' />
                 </Link>
               )}
-              <MenuItem item={item} />
+
+              <MenuItem item={menuItem} />
             </Fragment>
           ))}
         </MainMenu>

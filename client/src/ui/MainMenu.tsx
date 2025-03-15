@@ -1,5 +1,7 @@
 import React from 'react';
-import { Navbar } from 'styles';
+
+// Components
+import { Navbar } from '@styles/index';
 
 const MainMenu: React.FC<MenuProps> = ({ children }: MenuProps) => (
   <Navbar>{children}</Navbar>

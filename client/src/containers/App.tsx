@@ -1,28 +1,31 @@
-import { Container } from 'styles';
-import React, { useEffect } from 'react';
+import { Container } from '@styles/index';
+import { CSSProperties } from 'styled-components';
+import { useQuery } from '@tanstack/react-query';
+import { PacmanLoader } from 'react-spinners';
+import React, { FC, useEffect } from 'react';
 
 // Components
-import Header from 'inc/Header';
-import Footer from 'inc/Footer';
+import Header from '@inc/Header';
+import Footer from '@inc/Footer';
 import { setLoading, setMenu } from '../redux/reducers';
-import { getMenu } from 'functions';
-import { CSSProperties } from 'styled-components';
-import { useQuery } from 'react-query';
-import { PacmanLoader } from 'react-spinners';
-import useReduxConsts from 'hooks/useReduxConsts';
+import { getMenu } from '@functions/index';
+import useReduxConsts from '@hooks/useReduxConsts';
 
-const App: React.FC = () => {
+const App: FC = () => {
   const { dispatch } = useReduxConsts();
-  const { isLoading, data: menuData } = useQuery('repoData', getMenu);
+  const { isPending, data: menuData } = useQuery({
+    queryKey: ['repoData'],
+    queryFn: getMenu,
+  });
 
   useEffect(() => {
-    if (isLoading) {
+    if (isPending) {
       dispatch(setLoading(true));
     } else {
       dispatch(setMenu(menuData));
       dispatch(setLoading(false));
     }
-  }, []);
+  }, [menuData]);
 
   const override: CSSProperties = {
     position: 'fixed',
@@ -35,9 +38,9 @@ const App: React.FC = () => {
 
   return (
     <Container>
-      {isLoading ? (
+      {isPending ? (
         <PacmanLoader
-          loading={isLoading}
+          loading={isPending}
           aria-label='Loading Spinner'
           data-testid='loader'
           cssOverride={override}

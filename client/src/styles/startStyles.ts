@@ -1,5 +1,7 @@
-import Coding from 'assets/coding.jpg';
 import styled from 'styled-components';
+
+// Components
+import Coding from '@assets/coding.jpg';
 
 export const WhoContent = styled.div`
   background: url(${Coding});
