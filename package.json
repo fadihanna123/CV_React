@@ -6,10 +6,10 @@
   "author": "Fadi Hanna <54924938+fadihanna123@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "setup": "yarn --ignore-scripts --emoji --silent --immutable && cd server && yarn --silent --ignore-scripts --emoji && cd .. && cd client && yarn --silent --ignore-scripts --emoji",
+    "setup": "yarn && cd server && yarn && cd .. && cd client && yarn --silent --ignore-scripts --emoji",
     "dev": "concurrently \"cd server && yarn dev\" \"cd client && yarn dev\"",
     "seed": "cd server && yarn seed",
-    "clear": "rimraf node_modules && cd server && rimraf node_modules && cd .. && cd client && rimraf node_modules build"
+    "clear": "npx rimraf node_modules && cd server && npx rimraf node_modules && cd .. && cd client && npx rimraf node_modules build"
   },
   "devDependencies": {
     "concurrently": "9.1.2",
