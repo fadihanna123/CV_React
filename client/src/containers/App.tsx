@@ -1,13 +1,13 @@
-import { Container } from '@styles/index';
 import { CSSProperties } from 'styled-components';
 import { useQuery } from '@tanstack/react-query';
 import { PacmanLoader } from 'react-spinners';
 import React, { FC, useEffect } from 'react';
 
 // Components
+import { Container } from '@styles/index';
 import Header from '@inc/Header';
 import Footer from '@inc/Footer';
-import { setLoading, setMenu } from '../redux/reducers';
+import { setLoading, setMenu } from '@redux/reducers';
 import { getMenu } from '@functions/index';
 import useReduxConsts from '@hooks/useReduxConsts';
 

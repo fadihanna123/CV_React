@@ -1,6 +1,8 @@
 import { Meta } from '@storybook/react';
 import { JSX } from 'react';
-import MainMenu from 'ui/MainMenu';
+
+// Components
+import MainMenu from '@ui/MainMenu';
 
 const meta: Meta<typeof MainMenu> = {
   title: 'MainMenu',

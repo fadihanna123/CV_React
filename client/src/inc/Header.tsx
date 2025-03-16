@@ -1,9 +1,11 @@
-import Logo from '@assets/logo.jpg';
-import Contact from '@containers/Contact';
-import MenuItem from '@containers/MenuItem';
 import React, { Fragment } from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
+
+// Components
+import Logo from '@assets/logo.jpg';
+import Contact from '@containers/Contact';
+import MenuItem from '@containers/MenuItem';
 import MainHeader from '@ui/MainHeader';
 import MainMenu from '@ui/MainMenu';
 import Start from '@components/Home';

@@ -1,4 +1,6 @@
 import React from 'react';
+
+// Components
 import About from '@components/About';
 import WorknStudies from '@components/WorknStudies';
 import Banner from './Start/Banner';

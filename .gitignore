@@ -18,3 +18,9 @@ node_modules/
 
 # Storybook
 storybook-static
+
+# React Types
+react-app-env.d.ts
+
+# Build
+dist

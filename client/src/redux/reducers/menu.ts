@@ -1,5 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { RootState } from 'redux/app/store';
+
+// Components
+import { RootState } from '@redux/app/store';
 
 const initialState: Menu[] = [];
 

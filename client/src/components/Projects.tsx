@@ -1,3 +1,6 @@
+import React from 'react';
+
+// Components
 import {
   Card,
   ProjectImage,
@@ -9,7 +12,6 @@ import {
   ProjectsText,
   ProjectTitle,
 } from '@styles/index';
-import React from 'react';
 import { projectList } from '@utils/consts';
 
 const Projects: React.FC = () => (

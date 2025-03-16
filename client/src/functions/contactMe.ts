@@ -1,10 +1,12 @@
+import { toast } from 'react-toastify';
+
+// Components
 import {
   setContactFormAlert,
   setContactFormErr,
   setLoading,
-} from '../redux/reducers';
+} from '@redux/reducers';
 import { sendMail } from './apiStore';
-import { toast } from 'react-toastify';
 
 /**
  * Contact functionality.

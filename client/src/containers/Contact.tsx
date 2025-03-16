@@ -1,3 +1,7 @@
+import React from 'react';
+import HTMLReactParser from 'html-react-parser';
+
+// Components
 import ContactForm from '@containers/ContactForm';
 import {
   Alert,
@@ -5,8 +9,6 @@ import {
   ContactHeading,
   ContactText,
 } from '@styles/index';
-import React from 'react';
-import HTMLReactParser from 'html-react-parser';
 import useReduxConsts from '@hooks/useReduxConsts';
 
 const Contact: React.FC = () => {

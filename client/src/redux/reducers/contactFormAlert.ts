@@ -1,5 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { RootState } from 'redux/app';
+
+// Components
+import { RootState } from '@redux/app';
 
 const initialState = false;
 

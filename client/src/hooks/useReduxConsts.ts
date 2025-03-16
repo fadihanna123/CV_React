@@ -3,8 +3,8 @@ import {
   getContactFormAlert,
   getContactFormErr,
   getMenuState,
-} from '../redux/reducers';
-import { useAppDispatch, useAppSelector } from '../redux/app';
+} from '@redux/reducers';
+import { useAppDispatch, useAppSelector } from '@redux/app';
 
 const useReduxConsts = () => {
   const contactForm = useAppSelector(getContactForm);
