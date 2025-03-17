@@ -1,7 +1,10 @@
+import { FC } from 'react';
+
+// Components
 import { Icon } from '@styles/index';
 import Star from '@assets/star.png';
 
-const createStar: React.FC<{ count: number; alt: string }> = ({
+const CreateStar: FC<{ count: number; alt: string }> = ({
   count,
   alt,
 }: {
@@ -16,4 +19,4 @@ const createStar: React.FC<{ count: number; alt: string }> = ({
   return grids;
 };
 
-export default createStar;
+export default CreateStar;

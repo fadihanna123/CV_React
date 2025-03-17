@@ -13,6 +13,7 @@ import { apiKey, storeError } from '../utils';
 export const getMenu = async (req: Request, res: Response) => {
   if (req.get('apiKey') === apiKey) {
     const getList = await prisma.menu.findMany();
+
     if (getList.length === 0) {
       storeError('No menu links exist.', 'GET', '/api/menu');
       logger.error('No menu links exist.');

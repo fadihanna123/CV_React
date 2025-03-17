@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 // Components
 import { RootState } from '@redux/app';
 
-const initialState = '';
+const initialState: string = '';
 
 export const contactFormErrSlice = createSlice({
   name: 'contactFormErr',

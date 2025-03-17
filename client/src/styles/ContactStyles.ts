@@ -22,7 +22,7 @@ export const SendBtn = styled.button`
   transition: 0.3s all;
 `;
 
-export const ContactBlock = styled.div`
+export const ContactBlock = styled.form`
   text-align: center;
   font-style: italic;
   transition: 0.3s all;
@@ -156,7 +156,8 @@ export const ContactHeading = styled.h1`
 export const Alert = styled.div<AlertProps>`
   text-align: center;
   font-size: 20px;
-  color: ${(props) => (props.error ? 'red' : '#5cb85c')};
+  color: ${(props) =>
+    props.$error ? 'red' : props.$success ? '#5cb85c' : 'inherit'};
   background: #000;
   margin: 10px;
   padding: 10px;

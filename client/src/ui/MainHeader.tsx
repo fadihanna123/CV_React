@@ -1,7 +1,7 @@
-import React from 'react';
+import { FC } from 'react';
 
-const MainHeader: React.FC<MainHeaderProps> = ({
-  children,
-}: MainHeaderProps) => <header>{children}</header>;
+const MainHeader: FC<MainHeaderProps> = ({ children }: MainHeaderProps) => (
+  <header>{children}</header>
+);
 
 export default MainHeader;

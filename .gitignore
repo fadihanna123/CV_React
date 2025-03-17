@@ -21,6 +21,7 @@ storybook-static
 
 # React Types
 react-app-env.d.ts
+vite-env.d.ts
 
 # Build
 dist

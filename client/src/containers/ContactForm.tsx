@@ -1,5 +1,6 @@
-import React from 'react';
+import { FC } from 'react';
 import { Flip, ToastContainer } from 'react-toastify';
+import { useForm } from 'react-hook-form';
 
 // Components
 import { contactMe, typer } from '@functions/index';
@@ -15,83 +16,72 @@ import {
 } from '@styles/index';
 import useReduxConsts from '@hooks/useReduxConsts';
 
-const ContactForm: React.FC = () => {
-  const { contactForm, dispatch } = useReduxConsts();
+const ContactForm: FC = () => {
+  const { register, handleSubmit } = useForm<ContactFormTypes>();
+  const { dispatch } = useReduxConsts();
 
   return (
-    <ContactBlock>
+    <ContactBlock
+      onSubmit={handleSubmit((contactForm: ContactFormTypes) => {
+        contactMe(contactForm, dispatch);
+      })}
+    >
       <Row>
         <Col10>
-          <FormLabel htmlFor='fullname'>Fullständigt namn:</FormLabel>
+          <FormLabel htmlFor='contact_fullname'>Fullständigt namn:</FormLabel>
         </Col10>
         <Col25>
           <Input
-            id='fullname'
+            {...register('fullname')}
+            id='contact_fullname'
             name='fullname'
-            value={contactForm.fullname}
             style={{ textTransform: 'capitalize' }}
             placeholder='e.g Erik Eriksson'
-            onChange={(
-              e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-            ) => {
-              typer(e, contactForm, dispatch);
-            }}
           />
         </Col25>
       </Row>
       <Row>
         <Col10>
-          <FormLabel htmlFor='mail'>E-postadress:</FormLabel>
+          <FormLabel htmlFor='contact_email'>E-postadress:</FormLabel>
         </Col10>
         <Col25>
           <Input
-            id='mail'
+            {...register('mail')}
+            id='contact_email'
             name='mail'
-            value={contactForm.mail}
             placeholder={'e.g name@gmail.com'}
-            onChange={(
-              e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-            ) => typer(e, contactForm, dispatch)}
           />
         </Col25>
       </Row>
       <Row>
         <Col10>
-          <FormLabel htmlFor='phone'>Mobilnummer:</FormLabel>
+          <FormLabel htmlFor='contact_phone'>Mobilnummer:</FormLabel>
         </Col10>
         <Col25>
           <Input
-            id='phone'
+            {...register('phone')}
+            id='contact_phone'
             name='phone'
-            value={contactForm.phone}
             placeholder={'e.g 073-73 99 44'}
-            onChange={(
-              e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-            ) => typer(e, contactForm, dispatch)}
           />
         </Col25>
       </Row>
       <Row>
         <Col10>
-          <FormLabel htmlFor='msg'>Meddelande:</FormLabel>
+          <FormLabel htmlFor='contact_msg'>Meddelande:</FormLabel>
         </Col10>
         <Col25>
           <MyTxtarea
-            id='msg'
+            {...register('msg')}
+            id='contact_msg'
             name='msg'
             cols={50}
             rows={10}
-            value={contactForm.msg}
             placeholder={'e.g Tja! 😋'}
-            onChange={(
-              e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-            ) => typer(e, contactForm, dispatch, true)}
           ></MyTxtarea>
         </Col25>
       </Row>
-      <SendBtn type='submit' onClick={() => contactMe(contactForm, dispatch)}>
-        Skicka
-      </SendBtn>
+      <SendBtn type='submit'>Skicka</SendBtn>
       <ToastContainer transition={Flip} />
     </ContactBlock>
   );

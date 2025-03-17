@@ -1,7 +1,7 @@
+import { FC, useEffect } from 'react';
 import { CSSProperties } from 'styled-components';
 import { useQuery } from '@tanstack/react-query';
 import { PacmanLoader } from 'react-spinners';
-import React, { FC, useEffect } from 'react';
 
 // Components
 import { Container } from '@styles/index';
@@ -13,6 +13,7 @@ import useReduxConsts from '@hooks/useReduxConsts';
 
 const App: FC = () => {
   const { dispatch } = useReduxConsts();
+  const isMobile: boolean = screen.width < 1020;
   const { isPending, data: menuData } = useQuery({
     queryKey: ['repoData'],
     queryFn: getMenu,
@@ -44,7 +45,8 @@ const App: FC = () => {
           aria-label='Loading Spinner'
           data-testid='loader'
           cssOverride={override}
-          size={50}
+          size={isMobile ? 30 : 50}
+          className='loader'
         />
       ) : (
         <>

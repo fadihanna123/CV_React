@@ -1,4 +1,4 @@
-import React from 'react';
+import { FC } from 'react';
 import HTMLReactParser from 'html-react-parser';
 
 // Components
@@ -11,7 +11,7 @@ import {
 } from '@styles/index';
 import useReduxConsts from '@hooks/useReduxConsts';
 
-const Contact: React.FC = () => {
+const Contact: FC = () => {
   const { contactFormAlert, contactFormErr } = useReduxConsts();
 
   return (
@@ -22,9 +22,9 @@ const Contact: React.FC = () => {
       </ContactContent>
       {contactFormAlert ? (
         contactFormErr ? (
-          <Alert error>{HTMLReactParser(contactFormErr)}</Alert>
+          <Alert $error>{HTMLReactParser(contactFormErr)}</Alert>
         ) : (
-          <Alert success>
+          <Alert $success>
             Tack för meddelandet.
             <br />
             Vi hörs snart! &#128512;

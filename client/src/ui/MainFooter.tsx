@@ -1,10 +1,10 @@
-import React from 'react';
+import { FC } from 'react';
 
 // Components
 import { FooterBlock } from '@styles/footerStyles';
 
-const MainFooter: React.FC<MainFooterProps> = ({
-  children,
-}: MainFooterProps) => <FooterBlock>{children}</FooterBlock>;
+const MainFooter: FC<MainFooterProps> = ({ children }: MainFooterProps) => (
+  <FooterBlock>{children}</FooterBlock>
+);
 
 export default MainFooter;

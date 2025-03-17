@@ -31,6 +31,7 @@ export const sendMail = async (
         type: 'error',
         msg: 'Du måste fylla in alla rutor! &#128531;',
       });
+
       return;
     }
 
@@ -39,6 +40,7 @@ export const sendMail = async (
         type: 'error',
         msg: 'Email är inte korrekt skriven! &#128531;',
       });
+
       return;
     }
 
@@ -47,6 +49,7 @@ export const sendMail = async (
         type: 'error',
         msg: 'Mobilnummret är inte korrekt skriven!',
       });
+
       return;
     }
 
@@ -61,17 +64,26 @@ export const sendMail = async (
     };
 
     try {
-      await transporter.sendMail(mailData);
-      storeLog('Mail sent', 'POST', '/api/mailit');
-      res.json({
-        type: 'success',
-        msg: `Tack för att du kontaktar mig.
+      const mailsent = await transporter.sendMail(mailData);
+      if (mailsent) {
+        storeLog('Mail sent', 'POST', '/api/mailit');
+        res.json({
+          type: 'success',
+          msg: `Tack för att du kontaktar mig.
                 <br />
                 Jag har tagit emot ditt meddelande.
                 <br />
                 Jag kommer att kontakta dig så fort jag kan.
       `,
-      });
+        });
+      } else {
+        storeError('Mail not sent', 'POST', '/api/mailit');
+        res.json({
+          type: 'error',
+          msg: `Det finns ett okänt fel. <br /> Var vänlig och testa igen senare.
+      `,
+        });
+      }
     } catch (error) {
       storeError((error as Error).message, 'POST', '/api/mailit');
       logger.error((error as Error).message);

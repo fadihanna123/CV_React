@@ -22,8 +22,8 @@ declare global {
     | 'text/plain';
 
   interface AlertProps {
-    readonly error?: boolean;
-    readonly success?: boolean;
+    readonly $error?: boolean;
+    readonly $success?: boolean;
   }
 
   interface ContactFormTypes {
@@ -47,6 +47,11 @@ declare global {
     classname: string;
     pathroute: string;
     icon: string;
+  }
+
+  interface MailResponse {
+    type: string;
+    msg: string;
   }
 
   interface MainFooterProps {

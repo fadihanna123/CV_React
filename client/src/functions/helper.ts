@@ -1,6 +1,6 @@
 import { toast } from 'react-toastify';
 
-const capitalizeFirstLetter = (str: string) => {
+const capitalizeFirstLetter = (str: string): string => {
   return str.charAt(0).toUpperCase() + str.slice(1);
 };
 

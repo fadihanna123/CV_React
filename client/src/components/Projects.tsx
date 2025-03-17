@@ -1,4 +1,4 @@
-import React from 'react';
+import { FC } from 'react';
 
 // Components
 import {
@@ -14,7 +14,7 @@ import {
 } from '@styles/index';
 import { projectList } from '@utils/consts';
 
-const Projects: React.FC = () => (
+const Projects: FC = () => (
   <>
     <ProjectsContent>
       <ProjectsHeading>Projekt</ProjectsHeading>

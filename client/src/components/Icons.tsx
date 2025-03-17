@@ -1,10 +1,10 @@
-import React from 'react';
+import { FC } from 'react';
 
 // Components
 import { Col } from '@styles/index';
 import CreateStar from './CreateStar';
 
-const Icons: React.FC = () => (
+const Icons: FC = () => (
   <>
     <Col>
       React

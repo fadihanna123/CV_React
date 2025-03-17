@@ -1,17 +1,15 @@
-import React from 'react';
+import { FC } from 'react';
 
 // Components
 import { ThirdRow } from '@styles/index';
 import Studies from './Start/Studies';
 import Work from './Start/Work';
 
-const WorknStudies: React.FC = () => {
-  return (
-    <ThirdRow>
-      <Work />
-      <Studies />
-    </ThirdRow>
-  );
-};
+const WorknStudies: FC = () => (
+  <ThirdRow>
+    <Work />
+    <Studies />
+  </ThirdRow>
+);
 
 export default WorknStudies;
