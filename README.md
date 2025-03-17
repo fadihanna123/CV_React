@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to MittCV 👋</h1>
+<h1 align="center">Welcome to CV_React 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.32-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/fadihanna123/CV_React/blob/main/README.md" target="_blank">
@@ -9,7 +9,7 @@
   </a>
 </p>
 
-> MittCV
+> CV_React
 
 ## Author
 
