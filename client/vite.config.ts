@@ -4,15 +4,15 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
   plugins: [react(), tsconfigPaths()],
+  base: '/',
+  assetsInclude: ['**/*.PNG'],
   build: {
     sourcemap: false,
     outDir: 'build',
     chunkSizeWarningLimit: 1600,
   },
-  base: '/',
   server: {
     port: 3000,
     strictPort: true,
   },
-  assetsInclude: ['**/*.PNG'],
 });

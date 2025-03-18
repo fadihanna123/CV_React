@@ -23,6 +23,12 @@ export default [
   {
     ignores: ['**/node_modules', '**/storybook-static'],
   },
+  {
+    files: ['**/*.stories.*'],
+    rules: {
+      'import/no-anonymous-default-export': 'off',
+    },
+  },
   ...compat.extends(
     'plugin:@typescript-eslint/recommended',
     'eslint:recommended',

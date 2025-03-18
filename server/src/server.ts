@@ -10,6 +10,7 @@ import nodemailer from 'nodemailer';
 import { logger } from './tools';
 import {
   allowedURLs,
+  apiKey,
   errorHandler,
   psw,
   serverPort,
@@ -39,7 +40,7 @@ const corsOptions: CorsOptions = {
   },
 };
 
-if (!process.env['APIKEY'] || !process.env['AUTHORIZATION']) {
+if (!apiKey) {
   throw new Error('Missing keys? Add them and restart the app.');
 }
 
