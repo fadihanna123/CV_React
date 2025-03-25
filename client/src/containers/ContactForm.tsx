@@ -3,7 +3,7 @@ import { Flip, ToastContainer } from 'react-toastify';
 import { useForm } from 'react-hook-form';
 
 // Components
-import { contactMe, typer } from '@functions/index';
+import { contactMe } from '@functions/index';
 import {
   Col10,
   Col25,
