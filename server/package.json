@@ -22,20 +22,15 @@
     "seed-migrate": "prisma migrate dev",
     "lint": "eslint --ext .ts .",
     "format": "prettier -w .",
-    "docs": "rimraf ./docs && apidoc -i ./src -o ./docs && serve ./docs",
+    "docs": "rimraf ./docs && serve ./docs",
     "dbDocs": "prisma studio",
     "clear": "rimraf ./node_modules ./dist ./build ./docs"
   },
   "prisma": {
     "schema": "src/prisma/schema.prisma"
   },
-  "apidoc": {
-    "name": "CV_React Docs",
-    "url": "http://localhost:5000"
-  },
   "dependencies": {
     "@prisma/client": "6.6.0",
-    "apidoc": "^1.2.0",
     "express": "5.1.0",
     "express-rate-limit": "7.5.0",
     "helmet": "8.1.0",
