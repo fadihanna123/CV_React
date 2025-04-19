@@ -3,7 +3,13 @@ import routes from './api/routes';
 import { listenFn } from './controllers';
 import { connectDb } from './db';
 import dotenv from 'dotenv';
-import express, { json, urlencoded, Application } from 'express';
+import express, {
+  Request,
+  Response,
+  json,
+  urlencoded,
+  Application,
+} from 'express';
 import rateLimit from 'express-rate-limit';
 import helmet from 'helmet';
 import nodemailer from 'nodemailer';
@@ -84,7 +90,18 @@ server.use(urlencoded({ extended: true }));
 // Add routes to the server.
 server.use('/api/', routes);
 // Handle if user get access to unknown route.
-server.use((_, res) => res.send('This route does not exist!'));
+server.use((req: Request, res: Response) => {
+  res.json({
+    error: {
+      name: 'Error',
+      status: 404,
+      message: 'Invalid Request',
+      statusCode: 404,
+      stack: 'http://localhost:5000/',
+    },
+  });
+});
+
 // Handle server errors.
 server.use(errorHandler);
 

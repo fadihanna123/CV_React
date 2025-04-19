@@ -25,3 +25,6 @@ vite-env.d.ts
 
 # Build
 dist
+
+# MacOS
+.DS_Store
