@@ -51,7 +51,7 @@ if (!apiKey) {
 }
 
 // Settings
-export const port = serverPort || 5000;
+export const port = serverPort ?? 5000;
 
 export const transporter = nodemailer.createTransport({
   host: 'smtp.gmail.com',
