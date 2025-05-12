@@ -27,7 +27,7 @@
     "react-spinners": "0.17.0",
     "react-toastify": "11.0.5",
     "redux": "5.0.1",
-    "styled-components": "6.1.17"
+    "styled-components": "6.1.18"
   },
   "scripts": {
     "setup": "yarn --emoji --silent --ignore-scripts",
