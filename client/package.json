@@ -27,7 +27,7 @@
     "react-spinners": "0.17.0",
     "react-toastify": "11.0.5",
     "redux": "5.0.1",
-    "styled-components": "6.1.17"
+    "styled-components": "6.1.18"
   },
   "scripts": {
     "setup": "yarn --emoji --silent --ignore-scripts",
@@ -67,7 +67,7 @@
     "@typescript-eslint/eslint-plugin": "8.32.0",
     "@typescript-eslint/parser": "8.31.1",
     "@vitejs/plugin-react": "^4.4.1",
-    "eslint": "9.25.1",
+    "eslint": "9.26.0",
     "eslint-plugin-editorconfig": "4.0.3",
     "eslint-plugin-import": "2.31.0",
     "eslint-plugin-jsdoc": "50.6.9",
