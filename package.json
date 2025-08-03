@@ -1,7 +1,7 @@
 {
   "name": "cv_react",
-  "version": "1.0.2",
-  "lastUpgrade": "20250419",
+  "version": "1.0.3",
+  "lastUpgrade": "20250803",
   "repository": "https://github.com/fadihanna123/CV_React.git",
   "author": "Fadi Hanna <54924938+fadihanna123@users.noreply.github.com>",
   "license": "MIT",
@@ -12,8 +12,8 @@
     "clear": "npx rimraf node_modules && cd server && npx rimraf node_modules && cd .. && cd client && npx rimraf node_modules build"
   },
   "devDependencies": {
-    "concurrently": "9.1.2",
+    "concurrently": "9.2.0",
     "ts-node-dev": "2.0.0",
-    "typescript": "5.8.3"
+    "typescript": "5.9.2"
   }
 }

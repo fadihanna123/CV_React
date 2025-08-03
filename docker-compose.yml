@@ -7,7 +7,7 @@ services:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: cv_react_db
       MYSQL_USER: fadi
-      MYSQL_PASSWORD: '0000'
+      MYSQL_PASSWORD: "0000"
     volumes:
       - cv_react_db-data:/var/lib/mysql
 
@@ -30,6 +30,7 @@ services:
     container_name: cv_react_backend
     ports:
       - 5000:5000
+      - 5555:5555
     env_file:
       - ./server/.docker.env
     restart: no
