@@ -9,6 +9,7 @@
     "target": "es2017",
     "lib": ["DOM", "DOM.Iterable", "esnext"],
     "module": "NodeNext",
+    "baseUrl": "./",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
