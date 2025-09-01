@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@tanstack/react-query": "5.85.5",
-    "@types/react-dom": "19.1.7",
+    "@types/react-dom": "19.1.9",
     "axios": "1.11.0",
     "react": "19.1.1",
     "react-countup": "6.5.3",
