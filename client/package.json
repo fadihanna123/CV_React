@@ -59,7 +59,7 @@
     "@eslint/js": "9.33.0",
     "@reduxjs/toolkit": "2.8.2",
     "@storybook/react": "9.1.2",
-    "@storybook/react-webpack5": "9.1.2",
+    "@storybook/react-webpack5": "9.1.9",
     "@types/node": "24.3.0",
     "@types/react": "19.1.12",
     "@types/react-router-dom": "5.3.3",
