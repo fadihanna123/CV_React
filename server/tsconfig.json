@@ -1,6 +1,6 @@
 {
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"],
+  "include": ["./src/**/*"],
+  "exclude": ["./node_modules"],
   "files": ["src/types/global.d.ts"],
   "ts-node": {
     "files": true
@@ -35,10 +35,10 @@
     "strictFunctionTypes": true,
     "strictPropertyInitialization": true,
     "useUnknownInCatchVariables": false,
-    "rootDir": "src",
+    "rootDir": "./",
     "noUnusedLocals": true,
     "noPropertyAccessFromIndexSignature": true,
     "noUncheckedIndexedAccess": true,
-    "removeComments": true,
+    "removeComments": true
   }
 }
