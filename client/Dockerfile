@@ -1,4 +1,4 @@
-FROM node:22.17.1-slim
+FROM node:22.20-alpine
 WORKDIR /frontend
 COPY yarn.lock package.json ./
 RUN yarn setup
