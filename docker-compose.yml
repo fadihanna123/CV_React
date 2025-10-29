@@ -27,6 +27,7 @@ services:
 
   api:
     build: ./server
+    image: ${DOCKER_USERNAME}/cv_react-backend
     container_name: cv_react_backend
     ports:
       - 5000:5000
@@ -43,6 +44,7 @@ services:
 
   web:
     build: ./client
+    image: ${DOCKER_USERNAME}/cv_react-frontend
     container_name: cv_react_frontend
     ports:
       - 3000:3000
