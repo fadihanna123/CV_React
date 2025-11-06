@@ -14,7 +14,7 @@ const requiredEnvVars = [
 ];
 
 requiredEnvVars.forEach((varName) => {
-  if (!process.env[varName]) {
+  if (!import.meta.env[varName]) {
     throw new Error(`Missing required environment variable: ${varName}`);
   }
 });
