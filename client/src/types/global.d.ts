@@ -1,16 +1,20 @@
 declare global {
-  namespace NodeJS {
-    interface ProcessEnv {
-      REACT_APP_BACKEND_URL: string;
-      REACT_APP_LINKEDIN_URL: string;
-      REACT_APP_GITHUB_URL: string;
-      REACT_APP_SEND_MAIL: string;
-      REACT_APP_MENU: string;
-      REACT_APP_API_KEY: string;
-      REACT_APP_AUTHORIZATION: string;
-      SKIP_PREFLIGHT_CHECK: boolean;
-      NODE_ENV: 'development' | 'production';
-    }
+  declare module '*.jpg';
+  declare module '*.png';
+  declare module '*.PNG';
+
+  interface ImportMetaEnv {
+    VITE_PUBLIC_BACKEND_URL: string;
+    VITE_PUBLIC_LINKEDIN_URL: string;
+    VITE_PUBLIC_GITHUB_URL: string;
+    VITE_PUBLIC_SEND_MAIL: string;
+    VITE_PUBLIC_MENU: string;
+    VITE_PUBLIC_API_KEY: string;
+    NODE_ENV: 'development' | 'production' | 'test';
+  }
+
+  interface ImportMeta {
+    readonly env: ImportMetaEnv;
   }
 
   type Paths = 'mailit' | 'menu';
@@ -38,6 +42,7 @@ declare global {
     mail: string;
     phone: string;
     msg: string;
+    type: string;
   }
 
   interface Menu {

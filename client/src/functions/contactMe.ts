@@ -23,12 +23,12 @@ export const contactMe = async (
   dispatch(setLoading(true));
 
   try {
-    const data: AxiosResponse<MailData, any> | undefined =
+    const data: AxiosResponse<MailResponse> | undefined =
       await sendMail(contactForm);
 
-    if ((data as any).data.type === 'error') {
+    if (data!.data.type === 'error') {
       dispatch(setContactFormAlert(true));
-      dispatch(setContactFormErr((data as any).data.msg));
+      dispatch(setContactFormErr(data!.data.msg));
     } else {
       dispatch(setContactFormAlert(true));
       dispatch(setContactFormErr(''));

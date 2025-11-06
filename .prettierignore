@@ -1,7 +1,5 @@
 server/node_modules/*
 client/node_modules/*
-server/pnpm-lock.yaml
-client/pnpm-lock.yaml
 client/README.md
 client/build/*
 dbDocs/

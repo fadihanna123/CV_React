@@ -14,7 +14,7 @@ const Footer: React.FC = () => (
       </Col>
       <Col>
         <a href={githubURL} target='_blank' rel='noopener noreferrer'>
-          <Icon src={Github} alt='Github Ikon' />
+          <Icon loading='lazy' src={Github} alt='Github Ikon' />
         </a>
       </Col>
     </Row>

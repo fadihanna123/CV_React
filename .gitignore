@@ -24,7 +24,7 @@ react-app-env.d.ts
 vite-env.d.ts
 
 # Build
-dist
+build
 
 # MacOS
 .DS_Store

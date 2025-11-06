@@ -34,7 +34,6 @@ export default [
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:prettier/recommended',
-    'plugin:storybook/recommended',
     'plugin:editorconfig/all',
     'prettier'
   ),

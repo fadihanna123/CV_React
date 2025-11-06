@@ -23,7 +23,7 @@ const Header: React.FC = () => {
             <Fragment key={menuItem.id}>
               {i === 0 && (
                 <Link to={menuItem.pathroute}>
-                  <img src={Logo} alt='Logotypen' />
+                  <img loading='lazy' src={Logo} alt='Logotypen' />
                 </Link>
               )}
 

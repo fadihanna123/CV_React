@@ -1,5 +1,5 @@
 import { request } from '@api/index';
-import { menu_api, sendMail_api } from '@utils/index';
+import { menu_api, mode, sendMail_api } from '@utils/index';
 import { errorHandler } from './helper';
 
 /**
@@ -28,7 +28,11 @@ export const sendMail = async (contactForm: ContactFormTypes) => {
 export const getMenu = async (): Promise<Menu[] | undefined> => {
   try {
     const { data } = await request.get<Menu[]>(menu_api as Paths);
-    console.log('🔗 Menu: ', data);
+
+    if (mode === 'development') {
+      console.log('🔗 Menu: ', data);
+    }
+
     return data;
   } catch (error) {
     errorHandler(error);

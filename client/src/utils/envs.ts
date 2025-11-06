@@ -7,6 +7,18 @@ const {
   NODE_ENV,
 } = import.meta.env;
 
+const requiredEnvVars = [
+  'VITE_PUBLIC_BACKEND_URL',
+  'VITE_PUBLIC_MENU',
+  'VITE_PUBLIC_API_KEY',
+];
+
+requiredEnvVars.forEach((varName) => {
+  if (!process.env[varName]) {
+    throw new Error(`Missing required environment variable: ${varName}`);
+  }
+});
+
 export const backendURL = VITE_PUBLIC_BACKEND_URL;
 
 export const mode = NODE_ENV;

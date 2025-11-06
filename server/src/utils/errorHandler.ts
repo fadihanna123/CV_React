@@ -9,10 +9,9 @@ import { logger } from '../tools';
  */
 
 export const errorHandler = (error: Error, _req: Request, res: Response) => {
-  if (error) {
-    logger.error('Unhandled error', { error: error.message });
-    res.status(500).json({ error: 'Server error.' });
-  }
-
-  res.end();
+    if (error) {
+        logger.error('Unhandled error', { error: error.message });
+        res.status(500).json({ error: 'Server error.' });
+        res.end();
+    }
 };

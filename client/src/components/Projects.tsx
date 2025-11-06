@@ -26,7 +26,11 @@ const Projects: FC = () => (
           <ProjectsCol key={project.id}>
             <Card>
               <ProjectTitle>{project.title}</ProjectTitle>
-              <ProjectImage src={project.image.path} alt={project.image.alt} />
+              <ProjectImage
+                loading='lazy'
+                src={project.image.path}
+                alt={project.image.alt}
+              />
               <ProjectLink target='_blank' href={project.links.githubURL}>
                 <i className='fa-brands fa-github'></i>
               </ProjectLink>

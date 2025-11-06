@@ -1,4 +1,4 @@
-import { FC, useEffect } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { CSSProperties } from 'styled-components';
 import { useQuery } from '@tanstack/react-query';
 import { PacmanLoader } from 'react-spinners';
@@ -8,16 +8,29 @@ import { Container } from '@styles/index';
 import Header from '@inc/Header';
 import Footer from '@inc/Footer';
 import { setLoading, setMenu } from '@redux/reducers';
-import { getMenu } from '@functions/index';
+import { errorHandler, getMenu } from '@functions/index';
 import useReduxConsts from '@hooks/useReduxConsts';
 
 const App: FC = () => {
+  const [isMobile] = useState(window.innerWidth < 1020);
+
   const { dispatch } = useReduxConsts();
-  const isMobile: boolean = screen.width < 1020;
-  const { isPending, data: menuData } = useQuery({
+  const {
+    isPending,
+    data: menuData,
+    error,
+  } = useQuery({
     queryKey: ['repoData'],
     queryFn: getMenu,
+    retry: 2,
   });
+
+  useEffect(() => {
+    if (error) {
+      // Handle error appropriately
+      errorHandler(`Failed to fetch menu ${error}`);
+    }
+  }, [error]);
 
   useEffect(() => {
     if (isPending) {
@@ -26,7 +39,7 @@ const App: FC = () => {
       dispatch(setMenu(menuData));
       dispatch(setLoading(false));
     }
-  }, [menuData]);
+  }, [menuData, isPending, dispatch]);
 
   const override: CSSProperties = {
     position: 'fixed',

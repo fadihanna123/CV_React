@@ -1,4 +1,4 @@
-import { Meta } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import { JSX } from 'react';
 
 // Components
@@ -15,7 +15,7 @@ const Template = (args: JSX.IntrinsicAttributes & MenuProps) => (
   <MainMenu {...args} />
 );
 
-export const Default: any = Template.bind({});
+export const Default: StoryObj<typeof MainMenu> = Template.bind({});
 
 Default.args = {
   children: 'A link',

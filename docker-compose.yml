@@ -1,13 +1,13 @@
 services:
   db:
     image: mysql:lts-oraclelinux9
-    container_name: cv_react_db
+    container_name: ${DATABASE_NAME}
     restart: no
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: cv_react_db
-      MYSQL_USER: fadi
-      MYSQL_PASSWORD: "0000"
+      MYSQL_ROOT_PASSWORD: ${DATABASE_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DATABASE_NAME}
+      MYSQL_USER: ${DATABASE_USERNAME}
+      MYSQL_PASSWORD: ${DATABASE_PASSWORD}
     volumes:
       - cv_react_db-data:/var/lib/mysql
 
@@ -19,7 +19,7 @@ services:
     restart: no
     environment:
       PMA_HOST: db
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: ${DATABASE_ROOT_PASSWORD}
     volumes:
       - cv_react_db-admin:/var/lib/db/data
     depends_on:
@@ -38,7 +38,7 @@ services:
     volumes:
       - ./server/:/backend
       - /backend/node_modules
-    links:
+    depends_on:
       - db
     command: yarn dev
 
@@ -54,7 +54,7 @@ services:
     volumes:
       - ./client/:/frontend
       - /frontend/node_modules
-    links:
+    depends_on:
       - api
     command: yarn dev
 

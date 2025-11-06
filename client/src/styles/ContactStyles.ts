@@ -157,8 +157,9 @@ export const Alert = styled.div<AlertProps>`
   text-align: center;
   font-size: 20px;
   color: ${(props) => {
-    if (props.$error) return 'red';
-    else if (props.$success) {
+    if (props.$error) {
+      return 'red';
+    } else if (props.$success) {
       return '#5cb85c';
     } else {
       return 'inherit';

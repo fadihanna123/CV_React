@@ -1,4 +1,4 @@
-import { Meta } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import { JSX } from 'react';
 
 // Components
@@ -15,7 +15,7 @@ const Template = (args: JSX.IntrinsicAttributes & MainFooterProps) => (
   <MainFooter {...args} />
 );
 
-export const Default: any = Template.bind({});
+export const Default: StoryObj<typeof MainFooter> = Template.bind({});
 
 Default.args = {
   children: 'This is footer',
