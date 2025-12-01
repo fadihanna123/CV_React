@@ -75,7 +75,7 @@
     "eslint-plugin-prettier": "5.5.4",
     "eslint-plugin-react": "7.37.5",
     "globals": "16.5.0",
-    "html-react-parser": "5.2.8",
+    "html-react-parser": "5.2.10",
     "htmlhint": "^1.7.1",
     "jsdom": "^27.1.0",
     "prettier": "3.6.2",
