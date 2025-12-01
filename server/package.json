@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@prisma/client": "6.19.0",
-    "express": "5.1.0",
+    "express": "5.2.0",
     "express-rate-limit": "8.2.1",
     "helmet": "8.1.0",
     "luxon": "3.7.2",
