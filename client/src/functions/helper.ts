@@ -1,10 +1,12 @@
 import { toast } from 'react-toastify';
 
-const capitalizeFirstLetter = (str: string): string => {
+// capitalizeFirstLetter: Capitalize first letter of a string
+export const capitalizeFirstLetter = (str: string): string => {
   return str.charAt(0).toUpperCase() + str.slice(1);
 };
 
-const errorHandler = (error: any) => {
+// errorHandler: Handle errors
+export const errorHandler = (error: any) => {
   if (error.response) {
     toast.error(error.response.data);
     toast.error(error.response.status);
@@ -16,5 +18,3 @@ const errorHandler = (error: any) => {
 
   throw new Error((error as Error).message);
 };
-
-export { errorHandler, capitalizeFirstLetter };

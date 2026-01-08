@@ -5,20 +5,20 @@ import fs from 'fs';
  */
 
 export const fileCleaner = () => {
-  const logsPath = './src/logs/debug.log';
-  const errorPath = './src/logs/error.log';
-  const newValue = '';
+  const logsPath: string = './src/logs/debug.log';
+  const errorPath: string = './src/logs/error.log';
+  const newValue: string = '';
 
   fs.promises
     .readFile(logsPath)
     .then(() => {
-      fs.promises.writeFile(errorPath, newValue).catch((err) => {
+      fs.promises.writeFile(errorPath, newValue).catch((err: Error) => {
         if (err) {
           throw err;
         }
       });
     })
-    .catch((err) => {
+    .catch((err: Error) => {
       if (err) {
         throw err;
       }

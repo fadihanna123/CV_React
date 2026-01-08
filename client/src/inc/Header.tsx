@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import { FC, Fragment } from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 
@@ -12,7 +12,7 @@ import Start from '@components/Home';
 import Projects from '@components/Projects';
 import useReduxConsts from '@hooks/useReduxConsts';
 
-const Header: React.FC = () => {
+const Header: FC = () => {
   const { menu } = useReduxConsts();
 
   return (

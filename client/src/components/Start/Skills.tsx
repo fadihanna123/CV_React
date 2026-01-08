@@ -2,7 +2,7 @@ import { FC } from 'react';
 
 // Components
 import Icons from '@components/Icons';
-import { Row } from '@styles/index';
+import { SkillsRow } from '@styles/iconsStyles';
 import { SkillsHeading, SkillsHeadingContainer } from '@styles/startStyles';
 
 const Skills: FC = () => (
@@ -11,9 +11,9 @@ const Skills: FC = () => (
       <SkillsHeading>Kompetenser</SkillsHeading>
     </SkillsHeadingContainer>
     <br />
-    <Row>
+    <SkillsRow>
       <Icons />
-    </Row>
+    </SkillsRow>
   </>
 );
 

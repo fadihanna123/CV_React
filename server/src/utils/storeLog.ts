@@ -1,4 +1,4 @@
-import { prisma } from '../db';
+import { connection } from '../db';
 import { DateTime } from 'luxon';
 
 /**
@@ -9,20 +9,16 @@ import { DateTime } from 'luxon';
  */
 
 export const storeLog = async (
-    message: string,
-    method?: string,
-    located?: string
+  message: string,
+  method?: string,
+  located?: string
 ) => {
-    const time: string = DateTime.fromJSDate(new Date()).toFormat(
-        'yyyy-MM-dd HH:mm'
-    );
+  const time: string = DateTime.fromJSDate(new Date()).toFormat(
+    'yyyy-MM-dd HH:mm'
+  );
 
-    await prisma.logs.create({
-        data: {
-            message,
-            method: method!,
-            located: located!,
-            time,
-        },
-    });
+  connection.query(
+    'INSERT INTO logs (message, method, located, time) VALUES (?, ?, ?, ?)',
+    [message, method, located, time]
+  );
 };

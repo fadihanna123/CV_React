@@ -1,5 +1,11 @@
 import styled from 'styled-components';
 
+export const SkillsRow = styled.div`
+  display: flex;
+  justify-content: center;
+  transition: 0.3s all;
+`;
+
 export const Icon = styled.img`
   max-width: 15px;
   max-height: 15px;

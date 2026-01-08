@@ -10,7 +10,7 @@ declare global {
     VITE_PUBLIC_SEND_MAIL: string;
     VITE_PUBLIC_MENU: string;
     VITE_PUBLIC_API_KEY: string;
-    NODE_ENV: 'development' | 'production' | 'test';
+    MODE: 'development' | 'production';
   }
 
   interface ImportMeta {

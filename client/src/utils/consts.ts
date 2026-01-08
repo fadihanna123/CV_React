@@ -2,7 +2,7 @@ import Project3 from '@assets/2.PNG';
 import Project10 from '@assets/5.png';
 import Project8 from '@assets/6.PNG';
 
-const workList: WorkList[] = [
+export const workList: WorkList[] = [
   {
     id: 1,
     title: 'Fullstack utvecklare - Praktik',
@@ -91,7 +91,7 @@ const workList: WorkList[] = [
   },
 ];
 
-const studieList: StudioList[] = [
+export const studieList: StudioList[] = [
   {
     id: 1,
     title: 'Learn Front end Development',
@@ -126,7 +126,7 @@ const studieList: StudioList[] = [
   },
 ];
 
-const projectList: ProjectList[] = [
+export const projectList: ProjectList[] = [
   {
     id: 1,
     title: 'Intranätet(Dashboard)',
@@ -155,5 +155,3 @@ const projectList: ProjectList[] = [
     },
   },
 ];
-
-export { projectList, studieList, workList };

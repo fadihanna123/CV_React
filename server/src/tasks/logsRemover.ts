@@ -1,12 +1,11 @@
 import { fileCleaner } from './fileClenaer';
-import { prisma } from '../db';
+import { connection } from '../db';
 
 /**
  * Clean error and logs data in database and call fileCleaner.
  */
-
-export const logsRemover = async () => {
-  await prisma.logs.deleteMany();
-  await prisma.errors.deleteMany();
+export const logsRemover = (): void => {
+  connection.query('DELETE FROM logs');
+  connection.query('DELETE FROM errors');
   fileCleaner();
 };

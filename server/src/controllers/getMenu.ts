@@ -1,4 +1,4 @@
-import { prisma } from '../db';
+import { connection } from '../db';
 import type { Request, Response } from 'express';
 import { logger } from '../tools';
 import { apiKey, storeError } from '../utils';
@@ -12,9 +12,15 @@ import { apiKey, storeError } from '../utils';
 
 export const getMenu = async (req: Request, res: Response) => {
   if (req.get('apiKey') === apiKey) {
-    const getList = await prisma.menu.findMany();
+    const getList = connection.query('SELECT * FROM menu', (err, results) => {
+      if (err) {
+        return;
+      }
 
-    if (getList.length === 0) {
+      return results;
+    });
+
+    if ((getList as any).length === 0) {
       storeError('No menu links exist.', 'GET', '/api/menu');
       logger.error('No menu links exist.');
     }

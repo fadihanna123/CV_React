@@ -1,4 +1,4 @@
-FROM node:22.20-alpine
+FROM node:24.12-alpine
 WORKDIR /backend
 COPY package.json ./
 RUN yarn setup
