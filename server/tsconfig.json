@@ -1,7 +1,7 @@
 {
   "include": ["./src/**/*"],
   "exclude": ["./node_modules"],
-  "files": ["src/types/global.d.ts"],
+  "files": ["./src/types/global.d.ts"],
   "ts-node": {
     "files": true
   },
@@ -39,6 +39,16 @@
     "noUnusedLocals": true,
     "noPropertyAccessFromIndexSignature": true,
     "noUncheckedIndexedAccess": true,
-    "removeComments": true
+    "removeComments": true,
+    "paths": {
+      "@core/*": ["./src/*"],
+      "@api/*": ["./src/api/*"],
+      "@controllers/*": ["./src/controllers/*"],
+      "@db/*": ["./src/db/*"],
+      "@tasks/*": ["./src/tasks/*"],
+      "@tools/*": ["./src/tools/*"],
+      "@types/*": ["./src/types/*"],
+      "@utils/*": ["./src/utils/*"]
+    }
   }
 }

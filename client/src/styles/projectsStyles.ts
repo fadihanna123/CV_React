@@ -115,9 +115,4 @@ export const ProjectLink = styled.a`
     color: #ff0000;
     transition: 0.3s;
   }
-
-  @media (max-width: 1020px) {
-    display: flex;
-    flex-direction: column;
-  }
 `;

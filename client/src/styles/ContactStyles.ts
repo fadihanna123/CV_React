@@ -3,7 +3,7 @@ import styled from 'styled-components';
 // Components
 import Coding from '@assets/coding.jpg';
 
-export const Row = styled.div`
+export const ContactRow = styled.div`
   display: flex;
   justify-content: center;
   transition: 0.3s all;

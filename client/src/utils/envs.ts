@@ -4,7 +4,7 @@ const {
   VITE_PUBLIC_SEND_MAIL,
   VITE_PUBLIC_GITHUB_URL,
   VITE_PUBLIC_API_KEY,
-  NODE_ENV,
+  MODE,
 } = import.meta.env;
 
 const requiredEnvVars = [
@@ -21,7 +21,7 @@ requiredEnvVars.forEach((varName) => {
 
 export const backendURL = VITE_PUBLIC_BACKEND_URL;
 
-export const mode = NODE_ENV;
+export const mode = MODE;
 
 export const apiKey = VITE_PUBLIC_API_KEY;
 

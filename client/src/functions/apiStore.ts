@@ -27,13 +27,13 @@ export const sendMail = async (contactForm: ContactFormTypes) => {
  */
 export const getMenu = async (): Promise<Menu[] | undefined> => {
   try {
-    const { data } = await request.get<Menu[]>(menu_api as Paths);
+    const { data } = await request.get<any>(menu_api as Paths);
 
     if (mode === 'development') {
-      console.log('🔗 Menu: ', data);
+      console.log('🔗 Menu: ', data._rows[0]);
     }
 
-    return data;
+    return data._rows[0];
   } catch (error) {
     errorHandler(error);
   }

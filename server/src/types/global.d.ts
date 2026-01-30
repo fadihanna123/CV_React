@@ -3,7 +3,10 @@ import type { Request } from 'express';
 declare global {
   namespace NodeJS {
     interface ProcessEnv {
-      DATABASE_URL: string;
+      DATABASE_HOST: string;
+      DATABASE_USERNAME: string;
+      DATABASE_PSW: string;
+      DATABASE_NAME: string;
       DEV_PORT: number;
       PROD_PORT: number;
       ALLOWEDOMAINS: string;

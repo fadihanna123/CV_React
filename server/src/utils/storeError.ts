@@ -1,5 +1,5 @@
-import { prisma } from '../db';
 import { DateTime } from 'luxon';
+import { connection } from '../db';
 
 /**
  * Store errors in the database.
@@ -10,8 +10,8 @@ import { DateTime } from 'luxon';
 
 export const storeError = async (
   message: string,
-  method: string,
-  located: string
+  method?: string,
+  located?: string
 ): Promise<void> => {
   const rnd: number = Math.floor(Math.random() * 1000);
 
@@ -19,13 +19,8 @@ export const storeError = async (
     'yyyy-MM-dd HH:mm'
   );
 
-  await prisma.errors.create({
-    data: {
-      errorId: rnd,
-      message,
-      method,
-      located,
-      time,
-    },
-  });
+  connection.query(
+    'INSERT INTO errors (errorId, message, method, located, time) VALUES (?, ?, ?, ?, ?)',
+    [rnd, message, method, located, time]
+  );
 };

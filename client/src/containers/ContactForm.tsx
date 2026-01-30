@@ -11,7 +11,7 @@ import {
   FormLabel,
   Input,
   MyTxtarea,
-  Row,
+  ContactRow,
   SendBtn,
 } from '@styles/index';
 import useReduxConsts from '@hooks/useReduxConsts';
@@ -26,7 +26,7 @@ const ContactForm: FC = () => {
         contactMe(contactForm, dispatch);
       })}
     >
-      <Row>
+      <ContactRow>
         <Col10>
           <FormLabel htmlFor='contact_fullname'>Fullständigt namn:</FormLabel>
         </Col10>
@@ -39,8 +39,8 @@ const ContactForm: FC = () => {
             placeholder='e.g Erik Eriksson'
           />
         </Col25>
-      </Row>
-      <Row>
+      </ContactRow>
+      <ContactRow>
         <Col10>
           <FormLabel htmlFor='contact_email'>E-postadress:</FormLabel>
         </Col10>
@@ -52,8 +52,8 @@ const ContactForm: FC = () => {
             placeholder={'e.g name@gmail.com'}
           />
         </Col25>
-      </Row>
-      <Row>
+      </ContactRow>
+      <ContactRow>
         <Col10>
           <FormLabel htmlFor='contact_phone'>Mobilnummer:</FormLabel>
         </Col10>
@@ -65,8 +65,8 @@ const ContactForm: FC = () => {
             placeholder={'e.g 073-73 99 44'}
           />
         </Col25>
-      </Row>
-      <Row>
+      </ContactRow>
+      <ContactRow>
         <Col10>
           <FormLabel htmlFor='contact_msg'>Meddelande:</FormLabel>
         </Col10>
@@ -80,7 +80,7 @@ const ContactForm: FC = () => {
             placeholder={'e.g Tja! 😋'}
           ></MyTxtarea>
         </Col25>
-      </Row>
+      </ContactRow>
       <SendBtn type='submit'>Skicka</SendBtn>
       <ToastContainer transition={Flip} />
     </ContactBlock>

@@ -28,7 +28,7 @@
     {
       "label": "Remove dependencies - Server",
       "type": "shell",
-      "command": "rimraf node_modules dist build",
+      "command": "rimraf node_modules ./dist ./build",
       "presentation": {
         "reveal": "silent",
         "close": true
@@ -40,7 +40,7 @@
     {
       "label": "Remove dependencies - Client",
       "type": "shell",
-      "command": "rimraf node_modules dist build",
+      "command": "rimraf node_modules ./dist ./build",
       "presentation": {
         "reveal": "silent",
         "close": true
